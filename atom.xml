@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>rawraw</title>
-  <subtitle>Change not delete ~</subtitle>
+  <subtitle>Change not delete ！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-03-24T07:42:45.487Z</updated>
+  <updated>2017-03-24T08:06:31.640Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -16,14 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LESS环境部署</title>
+    <link href="http://rawraw.info/2017/03/24/324/"/>
+    <id>http://rawraw.info/2017/03/24/324/</id>
+    <published>2017-03-24T07:56:18.000Z</published>
+    <updated>2017-03-24T08:06:31.640Z</updated>
+    
+    <content type="html"><![CDATA[<p>等等再发咯</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;等等再发咯&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="css" scheme="http://rawraw.info/categories/css/"/>
+    
+    
+      <category term="less" scheme="http://rawraw.info/tags/less/"/>
+    
+      <category term="css" scheme="http://rawraw.info/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第二篇test</title>
     <link href="http://rawraw.info/2017/03/22/test3/"/>
     <id>http://rawraw.info/2017/03/22/test3/</id>
     <published>2017-03-22T07:37:37.000Z</published>
-    <updated>2017-03-24T07:42:45.487Z</updated>
+    <updated>2017-03-24T07:46:52.887Z</updated>
     
     <content type="html"><![CDATA[<p>大家好啊<br><img src="/images/peitu/test.jpg" alt="“好看死了的图片”"><br><a id="more"></a></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=26584442&auto=1&height=66"></iframe>]]></content>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=3313134&auto=1&height=66"></iframe>]]></content>
     
     <summary type="html">
     
@@ -43,7 +69,7 @@
     <link href="http://rawraw.info/2017/03/22/test1/"/>
     <id>http://rawraw.info/2017/03/22/test1/</id>
     <published>2017-03-22T07:07:49.000Z</published>
-    <updated>2017-03-24T07:35:41.398Z</updated>
+    <updated>2017-03-24T08:05:33.793Z</updated>
     
     <content type="html"><![CDATA[<p> 1 + 1 = 11 ?</p>
 <a id="more"></a>
