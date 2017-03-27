@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-03-27T09:31:25.221Z</updated>
+  <updated>2017-03-27T09:36:25.663Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://rawraw.info/2017/03/24/20170327/"/>
     <id>http://rawraw.info/2017/03/24/20170327/</id>
     <published>2017-03-24T07:56:18.000Z</published>
-    <updated>2017-03-27T09:31:25.221Z</updated>
+    <updated>2017-03-27T09:36:25.663Z</updated>
     
     <content type="html"><![CDATA[<p>讲道理 这里我要找一张好看的图片<br><a id="more"></a></p>
 <font size="5">一、开始</font><br>工具：phpstorm10.0.3<br>环境：Windows 10<br>好多爹一样的浏览器不支持666的ES6啊！大Babel帮你ES6编译成ES5哦~省事儿~<br><font size="5">二、安装</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install babel-cli -g</div></pre></td></tr></table></figure><br><br><font size="5">三、编译</font><br><font size="4">//1、自动编译</font><br><font size="3">①es6文件夹底下新建es6.js</font>
@@ -33,8 +33,8 @@
 <font size="4">//2、安装预设</font>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
-<p>啊啊啊啊啊啊啊啊啊啊啊啊啊！！！！！<br>答应我这一步千万不要用Terminal来装！！不要用Terminal来装！！不要用Terminal来装！！<br>会炸啊会炸！！<font color="red">老老实实把这个项目关了去打开cmd！</font>无响应了一个世纪、<br>看到红色的这句话，省你一个小时时间！装完趁早把node_modules给ignore吧，好气</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;presets&quot;:[&apos;es2015&apos;],</div><div class="line">&quot;plugins&quot;:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+<p>啊啊啊啊啊啊啊啊啊啊啊啊啊！！！！！<br>答应我这一步千万不要用Terminal来装！！不要用Terminal来装！！不要用Terminal来装！！<br>会炸啊会炸！！<font color="red">老老实实把这个项目关了去打开cmd！</font>无响应了一个世纪、<br>看到红色的这句话，省你一个小时时间！装完趁早吧，好气！<br>也别轻易把node_modules给ignore，找个吃饭的时间弄，不然真当卡死。哦，还有气死！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;presets&quot;:[&apos;es2015&apos;],</div><div class="line">&quot;plugins&quot;:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+]]></content>
     
     <summary type="html">
     
