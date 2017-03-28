@@ -83,7 +83,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="less,css," />
+  <meta name="keywords" content="babel,js,es6," />
 
 
 
@@ -101,16 +101,31 @@
 
 
 
-<meta name="description" content="等等再发咯">
+<meta name="description" content="讲道理 这里我要找一张好看的图片（没写完啊没写完，不生气了再写）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LESS环境部署">
-<meta property="og:url" content="http://rawraw.info/2017/03/24/324/index.html">
+<meta property="og:title" content="Babel安装、编译、配置（phpstorm）">
+<meta property="og:url" content="http://rawraw.info/2017/03/27/20170327/index.html">
 <meta property="og:site_name" content="rawraw">
-<meta property="og:description" content="等等再发咯">
-<meta property="og:updated_time" content="2017-03-24T08:31:25.359Z">
+<meta property="og:description" content="讲道理 这里我要找一张好看的图片（没写完啊没写完，不生气了再写）">
+<meta property="og:image" content="http://rawraw.info/images/bg/0001.jpeg">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327001.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327002.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327003.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327005.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327006.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327008.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327004.jpg">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327007.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327008.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327009.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327010.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327011.png">
+<meta property="og:image" content="http://rawraw.info/images/code/20170327012.png">
+<meta property="og:updated_time" content="2017-03-28T07:05:35.018Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LESS环境部署">
-<meta name="twitter:description" content="等等再发咯">
+<meta name="twitter:title" content="Babel安装、编译、配置（phpstorm）">
+<meta name="twitter:description" content="讲道理 这里我要找一张好看的图片（没写完啊没写完，不生气了再写）">
+<meta name="twitter:image" content="http://rawraw.info/images/bg/0001.jpeg">
 
 
 
@@ -138,13 +153,13 @@
 
 
 
-  <link rel="canonical" href="http://rawraw.info/2017/03/24/324/"/>
+  <link rel="canonical" href="http://rawraw.info/2017/03/27/20170327/"/>
 
 
 
 
 
-  <title> LESS环境部署 | rawraw </title>
+  <title> Babel安装、编译、配置（phpstorm） | rawraw </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -283,7 +298,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017/03/24/324/">
+    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017/03/27/20170327/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="rawraw">
@@ -304,7 +319,7 @@
             
             
               
-                LESS环境部署
+                Babel安装、编译、配置（phpstorm）
               
             
           </h1>
@@ -319,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-24T15:56:18+08:00">
-                2017-03-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-27T09:56:18+08:00">
+                2017-03-27
               </time>
             
 
@@ -342,8 +357,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
                   </a>
                 </span>
 
@@ -377,8 +392,23 @@
       
 
       
-        <p>等等再发咯<br><a id="more"></a></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5414349&auto=1&height=66"></iframe>
+        <p>讲道理 这里我要找一张好看的图片<br>（没写完啊没写完，不生气了再写）</p>
+<div align="center"><br><img src="/images/bg/0001.jpeg" alt="“封面”"><br></div><br><a id="more"></a><br><font size="5">一、开始</font><br>Babel转码器<br>工具：phpstorm10.0.3<br>环境：Windows 10<br>好多爹一样的浏览器不支持666的ES6啊！大Babel帮你ES6编译成ES5哦~省事儿~<br><font size="5">二、安装</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install babel-cli -g</div></pre></td></tr></table></figure><br><br><font size="5">三、编译</font><br><font size="4">//1、自动编译</font><br><font size="3">①es6文件夹底下新建es6.js</font><br><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> number = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</div><div class="line"><span class="keyword">let</span> double = number.map(<span class="function">(<span class="params">n</span>) =&gt;</span> n*<span class="number">2</span>);</div><div class="line"><span class="built_in">console</span>.log(double);</div></pre></td></tr></table></figure><br><br>如果出现红红黄黄的报错<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>File  =&gt;  settings  =&gt;  Languages  =&gt;  JavaScript  =&gt;  JavaScript language version 改为ECMAScript6<br><div align="center"><br><img src="/images/code/20170327001.png" alt="“好看死了的图片”"><br></div><br>然后apply一下、<br><br><font size="3">②添加事件监听</font><br>这个时候，如果讲道理的话，自己会弹出来这个，那就很happy地点击add添加事件监听。<br><div align="center"><br><img src="/images/code/20170327002.png" alt="“好看死了的图片”"><br></div><br>不讲道理的话，<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>File  =&gt;  settings  =&gt;  Tools  =&gt;  File Watchers  =&gt;  +  =&gt;  Babel<br><div align="center"><br><img src="/images/code/20170327003.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327005.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327006.png" alt="“好看死了的图片”"><br></div><br>名字随意取咯~<br>如果这个时候apply,不设置编译后目标文件夹，默认是在该文件下生成一个js和js.map<br>Tips:在babel监听配置之前，已存在的js文件，需要发生修改，才会触发自动编译。可以在中间回车几下。<br>不过好丑好难过啊，还是整一个文件夹给它吧(自动编译定位在虚线内，也可以跳过啊，并没有影响)<br><div align="center"><br><img src="/images/code/20170327008.png" alt="“好看死了的图片”"><br></div><br>————————————————————————<br><br><br>好啦好啦，开始正式配置了、<br>主要修改scope 和 output paths,就是编译前的文件夹和编译后的文件夹<br><div align="center"><br><img src="/images/code/20170327004.jpg" alt="“好看死了的图片”"><br></div><br>需要进行编译的文件夹：<br><div align="center"><br><img src="/images/code/20170327007.png" alt="“好看死了的图片”"><br></div><br>绿色框框的是哪个按钮啥意思自己去百度哈，总之就是选文件夹用的、<br>如果这个时候apply,不设置编译后目标文件夹，默认是在该文件下生成一个js和js.map<br><div align="center"><br><img src="/images/code/20170327008.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327009.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327010.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327011.png" alt="“好看死了的图片”"><br></div>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$FileNameWithoutExtension$-compiled.js:$FileNameWithoutExtension$-compiled.js.map</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ProjectFileDir$\es5\$FileNameWithoutExtension$.js</div></pre></td></tr></table></figure>
+<hr>
+<font size="4">//2、手动编译</font><br>通过phpstorm下面的terminal<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ babel es6/es6.js -o es5/es5.js</div></pre></td></tr></table></figure><br><br><div align="center"><br><img src="/images/code/20170327012.png" alt="“好看死了的图片”"><br></div><br><font size="5">四、配置</font><br>前面新建的es5.js和源文件es6.js是一毛一样的，毕竟还没有配置。<br><font size="4">//1、新建配置文件.babelrc</font>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"presets"</span>:[],</div><div class="line"><span class="string">"plugins"</span>:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<font size="4">//2、安装预设</font>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
+<p>啊啊啊啊啊啊啊啊啊啊啊啊啊！！！！！<br>答应我这一步千万不要用Terminal来装！！不要用Terminal来装！！不要用Terminal来装！！<br>会炸啊会炸！！<font color="red">老老实实把这个项目关了去打开cmd！</font>无响应了一个世纪、<br>看到红色的这句话，省你一个小时时间！装完趁早吧，好气！<br>也别轻易把node_modules给ignore，找个吃饭的时间弄，不然真当卡死。哦，还有气死！<br>另外，如果phpstorm一直好卡一直indexing的话，可以在phpstorm.vmoptions里面，最后加上<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">-Dawt.usesystemAAFontSettings=lcd  </div><div class="line">-Dawt.java2d.opengl=<span class="keyword">true</span></div></pre></td></tr></table></figure></p>
+<p>回归正题，在.babelrc文件里加上es2015的字段<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"presets"</span>:[<span class="string">'es2015'</span>],</div><div class="line"><span class="string">"plugins"</span>:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><font size="4">//3、安装展开符插件</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install babel-plugin-transform-object-rest-spread --save-dev</div></pre></td></tr></table></figure></p>
+<p>在.babelrc文件里加上transform-object-rest-spread的字段<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"presets"</span>:[<span class="string">'es2015'</span>],</div><div class="line"><span class="string">"plugins"</span>:[<span class="string">'transform-object-rest-spread'</span>]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -427,9 +457,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/less/" rel="tag"># less</a>
+            <a href="/tags/babel/" rel="tag"># babel</a>
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/es6/" rel="tag"># es6</a>
           
         </div>
       
@@ -442,8 +474,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/22/test3/" rel="next" title="第二篇test">
-                <i class="fa fa-chevron-left"></i> 第二篇test
+              <a href="/2017/03/24/324/" rel="next" title="LESS环境部署">
+                <i class="fa fa-chevron-left"></i> LESS环境部署
               </a>
             
           </div>
@@ -451,10 +483,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/27/20170327/" rel="prev" title="Babel安装、编译、配置（phpstorm）">
-                Babel安装、编译、配置（phpstorm） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

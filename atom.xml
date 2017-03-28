@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-03-27T09:37:51.060Z</updated>
+  <updated>2017-03-28T07:05:35.018Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -17,28 +17,33 @@
   
   <entry>
     <title>Babel安装、编译、配置（phpstorm）</title>
-    <link href="http://rawraw.info/2017/03/24/20170327/"/>
-    <id>http://rawraw.info/2017/03/24/20170327/</id>
-    <published>2017-03-24T07:56:18.000Z</published>
-    <updated>2017-03-27T09:37:51.060Z</updated>
+    <link href="http://rawraw.info/2017/03/27/20170327/"/>
+    <id>http://rawraw.info/2017/03/27/20170327/</id>
+    <published>2017-03-27T01:56:18.000Z</published>
+    <updated>2017-03-28T07:05:35.018Z</updated>
     
-    <content type="html"><![CDATA[<p>讲道理 这里我要找一张好看的图片<br>（没写完啊没写完，不生气了再写）<br><a id="more"></a></p>
-<font size="5">一、开始</font><br>工具：phpstorm10.0.3<br>环境：Windows 10<br>好多爹一样的浏览器不支持666的ES6啊！大Babel帮你ES6编译成ES5哦~省事儿~<br><font size="5">二、安装</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install babel-cli -g</div></pre></td></tr></table></figure><br><br><font size="5">三、编译</font><br><font size="4">//1、自动编译</font><br><font size="3">①es6文件夹底下新建es6.js</font>
+    <content type="html"><![CDATA[<p>讲道理 这里我要找一张好看的图片<br>（没写完啊没写完，不生气了再写）</p>
+<div align="center"><br><img src="/images/bg/0001.jpeg" alt="“封面”"><br></div><br><a id="more"></a><br><font size="5">一、开始</font><br>Babel转码器<br>工具：phpstorm10.0.3<br>环境：Windows 10<br>好多爹一样的浏览器不支持666的ES6啊！大Babel帮你ES6编译成ES5哦~省事儿~<br><font size="5">二、安装</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install babel-cli -g</div></pre></td></tr></table></figure><br><br><font size="5">三、编译</font><br><font size="4">//1、自动编译</font><br><font size="3">①es6文件夹底下新建es6.js</font><br><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> number = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</div><div class="line"><span class="keyword">let</span> double = number.map(<span class="function">(<span class="params">n</span>) =&gt;</span> n*<span class="number">2</span>);</div><div class="line"><span class="built_in">console</span>.log(double);</div></pre></td></tr></table></figure><br><br>如果出现红红黄黄的报错<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>File  =&gt;  settings  =&gt;  Languages  =&gt;  JavaScript  =&gt;  JavaScript language version 改为ECMAScript6<br><div align="center"><br><img src="/images/code/20170327001.png" alt="“好看死了的图片”"><br></div><br>然后apply一下、<br><br><font size="3">②添加事件监听</font><br>这个时候，如果讲道理的话，自己会弹出来这个，那就很happy地点击add添加事件监听。<br><div align="center"><br><img src="/images/code/20170327002.png" alt="“好看死了的图片”"><br></div><br>不讲道理的话，<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>File  =&gt;  settings  =&gt;  Tools  =&gt;  File Watchers  =&gt;  +  =&gt;  Babel<br><div align="center"><br><img src="/images/code/20170327003.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327005.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327006.png" alt="“好看死了的图片”"><br></div><br>名字随意取咯~<br>如果这个时候apply,不设置编译后目标文件夹，默认是在该文件下生成一个js和js.map<br>Tips:在babel监听配置之前，已存在的js文件，需要发生修改，才会触发自动编译。可以在中间回车几下。<br>不过好丑好难过啊，还是整一个文件夹给它吧(自动编译定位在虚线内，也可以跳过啊，并没有影响)<br><div align="center"><br><img src="/images/code/20170327008.png" alt="“好看死了的图片”"><br></div><br>————————————————————————<br><br><br>好啦好啦，开始正式配置了、<br>主要修改scope 和 output paths,就是编译前的文件夹和编译后的文件夹<br><div align="center"><br><img src="/images/code/20170327004.jpg" alt="“好看死了的图片”"><br></div><br>需要进行编译的文件夹：<br><div align="center"><br><img src="/images/code/20170327007.png" alt="“好看死了的图片”"><br></div><br>绿色框框的是哪个按钮啥意思自己去百度哈，总之就是选文件夹用的、<br>如果这个时候apply,不设置编译后目标文件夹，默认是在该文件下生成一个js和js.map<br><div align="center"><br><img src="/images/code/20170327008.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327009.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327010.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327011.png" alt="“好看死了的图片”"><br></div>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">let number = [1,2,3];</div><div class="line">let double = number.map((n) =&gt; n*2);</div><div class="line">console.log(double);</div></pre></td></tr></table></figure>
-<p>如果出现红红黄黄的报错<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>File  =&gt;  settings  =&gt;  Languages  =&gt;  JavaScript  =&gt;  JavaScript language version 改为ECMAScript6<br><img src="/images/code/20170327001.png" alt="“好看死了的图片”"><br>然后apply一下、 </p>
-<font size="3">②添加事件监听</font><br>这个时候，如果讲道理的话，自己会弹出来这个，那就很happy地点击add添加事件监听。<br><img src="/images/code/20170327002.png" alt="“好看死了的图片”"><br>不讲道理的话，<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>File  =&gt;  settings  =&gt;  Tools  =&gt;  File Watchers  =&gt;  +  =&gt;  Babel<br><img src="/images/code/20170327003.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327005.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327006.png" alt="“好看死了的图片”"><br>名字随意取咯~<br>如果这个时候apply,不设置编译后目标文件夹，默认是在该文件下生成一个js和js.map<br>Tips:在babel监听配置之前，已存在的js文件，需要发生修改，才会触发自动编译。可以在中间回车几下。<br>不过好丑好难过啊，还是整一个文件夹给它吧(自动编译定位在虚线内，也可以跳过啊，并没有影响)<br><img src="/images/code/20170327008.png" alt="“好看死了的图片”"><br><br>————————————————————————<br><br><br>好啦好啦，开始正式配置了、<br>主要修改scope 和 output paths,就是编译前的文件夹和编译后的文件夹<br><img src="/images/code/20170327004.jpg" alt="“好看死了的图片”"><br>需要进行编译的文件夹：<br><img src="/images/code/20170327007.png" alt="“好看死了的图片”"><br>绿色框框的是哪个按钮啥意思自己去百度哈，总之就是选文件夹用的、<br>如果这个时候apply,不设置编译后目标文件夹，默认是在该文件下生成一个js和js.map<br><br><img src="/images/code/20170327008.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327009.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327010.png" alt="“好看死了的图片”"><br><img src="/images/code/20170327011.png" alt="“好看死了的图片”"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$FileNameWithoutExtension$-compiled.js:$FileNameWithoutExtension$-compiled.js.map</div></pre></td></tr></table></figure><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ProjectFileDir$\es5\$FileNameWithoutExtension$.js</div></pre></td></tr></table></figure><br><br>————————————————————————<br><br><br><font size="4">//2、手动编译</font><br>通过phpstorm下面的terminal<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ babel es6/es6.js -o es5/es5.js</div></pre></td></tr></table></figure><br><br><img src="/images/code/20170327012.png" alt="“好看死了的图片”"><br><br><font size="5">四、配置</font><br>前面新建的es5.js和源文件es6.js是一毛一样的，毕竟还没有配置。<br><font size="4">//1、新建配置文件.babelrc</font>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$FileNameWithoutExtension$-compiled.js:$FileNameWithoutExtension$-compiled.js.map</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ProjectFileDir$\es5\$FileNameWithoutExtension$.js</div></pre></td></tr></table></figure>
+<hr>
+<font size="4">//2、手动编译</font><br>通过phpstorm下面的terminal<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ babel es6/es6.js -o es5/es5.js</div></pre></td></tr></table></figure><br><br><div align="center"><br><img src="/images/code/20170327012.png" alt="“好看死了的图片”"><br></div><br><font size="5">四、配置</font><br>前面新建的es5.js和源文件es6.js是一毛一样的，毕竟还没有配置。<br><font size="4">//1、新建配置文件.babelrc</font>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;presets&quot;:[],</div><div class="line">&quot;plugins&quot;:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"presets"</span>:[],</div><div class="line"><span class="string">"plugins"</span>:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <font size="4">//2、安装预设</font>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install --save-dev babel-preset-es2015</div></pre></td></tr></table></figure>
-<p>啊啊啊啊啊啊啊啊啊啊啊啊啊！！！！！<br>答应我这一步千万不要用Terminal来装！！不要用Terminal来装！！不要用Terminal来装！！<br>会炸啊会炸！！<font color="red">老老实实把这个项目关了去打开cmd！</font>无响应了一个世纪、<br>看到红色的这句话，省你一个小时时间！装完趁早吧，好气！<br>也别轻易把node_modules给ignore，找个吃饭的时间弄，不然真当卡死。哦，还有气死！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;presets&quot;:[&apos;es2015&apos;],</div><div class="line">&quot;plugins&quot;:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>啊啊啊啊啊啊啊啊啊啊啊啊啊！！！！！<br>答应我这一步千万不要用Terminal来装！！不要用Terminal来装！！不要用Terminal来装！！<br>会炸啊会炸！！<font color="red">老老实实把这个项目关了去打开cmd！</font>无响应了一个世纪、<br>看到红色的这句话，省你一个小时时间！装完趁早吧，好气！<br>也别轻易把node_modules给ignore，找个吃饭的时间弄，不然真当卡死。哦，还有气死！<br>另外，如果phpstorm一直好卡一直indexing的话，可以在phpstorm.vmoptions里面，最后加上<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">-Dawt.usesystemAAFontSettings=lcd  </div><div class="line">-Dawt.java2d.opengl=<span class="keyword">true</span></div></pre></td></tr></table></figure></p>
+<p>回归正题，在.babelrc文件里加上es2015的字段<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"presets"</span>:[<span class="string">'es2015'</span>],</div><div class="line"><span class="string">"plugins"</span>:[]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><font size="4">//3、安装展开符插件</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install babel-plugin-transform-object-rest-spread --save-dev</div></pre></td></tr></table></figure></p>
+<p>在.babelrc文件里加上transform-object-rest-spread的字段<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"presets"</span>:[<span class="string">'es2015'</span>],</div><div class="line"><span class="string">"plugins"</span>:[<span class="string">'transform-object-rest-spread'</span>]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;讲道理 这里我要找一张好看的图片&lt;br&gt;（没写完啊没写完，不生气了再写）&lt;br&gt;
+      &lt;p&gt;讲道理 这里我要找一张好看的图片&lt;br&gt;（没写完啊没写完，不生气了再写）&lt;/p&gt;
+&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0001.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
     
     </summary>
     
@@ -48,6 +53,8 @@
       <category term="babel" scheme="http://rawraw.info/tags/babel/"/>
     
       <category term="js" scheme="http://rawraw.info/tags/js/"/>
+    
+      <category term="es6" scheme="http://rawraw.info/tags/es6/"/>
     
   </entry>
   
