@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[\\这个插件还可以//之select2]]></title>
+      <url>%2F2017%2F04%2F19%2Fplu-select2%2F</url>
+      <content type="text"><![CDATA[]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[面试大宝典]]></title>
+      <url>%2F2017%2F04%2F12%2Finterview%2F</url>
+      <content type="text"><![CDATA[]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[markdown常用语法]]></title>
       <url>%2F2017%2F04%2F11%2Fmarkdown%2F</url>
       <content type="text"><![CDATA[markdown：语法比较少也简单，用来写作排版很棒哦、markdownpad：编译+预览的功能。纯编译的话，一般编辑器都可以。markdownpad2破解绿色中文版下载&emsp;提取密码：2ne1 一、标题1.第一种方法的标题code： 123456# 一级标题## 二级标题### 三级标题 #### 四级标题##### 五级标题###### 六级标题 结果：最小到6个###### 一级标题二级标题三级标题四级标题五级标题六级标题2. 第二种方法的标题code： 12345一级标题=============二级标题---- 结果： 一级标题二级标题3. 第三种方法的标题code： 12345678&lt;font size=1&gt;rawraw&lt;/font&gt;&lt;font size=2&gt;rawraw&lt;/font&gt;&lt;font size=3&gt;rawraw&lt;/font&gt;&lt;font size=4&gt;rawraw&lt;/font&gt;&lt;font size=5&gt;rawraw&lt;/font&gt;&lt;font size=6&gt;rawraw&lt;/font&gt;&lt;font size=7&gt;rawraw&lt;/font&gt;&lt;font size=8&gt;rawraw&lt;/font&gt; 结果：最大到7rawrawrawrawrawrawrawrawrawrawrawrawrawrawrawraw 二、排序code： 1234567891011121314//无序 * == + == -* raw* rawraw* raw+ raw+ rawraw+ rawrawraw- raw- rawraw- rawrawraw//有序，相当于自己写吧1. 提莫2. 娑娜3. 莫甘娜 结果： raw rawraw raw raw rawraw rawrawraw raw rawraw rawrawraw 提莫 娑娜 莫甘娜 三、引用code： 12&gt; 这是一段引用&gt;&gt; 这是一段引用的嵌套 结果： 这是一段引用 这是一段引用的嵌套 四、图片code： 1![“好看死了的图片”](/images/bg/0004.jpg) 结果： 五、链接code： 123456[去吧，皮卡丘](nothing)[回到主页](http://rawraw.info)飞去百度吧[Baidu] [1] ,或者[Rawraw] [2] 或者 [nothing] [3]. [1]: http://www.baidu.com/ "Baidu" [2]: http://rawraw.info "Rawrawh" [3]: nothing "nothing" 结果： 去吧，皮卡丘回到主页飞去百度吧Baidu ,或者Rawraw 或者 nothing. 六、代码code： 123456//行内代码`body &#123; margin: 0; padding: 0; &#125;`//行内代码代码块```CSS [reset.css]body &#123; margin: 0; padding: 0; &#125;\`\`\` 结果： body { margin: 0; padding: 0; } [reset.css]1body &#123; margin: 0; padding: 0; &#125; 七、分割线code： 123***//或者--- 结果： 八、斜体code： 123//_和* 一样_我是歪的_*我是歪的* 结果： 我是歪的我是歪的 九、表格好麻烦 code： 12345| 立正！ | 向左看！ | 向右看齐！|| :----------: |---------- | -----: || 拉克丝 | 潘森 | 伊泽瑞尔 || 弗拉基米尔 | 波比 | 崔丝塔娜 || 费德提克 | 雷克顿 | 库奇 | 结果： 立正！ 向左看！ 向右看齐！ 拉克丝 潘森 伊泽瑞尔 弗拉基米尔 波比 崔丝塔娜 费德提克 雷克顿 库奇 十、phpstorm中的markdown插件Setting –&gt; Plungins –&gt; 搜索markdown ，install]]></content>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-04-12T05:58:26.687Z</updated>
+  <updated>2017-04-19T03:33:12.784Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>\\这个插件还可以//之select2</title>
+    <link href="http://rawraw.info/2017/04/19/plu-select2/"/>
+    <id>http://rawraw.info/2017/04/19/plu-select2/</id>
+    <published>2017-04-19T03:19:41.000Z</published>
+    <updated>2017-04-19T03:33:12.784Z</updated>
+    
+    <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0027.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0027.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="插件" scheme="http://rawraw.info/categories/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="plugin" scheme="http://rawraw.info/tags/plugin/"/>
+    
+      <category term="select2" scheme="http://rawraw.info/tags/select2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试大宝典</title>
+    <link href="http://rawraw.info/2017/04/12/interview/"/>
+    <id>http://rawraw.info/2017/04/12/interview/</id>
+    <published>2017-04-12T03:07:57.000Z</published>
+    <updated>2017-04-19T03:33:38.793Z</updated>
+    
+    <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0029.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0029.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+    
+    
+      <category term="面试" scheme="http://rawraw.info/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown常用语法</title>
@@ -255,7 +305,7 @@
     <link href="http://rawraw.info/2017/03/30/nothing/"/>
     <id>http://rawraw.info/2017/03/30/nothing/</id>
     <published>2017-03-30T08:58:56.000Z</published>
-    <updated>2017-04-17T02:37:47.860Z</updated>
+    <updated>2017-04-18T05:55:42.569Z</updated>
     
     <content type="html"><![CDATA[<p>不想撸码的时候要看看电影看看书、看看那些美丽的地方、</p>
 <p><div align="center"><br><img src="/images/bg/0007.jpeg" alt="“好看死了的图片”"><br></div><br><a id="more"></a></p>
