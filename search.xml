@@ -5,14 +5,14 @@
     <entry>
       <title><![CDATA[\\这个插件还可以//之select2]]></title>
       <url>%2F2017%2F04%2F19%2Fplu-select2%2F</url>
-      <content type="text"><![CDATA[]]></content>
+      <content type="text"><![CDATA[placeholder: 一定要加空的 [ 举一个栗子 ]1234567$('#test').select2(&#123; data:[ &#123;id:1,text:"teemo"&#125;, &#123;id:2,text:"anni"&#125;, //... ]&#125;)]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[面试大宝典]]></title>
       <url>%2F2017%2F04%2F12%2Finterview%2F</url>
-      <content type="text"><![CDATA[]]></content>
+      <content type="text"><![CDATA[为什么要学习前端对前端的认识基础知识前端设计模式]]></content>
     </entry>
 
     

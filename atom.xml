@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-04-19T03:33:12.784Z</updated>
+  <updated>2017-05-03T07:33:31.899Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="http://rawraw.info/2017/04/19/plu-select2/"/>
     <id>http://rawraw.info/2017/04/19/plu-select2/</id>
     <published>2017-04-19T03:19:41.000Z</published>
-    <updated>2017-04-19T03:33:12.784Z</updated>
+    <updated>2017-05-03T07:33:31.899Z</updated>
     
     <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0027.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-]]></content>
+<p><em>placeholder: 一定要加空的<option></option></em></p>
+<figure class="highlight js"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#test'</span>).select2(&#123;</div><div class="line">    <span class="attr">data</span>:[</div><div class="line">            &#123;<span class="attr">id</span>:<span class="number">1</span>,<span class="attr">text</span>:<span class="string">"teemo"</span>&#125;,</div><div class="line">            &#123;<span class="attr">id</span>:<span class="number">2</span>,<span class="attr">text</span>:<span class="string">"anni"</span>&#125;,</div><div class="line">            <span class="comment">//...</span></div><div class="line">    ]</div><div class="line">&#125;)</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -45,10 +46,10 @@
     <link href="http://rawraw.info/2017/04/12/interview/"/>
     <id>http://rawraw.info/2017/04/12/interview/</id>
     <published>2017-04-12T03:07:57.000Z</published>
-    <updated>2017-04-19T03:33:38.793Z</updated>
+    <updated>2017-05-03T07:22:47.533Z</updated>
     
     <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0029.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-]]></content>
+<h1 id="为什么要学习前端"><a href="#为什么要学习前端" class="headerlink" title="为什么要学习前端"></a>为什么要学习前端</h1><h1 id="对前端的认识"><a href="#对前端的认识" class="headerlink" title="对前端的认识"></a>对前端的认识</h1><h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h1 id="前端设计模式"><a href="#前端设计模式" class="headerlink" title="前端设计模式"></a>前端设计模式</h1>]]></content>
     
     <summary type="html">
     
