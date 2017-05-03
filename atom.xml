@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-05-03T07:33:31.899Z</updated>
+  <updated>2017-05-03T08:21:59.198Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>各种爹一样的兼容处理</title>
+    <link href="http://rawraw.info/2017/05/03/compatible/"/>
+    <id>http://rawraw.info/2017/05/03/compatible/</id>
+    <published>2017-05-03T08:14:40.000Z</published>
+    <updated>2017-05-03T08:21:59.198Z</updated>
+    
+    <content type="html"><![CDATA[<p>好奇怪的ie678,好奇怪的安卓机，好奇怪的ios爸爸。。。</p>
+<p><div align="center"><br><img src="/images/bg/0005.jpg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="web端"><a href="#web端" class="headerlink" title="web端"></a>web端</h1><h2 id="杂"><a href="#杂" class="headerlink" title="杂"></a>杂</h2><p>在ie6-7中，用margin-bottom代替padding</p>
+<h1 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;好奇怪的ie678,好奇怪的安卓机，好奇怪的ios爸爸。。。&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0005.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="积累" scheme="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
+    
+    
+      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好用的小东西</title>
+    <link href="http://rawraw.info/2017/05/03/css3/"/>
+    <id>http://rawraw.info/2017/05/03/css3/</id>
+    <published>2017-05-03T07:40:56.000Z</published>
+    <updated>2017-05-03T08:13:35.190Z</updated>
+    
+    <content type="html"><![CDATA[<p>常用的css3巴拉巴拉的，js小技巧-_-</p>
+<p><div align="center"><br><img src="/images/bg/0008.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h1><hr>
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><p>修改选中文本的颜色：<br><figure class="highlight css"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">user-select</span><span class="selector-pseudo">:none</span></div><div class="line"><span class="selector-pseudo">:selection</span></div></pre></td></tr></table></figure></p>
+<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><figure class="highlight css"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*上至下，默认方向*/</span></div><div class="line"><span class="selector-id">#test</span>&#123;</div><div class="line">      <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(#000, #fff); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">      <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(#000, #fff); <span class="comment">/* Opera 11.1 - 12.0 */</span></div><div class="line">      <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(#000, #fff); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">      <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(#000, #fff); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*左至右*/</span></div><div class="line"><span class="selector-id">#test2</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(left, #000 , #fff); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(right, #000, #fff); <span class="comment">/* Opera 11.1 - 12.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(right, #000, #fff); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to right, #000 , #fff); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*角度。12点方向为0deg,顺时针增加deg*/</span></div><div class="line"><span class="selector-id">#test3</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* Opera 11.1 - 12.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*也可以径向渐变，多种颜色，透明度*/</span></div><div class="line"><span class="selector-id">#test4</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-radial-gradient</span>(#000 , #fff 10%, #000 20%); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-radial-gradient</span>(#000, #fff 10%, #000 20%); <span class="comment">/* Opera 11.6 - 12.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-radial-gradient</span>(#000, #fff 10%, #000 20%); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(#000, #fff 10%, #000 20%); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="JS部分"><a href="#JS部分" class="headerlink" title="JS部分"></a>JS部分</h1><hr>
+<h2 id="批量修改样式"><a href="#批量修改样式" class="headerlink" title="批量修改样式"></a>批量修改样式</h2><figure class="highlight js"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">div.style.cssText = <span class="string">'width:100px;height:100px;'</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;常用的css3巴拉巴拉的，js小技巧-_-&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0008.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+      <category term="js" scheme="http://rawraw.info/tags/js/"/>
+    
+      <category term="css3" scheme="http://rawraw.info/tags/css3/"/>
+    
+  </entry>
   
   <entry>
     <title>\\这个插件还可以//之select2</title>
