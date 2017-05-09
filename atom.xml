@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-05-03T08:21:59.198Z</updated>
+  <updated>2017-05-09T03:22:42.761Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>regexp</title>
+    <link href="http://rawraw.info/2017/05/09/regexp/"/>
+    <id>http://rawraw.info/2017/05/09/regexp/</id>
+    <published>2017-05-09T03:22:42.000Z</published>
+    <updated>2017-05-09T03:22:42.761Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>优化总结</title>
+    <link href="http://rawraw.info/2017/05/04/optimize/"/>
+    <id>http://rawraw.info/2017/05/04/optimize/</id>
+    <published>2017-05-04T08:53:50.000Z</published>
+    <updated>2017-05-09T02:22:50.438Z</updated>
+    
+    <content type="html"><![CDATA[<p>better better ~~ 强迫症的宝宝-_—</p>
+<p><div align="center"><br><img src="/images/bg/0023.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><h2 id="清晰度"><a href="#清晰度" class="headerlink" title="清晰度"></a>清晰度</h2><h1 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h1><h2 id="3D启用硬件加速"><a href="#3D启用硬件加速" class="headerlink" title="3D启用硬件加速"></a>3D启用硬件加速</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#test &#123;</div><div class="line">  -webkit-transform:translate3d(0, 0, 0)</div><div class="line">  transform: translate3d(0, 0, 0);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;better better ~~ 强迫症的宝宝-_—&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0023.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="积累" scheme="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
+    
+    
+      <category term="js" scheme="http://rawraw.info/tags/js/"/>
+    
+      <category term="css" scheme="http://rawraw.info/tags/css/"/>
+    
+      <category term="优化" scheme="http://rawraw.info/tags/%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>各种爹一样的兼容处理</title>
@@ -42,19 +86,89 @@
   </entry>
   
   <entry>
-    <title>好用的小东西</title>
+    <title>好用的小东西整理</title>
     <link href="http://rawraw.info/2017/05/03/css3/"/>
     <id>http://rawraw.info/2017/05/03/css3/</id>
     <published>2017-05-03T07:40:56.000Z</published>
-    <updated>2017-05-03T08:40:06.732Z</updated>
+    <updated>2017-05-09T03:18:59.513Z</updated>
     
     <content type="html"><![CDATA[<p>常用的css3巴拉巴拉的，js小技巧-_-</p>
 <p><div align="center"><br><img src="/images/bg/0008.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
 <h1 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h1><hr>
+<h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><h3 id="让滚动条顺溜地滑"><a href="#让滚动条顺溜地滑" class="headerlink" title="让滚动条顺溜地滑"></a>让滚动条顺溜地滑</h3><p>定位后的滑动会出现卡顿<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  -webkit-overflow-scrolling: touch;</div><div class="line">  overflow-scrolling: touch;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="长按闪退"><a href="#长按闪退" class="headerlink" title="长按闪退"></a>长按闪退</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#test&#123;</div><div class="line">  -webkit-touch-callout: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="select-设置右对齐"><a href="#select-设置右对齐" class="headerlink" title="select 设置右对齐"></a>select 设置右对齐</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select option &#123;</div><div class="line">    direction: rtl;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="touch时有半透明灰色遮罩（ios和android）"><a href="#touch时有半透明灰色遮罩（ios和android）" class="headerlink" title="touch时有半透明灰色遮罩（ios和android）"></a>touch时有半透明灰色遮罩（ios和android）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#test&#123;</div><div class="line">  -webkit-tap-highlight-color:rgba(255,255,255,0)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="输入框默认内阴影、以及默认样式-ios"><a href="#输入框默认内阴影、以及默认样式-ios" class="headerlink" title="输入框默认内阴影、以及默认样式(ios)"></a>输入框默认内阴影、以及默认样式(ios)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#test&#123;</div><div class="line">  -webkit-appearance: none; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="部分机型存在type为search的input，自带close按钮样式"><a href="#部分机型存在type为search的input，自带close按钮样式" class="headerlink" title="部分机型存在type为search的input，自带close按钮样式"></a>部分机型存在type为search的input，自带close按钮样式</h3><blockquote>
+<p><code>#Search::-webkit-search-cancel-button{
+    display: none; 
+  }</code></p>
+</blockquote>
+<h3 id="默认首字母会大写-ios"><a href="#默认首字母会大写-ios" class="headerlink" title="默认首字母会大写(ios)"></a>默认首字母会大写(ios)</h3><blockquote>
+<p><code>&lt;input type=&quot;text&quot; autocapitalize=&quot;off&quot; /&gt;</code></p>
+</blockquote>
+<h3 id="圆角失效-某些Android"><a href="#圆角失效-某些Android" class="headerlink" title="圆角失效(某些Android)"></a>圆角失效(某些Android)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#test&#123;</div><div class="line">  background-clip: padding-box; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="移动端伪类-active-失效"><a href="#移动端伪类-active-失效" class="headerlink" title="移动端伪类 :active 失效"></a>移动端伪类 <code>:active</code> 失效</h3><p>移动端应该是touch</p>
+<blockquote>
+<p><code>&lt;body ontouchstart=&quot;&quot;&gt;</code><br>或者<code>document.addEventListener(&#39;touchstart&#39;,function(){},false);</code></p>
+</blockquote>
+<h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><h3 id="禁止复制、选中文本"><a href="#禁止复制、选中文本" class="headerlink" title="禁止复制、选中文本"></a>禁止复制、选中文本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#test&#123;</div><div class="line">    -webkit-user-select: none;</div><div class="line">    -moz-user-select: none;</div><div class="line">    -khtml-user-select: none;</div><div class="line">     user-select: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="消除-IE10-的叉号"><a href="#消除-IE10-的叉号" class="headerlink" title="消除 IE10 的叉号"></a>消除 IE10 的叉号</h3><blockquote>
+<p><code>input:-ms-clear{display:none;}</code></p>
+</blockquote>
 <h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><p>修改选中文本的颜色：<br><figure class="highlight css"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">user-select</span><span class="selector-pseudo">:none</span></div><div class="line"><span class="selector-pseudo">:selection</span></div></pre></td></tr></table></figure></p>
-<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><figure class="highlight css"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*上至下，默认方向*/</span></div><div class="line"><span class="selector-id">#test</span>&#123;</div><div class="line">      <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(#000, #fff); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">      <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(#000, #fff); <span class="comment">/* Opera 11.1 - 12.0 */</span></div><div class="line">      <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(#000, #fff); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">      <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(#000, #fff); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*左至右*/</span></div><div class="line"><span class="selector-id">#test2</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(left, #000 , #fff); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(right, #000, #fff); <span class="comment">/* Opera 11.1 - 12.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(right, #000, #fff); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to right, #000 , #fff); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*角度。12点方向为0deg,顺时针增加deg*/</span></div><div class="line"><span class="selector-id">#test3</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* Opera 11.1 - 12.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(180deg, #000, #fff); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*也可以径向渐变，多种颜色，透明度*/</span></div><div class="line"><span class="selector-id">#test4</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-radial-gradient</span>(#000 , #fff 10%, #000 20%); <span class="comment">/* Safari 5.1 - 6.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-radial-gradient</span>(#000, #fff 10%, #000 20%); <span class="comment">/* Opera 11.6 - 12.0 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-radial-gradient</span>(#000, #fff 10%, #000 20%); <span class="comment">/* Firefox 3.6 - 15 */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(#000, #fff 10%, #000 20%); <span class="comment">/* 标准的语法 */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="webkit-mask遮罩"><a href="#webkit-mask遮罩" class="headerlink" title="webkit mask遮罩"></a>webkit mask遮罩</h3><p>要记得来写<br><a href="http://www.cnblogs.com/cosiray/archive/2012/12/06/2804770.html" target="_blank" rel="external">http://www.cnblogs.com/cosiray/archive/2012/12/06/2804770.html</a></p>
+<h3 id="transform出现锯齿"><a href="#transform出现锯齿" class="headerlink" title="transform出现锯齿"></a>transform出现锯齿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-webkit-transform: rotate(-4deg) skew(10deg) translateZ(0);</div><div class="line"> transform: rotate(-4deg) skew(10deg) translateZ(0);</div><div class="line"> outline: 1px solid rgba(255,255,255,0)</div></pre></td></tr></table></figure>
+<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><figure class="highlight css"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*上至下，默认方向*/</span></div><div class="line"><span class="selector-id">#test</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(#000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(#000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(#000, #fff);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(#000, #fff); </div><div class="line">&#125;</div><div class="line"><span class="comment">/*左至右*/</span></div><div class="line"><span class="selector-id">#test2</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(left, #000 , #fff);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(right, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(right, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to right, #000 , #fff); </div><div class="line">&#125;</div><div class="line"><span class="comment">/*角度。12点方向为0deg,顺时针增加deg*/</span></div><div class="line"><span class="selector-id">#test3</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(180deg, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(180deg, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(180deg, #000, #fff);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(180deg, #000, #fff);</div><div class="line">&#125;</div><div class="line"><span class="comment">/*也可以径向渐变，多种颜色，透明度*/</span></div><div class="line"><span class="selector-id">#test4</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-radial-gradient</span>(#000 , #fff 10%, #000 20%);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-radial-gradient</span>(#000, #fff 10%, #000 20%); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-radial-gradient</span>(#000, #fff 10%, #000 20%); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(#000, #fff 10%, #000 20%); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="JS部分"><a href="#JS部分" class="headerlink" title="JS部分"></a>JS部分</h1><hr>
-<h2 id="批量修改样式"><a href="#批量修改样式" class="headerlink" title="批量修改样式"></a>批量修改样式</h2><figure class="highlight js"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">div.style.cssText = <span class="string">'width:100px;height:100px;'</span></div></pre></td></tr></table></figure>]]></content>
+<h2 id="中文输入法输入英文时，有六分之一空格（ios）"><a href="#中文输入法输入英文时，有六分之一空格（ios）" class="headerlink" title="中文输入法输入英文时，有六分之一空格（ios）"></a>中文输入法输入英文时，有六分之一空格（ios）</h2><blockquote>
+<p><code>this.value = this.value.replace(/\u2006/g, &#39;&#39;);</code></p>
+</blockquote>
+<h2 id="移动端autoplay-失效问题"><a href="#移动端autoplay-失效问题" class="headerlink" title="移动端autoplay 失效问题"></a>移动端autoplay 失效问题</h2><p>必须由用户来触发才可以播放。<br>touchstart 触发播放并暂停（音频开始加载，后面用 JS 再操作就没问题了）。</p>
+<blockquote>
+<p><code>document.addEventListener(&#39;touchstart&#39;, function () {
+  document.getElementsByTagName(&#39;audio&#39;)[0].play();
+  document.getElementsByTagName(&#39;audio&#39;)[0].pause();
+});</code></p>
+</blockquote>
+<h2 id="批量修改样式"><a href="#批量修改样式" class="headerlink" title="批量修改样式"></a>批量修改样式</h2><figure class="highlight js"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">div.style.cssText = <span class="string">'width:100px;height:100px;'</span></div></pre></td></tr></table></figure>
+<h2 id="展开select的option"><a href="#展开select的option" class="headerlink" title="展开select的option"></a>展开select的option</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function showDropdown(sltElement) &#123;</div><div class="line">  var event;</div><div class="line">  event = document.createEvent(&apos;MouseEvents&apos;);</div><div class="line">  event.initMouseEvent(&apos;mousedown&apos;, true, true, window);</div><div class="line">  sltElement.dispatchEvent(event);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h1 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h1><hr>
+<h2 id="meta标签"><a href="#meta标签" class="headerlink" title="meta标签"></a>meta标签</h2><h3 id="apple-mobile-web-app-capable"><a href="#apple-mobile-web-app-capable" class="headerlink" title="apple-mobile-web-app-capable"></a>apple-mobile-web-app-capable</h3><p>apple-mobile-web-app-capable是设置Web应用是否以全屏模式运行。</p>
+<blockquote>
+<p><code>&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;</code></p>
+</blockquote>
+<h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>有时候改了bug刷新并没有卵用，然后就好气啊。<br>手机页面通常在第一次加载后会进行缓存，然后每次刷新会使用缓存而不是去重新向服务器发送请求。</p>
+<blockquote>
+<p><code>&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot; /&gt;</code></p>
+</blockquote>
+<h3 id="format-detection"><a href="#format-detection" class="headerlink" title="format-detection"></a>format-detection</h3><p>format-detection 启动或禁用自动识别页面中的电话号码。</p>
+<blockquote>
+<p><code>&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;</code></p>
+</blockquote>
+<h3 id="奇怪的浏览器强制屏幕"><a href="#奇怪的浏览器强制屏幕" class="headerlink" title="奇怪的浏览器强制屏幕"></a>奇怪的浏览器强制屏幕</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;!-- QQ浏览器私有 --&gt;</div><div class="line">&lt;!-- 全屏模式 --&gt;</div><div class="line">&lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;</div><div class="line">&lt;!-- 强制竖屏 --&gt;</div><div class="line">&lt;meta name=&quot;x5-orientation&quot; content=&quot;portrait&quot;&gt;</div><div class="line">&lt;!-- 强制横屏 --&gt;</div><div class="line">&lt;meta name=&quot;x5-orientation&quot; content=&quot;landscape&quot;&gt;</div><div class="line">&lt;!-- 应用模式 --&gt;</div><div class="line">&lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;</div><div class="line"> </div><div class="line">&lt;!-- UC浏览器私有 --&gt;</div><div class="line">&lt;!-- 全屏模式 --&gt;</div><div class="line">&lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;</div><div class="line">&lt;!-- 强制竖屏 --&gt;</div><div class="line">&lt;meta name=&quot;screen-orientation&quot; content=&quot;portrait&quot;&gt;</div><div class="line">&lt;!-- 强制横屏 --&gt;</div><div class="line">&lt;meta name=&quot;screen-orientation&quot; content=&quot;landscape&quot;&gt;</div><div class="line">&lt;!-- 应用模式 --&gt;</div><div class="line">&lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;</div></pre></td></tr></table></figure>
+<h2 id="移动端拨打电话功能（安卓、ios都可以）"><a href="#移动端拨打电话功能（安卓、ios都可以）" class="headerlink" title="移动端拨打电话功能（安卓、ios都可以）"></a>移动端拨打电话功能（安卓、ios都可以）</h2><blockquote>
+<p><code>&lt;a href=&quot;tel:10086&quot;&gt;10086&lt;/a&gt;</code></p>
+</blockquote>
+<h2 id="app"><a href="#app" class="headerlink" title="app"></a>app</h2><h3 id="横屏字体"><a href="#横屏字体" class="headerlink" title="横屏字体"></a>横屏字体</h3><p>text-size-adjust 为 none 可以解决 iOS 上的问题，但桌面版 Safari 的字体缩放功能会失效，因此最佳方案是将 text-size-adjust 为 100% </p>
+<blockquote>
+<p>-webkit-text-size-adjust: 100%;<br> -ms-text-size-adjust: 100%;<br> text-size-adjust: 100%;</p>
+<h3 id="顶部状态栏背景色"><a href="#顶部状态栏背景色" class="headerlink" title="顶部状态栏背景色"></a>顶部状态栏背景色</h3><p>先指定全屏模式 <code>apple-mobile-web-app-capable</code><br><code>&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;blank&quot; /&gt;</code></p>
+<p>content:default               正常显示<br>          blank                 黑色背景<br>          lank-translucent      黑色半透明，页面主体会向上占据位置</p>
+</blockquote>
+<h3 id="桌面图标"><a href="#桌面图标" class="headerlink" title="桌面图标"></a>桌面图标</h3><p>图片尺寸可以设定为57<em>57（px）或者Retina可以定为114</em>114（px），ipad尺寸为72*72（px)</p>
+<blockquote>
+<p><link rel="apple-touch-icon" href="touch-icon-iphone.png"><br> <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png"><br> <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png"><br> <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"></p>
+</blockquote>
+<p>去光泽</p>
+<blockquote>
+<p><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;touch-icon-iphone.png&quot; /&gt;</code> </p>
+</blockquote>
+<h3 id="启动画面"><a href="#启动画面" class="headerlink" title="启动画面"></a>启动画面</h3><blockquote>
+<p><code>&lt;link rel=&quot;apple-touch-startup-image&quot; href=&quot;start.png&quot;/&gt;</code><br>iOS下页面启动加载时显示的画面图片，避免加载时的白屏。<br>可以通过madia来指定不同的大小：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;!--iPhone--&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-320x460.png&quot; media=&quot;(device-width: 320px)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPhone Retina --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-640x920.png&quot; media=&quot;(device-width: 320px) and (-webkit-device-pixel-ratio: 2)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPhone 5 --&gt;</div><div class="line"> &lt;link rel=&quot;apple-touch-startup-image&quot; media=&quot;(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)&quot; href=&quot;apple-touch-startup-image-640x1096.png&quot;&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad portrait --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-768x1004.png&quot; media=&quot;(device-width: 768px) and (orientation: portrait)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad landscape --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-748x1024.png&quot; media=&quot;(device-width: 768px) and (orientation: landscape)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad Retina portrait --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-1536x2008.png&quot; media=&quot;(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad Retina landscape --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-1496x2048.png&quot;media=&quot;(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)&quot;rel=&quot;apple-touch-startup-image&quot; /&gt;</div></pre></td></tr></table></figure></p>
+</blockquote>
+]]></content>
     
     <summary type="html">
     
@@ -103,10 +217,11 @@
     <link href="http://rawraw.info/2017/04/12/interview/"/>
     <id>http://rawraw.info/2017/04/12/interview/</id>
     <published>2017-04-12T03:07:57.000Z</published>
-    <updated>2017-05-03T07:22:47.533Z</updated>
+    <updated>2017-05-04T08:32:51.457Z</updated>
     
     <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0029.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<h1 id="为什么要学习前端"><a href="#为什么要学习前端" class="headerlink" title="为什么要学习前端"></a>为什么要学习前端</h1><h1 id="对前端的认识"><a href="#对前端的认识" class="headerlink" title="对前端的认识"></a>对前端的认识</h1><h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h1 id="前端设计模式"><a href="#前端设计模式" class="headerlink" title="前端设计模式"></a>前端设计模式</h1>]]></content>
+<h1 id="为什么要学习前端"><a href="#为什么要学习前端" class="headerlink" title="为什么要学习前端"></a>为什么要学习前端</h1><h1 id="对前端的认识"><a href="#对前端的认识" class="headerlink" title="对前端的认识"></a>对前端的认识</h1><h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h1 id="前端设计模式"><a href="#前端设计模式" class="headerlink" title="前端设计模式"></a>前端设计模式</h1><p><a href="https://github.com/darcyclarke/Front-end-Developer-Interview-Questions" target="_blank" rel="external">前端面试问题合集</a></p>
+]]></content>
     
     <summary type="html">
     
@@ -128,7 +243,7 @@
     <link href="http://rawraw.info/2017/04/11/markdown/"/>
     <id>http://rawraw.info/2017/04/11/markdown/</id>
     <published>2017-04-11T02:18:51.000Z</published>
-    <updated>2017-04-12T05:58:26.687Z</updated>
+    <updated>2017-05-04T08:37:52.889Z</updated>
     
     <content type="html"><![CDATA[<p>markdown：语法比较少也简单，用来写作排版很棒哦、<br>markdownpad：编译+预览的功能。纯编译的话，一般编辑器都可以。<br><a href="http://pan.baidu.com/s/1dF25AX7" target="_blank" rel="external">markdownpad2破解绿色中文版下载</a>&emsp;提取密码：2ne1<br><a id="more"></a></p>
 <h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><h5 id="1-第一种方法的标题"><a href="#1-第一种方法的标题" class="headerlink" title="1.第一种方法的标题"></a>1.第一种方法的标题</h5><font color="#0080ff">code：</font>
@@ -194,6 +309,7 @@
 <font color="#0080ff">结果：</font>
 
 <p><a href="nothing">去吧，皮卡丘</a><br><a href="http://rawraw.info">回到主页</a><br>飞去百度吧<a href="http://www.baidu.com/" title="Baidu" target="_blank" rel="external">Baidu</a> ,或者<a href="http://rawraw.info" title="Rawraw">Rawraw</a> 或者 <a href="nothing" title="nothing">nothing</a>.</p>
+<p><em>文章内部链接的话，可以利用a的锚点</em>   </p>
 <h1 id="六、代码"><a href="#六、代码" class="headerlink" title="六、代码"></a>六、代码</h1><font color="#0080ff">code：</font>
 
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//行内代码</div><div class="line"><span class="code">`body &#123; margin: 0; padding: 0; &#125;`</span></div><div class="line">//行内代码代码块</div><div class="line"><span class="code">```CSS [reset.css]</span></div><div class="line">body &#123; margin: 0; padding: 0; &#125;</div><div class="line">\`\`\`</div></pre></td></tr></table></figure>
@@ -363,11 +479,11 @@
     <link href="http://rawraw.info/2017/03/30/nothing/"/>
     <id>http://rawraw.info/2017/03/30/nothing/</id>
     <published>2017-03-30T08:58:56.000Z</published>
-    <updated>2017-04-18T05:55:42.569Z</updated>
+    <updated>2017-05-04T02:26:00.994Z</updated>
     
     <content type="html"><![CDATA[<p>不想撸码的时候要看看电影看看书、看看那些美丽的地方、</p>
 <p><div align="center"><br><img src="/images/bg/0007.jpeg" alt="“好看死了的图片”"><br></div><br><a id="more"></a></p>
-<p>书单：<br>    1.《React全栈》      作者：张轩 杨寒星<br>电影：<br>    1.《暗夜恐惧》        8个黑白简约风高智商小故事<br>    2.《爆裂鼓手》        一定要戴着耳机看，感觉老师才是男主，演技爆表。<br>    3.《立春》           </p>
+<p>书单：<br>    1.《React全栈》      作者：张轩 杨寒星<br>    2.《JavaScript高级程序设计》<br>    3.《JavaScript语言精粹》<br>    4.《高性能JavaScript》<br>电影：<br>    1.《暗夜恐惧》        8个黑白简约风高智商小故事<br>    2.《爆裂鼓手》        一定要戴着耳机看，感觉老师才是男主，演技爆表。<br>    3.《立春》           </p>
 <p>旅行攻略：<br>    1.<a href="www.lvye.org">绿野自助户外活动</a><br>    2.<a href="www.go2eu.com">穷游网:针对国外旅游的攻略论坛</a></p>
 ]]></content>
     
