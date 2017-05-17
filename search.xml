@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[http协议]]></title>
       <url>%2F2017%2F05%2F10%2Fhttp%2F</url>
-      <content type="text"><![CDATA[一个页面的呈现，经历了怎样的对白、 在浏览器输入url地址浏览器查找域名的 IP 地址]]></content>
+      <content type="text"><![CDATA[一个页面的呈现，经历了怎样的对白、 在浏览器输入url地址浏览器查找域名的 IP 地址 http://mp.weixin.qq.com/s/Z-vKtayFWPZ-E-mXAgVNsQ]]></content>
     </entry>
 
     
@@ -73,9 +73,9 @@
 
     
     <entry>
-      <title><![CDATA[center]]></title>
+      <title><![CDATA[CSS居中方法合集]]></title>
       <url>%2F2017%2F04%2F09%2Fcenter%2F</url>
-      <content type="text"><![CDATA[居中合集 水平居中垂直居中行元素居中块元素居中不定宽高的元素居中]]></content>
+      <content type="text"><![CDATA[居中方法合集 看demo去吧/ 行元素居中水平居中text-align:center 垂直居中line-height 块元素居中水平垂直居中方法一: 纯position + margin本元素：position: absolute;left: 50%;top: 50%;margin-left: -50px;margin-top: -50px;父元素：position: relative;兼容性：兼容所有margin值为本元素宽高的一半123&lt;div class=&quot;box1&quot;&gt; &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;&lt;/div&gt; 12345678910111213141516.box1&#123; position: relative; width: 200px; height: 200px; background: #ffd2e9;&#125;.box1 .center &#123; position: absolute; left: 50%; top: 50%; width: 100px; height: 100px; background: #8cebf6; margin-left: -50px; margin-top: -50px;&#125; 方法二: position + margin本元素：margin: auto;position: absolute;left: 0;right: 0;top: 0;bottom: 0;父元素：position: relative兼容：不兼容ie6123&lt;div class=&quot;box2&quot;&gt; &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;&lt;/div&gt; 1234567891011121314151617.box2 &#123; position: relative; width: 200px; height: 200px; background: #ffd2e9;&#125;.box2 .center &#123; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 100px; height: 100px; background: #8cebf6; margin: auto;&#125; 方法三: position + transform本元素：position: absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);父元素：position: relative兼容性：ie9以下不支持 transformposition定位父元素元素的宽高50%，transform定位本元素的宽高50%123&lt;div class=&quot;box3&quot;&gt; &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;&lt;/div&gt; 12345678910111213141516.box3&#123; position: relative; width: 200px; height: 200px; background: #ffd2e9;&#125;.box3 .center &#123; position: absolute; top:50%; left:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); width: 100px; height: 100px; background: #8cebf6;&#125; 方法四: flex + center本元素：nothing~~父元素：display: flex;align-items: center;justify-content: center;兼容性：适合移动端123&lt;div class=&quot;box4&quot;&gt; &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;&lt;/div&gt; 12345678910111213.box4&#123; display: flex; width: 200px; height: 200px; align-items: center;/*垂直居中*/ justify-content: center;/*水平居中*/ background: #ffd2e9;&#125;.box4 .center &#123; width: 100px; height: 100px; background: #8cebf6;&#125; 方法五: flex + margin本元素：margin: auto;父元素：display: flex;兼容性：适合移动端123&lt;div class=&quot;box5&quot;&gt; &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;&lt;/div&gt; 123456789101112.box5 &#123; display: flex; width: 200px; height: 200px; background: #ffd2e9;&#125;.box5 .center &#123; width: 100px; height: 100px; margin: auto; background: #8cebf6;&#125; 方法六:table-cell + inline-block本元素：display: inline-block;父元素：display: table-cell;vertical-align: middle;text-align: center;兼容性：不兼容ie6/7123&lt;div class=&quot;box6&quot;&gt; &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;&lt;/div&gt; 1234567891011121314.box6&#123; display: table-cell; width: 200px; height: 200px; background: #ffd2e9; vertical-align: middle; text-align: center;&#125;.box6 .center&#123; display: inline-block; width: 100px; height: 100px; background: #8cebf6;&#125; 不定宽高的元素居中上述方法四五六]]></content>
     </entry>
 
     
