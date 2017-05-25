@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Front-end总结]]></title>
+      <url>%2F2017%2F05%2F25%2Ffront-end%2F</url>
+      <content type="text"><![CDATA[前端学习流程整理、我的小计划。然后可能就是大神了吧，哈哈哈哈哈哈哈哈哈哈~ 要不要画个图 我先纠结几天吧、]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[navicat for mysql安装问题]]></title>
       <url>%2F2017%2F05%2F16%2Fnavicat%2F</url>
       <content type="text"><![CDATA[navicat for mysql安装问题小集合 10451234C:\xampp\MySQL\bin mysql -u root mysql mysql&gt; UPDATE user SET Password=PASSWORD(&apos;newpassword&apos;) where USER=&apos;root&apos;;mysql&gt; FLUSH PRIVILEGES;mysql&gt; quit]]></content>
