@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/03/27/babel/</loc>
+    <lastmod>2017-05-26T08:11:37.665Z</lastmod>
+    <data>
+        <display>
+        <title>Babel安装、编译、配置（cmd和phpstorm）</title>
+        <pubTime>2017-03-27T01:56:18.000Z</pubTime>
+        
+        <tag>babel</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/26/bundler/</loc>
+    <lastmod>2017-05-26T03:11:03.316Z</lastmod>
+    <data>
+        <display>
+        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
+        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
+        
+        <tag>加宽</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/26/task-runner/</loc>
+    <lastmod>2017-05-26T03:03:02.214Z</lastmod>
+    <data>
+        <display>
+        <title>任务流工具-taskrunner：Grunt、Gulp</title>
+        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
+        
+        <tag>加宽</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/25/design-patterns/</loc>
+    <lastmod>2017-05-25T09:55:38.535Z</lastmod>
+    <data>
+        <display>
+        <title>design patterns - JavaScript设计模式</title>
+        <pubTime>2017-05-25T09:16:06.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/25/front-end/</loc>
+    <lastmod>2017-05-25T08:38:25.048Z</lastmod>
+    <data>
+        <display>
+        <title>Front-end总结</title>
+        <pubTime>2017-05-25T08:31:48.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/10/http/</loc>
+    <lastmod>2017-05-17T09:21:54.282Z</lastmod>
+    <data>
+        <display>
+        <title>http协议</title>
+        <pubTime>2017-05-10T01:37:26.000Z</pubTime>
+        
+        <tag>http</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/03/css3/</loc>
+    <lastmod>2017-05-17T09:19:07.875Z</lastmod>
+    <data>
+        <display>
+        <title>好用的小东西整理</title>
+        <pubTime>2017-05-03T07:40:56.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>js</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/09/center/</loc>
+    <lastmod>2017-05-17T09:16:46.649Z</lastmod>
+    <data>
+        <display>
+        <title>CSS居中方法合集</title>
+        <pubTime>2017-04-09T08:54:12.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="积累" url="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/12/interview/</loc>
+    <lastmod>2017-05-17T07:05:52.392Z</lastmod>
+    <data>
+        <display>
+        <title>面试大宝典</title>
+        <pubTime>2017-04-12T03:07:57.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/16/navicat/</loc>
+    <lastmod>2017-05-16T07:23:00.427Z</lastmod>
+    <data>
+        <display>
+        <title>navicat for mysql安装问题</title>
+        <pubTime>2017-05-16T06:57:22.000Z</pubTime>
+        
+        <tag>mysql</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/16/xampp/</loc>
+    <lastmod>2017-05-16T07:21:50.730Z</lastmod>
+    <data>
+        <display>
+        <title>xampp配置虚拟主机</title>
+        <pubTime>2017-05-16T06:56:42.000Z</pubTime>
+        
+        <tag>xampp</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/03/30/nothing/</loc>
+    <lastmod>2017-05-10T01:34:07.604Z</lastmod>
+    <data>
+        <display>
+        <title>nothing</title>
+        <pubTime>2017-03-30T08:58:56.000Z</pubTime>
+        
+        <tag>很闲</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/09/regexp/</loc>
+    <lastmod>2017-05-09T03:31:45.953Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式整理</title>
+        <pubTime>2017-05-09T03:22:42.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>正则</tag>
+         
+         
+           
+             
+              <breadCrumb title="积累" url="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/04/optimize/</loc>
+    <lastmod>2017-05-09T02:22:50.438Z</lastmod>
+    <data>
+        <display>
+        <title>优化总结</title>
+        <pubTime>2017-05-04T08:53:50.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>js</tag>
+         
+        <tag>优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="积累" url="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/11/markdown/</loc>
+    <lastmod>2017-05-04T08:37:52.889Z</lastmod>
+    <data>
+        <display>
+        <title>markdown常用语法</title>
+        <pubTime>2017-04-11T02:18:51.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>markdown</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://rawraw.info/2017/05/03/compatible/</loc>
+    <lastmod>2017-05-03T08:21:59.198Z</lastmod>
+    <data>
+        <display>
+        <title>各种爹一样的兼容处理</title>
+        <pubTime>2017-05-03T08:14:40.000Z</pubTime>
+        
+        <tag>兼容</tag>
+         
+         
+           
+             
+              <breadCrumb title="积累" url="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/19/plu-select2/</loc>
+    <lastmod>2017-05-03T07:33:31.899Z</lastmod>
+    <data>
+        <display>
+        <title>\\这个插件还可以//之select2</title>
+        <pubTime>2017-04-19T03:19:41.000Z</pubTime>
+        
+        <tag>plugin</tag>
+         
+        <tag>select2</tag>
+         
+         
+           
+             
+              <breadCrumb title="插件" url="http://rawraw.info/categories/%E6%8F%92%E4%BB%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/07/hexo/</loc>
+    <lastmod>2017-04-11T13:42:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo搭建个人博客</title>
+        <pubTime>2017-04-07T02:58:23.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="巨人的肩膀" url="http://rawraw.info/categories/%E5%B7%A8%E4%BA%BA%E7%9A%84%E8%82%A9%E8%86%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/07/color/</loc>
+    <lastmod>2017-04-11T08:49:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>看好看的颜色也是一种幸福</title>
+        <pubTime>2017-04-07T08:49:58.000Z</pubTime>
+        
+        <tag>color</tag>
+         
+         
+           
+             
+              <breadCrumb title="这很UI" url="http://rawraw.info/categories/%E8%BF%99%E5%BE%88UI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/04/07/hexo-next/</loc>
+    <lastmod>2017-04-07T09:15:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo之站点配置和next主题配置</title>
+        <pubTime>2017-04-07T08:50:39.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>next</tag>
+         
+         
+           
+             
+              <breadCrumb title="巨人的肩膀" url="http://rawraw.info/categories/%E5%B7%A8%E4%BA%BA%E7%9A%84%E8%82%A9%E8%86%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/03/22/test1/</loc>
+    <lastmod>2017-04-07T09:03:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>第一篇test</title>
+        <pubTime>2017-03-22T07:07:49.000Z</pubTime>
+        
+        <tag>测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="测试们" url="http://rawraw.info/categories/%E6%B5%8B%E8%AF%95%E4%BB%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017/03/24/less/</loc>
+    <lastmod>2017-04-07T09:00:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>LESS环境部署</title>
+        <pubTime>2017-03-24T07:56:18.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>less</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://rawraw.info/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+</urlset>
