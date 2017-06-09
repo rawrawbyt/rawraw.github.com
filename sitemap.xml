@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rawraw.info/2017/05/25/design-patterns/</loc>
+    
+    <lastmod>2017-06-06T09:34:21.291Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://rawraw.info/2017/03/27/babel/</loc>
     
     <lastmod>2017-05-26T08:11:37.665Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://rawraw.info/2017/05/26/task-runner/</loc>
     
     <lastmod>2017-05-26T03:03:02.214Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rawraw.info/2017/05/25/design-patterns/</loc>
-    
-    <lastmod>2017-05-25T09:55:38.535Z</lastmod>
     
   </url>
   

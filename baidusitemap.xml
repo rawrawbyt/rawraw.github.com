@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://rawraw.info/2017/05/25/design-patterns/</loc>
+    <lastmod>2017-06-06T09:34:21.291Z</lastmod>
+    <data>
+        <display>
+        <title>design patterns - JavaScript设计模式</title>
+        <pubTime>2017-05-25T09:16:06.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rawraw.info/2017/03/27/babel/</loc>
     <lastmod>2017-05-26T08:11:37.665Z</lastmod>
     <data>
@@ -56,26 +76,6 @@
         <pubTime>2017-05-26T02:48:57.000Z</pubTime>
         
         <tag>加宽</tag>
-         
-         
-           
-             
-              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rawraw.info/2017/05/25/design-patterns/</loc>
-    <lastmod>2017-05-25T09:55:38.535Z</lastmod>
-    <data>
-        <display>
-        <title>design patterns - JavaScript设计模式</title>
-        <pubTime>2017-05-25T09:16:06.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
          
          
            
