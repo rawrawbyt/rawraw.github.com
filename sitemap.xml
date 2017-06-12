@@ -2,105 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://rawraw.info/2017/05/25/design-patterns/</loc>
+    <loc>http://rawraw.info/2017-04-12-interview.html</loc>
+    
+    <lastmod>2017-06-12T09:02:01.474Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2017-06-12-js01.html</loc>
+    
+    <lastmod>2017-06-12T08:33:34.612Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2017-05-25-design-patterns.html</loc>
     
     <lastmod>2017-06-09T08:08:22.671Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/03/27/babel/</loc>
+    <loc>http://rawraw.info/2017-03-27-babel.html</loc>
     
     <lastmod>2017-05-26T08:11:37.665Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/26/bundler/</loc>
+    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
     
     <lastmod>2017-05-26T03:11:03.316Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/26/task-runner/</loc>
+    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
     
     <lastmod>2017-05-26T03:03:02.214Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/25/front-end/</loc>
+    <loc>http://rawraw.info/2017-05-25-front-end.html</loc>
     
     <lastmod>2017-05-25T08:38:25.048Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/10/http/</loc>
+    <loc>http://rawraw.info/2017-05-10-http.html</loc>
     
     <lastmod>2017-05-17T09:21:54.282Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/03/css3/</loc>
+    <loc>http://rawraw.info/2017-05-03-css3.html</loc>
     
     <lastmod>2017-05-17T09:19:07.875Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/09/center/</loc>
+    <loc>http://rawraw.info/2017-04-09-center.html</loc>
     
     <lastmod>2017-05-17T09:16:46.649Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/12/interview/</loc>
-    
-    <lastmod>2017-05-17T07:05:52.392Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rawraw.info/2017/05/16/navicat/</loc>
+    <loc>http://rawraw.info/2017-05-16-navicat.html</loc>
     
     <lastmod>2017-05-16T07:23:00.427Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/16/xampp/</loc>
+    <loc>http://rawraw.info/2017-05-16-xampp.html</loc>
     
     <lastmod>2017-05-16T07:21:50.730Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/03/30/nothing/</loc>
+    <loc>http://rawraw.info/2017-03-30-nothing.html</loc>
     
     <lastmod>2017-05-10T01:34:07.604Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/09/regexp/</loc>
+    <loc>http://rawraw.info/2017-05-09-regexp.html</loc>
     
     <lastmod>2017-05-09T03:31:45.953Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/04/optimize/</loc>
+    <loc>http://rawraw.info/2017-05-04-optimize.html</loc>
     
     <lastmod>2017-05-09T02:22:50.438Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/11/markdown/</loc>
+    <loc>http://rawraw.info/2017-04-11-markdown.html</loc>
     
     <lastmod>2017-05-04T08:37:52.889Z</lastmod>
     
@@ -114,14 +121,14 @@
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/05/03/compatible/</loc>
+    <loc>http://rawraw.info/2017-05-03-compatible.html</loc>
     
     <lastmod>2017-05-03T08:21:59.198Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/19/plu-select2/</loc>
+    <loc>http://rawraw.info/2017-04-19-plu-select2.html</loc>
     
     <lastmod>2017-05-03T07:33:31.899Z</lastmod>
     
@@ -135,35 +142,35 @@
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/07/hexo/</loc>
+    <loc>http://rawraw.info/2017-04-07-hexo.html</loc>
     
     <lastmod>2017-04-11T13:42:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/07/color/</loc>
+    <loc>http://rawraw.info/2017-04-07-color.html</loc>
     
     <lastmod>2017-04-11T08:49:38.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/04/07/hexo-next/</loc>
+    <loc>http://rawraw.info/2017-04-07-hexo-next.html</loc>
     
     <lastmod>2017-04-07T09:15:48.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/03/22/test1/</loc>
+    <loc>http://rawraw.info/2017-03-22-test1.html</loc>
     
     <lastmod>2017-04-07T09:03:54.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017/03/24/less/</loc>
+    <loc>http://rawraw.info/2017-03-24-less.html</loc>
     
     <lastmod>2017-04-07T09:00:38.000Z</lastmod>
     

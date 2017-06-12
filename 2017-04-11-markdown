@@ -1,0 +1,919 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo,markdown," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="rawraw" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="markdown：语法比较少也简单，用来写作排版很棒哦、markdownpad：编译+预览的功能。纯编译的话，一般编辑器都可以。markdownpad2破解绿色中文版下载&amp;emsp;提取密码：2ne1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown常用语法">
+<meta property="og:url" content="http://rawraw.info/2017-04-11-markdown">
+<meta property="og:site_name" content="rawraw">
+<meta property="og:description" content="markdown：语法比较少也简单，用来写作排版很棒哦、markdownpad：编译+预览的功能。纯编译的话，一般编辑器都可以。markdownpad2破解绿色中文版下载&amp;emsp;提取密码：2ne1">
+<meta property="og:image" content="http://rawraw.info/images/bg/0004.jpg">
+<meta property="og:updated_time" content="2017-05-04T08:37:52.889Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown常用语法">
+<meta name="twitter:description" content="markdown：语法比较少也简单，用来写作排版很棒哦、markdownpad：编译+预览的功能。纯编译的话，一般编辑器都可以。markdownpad2破解绿色中文版下载&amp;emsp;提取密码：2ne1">
+<meta name="twitter:image" content="http://rawraw.info/images/bg/0004.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://rawraw.info/2017-04-11-markdown"/>
+
+
+
+
+
+  <title> markdown常用语法 | rawraw </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?14cd7af8229ceaad887b250b9b886bd3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">rawraw</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Change not delete ！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017-04-11-markdown">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="rawraw">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/rawraw.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rawraw">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                markdown常用语法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-11T10:18:51+08:00">
+                2017-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>markdown：语法比较少也简单，用来写作排版很棒哦、<br>markdownpad：编译+预览的功能。纯编译的话，一般编辑器都可以。<br><a href="http://pan.baidu.com/s/1dF25AX7" target="_blank" rel="external">markdownpad2破解绿色中文版下载</a>&emsp;提取密码：2ne1<br><a id="more"></a></p>
+<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><h5 id="1-第一种方法的标题"><a href="#1-第一种方法的标题" class="headerlink" title="1.第一种方法的标题"></a>1.第一种方法的标题</h5><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="section"># 一级标题</span></div><div class="line"><span class="section">## 二级标题</span></div><div class="line"><span class="section">### 三级标题 </span></div><div class="line"><span class="section">#### 四级标题</span></div><div class="line"><span class="section">##### 五级标题</span></div><div class="line"><span class="section">###### 六级标题</span></div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font><br><font color="red">最小到6个######</font>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h5 id="2-第二种方法的标题"><a href="#2-第二种方法的标题" class="headerlink" title="2. 第二种方法的标题"></a>2. 第二种方法的标题</h5><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">一级标题</span></div><div class="line">=============</div><div class="line"></div><div class="line"><span class="section">二级标题</span></div><div class="line">----</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h5 id="3-第三种方法的标题"><a href="#3-第三种方法的标题" class="headerlink" title="3. 第三种方法的标题"></a>3. 第三种方法的标题</h5><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;font size=1&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=2&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=3&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=4&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=5&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=6&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=7&gt;rawraw&lt;/font&gt;</div><div class="line">&lt;font size=8&gt;rawraw&lt;/font&gt;</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font><br><font color="red">最大到7</font><br><font size="1">rawraw</font><br><font size="2">rawraw</font><br><font size="3">rawraw</font><br><font size="4">rawraw</font><br><font size="5">rawraw</font><br><font size="6">rawraw</font><br><font size="7">rawraw</font><br><font size="8">rawraw</font>
+
+<h1 id="二、排序"><a href="#二、排序" class="headerlink" title="二、排序"></a>二、排序</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//无序 * == + == -</div><div class="line"><span class="bullet">* </span>raw</div><div class="line"><span class="bullet">* </span>rawraw</div><div class="line"><span class="bullet">* </span>raw</div><div class="line"><span class="bullet">+ </span>raw</div><div class="line"><span class="bullet">+ </span>rawraw</div><div class="line"><span class="bullet">+ </span>rawrawraw</div><div class="line"><span class="bullet">- </span>raw</div><div class="line"><span class="bullet">- </span>rawraw</div><div class="line"><span class="bullet">- </span>rawrawraw</div><div class="line">//有序，相当于自己写吧</div><div class="line"><span class="bullet">1. </span>提莫</div><div class="line"><span class="bullet">2. </span>娑娜</div><div class="line"><span class="bullet">3. </span>莫甘娜</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<ul>
+<li>raw</li>
+<li>rawraw</li>
+<li>raw</li>
+</ul>
+<ul>
+<li>raw</li>
+<li>rawraw</li>
+<li>rawrawraw</li>
+</ul>
+<ul>
+<li>raw</li>
+<li>rawraw</li>
+<li>rawrawraw</li>
+</ul>
+<ol>
+<li>提莫</li>
+<li>娑娜</li>
+<li>莫甘娜</li>
+</ol>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 这是一段引用</span></div><div class="line">&gt;&gt; 这是一段引用的嵌套</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<blockquote>
+<p>这是一段引用</p>
+<blockquote>
+<p>这是一段引用的嵌套</p>
+</blockquote>
+</blockquote>
+<h1 id="四、图片"><a href="#四、图片" class="headerlink" title="四、图片"></a>四、图片</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="string">“好看死了的图片”</span>](<span class="link">/images/bg/0004.jpg</span>)</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<p><img src="/images/bg/0004.jpg" alt="“好看死了的图片”"></p>
+<h1 id="五、链接"><a href="#五、链接" class="headerlink" title="五、链接"></a>五、链接</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">[<span class="string">去吧，皮卡丘</span>](<span class="link">nothing</span>)</div><div class="line">[<span class="string">回到主页</span>](<span class="link">http://rawraw.info</span>)</div><div class="line">飞去百度吧[Baidu] [1] ,或者[Rawraw] [2] 或者 [nothing] [3].</div><div class="line">  [1]: http://www.baidu.com/    "Baidu"</div><div class="line">  [2]: http://rawraw.info  "Rawrawh"</div><div class="line">  [3]: nothing    "nothing"</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<p><a href="nothing">去吧，皮卡丘</a><br><a href="http://rawraw.info">回到主页</a><br>飞去百度吧<a href="http://www.baidu.com/" title="Baidu" target="_blank" rel="external">Baidu</a> ,或者<a href="http://rawraw.info" title="Rawraw">Rawraw</a> 或者 <a href="nothing" title="nothing">nothing</a>.</p>
+<p><em>文章内部链接的话，可以利用a的锚点</em>   </p>
+<h1 id="六、代码"><a href="#六、代码" class="headerlink" title="六、代码"></a>六、代码</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//行内代码</div><div class="line"><span class="code">`body &#123; margin: 0; padding: 0; &#125;`</span></div><div class="line">//行内代码代码块</div><div class="line"><span class="code">```CSS [reset.css]</span></div><div class="line">body &#123; margin: 0; padding: 0; &#125;</div><div class="line">\`\`\`</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<p><code>body { margin: 0; padding: 0; }</code></p>
+<figure class="highlight css"><figcaption><span>[reset.css]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123; <span class="attribute">margin</span>: <span class="number">0</span>; <span class="attribute">padding</span>: <span class="number">0</span>; &#125;</div></pre></td></tr></table></figure>
+<h1 id="七、分割线"><a href="#七、分割线" class="headerlink" title="七、分割线"></a>七、分割线</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="emphasis">***</span></div><div class="line"><span class="section">//或者</span></div><div class="line">---</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<hr>
+<hr>
+<h1 id="八、斜体"><a href="#八、斜体" class="headerlink" title="八、斜体"></a>八、斜体</h1><font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//_和* 一样</div><div class="line"><span class="emphasis">_我是歪的_</span></div><div class="line"><span class="emphasis">*我是歪的*</span></div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<p><em>我是歪的</em><br><em>我是歪的</em></p>
+<h1 id="九、表格"><a href="#九、表格" class="headerlink" title="九、表格"></a>九、表格</h1><p>好麻烦</p>
+<font color="#0080ff">code：</font>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">| 立正！        | 向左看！       | 向右看齐！|</div><div class="line">| :----------: |----------    | -----:  |</div><div class="line">| 拉克丝        | 潘森          | 伊泽瑞尔 |</div><div class="line">| 弗拉基米尔     | 波比          | 崔丝塔娜 |</div><div class="line">| 费德提克       | 雷克顿        |    库奇 |</div></pre></td></tr></table></figure>
+<font color="#0080ff">结果：</font>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">立正！</th>
+<th>向左看！</th>
+<th style="text-align:right">向右看齐！</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">拉克丝</td>
+<td>潘森</td>
+<td style="text-align:right">伊泽瑞尔</td>
+</tr>
+<tr>
+<td style="text-align:center">弗拉基米尔</td>
+<td>波比</td>
+<td style="text-align:right">崔丝塔娜</td>
+</tr>
+<tr>
+<td style="text-align:center">费德提克</td>
+<td>雷克顿</td>
+<td style="text-align:right">库奇</td>
+</tr>
+</tbody>
+</table>
+<h1 id="十、phpstorm中的markdown插件"><a href="#十、phpstorm中的markdown插件" class="headerlink" title="十、phpstorm中的markdown插件"></a>十、phpstorm中的markdown插件</h1><p>Setting –&gt; Plungins –&gt; 搜索markdown ，install</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/rawraw00.jpg" alt="rawraw wechat" style="width: 200px; max-width: 100%;"/>
+    <div>rawraw的公众号//先别关注吧、都没写东西、唉</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="rawraw WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay2.png" alt="rawraw Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/markdown/" rel="tag"># markdown</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017-04-09-center" rel="next" title="CSS居中方法合集">
+                <i class="fa fa-chevron-left"></i> CSS居中方法合集
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017-04-12-interview" rel="prev" title="面试大宝典">
+                面试大宝典 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129128"></script>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/rawraw.jpg"
+               alt="rawraw" />
+          <p class="site-author-name" itemprop="name">rawraw</p>
+           
+              <p class="site-description motion-element" itemprop="description">Change not delete ！</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1100379063" target="_blank" title="sina">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  sina
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              我瞅瞅、
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.pexels.com/" title="pexels素材" target="_blank">pexels素材</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.17sucai.com/" title="17素材" target="_blank">17素材</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jq22.com/" title="jQuery插件库" target="_blank">jQuery插件库</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、标题"><span class="nav-number">1.</span> <span class="nav-text">一、标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-第一种方法的标题"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">1.第一种方法的标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">2.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">2.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-第二种方法的标题"><span class="nav-number">2.1.1.1.2.</span> <span class="nav-text">2. 第二种方法的标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题-1"><span class="nav-number">3.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题-1"><span class="nav-number">3.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-第三种方法的标题"><span class="nav-number">3.1.0.0.1.</span> <span class="nav-text">3. 第三种方法的标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、排序"><span class="nav-number">4.</span> <span class="nav-text">二、排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、引用"><span class="nav-number">5.</span> <span class="nav-text">三、引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、图片"><span class="nav-number">6.</span> <span class="nav-text">四、图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、链接"><span class="nav-number">7.</span> <span class="nav-text">五、链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、代码"><span class="nav-number">8.</span> <span class="nav-text">六、代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、分割线"><span class="nav-number">9.</span> <span class="nav-text">七、分割线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、斜体"><span class="nav-number">10.</span> <span class="nav-text">八、斜体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九、表格"><span class="nav-number">11.</span> <span class="nav-text">九、表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十、phpstorm中的markdown插件"><span class="nav-number">12.</span> <span class="nav-text">十、phpstorm中的markdown插件</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">rawraw</span>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129128"></script>
+      <!-- UY END -->
+    
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
