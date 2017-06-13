@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[API大全整理/from github]]></title>
+      <url>%2F2017-06-13-api.html</url>
+      <content type="text"><![CDATA[偶然发现的github上的API，蛮好用的吼、 emoji表情包大全https://api.github.com/emojisGET返回数据格式：1234567&#123; "+1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v7", "-1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44e.png?v7", "100": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4af.png?v7", "1234": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f522.png?v7", //... &#125; markdown编辑器https://api.github.com/markdownPOST12345data = &#123; "text":"#test", "mode": "gfm", "context": "github/gollum" &#125; 返回数据：html]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[JavaScript要仔细学之一//apply( )和call( )的区别]]></title>
       <url>%2F2017-06-12-js01.html</url>
       <content type="text"><![CDATA[call和apply可以改变this指针,即改变函数的作用域。 说明call和apply方法的作用相同，就是参数不同。call和apply的第一个参数都是一样的，但是后面参数不同，call从第二个参数开始后面有许多参数，apply第二个参数必须是数组。call([thisObj[,arg1[, arg2[, [,.argN]]]]])apply([thisObj[,argArray]])]]></content>

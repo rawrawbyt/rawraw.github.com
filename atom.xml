@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-06-12T08:33:34.612Z</updated>
+  <updated>2017-06-13T09:56:45.586Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>API大全整理/from github</title>
+    <link href="http://rawraw.info/2017-06-13-api.html"/>
+    <id>http://rawraw.info/2017-06-13-api.html</id>
+    <published>2017-06-13T09:47:54.000Z</published>
+    <updated>2017-06-13T09:56:45.586Z</updated>
+    
+    <content type="html"><![CDATA[<p>偶然发现的github上的API，蛮好用的吼、</p>
+<p><div align="center"><br><img src="/images/bg/0038.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="emoji表情包大全"><a href="#emoji表情包大全" class="headerlink" title="emoji表情包大全"></a>emoji表情包大全</h1><p><code>https://api.github.com/emojis</code><br><code>GET</code><br>返回数据格式：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"+1"</span>: <span class="string">"https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v7"</span>,</div><div class="line">  <span class="string">"-1"</span>: <span class="string">"https://assets-cdn.github.com/images/icons/emoji/unicode/1f44e.png?v7"</span>,</div><div class="line">  <span class="string">"100"</span>: <span class="string">"https://assets-cdn.github.com/images/icons/emoji/unicode/1f4af.png?v7"</span>,</div><div class="line">  <span class="string">"1234"</span>: <span class="string">"https://assets-cdn.github.com/images/icons/emoji/unicode/1f522.png?v7"</span>,</div><div class="line">  <span class="comment">//...</span></div><div class="line">  &#125;</div></pre></td></tr></table></figure></p>
+<h1 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h1><p><code>https://api.github.com/markdown</code><br><code>POST</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">data = </div><div class="line">&#123;   <span class="string">"text"</span>:<span class="string">"#test"</span>,</div><div class="line">    <span class="string">"mode"</span>: <span class="string">"gfm"</span>,</div><div class="line">    <span class="string">"context"</span>: <span class="string">"github/gollum"</span></div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>返回数据：html</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;偶然发现的github上的API，蛮好用的吼、&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0038.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="干货" scheme="http://rawraw.info/categories/%E5%B9%B2%E8%B4%A7/"/>
+    
+    
+      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript要仔细学之一//apply( )和call( )的区别</title>
@@ -790,39 +818,6 @@
     
     
       <category term="hexo" scheme="http://rawraw.info/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nothing</title>
-    <link href="http://rawraw.info/2017-03-30-nothing.html"/>
-    <id>http://rawraw.info/2017-03-30-nothing.html</id>
-    <published>2017-03-30T08:58:56.000Z</published>
-    <updated>2017-05-10T01:34:07.604Z</updated>
-    
-    <content type="html"><![CDATA[<p>不想撸码的时候要看看电影看看书、看看那些美丽的地方、</p>
-<p><div align="center"><br><img src="/images/bg/0007.jpeg" alt="“好看死了的图片”"><br></div><br><a id="more"></a></p>
-<h1 id="书单："><a href="#书单：" class="headerlink" title="书单："></a>书单：</h1><pre><code>1.《React全栈》                 作者：张轩 杨寒星 
-2.《JavaScript高级程序设计》
-3.《JavaScript语言精粹》
-4.《高性能JavaScript》
-</code></pre><h1 id="电影："><a href="#电影：" class="headerlink" title="电影："></a>电影：</h1><pre><code>1.《暗夜恐惧》                   8个黑白简约风高智商小故事
-2.《爆裂鼓手》                   一定要戴着耳机看，感觉老师才是男主，演技爆表。
-3.《立春》           
-</code></pre><p><a href="https://www.zhihu.com/question/28882548/answer/42426812?utm_campaign=weekly192&amp;utm_source=weekly-digest&amp;utm_medium=email" target="_blank" rel="external">https://www.zhihu.com/question/28882548/answer/42426812?utm_campaign=weekly192&amp;utm_source=weekly-digest&amp;utm_medium=email</a>    </p>
-<h1 id="旅行攻略："><a href="#旅行攻略：" class="headerlink" title="旅行攻略："></a>旅行攻略：</h1><pre><code>1.[绿野自助户外活动](www.lvye.org)
-2.[穷游网:针对国外旅游的攻略论坛](www.go2eu.com)
-</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;不想撸码的时候要看看电影看看书、看看那些美丽的地方、&lt;/p&gt;
-&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0007.jpeg&quot; alt=&quot;“好看死了的图片”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="很闲" scheme="http://rawraw.info/tags/%E5%BE%88%E9%97%B2/"/>
     
   </entry>
   
