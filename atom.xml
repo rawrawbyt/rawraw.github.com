@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-06-13T09:56:45.586Z</updated>
+  <updated>2017-06-15T12:34:55.972Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML、JavaScript、CSS书写规范</title>
+    <link href="http://rawraw.info/2017-06-14-norm.html"/>
+    <id>http://rawraw.info/2017-06-14-norm.html</id>
+    <published>2017-06-14T06:46:21.000Z</published>
+    <updated>2017-06-15T12:34:55.972Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为强迫症，就是特别喜欢介个样子//</p>
+<p><div align="center"><br><img src="/images/bg/0047.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="引用结构"><a href="#引用结构" class="headerlink" title="引用结构"></a>引用结构</h2><p>按照顺序引入<br>CSS 一律写在 CSS 文件中，原则上不写内联样式，不直接为标签添加样式（reset 除外）。</p>
+<ul>
+<li>基础框架（reset / grid …）</li>
+<li>通用模块（theme/ common…）</li>
+<li>页面样式（page…）</li>
+</ul>
+<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
+<li>CSS对大小写敏感</li>
+<li>不采用驼峰式命名，不用中文拼音</li>
+<li>不允许使用具体的样式名称命名，也不应包含颜色、位置等与现实效果相关的信息。</li>
+<li>加上适当的命名空间（前缀），以避免命名冲突。命名空间不使用单个字母，以免与通用样式冲突。</li>
+</ul>
+<h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><p>CSS 文件命名由小写字母、下划线（_）组成。</p>
+<h3 id="选择器命名"><a href="#选择器命名" class="headerlink" title="选择器命名"></a>选择器命名</h3><p>CSS 文件命名由小写字母、中划线（-）组成。<br>|布局（grid） .g-|模块（module） .m-|元件（unit）|功能（function）|状态 .z-|皮肤（skin） .s-|JS选择器 .j-|</p>
+<h2 id="书写规范"><a href="#书写规范" class="headerlink" title="书写规范"></a>书写规范</h2><ul>
+<li><code>;</code>分行书写</li>
+<li>属性值为 0 时，单位可以省略。</li>
+<li>属性值为小数时，小数点之前的 0 不可以省略。</li>
+<li>省略 url 中的引号，其他需要引号的地方使用单引号。</li>
+</ul>
+<h2 id="书写顺序"><a href="#书写顺序" class="headerlink" title="书写顺序"></a>书写顺序</h2><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>| 显示属性 | display, visibility, position, float, clear, list-style, top 等 |<br>| 自身属性 | width, height, margin, padding, border, overflow 等 |<br>| 文本及修饰属性 | font, text-align, text-decoration, vertical-align, white-space, color, background 等 |<br>| CSS3 属性 | border-radius, box-shadow, gradients, transforms, animations 等 |</p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>a:link -&gt; a:visited -&gt; a:hover -&gt; a:active</p>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="合并选择器"><a href="#合并选择器" class="headerlink" title="合并选择器"></a>合并选择器</h3><h3 id="属性值缩写"><a href="#属性值缩写" class="headerlink" title="属性值缩写"></a>属性值缩写</h3><ul>
+<li>margin</li>
+<li>padding</li>
+<li>border</li>
+<li>background</li>
+<li>font</li>
+<li>color</li>
+<li>list-style<h2 id="避免耗性能的属性"><a href="#避免耗性能的属性" class="headerlink" title="避免耗性能的属性"></a>避免耗性能的属性</h2></li>
+<li><code>width: expression(this.width&gt;100?&#39;100px&#39;:&#39;auto&#39;);</code></li>
+<li><code>filter: alpha(opacity=50);</code><h3 id="图片合并（sprite）"><a href="#图片合并（sprite）" class="headerlink" title="图片合并（sprite）"></a>图片合并（sprite）</h3><h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2>###　TODO</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为强迫症，就是特别喜欢介个样子//&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0047.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+    
+    
+      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
+    
+  </entry>
   
   <entry>
     <title>API大全整理/from github</title>
@@ -775,49 +833,6 @@
     
     
       <category term="color" scheme="http://rawraw.info/tags/color/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo搭建个人博客</title>
-    <link href="http://rawraw.info/2017-04-07-hexo.html"/>
-    <id>http://rawraw.info/2017-04-07-hexo.html</id>
-    <published>2017-04-07T02:58:23.000Z</published>
-    <updated>2017-04-11T13:42:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>很酷啊~hexo+github,再加上十几二十块买个酷酷的域名,完成这个小站哦~写写学习笔记，写写杂七杂八的小东西，虽然可能没什么人来看，但是，我开心呀~~~</p>
-<div align="center"><br><img src="/images/bg/0020.jpeg" alt="“封面”"><br></div><br><a id="more"></a><br><font size="5">一、hexo</font><br>先配hexo再拉git库吧，不然.git文件在hexo初始化的时候被删掉也是一个心烦的事情内。<br><font size="4">//1、安装node环境（基本可以忽略，都装了吧）</font><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install npm -g</div></pre></td></tr></table></figure><br><br><font size="4">//2、全局安装hexo依赖</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure><br><br><font size="4">//3、初始化博客文件夹</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm init [folder]</div></pre></td></tr></table></figure><br><br>第一次尝试的报错：<br><div align="center"><br><img src="/images/code/20170407001.png" alt="“报错”"><br></div><br>说是swig和minimatch要升级到3.0.2的问题，那就在安装一下swig,再升级一下minimatch咯<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install swig</div><div class="line">$ npm minimatch@”3.0.2”</div></pre></td></tr></table></figure><br><br>第二次尝试的报错：<br><div align="center"><br><img src="/images/code/20170407003.png" alt="“报错”"><br></div><br>还是swig有问题咯，那就再装，哼，明明绿了<br><div align="center"><br><img src="/images/code/20170407002.png" alt="“报错”"><br></div><br>第三次尝试的报错：还是跟第二次一样！！<br><div align="center"><br><img src="/images/code/20170407004.png" alt="“报错”"><br></div><br>还有这个关于fsevents的报错，是可以忽略的<br>反正他跟你说缺啥，你就用npm install补啥<br>看到<font color="green">INFO</font> Start blogging with Hexo!这句话就ok啦<br><font size="4">//4、启动hexo</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo sever</div><div class="line">//或者</div><div class="line">$ hexo s</div><div class="line">//可以自定义端口号，默认是4000，没事也就别改啦</div><div class="line">$ hexo server -p 1102  //指定1102端口</div></pre></td></tr></table></figure><br><br>如果前面看到<font color="green">INFO</font> Start blogging with Hexo!，这一步基本没问题。<br><div align="center"><br><img src="/images/code/20170407007.png" alt="“报错”"><br></div><br>听话地去浏览器打开<a href="http://localhost:4000，然后看到这样" target="_blank" rel="external">http://localhost:4000，然后看到这样</a><br><div align="center"><br><img src="/images/code/20170407006.png" alt="“报错”"><br></div><br>没有报错最开心了！！第一步搞定！这是hexo的默认主题和配置，然后就可以开始屁颠屁颠改成自己喜欢的样子了咧。<br><br><font size="5">二、github</font><br><font size="4">//1、建立github库</font><br>Tip:命名必须 账户名.github.io<br><font size="4">//2、项目拉取到本地</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/yourname/yourname.github.io</div></pre></td></tr></table></figure><br><br><font size="5">三、hexo/github大合体</font><br><font size="4">//1、安装deployer依赖</font><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure><br><br><font size="4">//2、hexo配置修改</font><br><div align="center"><br><img src="/images/code/20170407005.png" alt="“报错”"><br></div>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">node_modules --&gt;</div><div class="line">scaffolds    --&gt;</div><div class="line">source       --&gt;    文章、图片等资源</div><div class="line">themes       --&gt;    站点主题的相关配置</div><div class="line">.gitignore   --&gt;</div><div class="line">_config.yml  --&gt;    主要改这个文件！！！</div><div class="line">package.json --&gt;</div></pre></td></tr></table></figure>
-<p>yes!打开_config.yml,就先改<font color="#0080ff"># Site</font>和<font color="#0080ff"># Deployment</font>这两部分先，其他的以后熟了再细看吧。<br><a href="有空再写哈哈">去看完整版(有空再写哈哈)</a><br><figure class="highlight yml"><figcaption><span>[_config.yml]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Site</span></div><div class="line"><span class="attr">title:</span>          <span class="comment">#你的网站的名字咧</span></div><div class="line"><span class="attr">subtitle:</span>       <span class="comment">#你的网站的副标题咧</span></div><div class="line"><span class="attr">description:</span>    <span class="comment">#你的网站的描述咧</span></div><div class="line"><span class="attr">author:</span>         <span class="comment">#你的大名咧</span></div><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/yourname/yourname.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure></p>
-<p><font color="red">千万千万不要忘记每个冒号后面都要有空格！！WTF!</font></p>
-<p><font size="4">//3、hexo新建文章</font><br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//新建文章</div><div class="line">$ hexo new test     //默认post</div><div class="line">//新建草稿和文件夹（先别试这个）</div><div class="line">$ hexo new draft test</div><div class="line">$ hexo new page test</div></pre></td></tr></table></figure></p>
-<p>可以发现source文件夹下的_posts文件夹下多了一个test.md的文件，</p>
-<div align="center"><br><img src="/images/code/20170407008.png" alt="“报错”"><br></div>
-
-<figure class="highlight js"><figcaption><span>[test.md]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: test                 <span class="comment">//该文章标题，可以和文件名不一样的</span></div><div class="line">date: <span class="number">2017</span><span class="number">-04</span><span class="number">-07</span> <span class="number">15</span>:<span class="number">00</span>:<span class="number">51</span></div><div class="line">tags:                       <span class="comment">//标签，多个用数组[ tag1 , tag2 ]</span></div><div class="line">---</div></pre></td></tr></table></figure>
-<p><font size="4">//4、hexo打包</font><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate  <span class="comment">//打包，等同于hexo g</span></div></pre></td></tr></table></figure></p>
-<p><font size="4">//5、hexo同步到git</font><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy    <span class="comment">//上传git,等同于hexo d</span></div></pre></td></tr></table></figure></p>
-<p>如果出现下图，一定是前面的_config.yml里面的<font color="#0080ff"># Deployment</font>部分没有配置好。</p>
-<div align="center"><br><img src="/images/code/20170407009.png" alt="“报错”"><br></div><br>注意红色部分也要有个空格！WTF!<br><div align="center"><br><img src="/images/code/20170407010.png" alt="“报错”"><br></div>
-
-<p><font size="5">四、世界宇宙超级无敌酷的域名合体</font></p>
-<p><div align="center"><br><img src="/images/code/20170407011.png" alt="“报错”"><br></div></p>
-<p><div align="center"><br><img src="/images/code/20170407012.png" alt="“报错”"><br></div></p>
-<p><font size="5">五、hexo常用语句整理</font><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo n  =  hexo <span class="keyword">new</span>       <span class="comment">//新建</span></div><div class="line">$ hexo s  =  hexo server    <span class="comment">//开启</span></div><div class="line">$ hexo c  =  hexo clean     <span class="comment">//清缓存   </span></div><div class="line">$ hexo g  =  hexo generate  <span class="comment">//打包</span></div><div class="line">$ hexo d  =  hexo deploy    <span class="comment">//上传git</span></div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;很酷啊~hexo+github,再加上十几二十块买个酷酷的域名,完成这个小站哦~写写学习笔记，写写杂七杂八的小东西，虽然可能没什么人来看，但是，我开心呀~~~&lt;/p&gt;
-&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0020.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="巨人的肩膀" scheme="http://rawraw.info/categories/%E5%B7%A8%E4%BA%BA%E7%9A%84%E8%82%A9%E8%86%80/"/>
-    
-    
-      <category term="hexo" scheme="http://rawraw.info/tags/hexo/"/>
     
   </entry>
   

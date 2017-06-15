@@ -83,7 +83,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="加宽," />
+  <meta name="keywords" content="summary," />
 
 
 
@@ -101,18 +101,18 @@
 
 
 
-<meta name="description" content="目前比较完善的模块打包：browserify和webpack。webpack在browserify之后出现。">
+<meta name="description" content="作为强迫症，就是特别喜欢介个样子//">
 <meta property="og:type" content="article">
-<meta property="og:title" content="模块打包-bundler：browserify、webpack、RequireJS/AMD">
-<meta property="og:url" content="http://rawraw.info/2017-05-26-bundler.html">
+<meta property="og:title" content="HTML、JavaScript、CSS书写规范">
+<meta property="og:url" content="http://rawraw.info/2017-06-14-norm.html">
 <meta property="og:site_name" content="rawraw">
-<meta property="og:description" content="目前比较完善的模块打包：browserify和webpack。webpack在browserify之后出现。">
-<meta property="og:image" content="http://rawraw.info/images/bg/0034.jpeg">
-<meta property="og:updated_time" content="2017-05-26T03:11:03.316Z">
+<meta property="og:description" content="作为强迫症，就是特别喜欢介个样子//">
+<meta property="og:image" content="http://rawraw.info/images/bg/0047.jpeg">
+<meta property="og:updated_time" content="2017-06-15T12:34:55.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="模块打包-bundler：browserify、webpack、RequireJS/AMD">
-<meta name="twitter:description" content="目前比较完善的模块打包：browserify和webpack。webpack在browserify之后出现。">
-<meta name="twitter:image" content="http://rawraw.info/images/bg/0034.jpeg">
+<meta name="twitter:title" content="HTML、JavaScript、CSS书写规范">
+<meta name="twitter:description" content="作为强迫症，就是特别喜欢介个样子//">
+<meta name="twitter:image" content="http://rawraw.info/images/bg/0047.jpeg">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://rawraw.info/2017-05-26-bundler.html"/>
+  <link rel="canonical" href="http://rawraw.info/2017-06-14-norm.html"/>
 
 
 
 
 
-  <title> 模块打包-bundler：browserify、webpack、RequireJS/AMD | rawraw </title>
+  <title> HTML、JavaScript、CSS书写规范 | rawraw </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -293,7 +293,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017-05-26-bundler.html">
+    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017-06-14-norm.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="rawraw">
@@ -314,7 +314,7 @@
             
             
               
-                模块打包-bundler：browserify、webpack、RequireJS/AMD
+                HTML、JavaScript、CSS书写规范
               
             
           </h1>
@@ -329,8 +329,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-26T11:00:28+08:00">
-                2017-05-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-14T14:46:21+08:00">
+                2017-06-14
               </time>
             
 
@@ -352,8 +352,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/知识点/" itemprop="url" rel="index">
-                    <span itemprop="name">知识点</span>
+                  <a href="/categories/小结/" itemprop="url" rel="index">
+                    <span itemprop="name">小结</span>
                   </a>
                 </span>
 
@@ -387,9 +387,42 @@
       
 
       
-        <p>目前比较完善的模块打包：browserify和webpack。webpack在browserify之后出现。</p>
-<p><div align="center"><br><img src="/images/bg/0034.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<h1 id="browserify"><a href="#browserify" class="headerlink" title="browserify"></a>browserify</h1><h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><h1 id="RequireJS-AMD"><a href="#RequireJS-AMD" class="headerlink" title="RequireJS/AMD"></a>RequireJS/AMD</h1>
+        <p>作为强迫症，就是特别喜欢介个样子//</p>
+<p><div align="center"><br><img src="/images/bg/0047.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="引用结构"><a href="#引用结构" class="headerlink" title="引用结构"></a>引用结构</h2><p>按照顺序引入<br>CSS 一律写在 CSS 文件中，原则上不写内联样式，不直接为标签添加样式（reset 除外）。</p>
+<ul>
+<li>基础框架（reset / grid …）</li>
+<li>通用模块（theme/ common…）</li>
+<li>页面样式（page…）</li>
+</ul>
+<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
+<li>CSS对大小写敏感</li>
+<li>不采用驼峰式命名，不用中文拼音</li>
+<li>不允许使用具体的样式名称命名，也不应包含颜色、位置等与现实效果相关的信息。</li>
+<li>加上适当的命名空间（前缀），以避免命名冲突。命名空间不使用单个字母，以免与通用样式冲突。</li>
+</ul>
+<h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><p>CSS 文件命名由小写字母、下划线（_）组成。</p>
+<h3 id="选择器命名"><a href="#选择器命名" class="headerlink" title="选择器命名"></a>选择器命名</h3><p>CSS 文件命名由小写字母、中划线（-）组成。<br>|布局（grid） .g-|模块（module） .m-|元件（unit）|功能（function）|状态 .z-|皮肤（skin） .s-|JS选择器 .j-|</p>
+<h2 id="书写规范"><a href="#书写规范" class="headerlink" title="书写规范"></a>书写规范</h2><ul>
+<li><code>;</code>分行书写</li>
+<li>属性值为 0 时，单位可以省略。</li>
+<li>属性值为小数时，小数点之前的 0 不可以省略。</li>
+<li>省略 url 中的引号，其他需要引号的地方使用单引号。</li>
+</ul>
+<h2 id="书写顺序"><a href="#书写顺序" class="headerlink" title="书写顺序"></a>书写顺序</h2><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>| 显示属性 | display, visibility, position, float, clear, list-style, top 等 |<br>| 自身属性 | width, height, margin, padding, border, overflow 等 |<br>| 文本及修饰属性 | font, text-align, text-decoration, vertical-align, white-space, color, background 等 |<br>| CSS3 属性 | border-radius, box-shadow, gradients, transforms, animations 等 |</p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>a:link -&gt; a:visited -&gt; a:hover -&gt; a:active</p>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="合并选择器"><a href="#合并选择器" class="headerlink" title="合并选择器"></a>合并选择器</h3><h3 id="属性值缩写"><a href="#属性值缩写" class="headerlink" title="属性值缩写"></a>属性值缩写</h3><ul>
+<li>margin</li>
+<li>padding</li>
+<li>border</li>
+<li>background</li>
+<li>font</li>
+<li>color</li>
+<li>list-style<h2 id="避免耗性能的属性"><a href="#避免耗性能的属性" class="headerlink" title="避免耗性能的属性"></a>避免耗性能的属性</h2></li>
+<li><code>width: expression(this.width&gt;100?&#39;100px&#39;:&#39;auto&#39;);</code></li>
+<li><code>filter: alpha(opacity=50);</code><h3 id="图片合并（sprite）"><a href="#图片合并（sprite）" class="headerlink" title="图片合并（sprite）"></a>图片合并（sprite）</h3><h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2>###　TODO</li>
+</ul>
+
       
     </div>
 
@@ -438,7 +471,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/加宽/" rel="tag"># 加宽</a>
+            <a href="/tags/summary/" rel="tag"># summary</a>
           
         </div>
       
@@ -451,8 +484,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017-05-26-task-runner.html" rel="next" title="任务流工具-taskrunner：Grunt、Gulp">
-                <i class="fa fa-chevron-left"></i> 任务流工具-taskrunner：Grunt、Gulp
+              <a href="/2017-06-13-api.html" rel="next" title="API大全整理/from github">
+                <i class="fa fa-chevron-left"></i> API大全整理/from github
               </a>
             
           </div>
@@ -460,10 +493,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017-06-12-js01.html" rel="prev" title="JavaScript要仔细学之一//apply( )和call( )的区别">
-                JavaScript要仔细学之一//apply( )和call( )的区别 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -654,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#browserify"><span class="nav-number">1.</span> <span class="nav-text">browserify</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack"><span class="nav-number">2.</span> <span class="nav-text">webpack</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RequireJS-AMD"><span class="nav-number">3.</span> <span class="nav-text">RequireJS/AMD</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">2.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用结构"><span class="nav-number">2.1.</span> <span class="nav-text">引用结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名规范"><span class="nav-number">2.2.</span> <span class="nav-text">命名规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件命名"><span class="nav-number">2.2.1.</span> <span class="nav-text">文件命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器命名"><span class="nav-number">2.2.2.</span> <span class="nav-text">选择器命名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写规范"><span class="nav-number">2.3.</span> <span class="nav-text">书写规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写顺序"><span class="nav-number">2.4.</span> <span class="nav-text">书写顺序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">2.4.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">2.4.2.</span> <span class="nav-text">链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化"><span class="nav-number">2.5.</span> <span class="nav-text">优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#合并选择器"><span class="nav-number">2.5.1.</span> <span class="nav-text">合并选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性值缩写"><span class="nav-number">2.5.2.</span> <span class="nav-text">属性值缩写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免耗性能的属性"><span class="nav-number">2.6.</span> <span class="nav-text">避免耗性能的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图片合并（sprite）"><span class="nav-number">2.6.1.</span> <span class="nav-text">图片合并（sprite）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件压缩"><span class="nav-number">2.6.2.</span> <span class="nav-text">文件压缩</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript"><span class="nav-number">3.</span> <span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">3.1.</span> <span class="nav-text">注释</span></a></li></ol></li></ol></div>
             
 
           </div>

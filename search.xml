@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[HTML、JavaScript、CSS书写规范]]></title>
+      <url>%2F2017-06-14-norm.html</url>
+      <content type="text"><![CDATA[作为强迫症，就是特别喜欢介个样子// HTMLCSS引用结构按照顺序引入CSS 一律写在 CSS 文件中，原则上不写内联样式，不直接为标签添加样式（reset 除外）。 基础框架（reset / grid …） 通用模块（theme/ common…） 页面样式（page…） 命名规范 CSS对大小写敏感 不采用驼峰式命名，不用中文拼音 不允许使用具体的样式名称命名，也不应包含颜色、位置等与现实效果相关的信息。 加上适当的命名空间（前缀），以避免命名冲突。命名空间不使用单个字母，以免与通用样式冲突。 文件命名CSS 文件命名由小写字母、下划线（_）组成。 选择器命名CSS 文件命名由小写字母、中划线（-）组成。|布局（grid） .g-|模块（module） .m-|元件（unit）|功能（function）|状态 .z-|皮肤（skin） .s-|JS选择器 .j-| 书写规范 ;分行书写 属性值为 0 时，单位可以省略。 属性值为小数时，小数点之前的 0 不可以省略。 省略 url 中的引号，其他需要引号的地方使用单引号。 书写顺序属性| 显示属性 | display, visibility, position, float, clear, list-style, top 等 || 自身属性 | width, height, margin, padding, border, overflow 等 || 文本及修饰属性 | font, text-align, text-decoration, vertical-align, white-space, color, background 等 || CSS3 属性 | border-radius, box-shadow, gradients, transforms, animations 等 | 链接a:link -&gt; a:visited -&gt; a:hover -&gt; a:active 优化合并选择器属性值缩写 margin padding border background font color list-style避免耗性能的属性 width: expression(this.width&gt;100?&#39;100px&#39;:&#39;auto&#39;); filter: alpha(opacity=50);图片合并（sprite）文件压缩JavaScript注释### TODO]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[API大全整理/from github]]></title>
       <url>%2F2017-06-13-api.html</url>
       <content type="text"><![CDATA[偶然发现的github上的API，蛮好用的吼、 emoji表情包大全https://api.github.com/emojisGET返回数据格式：1234567&#123; "+1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v7", "-1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44e.png?v7", "100": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4af.png?v7", "1234": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f522.png?v7", //... &#125; markdown编辑器https://api.github.com/markdownPOST12345data = &#123; "text":"#test", "mode": "gfm", "context": "github/gollum" &#125; 返回数据：html]]></content>
