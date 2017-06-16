@@ -103,14 +103,14 @@
 
 <meta name="description" content="作为强迫症，就是特别喜欢介个样子//">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML、JavaScript、CSS书写规范">
+<meta property="og:title" content="HTML5、JavaScript、CSS书写规范">
 <meta property="og:url" content="http://rawraw.info/2017-06-14-norm.html">
 <meta property="og:site_name" content="rawraw">
 <meta property="og:description" content="作为强迫症，就是特别喜欢介个样子//">
 <meta property="og:image" content="http://rawraw.info/images/bg/0047.jpeg">
-<meta property="og:updated_time" content="2017-06-15T12:34:55.972Z">
+<meta property="og:updated_time" content="2017-06-16T09:59:09.085Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTML、JavaScript、CSS书写规范">
+<meta name="twitter:title" content="HTML5、JavaScript、CSS书写规范">
 <meta name="twitter:description" content="作为强迫症，就是特别喜欢介个样子//">
 <meta name="twitter:image" content="http://rawraw.info/images/bg/0047.jpeg">
 
@@ -146,7 +146,7 @@
 
 
 
-  <title> HTML、JavaScript、CSS书写规范 | rawraw </title>
+  <title> HTML5、JavaScript、CSS书写规范 | rawraw </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -314,7 +314,7 @@
             
             
               
-                HTML、JavaScript、CSS书写规范
+                HTML5、JavaScript、CSS书写规范
               
             
           </h1>
@@ -389,7 +389,135 @@
       
         <p>作为强迫症，就是特别喜欢介个样子//</p>
 <p><div align="center"><br><img src="/images/bg/0047.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="引用结构"><a href="#引用结构" class="headerlink" title="引用结构"></a>引用结构</h2><p>按照顺序引入<br>CSS 一律写在 CSS 文件中，原则上不写内联样式，不直接为标签添加样式（reset 除外）。</p>
+<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h1 id="头部"><a href="#头部" class="headerlink" title="头部"></a>头部</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=Edge"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span>    </div><div class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>HTML5 standardization<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">//type属性：省略</div></pre></td></tr></table></figure>
+<h1 id="区分浏览器"><a href="#区分浏览器" class="headerlink" title="区分浏览器"></a>区分浏览器</h1><p>no-js标签是需要与Modernizr等类库配合使用的<br><code>&lt;script src=&quot;js/libs/modernizr-2.5.0.min.js&quot;&gt;&lt;/script&gt;</code><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--[if lt IE 7]&gt; &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"&gt; &lt;![endif]--&gt;</span></div><div class="line"><span class="comment">&lt;!--[if IE 7]&gt;    &lt;html class="no-js lt-ie9 lt-ie8" lang="zh"&gt; &lt;![endif]--&gt;</span></div><div class="line"><span class="comment">&lt;!--[if IE 8]&gt;    &lt;html class="no-js lt-ie9" lang="zh"&gt; &lt;![endif]--&gt;</span></div><div class="line"><span class="comment">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span> <span class="tag">&lt;<span class="name">html</span> <span class="attr">class</span>=<span class="string">"no-js"</span> <span class="attr">lang</span>=<span class="string">"zh"</span>&gt;</span> <span class="comment">&lt;!--&lt;![endif]--&gt;</span></div></pre></td></tr></table></figure></p>
+<ul>
+<li>避免IE6条件注释引起的高版本IE文件阻塞问题</li>
+<li>与Modernizr等特征检测类库使用相同的class，更具备通用性</li>
+<li>优于使用CSS Hack</li>
+</ul>
+<h2 id="嵌套规则"><a href="#嵌套规则" class="headerlink" title="嵌套规则"></a>嵌套规则</h2><ul>
+<li>块元素可以包含内联元素或某些块元素，但内联元素却不能包含块元素，它只能包含其它的内联元素；</li>
+<li><p>里面不能放块级元素；</p></li>
+<li>块级元素与块级元素并列、内嵌元素与内嵌元素并列；</li>
+</ul>
+<h2 id="文档内容"><a href="#文档内容" class="headerlink" title="文档内容"></a>文档内容</h2><ul>
+<li>自定义属性：<code>data-*</code></li>
+<li>不要使用内联样式</li>
+<li>不要使用<em>和<strong>,用css来控制。不要使用<i>和<b>，HTML5不赞成使用</b></i></strong></em></li>
+</ul>
+<h2 id="实体字符引用"><a href="#实体字符引用" class="headerlink" title="实体字符引用"></a>实体字符引用</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th style="text-align:center">实体名</th>
+<th style="text-align:center">实体数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">“</td>
+<td style="text-align:center"><code>&amp;quot;</code></td>
+<td style="text-align:center"><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">‘</td>
+<td style="text-align:center"><code>&amp;apos;(IE不支持)</code></td>
+<td style="text-align:center"><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center"><code>&amp;amp;</code></td>
+<td style="text-align:center"><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center"><code>&amp;gt;</code></td>
+<td style="text-align:center"><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center"><code>&amp;lt;</code></td>
+<td style="text-align:center"><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center"><code>&amp;nbsp;</code></td>
+<td style="text-align:center"><code>&amp;#160;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&emsp;</td>
+<td style="text-align:center"><code>&amp;emsp;</code></td>
+<td style="text-align:center"><code>&amp;#12288;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">￥&yen;</td>
+<td style="text-align:center"><code>&amp;yen;</code></td>
+<td style="text-align:center"><code>&amp;#165;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&brvbar;</td>
+<td style="text-align:center"><code>&amp;brvbar;</code></td>
+<td style="text-align:center"><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&copy;</td>
+<td style="text-align:center"><code>&amp;copy;</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">&reg;</td>
+<td style="text-align:center"><code>&amp;reg;</code></td>
+<td style="text-align:center"><code>&amp;#169;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&trade;</td>
+<td style="text-align:center"><code>&amp;trade;</code></td>
+<td style="text-align:center"><code>&amp;#8428;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&middot;</td>
+<td style="text-align:center"><code>&amp;middot;</code></td>
+<td style="text-align:center"><code>&amp;#183;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&laquo;</td>
+<td style="text-align:center"><code>&amp;laquo;</code></td>
+<td style="text-align:center"><code>&amp;#171;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&raquo;</td>
+<td style="text-align:center"><code>&amp;raquo;</code></td>
+<td style="text-align:center"><code>&amp;#187;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&deg;</td>
+<td style="text-align:center"><code>&amp;deg;</code></td>
+<td style="text-align:center"><code>&amp;#176;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&times;</td>
+<td style="text-align:center"><code>&amp;times;</code></td>
+<td style="text-align:center"><code>&amp;#215;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&divide;</td>
+<td style="text-align:center"><code>&amp;divide;</code></td>
+<td style="text-align:center"><code>&amp;#247;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&permil;</td>
+<td style="text-align:center"><code>&amp;permil;</code></td>
+<td style="text-align:center"><code>&amp;#8240;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
+<li>给图片添加width和height，提升页面加载速度</li>
+<li>给所有img添加alt属性</li>
+<li>不要使用或尽量少用gif文件</li>
+</ul>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="引用结构"><a href="#引用结构" class="headerlink" title="引用结构"></a>引用结构</h2><p>按照顺序引入<br>CSS 一律写在 CSS 文件中，原则上不写内联样式，不直接为标签添加样式（reset 除外）。</p>
 <ul>
 <li>基础框架（reset / grid …）</li>
 <li>通用模块（theme/ common…）</li>
@@ -418,10 +546,13 @@
 <li>background</li>
 <li>font</li>
 <li>color</li>
-<li>list-style<h2 id="避免耗性能的属性"><a href="#避免耗性能的属性" class="headerlink" title="避免耗性能的属性"></a>避免耗性能的属性</h2></li>
-<li><code>width: expression(this.width&gt;100?&#39;100px&#39;:&#39;auto&#39;);</code></li>
-<li><code>filter: alpha(opacity=50);</code><h3 id="图片合并（sprite）"><a href="#图片合并（sprite）" class="headerlink" title="图片合并（sprite）"></a>图片合并（sprite）</h3><h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2>###　TODO</li>
+<li>list-style</li>
 </ul>
+<h2 id="避免耗性能的属性"><a href="#避免耗性能的属性" class="headerlink" title="避免耗性能的属性"></a>避免耗性能的属性</h2><ul>
+<li><code>width: expression(this.width&gt;100?&#39;100px&#39;:&#39;auto&#39;);</code></li>
+<li><code>filter: alpha(opacity=50);</code></li>
+</ul>
+<h3 id="图片合并（sprite）"><a href="#图片合并（sprite）" class="headerlink" title="图片合并（sprite）"></a>图片合并（sprite）</h3><h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="待定项"><a href="#待定项" class="headerlink" title="待定项"></a>待定项</h2><p><code>&lt;!-- TODO(rawraw) : add more items --&gt;</code></p>
 
       
     </div>
@@ -683,7 +814,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">2.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用结构"><span class="nav-number">2.1.</span> <span class="nav-text">引用结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名规范"><span class="nav-number">2.2.</span> <span class="nav-text">命名规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件命名"><span class="nav-number">2.2.1.</span> <span class="nav-text">文件命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器命名"><span class="nav-number">2.2.2.</span> <span class="nav-text">选择器命名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写规范"><span class="nav-number">2.3.</span> <span class="nav-text">书写规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写顺序"><span class="nav-number">2.4.</span> <span class="nav-text">书写顺序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">2.4.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">2.4.2.</span> <span class="nav-text">链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化"><span class="nav-number">2.5.</span> <span class="nav-text">优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#合并选择器"><span class="nav-number">2.5.1.</span> <span class="nav-text">合并选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性值缩写"><span class="nav-number">2.5.2.</span> <span class="nav-text">属性值缩写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免耗性能的属性"><span class="nav-number">2.6.</span> <span class="nav-text">避免耗性能的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图片合并（sprite）"><span class="nav-number">2.6.1.</span> <span class="nav-text">图片合并（sprite）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件压缩"><span class="nav-number">2.6.2.</span> <span class="nav-text">文件压缩</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript"><span class="nav-number">3.</span> <span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">3.1.</span> <span class="nav-text">注释</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5"><span class="nav-number">1.</span> <span class="nav-text">HTML5</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#头部"><span class="nav-number">2.</span> <span class="nav-text">头部</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区分浏览器"><span class="nav-number">3.</span> <span class="nav-text">区分浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套规则"><span class="nav-number">3.1.</span> <span class="nav-text">嵌套规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文档内容"><span class="nav-number">3.2.</span> <span class="nav-text">文档内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实体字符引用"><span class="nav-number">3.3.</span> <span class="nav-text">实体字符引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">3.4.</span> <span class="nav-text">图片</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">4.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用结构"><span class="nav-number">4.1.</span> <span class="nav-text">引用结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名规范"><span class="nav-number">4.2.</span> <span class="nav-text">命名规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件命名"><span class="nav-number">4.2.1.</span> <span class="nav-text">文件命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器命名"><span class="nav-number">4.2.2.</span> <span class="nav-text">选择器命名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写规范"><span class="nav-number">4.3.</span> <span class="nav-text">书写规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写顺序"><span class="nav-number">4.4.</span> <span class="nav-text">书写顺序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">4.4.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">4.4.2.</span> <span class="nav-text">链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化"><span class="nav-number">4.5.</span> <span class="nav-text">优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#合并选择器"><span class="nav-number">4.5.1.</span> <span class="nav-text">合并选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性值缩写"><span class="nav-number">4.5.2.</span> <span class="nav-text">属性值缩写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免耗性能的属性"><span class="nav-number">4.6.</span> <span class="nav-text">避免耗性能的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图片合并（sprite）"><span class="nav-number">4.6.1.</span> <span class="nav-text">图片合并（sprite）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件压缩"><span class="nav-number">4.6.2.</span> <span class="nav-text">文件压缩</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript"><span class="nav-number">5.</span> <span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#待定项"><span class="nav-number">5.1.</span> <span class="nav-text">待定项</span></a></li></ol></li></ol></div>
             
 
           </div>
