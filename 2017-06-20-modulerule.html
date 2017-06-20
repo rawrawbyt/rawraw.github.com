@@ -83,7 +83,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="xampp," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -101,19 +101,18 @@
 
 
 
-<meta name="description" content="xampp配置虚拟主机">
+<meta name="description" content="目前，通行的Javascript模块规范有两种：CommonJS和AMD。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="xampp配置虚拟主机">
-<meta property="og:url" content="http://rawraw.info/2017-05-16-xampp.html">
+<meta property="og:title" content="Javascript模块规范:CommonJS和AMD">
+<meta property="og:url" content="http://rawraw.info/2017-06-20-modulerule.html">
 <meta property="og:site_name" content="rawraw">
-<meta property="og:description" content="xampp配置虚拟主机">
-<meta property="og:image" content="http://rawraw.info/images/bg/0019.jpeg">
-<meta property="og:image" content="http://rawraw.info/images/code/20170516001.png">
-<meta property="og:updated_time" content="2017-05-16T07:21:50.730Z">
+<meta property="og:description" content="目前，通行的Javascript模块规范有两种：CommonJS和AMD。">
+<meta property="og:image" content="http://rawraw.info/images/bg/0010.jpg">
+<meta property="og:updated_time" content="2017-06-20T09:10:54.259Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xampp配置虚拟主机">
-<meta name="twitter:description" content="xampp配置虚拟主机">
-<meta name="twitter:image" content="http://rawraw.info/images/bg/0019.jpeg">
+<meta name="twitter:title" content="Javascript模块规范:CommonJS和AMD">
+<meta name="twitter:description" content="目前，通行的Javascript模块规范有两种：CommonJS和AMD。">
+<meta name="twitter:image" content="http://rawraw.info/images/bg/0010.jpg">
 
 
 
@@ -141,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://rawraw.info/2017-05-16-xampp.html"/>
+  <link rel="canonical" href="http://rawraw.info/2017-06-20-modulerule.html"/>
 
 
 
 
 
-  <title> xampp配置虚拟主机 | rawraw </title>
+  <title> Javascript模块规范:CommonJS和AMD | rawraw </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -294,7 +293,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017-05-16-xampp.html">
+    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017-06-20-modulerule.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="rawraw">
@@ -315,7 +314,7 @@
             
             
               
-                xampp配置虚拟主机
+                Javascript模块规范:CommonJS和AMD
               
             
           </h1>
@@ -330,8 +329,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-16T14:56:42+08:00">
-                2017-05-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-20T16:49:47+08:00">
+                2017-06-20
               </time>
             
 
@@ -340,6 +339,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/知识点/" itemprop="url" rel="index">
+                    <span itemprop="name">知识点</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -366,10 +387,19 @@
       
 
       
-        <p>xampp配置虚拟主机</p>
-<p><div align="center"><br><img src="/images/bg/0019.jpeg" alt="“封面”"><br></div><br><a id="more"></a><br>首先，xampp要可以基本运行起来</p>
-<h1 id="域名配置"><a href="#域名配置" class="headerlink" title="域名配置"></a>域名配置</h1><p><div align="center"><br><img src="/images/code/20170516001.png" alt="“路径”"><br></div><br>以管理员身份运行hosts,新增<code>127.0.0.1 test.com</code></p>
-<h1 id="xampp配置"><a href="#xampp配置" class="headerlink" title="xampp配置"></a>xampp配置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin webmaster@dummy-host2.example.com</div><div class="line">    DocumentRoot &quot;E:/test&quot;  ## 文件根目录</div><div class="line">    ServerName  test.com    ## 虚拟域名</div><div class="line">    &lt;Directory E:/test&gt;     ## 文件根目录</div><div class="line">        Options -Indexes</div><div class="line">        AllowOverride ALL</div><div class="line">        DirectoryIndex index.php index.html</div><div class="line">        Require all granted</div><div class="line">    &lt;/Directory&gt;</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+        <p>目前，通行的Javascript模块规范有两种：CommonJS和AMD。</p>
+<p><div align="center"><br><img src="/images/bg/0010.jpg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><blockquote>
+<p>在浏览器环境下，没有模块也不是特别大的问题，毕竟网页程序的复杂性有限；但是在服务器端，一定要有模块，与操作系统和其他应用程序互动，否则根本没法编程。node.js的模块系统，就是参照CommonJS规范实现的。在CommonJS中，有一个全局性方法require()，用于加载模块。</p>
+</blockquote>
+<p>假定有一个数学模块math.js，就可以像下面这样加载。<br><figure class="highlight js"><figcaption><span>[math.js]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> math = <span class="built_in">require</span>(<span class="string">'math'</span>);</div><div class="line">math.add(<span class="number">2</span>,<span class="number">3</span>); <span class="comment">// 5 ,调用模块提供的方法</span></div></pre></td></tr></table></figure></p>
+<p>CommonJS规范不适用于浏览器环境。第二行math.add(2, 3)，在第一行require(‘math’)之后运行，因此必须等math.js加载完成。浏览器端的模块，不能采用”同步加载”（synchronous），只能采用”异步加载”（asynchronous）。这就是AMD规范诞生的背景。</p>
+<p>##　AMD规范</p>
+<blockquote>
+<p>全称：Asynchronous Module Definition（异步模块定义）<br>它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p>
+</blockquote>
+<p>AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：<br><code>require([module], callback);</code><br>上述的例子：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">　　<span class="built_in">require</span>([<span class="string">'math'</span>], <span class="function"><span class="keyword">function</span> (<span class="params">math</span>) </span>&#123;</div><div class="line">　　　　math.add(<span class="number">2</span>, <span class="number">3</span>);</div><div class="line">　　&#125;);</div></pre></td></tr></table></figure></p>
+<p>math.add()与math模块加载不是同步的，浏览器不会发生假死。所以很显然，AMD比较适合浏览器环境。</p>
 
       
     </div>
@@ -419,7 +449,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/xampp/" rel="tag"># xampp</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -432,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017-05-10-http.html" rel="next" title="http协议">
-                <i class="fa fa-chevron-left"></i> http协议
+              <a href="/2017-06-20-github.html" rel="next" title="rawraw的github">
+                <i class="fa fa-chevron-left"></i> rawraw的github
               </a>
             
           </div>
@@ -441,10 +471,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017-05-16-navicat.html" rel="prev" title="navicat for mysql安装问题">
-                navicat for mysql安装问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -635,7 +661,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#域名配置"><span class="nav-number">1.</span> <span class="nav-text">域名配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#xampp配置"><span class="nav-number">2.</span> <span class="nav-text">xampp配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CommonJS"><span class="nav-number">1.</span> <span class="nav-text">CommonJS</span></a></li></ol></div>
             
 
           </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-06-20T02:35:28.095Z</updated>
+  <updated>2017-06-20T09:10:54.259Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript模块规范:CommonJS和AMD</title>
+    <link href="http://rawraw.info/2017-06-20-modulerule.html"/>
+    <id>http://rawraw.info/2017-06-20-modulerule.html</id>
+    <published>2017-06-20T08:49:47.000Z</published>
+    <updated>2017-06-20T09:10:54.259Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前，通行的Javascript模块规范有两种：CommonJS和AMD。</p>
+<p><div align="center"><br><img src="/images/bg/0010.jpg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><blockquote>
+<p>在浏览器环境下，没有模块也不是特别大的问题，毕竟网页程序的复杂性有限；但是在服务器端，一定要有模块，与操作系统和其他应用程序互动，否则根本没法编程。node.js的模块系统，就是参照CommonJS规范实现的。在CommonJS中，有一个全局性方法require()，用于加载模块。</p>
+</blockquote>
+<p>假定有一个数学模块math.js，就可以像下面这样加载。<br><figure class="highlight js"><figcaption><span>[math.js]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> math = <span class="built_in">require</span>(<span class="string">'math'</span>);</div><div class="line">math.add(<span class="number">2</span>,<span class="number">3</span>); <span class="comment">// 5 ,调用模块提供的方法</span></div></pre></td></tr></table></figure></p>
+<p>CommonJS规范不适用于浏览器环境。第二行math.add(2, 3)，在第一行require(‘math’)之后运行，因此必须等math.js加载完成。浏览器端的模块，不能采用”同步加载”（synchronous），只能采用”异步加载”（asynchronous）。这就是AMD规范诞生的背景。</p>
+<p>##　AMD规范</p>
+<blockquote>
+<p>全称：Asynchronous Module Definition（异步模块定义）<br>它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p>
+</blockquote>
+<p>AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：<br><code>require([module], callback);</code><br>上述的例子：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">　　<span class="built_in">require</span>([<span class="string">'math'</span>], <span class="function"><span class="keyword">function</span> (<span class="params">math</span>) </span>&#123;</div><div class="line">　　　　math.add(<span class="number">2</span>, <span class="number">3</span>);</div><div class="line">　　&#125;);</div></pre></td></tr></table></figure></p>
+<p>math.add()与math模块加载不是同步的，浏览器不会发生假死。所以很显然，AMD比较适合浏览器环境。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;目前，通行的Javascript模块规范有两种：CommonJS和AMD。&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0010.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>rawraw的github</title>
@@ -989,33 +1025,6 @@
     
     
       <category term="css" scheme="http://rawraw.info/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo之站点配置和next主题配置</title>
-    <link href="http://rawraw.info/2017-04-07-hexo-next.html"/>
-    <id>http://rawraw.info/2017-04-07-hexo-next.html</id>
-    <published>2017-04-07T08:50:39.000Z</published>
-    <updated>2017-04-07T09:15:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>给丑丑的默认hexo换个皮肤、<br><a id="more"></a></p>
-<p><font size="5">一、站点配置</font></p>
-<p><font size="5">一、next主题配置</font><br><a href="http://www.tuicool.com/articles/ueI7naV" target="_blank" rel="external">http://www.tuicool.com/articles/ueI7naV</a><br>Next主题文档：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a><br>Rss:$ npm install hexo-generator-feed –save</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;给丑丑的默认hexo换个皮肤、&lt;br&gt;
-    
-    </summary>
-    
-      <category term="巨人的肩膀" scheme="http://rawraw.info/categories/%E5%B7%A8%E4%BA%BA%E7%9A%84%E8%82%A9%E8%86%80/"/>
-    
-    
-      <category term="hexo" scheme="http://rawraw.info/tags/hexo/"/>
-    
-      <category term="next" scheme="http://rawraw.info/tags/next/"/>
     
   </entry>
   
