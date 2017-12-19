@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-12-19T05:21:00.899Z</updated>
+  <updated>2017-12-19T06:06:09.213Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -20,15 +20,49 @@
     <link href="http://rawraw.info/2017-12-19-plan2018.html"/>
     <id>http://rawraw.info/2017-12-19-plan2018.html</id>
     <published>2017-12-19T05:14:03.000Z</published>
-    <updated>2017-12-19T05:21:00.899Z</updated>
+    <updated>2017-12-19T06:06:09.213Z</updated>
     
-    <content type="html"><![CDATA[<p>再堕落下去，要是个废人了。开始好好学习，天天向上咯！</p>
+    <content type="html"><![CDATA[<p>再堕落下去，要是个废人了。开始好好学习，天天向上咯！<br>小小列个清单先~</p>
 <p><div align="center"><br><img src="/images/bg/0057.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="旧的要巩固"><a href="#旧的要巩固" class="headerlink" title="旧的要巩固"></a>旧的要巩固</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ol>
+<li>结构：HTML/HTML5</li>
+<li>样式：CSS/CSS3/canvas/svg/vr/webGL</li>
+<li>逻辑：JavaScript/jQuery</li>
+<li>地图：摸清天地图，一切地图不是事儿</li>
+<li>数据:数据库/php(后台小哥哥的东西，看看会cv就好)</li>
+<li>服务：node</li>
+</ol>
+<h2 id="框架全家桶"><a href="#框架全家桶" class="headerlink" title="框架全家桶"></a>框架全家桶</h2><ol>
+<li>vue+vuex+vue+router+axios</li>
+<li>react+</li>
+<li>Angular(找时间看2啊)</li>
+</ol>
+<h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2><ol>
+<li>LESS/SASS</li>
+<li>TypeSript</li>
+<li>webpack+npm/yarn</li>
+</ol>
+<h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ol>
+<li>es6</li>
+</ol>
+<h2 id="小技能"><a href="#小技能" class="headerlink" title="小技能"></a>小技能</h2><ol>
+<li>gif录制，用啥软件来着，记得回去翻翻</li>
+</ol>
+<h1 id="新的要学学学学学！嘿嘿"><a href="#新的要学学学学学！嘿嘿" class="headerlink" title="新的要学学学学学！嘿嘿~"></a>新的要学学学学学！嘿嘿~</h1><h2 id="特效，公式撸起来"><a href="#特效，公式撸起来" class="headerlink" title="特效，公式撸起来"></a>特效，公式撸起来</h2><ol>
+<li>贝塞尔曲线原理</li>
+<li>视差原理</li>
+<li>阻尼公式</li>
+</ol>
+<h2 id="新框架"><a href="#新框架" class="headerlink" title="新框架"></a>新框架</h2><ol>
+<li>express框架</li>
+<li>koa框架</li>
+<li>egg.js(天猫)</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;再堕落下去，要是个废人了。开始好好学习，天天向上咯！&lt;/p&gt;
+      &lt;p&gt;再堕落下去，要是个废人了。开始好好学习，天天向上咯！&lt;br&gt;小小列个清单先~&lt;/p&gt;
 &lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0057.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
     
     </summary>
