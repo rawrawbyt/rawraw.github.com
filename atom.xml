@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-12-19T06:06:09.213Z</updated>
+  <updated>2017-12-19T06:41:16.884Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -16,11 +16,143 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>移动端语音播报问题集合</title>
+    <link href="http://rawraw.info/2017-12-19-sound.html"/>
+    <id>http://rawraw.info/2017-12-19-sound.html</id>
+    <published>2017-12-19T06:16:01.000Z</published>
+    <updated>2017-12-19T06:41:16.884Z</updated>
+    
+    <content type="html"><![CDATA[<p>突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。<br>打卡签到，播放“XXX,签到成功”。<br>判断一个人的语音提示是否播报完成？或者打断？</p>
+<p><div align="center"><br><img src="/images/bg/0059.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="文本生成语音"><a href="#文本生成语音" class="headerlink" title="文本生成语音"></a>文本生成语音</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> speaker = <span class="keyword">new</span> <span class="built_in">window</span>.SpeechSynthesisUtterance();</div><div class="line"><span class="keyword">var</span> speakTimer,</div><div class="line">    stopTimer;</div><div class="line"><span class="comment">// 开始播报</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">speakText</span>(<span class="params">text</span>) </span>&#123;</div><div class="line">    clearTimeout(speakTimer);</div><div class="line">    <span class="built_in">window</span>.speechSynthesis.cancel();</div><div class="line">    speakTimer = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        speaker.text = text;</div><div class="line">        <span class="built_in">window</span>.speechSynthesis.speak(speaker);</div><div class="line">    &#125;, <span class="number">200</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 停止播报</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopSpeak</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    clearTimeout(stopTimer);</div><div class="line">    clearTimeout(speakTimer);</div><div class="line">    stopTimer = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">window</span>.speechSynthesis.cancel();</div><div class="line">    &#125;, <span class="number">20</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="SpeechSynthesis"><a href="#SpeechSynthesis" class="headerlink" title="SpeechSynthesis"></a>SpeechSynthesis</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paused</td>
+<td>是否暂停</td>
+</tr>
+<tr>
+<td>pending</td>
+<td>是否处理中</td>
+</tr>
+<tr>
+<td>speaking</td>
+<td>是否朗读中</td>
+</tr>
+<tr>
+<td>onvoiceschanged</td>
+<td>声音变化时触发</td>
+</tr>
+<tr>
+<td>cancel()</td>
+<td>情况待朗读队列</td>
+</tr>
+<tr>
+<td>getVoices()</td>
+<td>获取浏览器支持的语音包列表</td>
+</tr>
+<tr>
+<td>pause()</td>
+<td>暂停</td>
+</tr>
+<tr>
+<td>resume()</td>
+<td>重新开始</td>
+</tr>
+<tr>
+<td>speak()</td>
+<td>读合成的语音，参数必须</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SpeechSynthesisUtterance"><a href="#SpeechSynthesisUtterance" class="headerlink" title="SpeechSynthesisUtterance"></a>SpeechSynthesisUtterance</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lang</td>
+<td>语言</td>
+</tr>
+<tr>
+<td>pitch</td>
+<td>音高</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>语速</td>
+</tr>
+<tr>
+<td>text</td>
+<td>文本</td>
+</tr>
+<tr>
+<td>voice</td>
+<td>声音</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>音量</td>
+</tr>
+<tr>
+<td>onboundary</td>
+<td>单词或句子边界触发，即分隔处触发</td>
+</tr>
+<tr>
+<td>onend</td>
+<td>结束时触发</td>
+</tr>
+<tr>
+<td>onerror</td>
+<td>错误时触发</td>
+</tr>
+<tr>
+<td>onmark</td>
+<td></td>
+</tr>
+<tr>
+<td>onpause</td>
+<td>暂停时触发</td>
+</tr>
+<tr>
+<td>onresume</td>
+<td>重新播放时触发</td>
+</tr>
+<tr>
+<td>onstart</td>
+<td>开始时触发</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。&lt;br&gt;打卡签到，播放“XXX,签到成功”。&lt;br&gt;判断一个人的语音提示是否播报完成？或者打断？&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0059.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="待解决" scheme="http://rawraw.info/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2018前端学习计划</title>
     <link href="http://rawraw.info/2017-12-19-plan2018.html"/>
     <id>http://rawraw.info/2017-12-19-plan2018.html</id>
     <published>2017-12-19T05:14:03.000Z</published>
-    <updated>2017-12-19T06:06:09.213Z</updated>
+    <updated>2017-12-19T06:28:20.730Z</updated>
     
     <content type="html"><![CDATA[<p>再堕落下去，要是个废人了。开始好好学习，天天向上咯！<br>小小列个清单先~</p>
 <p><div align="center"><br><img src="/images/bg/0057.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
@@ -31,6 +163,7 @@
 <li>地图：摸清天地图，一切地图不是事儿</li>
 <li>数据:数据库/php(后台小哥哥的东西，看看会cv就好)</li>
 <li>服务：node</li>
+<li>兼容性：web和移动端/各浏览器</li>
 </ol>
 <h2 id="框架全家桶"><a href="#框架全家桶" class="headerlink" title="框架全家桶"></a>框架全家桶</h2><ol>
 <li>vue+vuex+vue+router+axios</li>
@@ -808,104 +941,6 @@
     
     
       <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>好用的小东西整理</title>
-    <link href="http://rawraw.info/2017-05-03-css3.html"/>
-    <id>http://rawraw.info/2017-05-03-css3.html</id>
-    <published>2017-05-03T07:40:56.000Z</published>
-    <updated>2017-05-17T09:19:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>常用的css3巴拉巴拉的，js小技巧-_-</p>
-<p><div align="center"><br><img src="/images/bg/0008.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<h1 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h1><hr>
-<h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><h3 id="将文本分成多列"><a href="#将文本分成多列" class="headerlink" title="将文本分成多列"></a>将文本分成多列</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#test&#123;</div><div class="line">   -moz-column-count:3; </div><div class="line">   -webkit-column-count:3; </div><div class="line">   column-count:3;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="创建模糊文本"><a href="#创建模糊文本" class="headerlink" title="创建模糊文本"></a>创建模糊文本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#test &#123;</div><div class="line">   color: transparent;</div><div class="line">   text-shadow: 0 0 5px rgba(0,0,0,0.5);</div><div class="line">&#125;   </div><div class="line">```   </div><div class="line">### pre标签内文本自动换行</div></pre></td></tr></table></figure>
-<pre><code>pre{
-    overflow: auto;
-    background-color: #f1f1f1;
-    overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not
-    white-space: pre-wrap; /* css-3 */
-    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
-    margin: 0;
-    padding:5px 5px 3px 5px;
-    white-space : normal; /* crucial for IE 6, maybe 7? */
-}
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### 表格自动宽度</div></pre></td></tr></table></figure>
-<p>td {<br>    white-space: nowrap;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">### 让滚动条顺溜地滑</div><div class="line">定位后的滑动会出现卡顿</div></pre></td></tr></table></figure></p>
-<p>body {<br>  -webkit-overflow-scrolling: touch;<br>  overflow-scrolling: touch;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### 长按闪退</div></pre></td></tr></table></figure></p>
-<p>#test{<br>  -webkit-touch-callout: none;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### select 设置右对齐</div></pre></td></tr></table></figure></p>
-<p>select option {<br>    direction: rtl;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### touch时有半透明灰色遮罩（ios和android）</div></pre></td></tr></table></figure></p>
-<p>#test{<br>  -webkit-tap-highlight-color:rgba(255,255,255,0)<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### 输入框默认内阴影、以及默认样式(ios)</div></pre></td></tr></table></figure></p>
-<p>#test{<br>  -webkit-appearance: none;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">### 部分机型存在type为search的input，自带close按钮样式</div><div class="line">&gt;`#Search::-webkit-search-cancel-button&#123;</div><div class="line">    display: none; </div><div class="line">  &#125;`</div><div class="line"></div><div class="line">### 默认首字母会大写(ios)</div><div class="line">&gt;`&lt;input type=&quot;text&quot; autocapitalize=&quot;off&quot; /&gt;`</div><div class="line"></div><div class="line">### 圆角失效(某些Android)</div></pre></td></tr></table></figure></p>
-<p>#test{<br>  background-clip: padding-box;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">### 移动端伪类 `:active` 失效</div><div class="line">移动端应该是touch</div><div class="line">&gt;`&lt;body ontouchstart=&quot;&quot;&gt;` </div><div class="line">&gt;或者`document.addEventListener(&apos;touchstart&apos;,function()&#123;&#125;,false);`</div><div class="line"></div><div class="line">## 浏览器</div><div class="line">### 禁止复制、选中文本</div></pre></td></tr></table></figure></p>
-<p>#test{<br>    -webkit-user-select: none;<br>    -moz-user-select: none;<br>    -khtml-user-select: none;<br>     user-select: none;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 消除 IE10 的叉号</div><div class="line">&gt;`input:-ms-clear&#123;display:none;&#125;`</div><div class="line"></div><div class="line">### css垂直居中</div><div class="line"> ![去这里看](center)         </div><div class="line">          </div><div class="line">## CSS3</div><div class="line">### 伪类</div><div class="line">#### 修改选中文本的颜色：</div><div class="line">```css [ 举一个栗子 ]</div><div class="line">user-select:none</div><div class="line">::selection&#123;</div><div class="line">color: white;</div><div class="line">background-color: red;</div><div class="line">&#125;</div><div class="line"> </div><div class="line">::-moz-selection &#123;</div><div class="line">color: white;</div><div class="line">background-color: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h4 id="首字母设置"><a href="#首字母设置" class="headerlink" title="首字母设置"></a>首字母设置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#test:first-child::first-letter&#123;</div><div class="line">  font-size: 28px;</div><div class="line">  font-weight: bold;</div><div class="line">&#125;</div><div class="line">/*首字下沉*/</div><div class="line">p:first-letter&#123;</div><div class="line">    display:block;</div><div class="line">    margin:5px 0 0 5px;</div><div class="line">    float:left;</div><div class="line">    color:#FF3366;</div><div class="line">    font-size:60px;</div><div class="line">    font-family:Georgia;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="透明度的兼容"><a href="#透明度的兼容" class="headerlink" title="透明度的兼容"></a>透明度的兼容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#test &#123;</div><div class="line">    filter: alpha(opacity=50); /* internet explorer */</div><div class="line">    -khtml-opacity: 0.5;      /* khtml, old safari */</div><div class="line">    -moz-opacity: 0.5;       /* mozilla, netscape */</div><div class="line">    opacity: 0.5;           /* fx, safari, opera */</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="webkit-mask遮罩"><a href="#webkit-mask遮罩" class="headerlink" title="webkit mask遮罩"></a>webkit mask遮罩</h3><p>要记得来写<br><a href="http://www.cnblogs.com/cosiray/archive/2012/12/06/2804770.html" target="_blank" rel="external">http://www.cnblogs.com/cosiray/archive/2012/12/06/2804770.html</a></p>
-<h3 id="transform出现锯齿"><a href="#transform出现锯齿" class="headerlink" title="transform出现锯齿"></a>transform出现锯齿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-webkit-transform: rotate(-4deg) skew(10deg) translateZ(0);</div><div class="line"> transform: rotate(-4deg) skew(10deg) translateZ(0);</div><div class="line"> outline: 1px solid rgba(255,255,255,0)</div></pre></td></tr></table></figure>
-<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><figure class="highlight css"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*上至下，默认方向*/</span></div><div class="line"><span class="selector-id">#test</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(#000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(#000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(#000, #fff);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(#000, #fff); </div><div class="line">&#125;</div><div class="line"><span class="comment">/*左至右*/</span></div><div class="line"><span class="selector-id">#test2</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(left, #000 , #fff);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(right, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(right, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to right, #000 , #fff); </div><div class="line">&#125;</div><div class="line"><span class="comment">/*角度。12点方向为0deg,顺时针增加deg*/</span></div><div class="line"><span class="selector-id">#test3</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(180deg, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-linear-gradient</span>(180deg, #000, #fff); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-linear-gradient</span>(180deg, #000, #fff);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(180deg, #000, #fff);</div><div class="line">&#125;</div><div class="line"><span class="comment">/*也可以径向渐变，多种颜色，透明度*/</span></div><div class="line"><span class="selector-id">#test4</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-radial-gradient</span>(#000 , #fff 10%, #000 20%);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-o-radial-gradient</span>(#000, #fff 10%, #000 20%); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-moz-radial-gradient</span>(#000, #fff 10%, #000 20%); </div><div class="line">  <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(#000, #fff 10%, #000 20%); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h1 id="JS部分"><a href="#JS部分" class="headerlink" title="JS部分"></a>JS部分</h1><hr>
-<h2 id="中文输入法输入英文时，有六分之一空格（ios）"><a href="#中文输入法输入英文时，有六分之一空格（ios）" class="headerlink" title="中文输入法输入英文时，有六分之一空格（ios）"></a>中文输入法输入英文时，有六分之一空格（ios）</h2><blockquote>
-<p><code>this.value = this.value.replace(/\u2006/g, &#39;&#39;);</code></p>
-</blockquote>
-<h2 id="移动端autoplay-失效问题"><a href="#移动端autoplay-失效问题" class="headerlink" title="移动端autoplay 失效问题"></a>移动端autoplay 失效问题</h2><p>必须由用户来触发才可以播放。<br>touchstart 触发播放并暂停（音频开始加载，后面用 JS 再操作就没问题了）。</p>
-<blockquote>
-<p><code>document.addEventListener(&#39;touchstart&#39;, function () {
-  document.getElementsByTagName(&#39;audio&#39;)[0].play();
-  document.getElementsByTagName(&#39;audio&#39;)[0].pause();
-});</code></p>
-</blockquote>
-<h2 id="批量修改样式"><a href="#批量修改样式" class="headerlink" title="批量修改样式"></a>批量修改样式</h2><figure class="highlight js"><figcaption><span>[ 举一个栗子 ]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">div.style.cssText = <span class="string">'width:100px;height:100px;'</span></div></pre></td></tr></table></figure>
-<h2 id="展开select的option"><a href="#展开select的option" class="headerlink" title="展开select的option"></a>展开select的option</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function showDropdown(sltElement) &#123;</div><div class="line">  var event;</div><div class="line">  event = document.createEvent(&apos;MouseEvents&apos;);</div><div class="line">  event.initMouseEvent(&apos;mousedown&apos;, true, true, window);</div><div class="line">  sltElement.dispatchEvent(event);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h1 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h1><hr>
-<h2 id="meta标签"><a href="#meta标签" class="headerlink" title="meta标签"></a>meta标签</h2><h3 id="apple-mobile-web-app-capable"><a href="#apple-mobile-web-app-capable" class="headerlink" title="apple-mobile-web-app-capable"></a>apple-mobile-web-app-capable</h3><p>apple-mobile-web-app-capable是设置Web应用是否以全屏模式运行。</p>
-<blockquote>
-<p><code>&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;</code></p>
-</blockquote>
-<h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>有时候改了bug刷新并没有卵用，然后就好气啊。<br>手机页面通常在第一次加载后会进行缓存，然后每次刷新会使用缓存而不是去重新向服务器发送请求。</p>
-<blockquote>
-<p><code>&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot; /&gt;</code><br>format-detection 启动或禁用自动识别页面中的电话号码。<br><code>&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;</code></p>
-</blockquote>
-<h3 id="奇怪的浏览器强制屏幕"><a href="#奇怪的浏览器强制屏幕" class="headerlink" title="奇怪的浏览器强制屏幕"></a>奇怪的浏览器强制屏幕</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;!-- QQ浏览器私有 --&gt;</div><div class="line">&lt;!-- 全屏模式 --&gt;</div><div class="line">&lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;</div><div class="line">&lt;!-- 强制竖屏 --&gt;</div><div class="line">&lt;meta name=&quot;x5-orientation&quot; content=&quot;portrait&quot;&gt;</div><div class="line">&lt;!-- 强制横屏 --&gt;</div><div class="line">&lt;meta name=&quot;x5-orientation&quot; content=&quot;landscape&quot;&gt;</div><div class="line">&lt;!-- 应用模式 --&gt;</div><div class="line">&lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;</div><div class="line"> </div><div class="line">&lt;!-- UC浏览器私有 --&gt;</div><div class="line">&lt;!-- 全屏模式 --&gt;</div><div class="line">&lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;</div><div class="line">&lt;!-- 强制竖屏 --&gt;</div><div class="line">&lt;meta name=&quot;screen-orientation&quot; content=&quot;portrait&quot;&gt;</div><div class="line">&lt;!-- 强制横屏 --&gt;</div><div class="line">&lt;meta name=&quot;screen-orientation&quot; content=&quot;landscape&quot;&gt;</div><div class="line">&lt;!-- 应用模式 --&gt;</div><div class="line">&lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;</div></pre></td></tr></table></figure>
-<h2 id="移动端拨打电话功能（安卓、ios都可以）"><a href="#移动端拨打电话功能（安卓、ios都可以）" class="headerlink" title="移动端拨打电话功能（安卓、ios都可以）"></a>移动端拨打电话功能（安卓、ios都可以）</h2><blockquote>
-<p><code>&lt;a href=&quot;tel:10086&quot;&gt;10086&lt;/a&gt;</code></p>
-</blockquote>
-<h2 id="app"><a href="#app" class="headerlink" title="app"></a>app</h2><h3 id="横屏字体"><a href="#横屏字体" class="headerlink" title="横屏字体"></a>横屏字体</h3><p>text-size-adjust 为 none 可以解决 iOS 上的问题，但桌面版 Safari 的字体缩放功能会失效，因此最佳方案是将 text-size-adjust 为 100% </p>
-<blockquote>
-<p>-webkit-text-size-adjust: 100%;<br> -ms-text-size-adjust: 100%;<br> text-size-adjust: 100%;</p>
-<h3 id="顶部状态栏背景色"><a href="#顶部状态栏背景色" class="headerlink" title="顶部状态栏背景色"></a>顶部状态栏背景色</h3><p>先指定全屏模式 <code>apple-mobile-web-app-capable</code><br><code>&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;blank&quot; /&gt;</code></p>
-<p>content:default               正常显示<br>          blank                 黑色背景<br>          lank-translucent      黑色半透明，页面主体会向上占据位置</p>
-</blockquote>
-<h3 id="桌面图标"><a href="#桌面图标" class="headerlink" title="桌面图标"></a>桌面图标</h3><p>图片尺寸可以设定为57<em>57（px）或者Retina可以定为114</em>114（px），ipad尺寸为72*72（px)</p>
-<blockquote>
-<p><link rel="apple-touch-icon" href="touch-icon-iphone.png"><br> <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png"><br> <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png"><br> <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"></p>
-</blockquote>
-<p>去光泽</p>
-<blockquote>
-<p><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;touch-icon-iphone.png&quot; /&gt;</code> </p>
-</blockquote>
-<h3 id="启动画面"><a href="#启动画面" class="headerlink" title="启动画面"></a>启动画面</h3><blockquote>
-<p><code>&lt;link rel=&quot;apple-touch-startup-image&quot; href=&quot;start.png&quot;/&gt;</code><br>iOS下页面启动加载时显示的画面图片，避免加载时的白屏。<br>可以通过madia来指定不同的大小：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;!--iPhone--&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-320x460.png&quot; media=&quot;(device-width: 320px)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPhone Retina --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-640x920.png&quot; media=&quot;(device-width: 320px) and (-webkit-device-pixel-ratio: 2)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPhone 5 --&gt;</div><div class="line"> &lt;link rel=&quot;apple-touch-startup-image&quot; media=&quot;(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)&quot; href=&quot;apple-touch-startup-image-640x1096.png&quot;&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad portrait --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-768x1004.png&quot; media=&quot;(device-width: 768px) and (orientation: portrait)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad landscape --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-748x1024.png&quot; media=&quot;(device-width: 768px) and (orientation: landscape)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad Retina portrait --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-1536x2008.png&quot; media=&quot;(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)&quot; rel=&quot;apple-touch-startup-image&quot; /&gt;</div><div class="line">  </div><div class="line"> &lt;!-- iPad Retina landscape --&gt;</div><div class="line"> &lt;link href=&quot;apple-touch-startup-image-1496x2048.png&quot;media=&quot;(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)&quot;rel=&quot;apple-touch-startup-image&quot; /&gt;</div></pre></td></tr></table></figure></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;常用的css3巴拉巴拉的，js小技巧-_-&lt;/p&gt;
-&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0008.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-      <category term="css" scheme="http://rawraw.info/tags/css/"/>
-    
-      <category term="js" scheme="http://rawraw.info/tags/js/"/>
     
   </entry>
   
