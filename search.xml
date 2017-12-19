@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[2018前端学习计划]]></title>
+      <url>%2F2017-12-19-plan2018.html</url>
+      <content type="text"><![CDATA[再堕落下去，要是个废人了。开始好好学习，天天向上咯！]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[毒鸡汤]]></title>
+      <url>%2F2017-12-08-soup.html</url>
+      <content type="text"><![CDATA[在家里闲置了很久的大脑，可能就是鸡汤喝得太多了吧]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[JavaScript要仔细学之二//闭包]]></title>
       <url>%2F2017-06-28-js02.html</url>
       <content type="text"><![CDATA[不得不看之闭包– 一个栗子 问题:点击列表输出对应的索引（用JS，非JQ） 123456789101112&lt;ul&gt; &lt;li&gt;哈哈哈&lt;/li&gt; &lt;li&gt;嘤嘤嘤&lt;/li&gt; &lt;li&gt;嘿嘿嘿&lt;/li&gt; &lt;li&gt;啦啦啦&lt;/li&gt; &lt;li&gt;略略略&lt;/li&gt; &lt;li&gt;嘻嘻嘻&lt;/li&gt; &lt;li&gt;呵呵呵&lt;/li&gt; &lt;li&gt;哒哒哒&lt;/li&gt; &lt;li&gt;嘁嘁嘁&lt;/li&gt; &lt;li&gt;哟哟哟&lt;/li&gt;&lt;/ul&gt; 可能有小可爱会这样做:1234567var lis = document.querySelectorAll('ul li');var len = lis.length;for(var i = 0; i &lt; len; i++) &#123; lis[i].addEventListener('click', function () &#123; console.log(i); &#125;, false);&#125; 运行结果是，不管点击哪个列表，结果输出的都是10。 var声明的变量是函数作用域的，而不是块级作用域的。也就是说，for循环10次，每次都是改变同一个i，所以它的值会从0一直加到10。 闭包保存的是外部变量的引用，而不是值。也就是说，循环10次监听器创建了10 个闭包，它们里面的i引用的是同一个啊。所以全部都指向了10。 解决方案let替代var但是涉及到es6,出于兼容性的考虑，还要做转译，还是微微有点不开心1234567var lis = document.querySelectorAll('ul li');var len = lis.length;for(let i = 0; i &lt; len; i++) &#123; lis[i].addEventListener('click', function () &#123; console.log(i); &#125;, false);&#125; 立即执行函数(切断闭包)123456789var lis = document.querySelectorAll('ul li');var len = lis.length;for(var i = 0; i &lt; len; i++) &#123; (function (i) &#123; lis[i].addEventListener('click', function () &#123; console.log(i); &#125;, false); &#125;)(i)&#125; 事件委托(避开闭包)12345678var ul = document.querySelector('ul');var lis = ul.querySelectorAll('li'); ul.addEventListener('click', function (e) &#123; var target = e.target; if(target.nodeName.toLowerCase() === 'li') &#123; console.log([].indexOf.call(lis, target)); &#125;&#125;, false);]]></content>
