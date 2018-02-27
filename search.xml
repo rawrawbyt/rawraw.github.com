@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[文件夹命名习惯]]></title>
+      <url>%2F2018-01-07-name.html</url>
+      <content type="text"><![CDATA[常用的项目目录文件命名 config 配置文件 static 静态资源 src,source 源代码 examples，demo 示例 docs 文档 plugins 插件 lib library,库文件 component 组件 dist distribution,打包编译后的文件 less,sass,typescript,es6 test,tests,test 测试文件 benchmarks 测试版本的性能变化 units,spec 单元测试 e2e 端对端测试 build,script 构建脚本 utils,tools,helpers 工具代码 models,views,controllers,middlewares MVC，中间件 router 路由 server 服务端代码 adapters 适配器模式 legacy 兼容历史版本或者浏览器的代码 bin 命令脚本，命令行工具 common 公用文件 packages 打包多个npm包,减小体积 core 核心文件 misc 杂项]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[移动端语音播报问题集合]]></title>
       <url>%2F2017-12-19-sound.html</url>
       <content type="text"><![CDATA[突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。打卡签到，播放“XXX,签到成功”。判断一个人的语音提示是否播报完成？或者打断？ 文本生成语音1234567891011121314151617181920var speaker = new window.SpeechSynthesisUtterance();var speakTimer, stopTimer;// 开始播报function speakText(text) &#123; clearTimeout(speakTimer); window.speechSynthesis.cancel(); speakTimer = setTimeout(function () &#123; speaker.text = text; window.speechSynthesis.speak(speaker); &#125;, 200);&#125;// 停止播报function stopSpeak() &#123; clearTimeout(stopTimer); clearTimeout(speakTimer); stopTimer = setTimeout(function () &#123; window.speechSynthesis.cancel(); &#125;, 20);&#125; APISpeechSynthesis 参数 含义 paused 是否暂停 pending 是否处理中 speaking 是否朗读中 onvoiceschanged 声音变化时触发 cancel() 情况待朗读队列 getVoices() 获取浏览器支持的语音包列表 pause() 暂停 resume() 重新开始 speak() 读合成的语音，参数必须 SpeechSynthesisUtterance 参数 含义 lang 语言 pitch 音高 rate 语速 text 文本 voice 声音 volume 音量 onboundary 单词或句子边界触发，即分隔处触发 onend 结束时触发 onerror 错误时触发 onmark onpause 暂停时触发 onresume 重新播放时触发 onstart 开始时触发]]></content>

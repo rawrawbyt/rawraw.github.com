@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2017-12-19T06:41:16.884Z</updated>
+  <updated>2018-02-27T05:35:19.687Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,109 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文件夹命名习惯</title>
+    <link href="http://rawraw.info/2018-01-07-name.html"/>
+    <id>http://rawraw.info/2018-01-07-name.html</id>
+    <published>2018-01-07T04:36:28.000Z</published>
+    <updated>2018-02-27T05:35:19.687Z</updated>
+    
+    <content type="html"><![CDATA[<p>常用的项目目录文件命名<br><a id="more"></a></p>
+<h1 id="config"><a href="#config" class="headerlink" title="config"></a>config</h1><blockquote>
+<p>配置文件</p>
+</blockquote>
+<h1 id="static"><a href="#static" class="headerlink" title="static"></a>static</h1><blockquote>
+<p>静态资源</p>
+</blockquote>
+<h1 id="src-source"><a href="#src-source" class="headerlink" title="src,source"></a>src,source</h1><blockquote>
+<p>源代码</p>
+</blockquote>
+<h1 id="examples，demo"><a href="#examples，demo" class="headerlink" title="examples，demo"></a>examples，demo</h1><blockquote>
+<p>示例</p>
+</blockquote>
+<h1 id="docs"><a href="#docs" class="headerlink" title="docs"></a>docs</h1><blockquote>
+<p>文档</p>
+</blockquote>
+<h1 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h1><blockquote>
+<p>插件</p>
+</blockquote>
+<h1 id="lib"><a href="#lib" class="headerlink" title="lib"></a>lib</h1><blockquote>
+<p>library,库文件</p>
+</blockquote>
+<h1 id="component"><a href="#component" class="headerlink" title="component"></a>component</h1><blockquote>
+<p>组件</p>
+</blockquote>
+<h1 id="dist"><a href="#dist" class="headerlink" title="dist"></a>dist</h1><blockquote>
+<p>distribution,打包编译后的文件</p>
+<blockquote>
+<p>less,sass,typescript,es6</p>
+</blockquote>
+</blockquote>
+<h1 id="test-tests-test"><a href="#test-tests-test" class="headerlink" title="test,tests,test"></a>test,tests,<strong>test</strong></h1><blockquote>
+<p>测试文件</p>
+</blockquote>
+<h2 id="benchmarks"><a href="#benchmarks" class="headerlink" title="benchmarks"></a>benchmarks</h2><blockquote>
+<p>测试版本的性能变化</p>
+</blockquote>
+<h2 id="units-spec"><a href="#units-spec" class="headerlink" title="units,spec"></a>units,spec</h2><blockquote>
+<p>单元测试</p>
+</blockquote>
+<h2 id="e2e"><a href="#e2e" class="headerlink" title="e2e"></a>e2e</h2><blockquote>
+<p>端对端测试</p>
+</blockquote>
+<h1 id="build-script"><a href="#build-script" class="headerlink" title="build,script"></a>build,script</h1><blockquote>
+<p>构建脚本</p>
+</blockquote>
+<h1 id="utils-tools-helpers"><a href="#utils-tools-helpers" class="headerlink" title="utils,tools,helpers"></a>utils,tools,helpers</h1><blockquote>
+<p>工具代码</p>
+</blockquote>
+<h1 id="models-views-controllers-middlewares"><a href="#models-views-controllers-middlewares" class="headerlink" title="models,views,controllers,middlewares"></a>models,views,controllers,middlewares</h1><blockquote>
+<p>MVC，中间件</p>
+</blockquote>
+<h1 id="router"><a href="#router" class="headerlink" title="router"></a>router</h1><blockquote>
+<p>路由</p>
+</blockquote>
+<h1 id="server"><a href="#server" class="headerlink" title="server"></a>server</h1><blockquote>
+<p>服务端代码</p>
+</blockquote>
+<h1 id="adapters"><a href="#adapters" class="headerlink" title="adapters"></a>adapters</h1><blockquote>
+<p>适配器模式</p>
+</blockquote>
+<h1 id="legacy"><a href="#legacy" class="headerlink" title="legacy"></a>legacy</h1><blockquote>
+<p>兼容历史版本或者浏览器的代码</p>
+</blockquote>
+<h1 id="bin"><a href="#bin" class="headerlink" title="bin"></a>bin</h1><blockquote>
+<p>命令脚本，命令行工具</p>
+</blockquote>
+<h1 id="common"><a href="#common" class="headerlink" title="common"></a>common</h1><blockquote>
+<p>公用文件</p>
+</blockquote>
+<h1 id="packages"><a href="#packages" class="headerlink" title="packages"></a>packages</h1><blockquote>
+<p>打包多个npm包,减小体积</p>
+</blockquote>
+<h1 id="core"><a href="#core" class="headerlink" title="core"></a>core</h1><blockquote>
+<p>核心文件</p>
+</blockquote>
+<h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><blockquote>
+<p>杂项</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;常用的项目目录文件命名&lt;br&gt;
+    
+    </summary>
+    
+      <category term="规范" scheme="http://rawraw.info/categories/%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="命名" scheme="http://rawraw.info/tags/%E5%91%BD%E5%90%8D/"/>
+    
+      <category term="规范" scheme="http://rawraw.info/tags/%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
   
   <entry>
     <title>移动端语音播报问题集合</title>
@@ -915,32 +1018,6 @@
       <category term="js" scheme="http://rawraw.info/tags/js/"/>
     
       <category term="优化" scheme="http://rawraw.info/tags/%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>各种爹一样的兼容处理</title>
-    <link href="http://rawraw.info/2017-05-03-compatible.html"/>
-    <id>http://rawraw.info/2017-05-03-compatible.html</id>
-    <published>2017-05-03T08:14:40.000Z</published>
-    <updated>2017-05-03T08:22:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>好奇怪的ie678,好奇怪的安卓机，好奇怪的ios爸爸。。。</p>
-<p><div align="center"><br><img src="/images/bg/0005.jpg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<h1 id="web端"><a href="#web端" class="headerlink" title="web端"></a>web端</h1><h2 id="杂"><a href="#杂" class="headerlink" title="杂"></a>杂</h2><p>在ie6-7中，用margin-bottom代替padding</p>
-<h1 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;好奇怪的ie678,好奇怪的安卓机，好奇怪的ios爸爸。。。&lt;/p&gt;
-&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0005.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="积累" scheme="http://rawraw.info/categories/%E7%A7%AF%E7%B4%AF/"/>
-    
-    
-      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
     
   </entry>
   
