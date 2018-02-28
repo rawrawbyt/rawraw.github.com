@@ -4,9 +4,9 @@
   <subtitle>Change not delete ！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.rawraw.info/"/>
-  <updated>2018-02-28T04:51:10.063Z</updated>
-  <id>http://www.rawraw.info/</id>
+  <link href="http://rawraw.info/"/>
+  <updated>2018-02-28T06:00:20.920Z</updated>
+  <id>http://rawraw.info/</id>
   
   <author>
     <name>rawraw</name>
@@ -17,14 +17,16 @@
   
   <entry>
     <title>hexo提交问题</title>
-    <link href="http://www.rawraw.info/2018-02-28-bug20180228.html"/>
-    <id>http://www.rawraw.info/2018-02-28-bug20180228.html</id>
+    <link href="http://rawraw.info/2018-02-28-bug20180228.html"/>
+    <id>http://rawraw.info/2018-02-28-bug20180228.html</id>
     <published>2018-02-28T04:13:55.000Z</published>
-    <updated>2018-02-28T04:51:10.063Z</updated>
+    <updated>2018-02-28T06:00:20.920Z</updated>
     
     <content type="html"><![CDATA[<p>今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。</p>
 <p><div align="center"><br><img src="/images/bgus/0228001.png" alt="“封面”"><br></div><br><a id="more"></a></p>
 <h1 id="TRY"><a href="#TRY" class="headerlink" title="TRY"></a>TRY</h1><h2 id="尝试一"><a href="#尝试一" class="headerlink" title="尝试一"></a>尝试一</h2><p>原因：<br>https方式的时候 在git remote add origin 的https url 里面没有用户名和密码<br>方案：<br><code>git remote add origin https://{username}:{password}@github.com/{username}/project.git</code><br> 或者直接修改 .git/config 隐藏文件 为git remote add origin <a href="https://{username}:{password}@github.com/{username}/project.git" target="_blank" rel="external">https://{username}:{password}@github.com/{username}/project.git</a> 格式<br>结果：<br>百度来的方案，查了N次，都是对的，添加了N次，都是已存在。</p>
+<h2 id="尝试二"><a href="#尝试二" class="headerlink" title="尝试二"></a>尝试二</h2><p>原因：<br>如果安装git客户端的时候没有勾选git命令在bash和cmd命令都有效，若是在cmd命令下则因为没有将git添加到windows的path。<br>方案：<br>在blog的目录打开git bash再尝试hexo d。<br>结果：<br>然并卵</p>
+<h2 id="尝试三"><a href="#尝试三" class="headerlink" title="尝试三"></a>尝试三</h2><p>原因：<br>git的版本bug<br>方案：<br>查看git版本<br><code>git version</code><br>结果：<br>我的是2.12.2windows.2。<br><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code>用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。<br><code>https://git-scm.com/download/win</code></p>
 ]]></content>
     
     <summary type="html">
@@ -34,17 +36,17 @@
     
     </summary>
     
-      <category term="万恶BUG" scheme="http://www.rawraw.info/categories/%E4%B8%87%E6%81%B6BUG/"/>
+      <category term="万恶BUG" scheme="http://rawraw.info/categories/%E4%B8%87%E6%81%B6BUG/"/>
     
     
-      <category term="hexo" scheme="http://www.rawraw.info/tags/hexo/"/>
+      <category term="hexo" scheme="http://rawraw.info/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>git常用命令</title>
-    <link href="http://www.rawraw.info/2018-01-27-gitstudy.html"/>
-    <id>http://www.rawraw.info/2018-01-27-gitstudy.html</id>
+    <link href="http://rawraw.info/2018-01-27-gitstudy.html"/>
+    <id>http://rawraw.info/2018-01-27-gitstudy.html</id>
     <published>2018-01-27T06:06:34.000Z</published>
     <updated>2018-02-28T04:11:19.462Z</updated>
     
@@ -84,17 +86,17 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://www.rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git" scheme="http://www.rawraw.info/tags/git/"/>
+      <category term="git" scheme="http://rawraw.info/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>文件夹命名习惯</title>
-    <link href="http://www.rawraw.info/2018-01-07-name.html"/>
-    <id>http://www.rawraw.info/2018-01-07-name.html</id>
+    <link href="http://rawraw.info/2018-01-07-name.html"/>
+    <id>http://rawraw.info/2018-01-07-name.html</id>
     <published>2018-01-07T04:36:28.000Z</published>
     <updated>2018-02-27T05:37:57.740Z</updated>
     
@@ -185,19 +187,19 @@
     
     </summary>
     
-      <category term="规范" scheme="http://www.rawraw.info/categories/%E8%A7%84%E8%8C%83/"/>
+      <category term="规范" scheme="http://rawraw.info/categories/%E8%A7%84%E8%8C%83/"/>
     
     
-      <category term="命名" scheme="http://www.rawraw.info/tags/%E5%91%BD%E5%90%8D/"/>
+      <category term="命名" scheme="http://rawraw.info/tags/%E5%91%BD%E5%90%8D/"/>
     
-      <category term="规范" scheme="http://www.rawraw.info/tags/%E8%A7%84%E8%8C%83/"/>
+      <category term="规范" scheme="http://rawraw.info/tags/%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title>移动端语音播报问题集合</title>
-    <link href="http://www.rawraw.info/2017-12-19-sound.html"/>
-    <id>http://www.rawraw.info/2017-12-19-sound.html</id>
+    <link href="http://rawraw.info/2017-12-19-sound.html"/>
+    <id>http://rawraw.info/2017-12-19-sound.html</id>
     <published>2017-12-19T06:16:01.000Z</published>
     <updated>2017-12-19T06:41:16.884Z</updated>
     
@@ -321,15 +323,15 @@
     
     </summary>
     
-      <category term="待解决" scheme="http://www.rawraw.info/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
+      <category term="待解决" scheme="http://rawraw.info/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
     
     
   </entry>
   
   <entry>
     <title>2018前端学习计划</title>
-    <link href="http://www.rawraw.info/2017-12-19-plan2018.html"/>
-    <id>http://www.rawraw.info/2017-12-19-plan2018.html</id>
+    <link href="http://rawraw.info/2017-12-19-plan2018.html"/>
+    <id>http://rawraw.info/2017-12-19-plan2018.html</id>
     <published>2017-12-19T05:14:03.000Z</published>
     <updated>2017-12-19T06:28:20.730Z</updated>
     
@@ -379,17 +381,17 @@
     
     </summary>
     
-      <category term="计划" scheme="http://www.rawraw.info/categories/%E8%AE%A1%E5%88%92/"/>
+      <category term="计划" scheme="http://rawraw.info/categories/%E8%AE%A1%E5%88%92/"/>
     
     
-      <category term="daydayup" scheme="http://www.rawraw.info/tags/daydayup/"/>
+      <category term="daydayup" scheme="http://rawraw.info/tags/daydayup/"/>
     
   </entry>
   
   <entry>
     <title>毒鸡汤</title>
-    <link href="http://www.rawraw.info/2017-12-08-soup.html"/>
-    <id>http://www.rawraw.info/2017-12-08-soup.html</id>
+    <link href="http://rawraw.info/2017-12-08-soup.html"/>
+    <id>http://rawraw.info/2017-12-08-soup.html</id>
     <published>2017-12-08T07:54:04.000Z</published>
     <updated>2017-12-08T07:57:34.070Z</updated>
     
@@ -404,17 +406,17 @@
     
     </summary>
     
-      <category term="杂" scheme="http://www.rawraw.info/categories/%E6%9D%82/"/>
+      <category term="杂" scheme="http://rawraw.info/categories/%E6%9D%82/"/>
     
     
-      <category term="杂" scheme="http://www.rawraw.info/tags/%E6%9D%82/"/>
+      <category term="杂" scheme="http://rawraw.info/tags/%E6%9D%82/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript要仔细学之二//闭包</title>
-    <link href="http://www.rawraw.info/2017-06-28-js02.html"/>
-    <id>http://www.rawraw.info/2017-06-28-js02.html</id>
+    <link href="http://rawraw.info/2017-06-28-js02.html"/>
+    <id>http://rawraw.info/2017-06-28-js02.html</id>
     <published>2017-06-28T01:48:15.000Z</published>
     <updated>2017-06-28T02:27:00.000Z</updated>
     
@@ -439,17 +441,17 @@
     
     </summary>
     
-      <category term="JavaScript要仔细学" scheme="http://www.rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
+      <category term="JavaScript要仔细学" scheme="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
     
     
-      <category term="JavaScript" scheme="http://www.rawraw.info/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>鹅厂小事件</title>
-    <link href="http://www.rawraw.info/2017-06-21-tencent.html"/>
-    <id>http://www.rawraw.info/2017-06-21-tencent.html</id>
+    <link href="http://rawraw.info/2017-06-21-tencent.html"/>
+    <id>http://rawraw.info/2017-06-21-tencent.html</id>
     <published>2017-06-21T02:58:49.000Z</published>
     <updated>2017-06-21T06:26:16.000Z</updated>
     
@@ -465,17 +467,17 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://www.rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="widen" scheme="http://www.rawraw.info/tags/widen/"/>
+      <category term="widen" scheme="http://rawraw.info/tags/widen/"/>
     
   </entry>
   
   <entry>
     <title>Javascript模块规范:CommonJS和AMD</title>
-    <link href="http://www.rawraw.info/2017-06-20-modulerule.html"/>
-    <id>http://www.rawraw.info/2017-06-20-modulerule.html</id>
+    <link href="http://rawraw.info/2017-06-20-modulerule.html"/>
+    <id>http://rawraw.info/2017-06-20-modulerule.html</id>
     <published>2017-06-20T08:49:47.000Z</published>
     <updated>2017-06-20T09:10:56.000Z</updated>
     
@@ -501,30 +503,30 @@
     
     </summary>
     
-      <category term="知识点" scheme="http://www.rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-      <category term="JavaScript" scheme="http://www.rawraw.info/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>rawraw的github</title>
-    <link href="http://www.rawraw.info/2017-06-20-github.html"/>
-    <id>http://www.rawraw.info/2017-06-20-github.html</id>
+    <link href="http://rawraw.info/2017-06-20-github.html"/>
+    <id>http://rawraw.info/2017-06-20-github.html</id>
     <published>2017-06-20T02:18:03.000Z</published>
     <updated>2017-06-20T02:35:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>rawraw的github项目的快速链接</p>
 <p><div align="center"><br><img src="/images/bg/0044.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
 <h1 id="bundler"><a href="#bundler" class="headerlink" title="bundler"></a>bundler</h1><ul>
-<li><a href="http://www.rawraw.info/browserify-learn/">browserify</a></li>
-<li><a href="http://www.rawraw.info/webpack-learn/">webpack</a></li>
-<li><a href="http://www.rawraw.info/RequireJS-learn/">RequireJS/AMD</a></li>
+<li><a href="http://www.rawraw.info/browserify-learn/" target="_blank" rel="external">browserify</a></li>
+<li><a href="http://www.rawraw.info/webpack-learn/" target="_blank" rel="external">webpack</a></li>
+<li><a href="http://www.rawraw.info/RequireJS-learn/" target="_blank" rel="external">RequireJS/AMD</a></li>
 </ul>
 <h1 id="taskrunner"><a href="#taskrunner" class="headerlink" title="taskrunner"></a>taskrunner</h1><ul>
-<li><a href="http://www.rawraw.info/Grunt-learn/">Grunt</a></li>
-<li><a href="http://www.rawraw.info/Gulp-learn/">Gulp</a></li>
+<li><a href="http://www.rawraw.info/Grunt-learn/" target="_blank" rel="external">Grunt</a></li>
+<li><a href="http://www.rawraw.info/Gulp-learn/" target="_blank" rel="external">Gulp</a></li>
 </ul>
 <p><a href="https://segmentfault.com/a/1190000005706707" target="_blank" rel="external">git常用</a></p>
 ]]></content>
@@ -536,19 +538,19 @@
     
     </summary>
     
-      <category term="链接" scheme="http://www.rawraw.info/categories/%E9%93%BE%E6%8E%A5/"/>
+      <category term="链接" scheme="http://rawraw.info/categories/%E9%93%BE%E6%8E%A5/"/>
     
     
-      <category term="链接" scheme="http://www.rawraw.info/tags/%E9%93%BE%E6%8E%A5/"/>
+      <category term="链接" scheme="http://rawraw.info/tags/%E9%93%BE%E6%8E%A5/"/>
     
-      <category term="github" scheme="http://www.rawraw.info/tags/github/"/>
+      <category term="github" scheme="http://rawraw.info/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>HTML5/JavaScript/CSS书写规范</title>
-    <link href="http://www.rawraw.info/2017-06-14-norm.html"/>
-    <id>http://www.rawraw.info/2017-06-14-norm.html</id>
+    <link href="http://rawraw.info/2017-06-14-norm.html"/>
+    <id>http://rawraw.info/2017-06-14-norm.html</id>
     <published>2017-06-14T06:46:21.000Z</published>
     <updated>2017-06-19T07:51:30.000Z</updated>
     
@@ -768,17 +770,17 @@
     
     </summary>
     
-      <category term="小结" scheme="http://www.rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
     
     
-      <category term="summary" scheme="http://www.rawraw.info/tags/summary/"/>
+      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
     
   </entry>
   
   <entry>
     <title>API大全整理/from github</title>
-    <link href="http://www.rawraw.info/2017-06-13-api.html"/>
-    <id>http://www.rawraw.info/2017-06-13-api.html</id>
+    <link href="http://rawraw.info/2017-06-13-api.html"/>
+    <id>http://rawraw.info/2017-06-13-api.html</id>
     <published>2017-06-13T09:47:54.000Z</published>
     <updated>2017-06-13T09:56:46.000Z</updated>
     
@@ -796,17 +798,17 @@
     
     </summary>
     
-      <category term="干货" scheme="http://www.rawraw.info/categories/%E5%B9%B2%E8%B4%A7/"/>
+      <category term="干货" scheme="http://rawraw.info/categories/%E5%B9%B2%E8%B4%A7/"/>
     
     
-      <category term="summary" scheme="http://www.rawraw.info/tags/summary/"/>
+      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript要仔细学之一//apply( )和call( )的区别</title>
-    <link href="http://www.rawraw.info/2017-06-12-js01.html"/>
-    <id>http://www.rawraw.info/2017-06-12-js01.html</id>
+    <link href="http://rawraw.info/2017-06-12-js01.html"/>
+    <id>http://rawraw.info/2017-06-12-js01.html</id>
     <published>2017-06-12T08:18:56.000Z</published>
     <updated>2017-06-12T08:33:36.000Z</updated>
     
@@ -820,17 +822,17 @@
     
     </summary>
     
-      <category term="JavaScript要仔细学" scheme="http://www.rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
+      <category term="JavaScript要仔细学" scheme="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
     
     
-      <category term="JavaScript" scheme="http://www.rawraw.info/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
-    <link href="http://www.rawraw.info/2017-05-26-bundler.html"/>
-    <id>http://www.rawraw.info/2017-05-26-bundler.html</id>
+    <link href="http://rawraw.info/2017-05-26-bundler.html"/>
+    <id>http://rawraw.info/2017-05-26-bundler.html</id>
     <published>2017-05-26T03:00:28.000Z</published>
     <updated>2017-06-21T03:04:56.000Z</updated>
     
@@ -845,17 +847,17 @@
     
     </summary>
     
-      <category term="知识点" scheme="http://www.rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-      <category term="widen" scheme="http://www.rawraw.info/tags/widen/"/>
+      <category term="widen" scheme="http://rawraw.info/tags/widen/"/>
     
   </entry>
   
   <entry>
     <title>任务流工具-taskrunner：Grunt、Gulp</title>
-    <link href="http://www.rawraw.info/2017-05-26-task-runner.html"/>
-    <id>http://www.rawraw.info/2017-05-26-task-runner.html</id>
+    <link href="http://rawraw.info/2017-05-26-task-runner.html"/>
+    <id>http://rawraw.info/2017-05-26-task-runner.html</id>
     <published>2017-05-26T02:48:57.000Z</published>
     <updated>2017-06-21T03:04:56.000Z</updated>
     
@@ -872,17 +874,17 @@
     
     </summary>
     
-      <category term="知识点" scheme="http://www.rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-      <category term="widen" scheme="http://www.rawraw.info/tags/widen/"/>
+      <category term="widen" scheme="http://rawraw.info/tags/widen/"/>
     
   </entry>
   
   <entry>
     <title>design patterns - JavaScript设计模式</title>
-    <link href="http://www.rawraw.info/2017-05-25-design-patterns.html"/>
-    <id>http://www.rawraw.info/2017-05-25-design-patterns.html</id>
+    <link href="http://rawraw.info/2017-05-25-design-patterns.html"/>
+    <id>http://rawraw.info/2017-05-25-design-patterns.html</id>
     <published>2017-05-25T09:16:06.000Z</published>
     <updated>2017-06-09T08:08:24.000Z</updated>
     
@@ -933,17 +935,17 @@
     
     </summary>
     
-      <category term="知识点" scheme="http://www.rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-      <category term="JavaScript" scheme="http://www.rawraw.info/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>Front-end总结</title>
-    <link href="http://www.rawraw.info/2017-05-25-front-end.html"/>
-    <id>http://www.rawraw.info/2017-05-25-front-end.html</id>
+    <link href="http://rawraw.info/2017-05-25-front-end.html"/>
+    <id>http://rawraw.info/2017-05-25-front-end.html</id>
     <published>2017-05-25T08:31:48.000Z</published>
     <updated>2017-05-25T08:38:26.000Z</updated>
     
@@ -959,17 +961,17 @@
     
     </summary>
     
-      <category term="小结" scheme="http://www.rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
     
     
-      <category term="summary" scheme="http://www.rawraw.info/tags/summary/"/>
+      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
     
   </entry>
   
   <entry>
     <title>navicat for mysql安装问题</title>
-    <link href="http://www.rawraw.info/2017-05-16-navicat.html"/>
-    <id>http://www.rawraw.info/2017-05-16-navicat.html</id>
+    <link href="http://rawraw.info/2017-05-16-navicat.html"/>
+    <id>http://rawraw.info/2017-05-16-navicat.html</id>
     <published>2017-05-16T06:57:22.000Z</published>
     <updated>2017-05-16T07:23:02.000Z</updated>
     
@@ -985,14 +987,14 @@
     </summary>
     
     
-      <category term="mysql" scheme="http://www.rawraw.info/tags/mysql/"/>
+      <category term="mysql" scheme="http://rawraw.info/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>xampp配置虚拟主机</title>
-    <link href="http://www.rawraw.info/2017-05-16-xampp.html"/>
-    <id>http://www.rawraw.info/2017-05-16-xampp.html</id>
+    <link href="http://rawraw.info/2017-05-16-xampp.html"/>
+    <id>http://rawraw.info/2017-05-16-xampp.html</id>
     <published>2017-05-16T06:56:42.000Z</published>
     <updated>2017-05-16T07:21:52.000Z</updated>
     
@@ -1010,14 +1012,14 @@
     </summary>
     
     
-      <category term="xampp" scheme="http://www.rawraw.info/tags/xampp/"/>
+      <category term="xampp" scheme="http://rawraw.info/tags/xampp/"/>
     
   </entry>
   
   <entry>
     <title>http协议</title>
-    <link href="http://www.rawraw.info/2017-05-10-http.html"/>
-    <id>http://www.rawraw.info/2017-05-10-http.html</id>
+    <link href="http://rawraw.info/2017-05-10-http.html"/>
+    <id>http://rawraw.info/2017-05-10-http.html</id>
     <published>2017-05-10T01:37:26.000Z</published>
     <updated>2017-05-17T09:21:56.000Z</updated>
     
@@ -1033,10 +1035,10 @@
     
     </summary>
     
-      <category term="知识点" scheme="http://www.rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-      <category term="http" scheme="http://www.rawraw.info/tags/http/"/>
+      <category term="http" scheme="http://rawraw.info/tags/http/"/>
     
   </entry>
   
