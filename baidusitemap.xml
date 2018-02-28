@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://rawraw.info/2018-02-28-bug20180228.html</loc>
+    <lastmod>2018-02-28T04:24:33.980Z</lastmod>
+    <data>
+        <display>
+        <title>hexo提交问题</title>
+        <pubTime>2018-02-28T04:13:55.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="万恶BUG" url="http://rawraw.info/categories/%E4%B8%87%E6%81%B6BUG/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
-    <lastmod>2018-02-27T06:20:52.797Z</lastmod>
+    <lastmod>2018-02-28T04:11:19.462Z</lastmod>
     <data>
         <display>
         <title>git常用命令</title>
