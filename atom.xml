@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2018-02-28T06:00:20.920Z</updated>
+  <updated>2018-02-28T07:58:26.834Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -20,19 +20,19 @@
     <link href="http://rawraw.info/2018-02-28-bug20180228.html"/>
     <id>http://rawraw.info/2018-02-28-bug20180228.html</id>
     <published>2018-02-28T04:13:55.000Z</published>
-    <updated>2018-02-28T06:00:20.920Z</updated>
+    <updated>2018-02-28T07:58:26.834Z</updated>
     
     <content type="html"><![CDATA[<p>今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。</p>
-<p><div align="center"><br><img src="/images/bgus/0228001.png" alt="“封面”"><br></div><br><a id="more"></a></p>
+<p><div align="center"><br><img src="/images/bgus/20170228001.png" alt="“封面”"><br></div><br><a id="more"></a></p>
 <h1 id="TRY"><a href="#TRY" class="headerlink" title="TRY"></a>TRY</h1><h2 id="尝试一"><a href="#尝试一" class="headerlink" title="尝试一"></a>尝试一</h2><p>原因：<br>https方式的时候 在git remote add origin 的https url 里面没有用户名和密码<br>方案：<br><code>git remote add origin https://{username}:{password}@github.com/{username}/project.git</code><br> 或者直接修改 .git/config 隐藏文件 为git remote add origin <a href="https://{username}:{password}@github.com/{username}/project.git" target="_blank" rel="external">https://{username}:{password}@github.com/{username}/project.git</a> 格式<br>结果：<br>百度来的方案，查了N次，都是对的，添加了N次，都是已存在。</p>
 <h2 id="尝试二"><a href="#尝试二" class="headerlink" title="尝试二"></a>尝试二</h2><p>原因：<br>如果安装git客户端的时候没有勾选git命令在bash和cmd命令都有效，若是在cmd命令下则因为没有将git添加到windows的path。<br>方案：<br>在blog的目录打开git bash再尝试hexo d。<br>结果：<br>然并卵</p>
-<h2 id="尝试三"><a href="#尝试三" class="headerlink" title="尝试三"></a>尝试三</h2><p>原因：<br>git的版本bug<br>方案：<br>查看git版本<br><code>git version</code><br>结果：<br>我的是2.12.2windows.2。<br><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code>用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。<br><code>https://git-scm.com/download/win</code></p>
+<h2 id="尝试三"><a href="#尝试三" class="headerlink" title="尝试三"></a>尝试三</h2><p>原因：<br>git的版本bug<br>方案：<br>查看git版本<br><code>git version</code><br>结果：<br>我的是2.12.2windows.2。<br><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code>用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。<br><code>https://git-scm.com/download/win</code><br>搞了好久的vpn啊，还好最后升级之后真的解决了问题！开心值+100！！！</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。&lt;/p&gt;
-&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bgus/0228001.png&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bgus/20170228001.png&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
     
     </summary>
     
