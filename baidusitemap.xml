@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
-    <lastmod>2018-02-28T08:01:00.881Z</lastmod>
-    <data>
-        <display>
-        <title>git常用命令</title>
-        <pubTime>2018-01-27T06:06:34.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://rawraw.info/2018-02-28-bug20180228.html</loc>
-    <lastmod>2018-02-28T08:00:13.896Z</lastmod>
+    <lastmod>2018-02-28T08:12:47.238Z</lastmod>
     <data>
         <display>
         <title>hexo提交问题</title>
@@ -37,6 +17,26 @@
            
              
               <breadCrumb title="万恶BUG" url="http://rawraw.info/categories/%E4%B8%87%E6%81%B6BUG/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
+    <lastmod>2018-02-28T08:03:03.416Z</lastmod>
+    <data>
+        <display>
+        <title>git常用命令</title>
+        <pubTime>2018-01-27T06:06:34.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>
@@ -208,12 +208,12 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
+    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     <data>
         <display>
-        <title>任务流工具-taskrunner：Grunt、Gulp</title>
-        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
+        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
+        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
         
         <tag>widen</tag>
          
@@ -228,12 +228,12 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
+    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     <data>
         <display>
-        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
-        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
+        <title>任务流工具-taskrunner：Grunt、Gulp</title>
+        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
         
         <tag>widen</tag>
          

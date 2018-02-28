@@ -432,7 +432,7 @@
       
         
           <p>今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。</p>
-<p><div align=center><br><img src="/images/bugs/20170228001.png" alt="“封面”"><br></div><br>
+<div align=center><br><img src="/images/bugs/20170228001.png" alt="“封面”"><br></div>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018-02-28-bug20180228.html#more" rel="contents">
@@ -587,36 +587,14 @@
 
       
         
-          
-            <a id="more"></a>
-<h2 id="git升级"><a href="#git升级" class="headerlink" title="git升级"></a>git升级</h2><p><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code></p>
-<h2 id="查看用户名和邮箱"><a href="#查看用户名和邮箱" class="headerlink" title="查看用户名和邮箱"></a>查看用户名和邮箱</h2><p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
-<h2 id="修改用户名和邮箱"><a href="#修改用户名和邮箱" class="headerlink" title="修改用户名和邮箱"></a>修改用户名和邮箱</h2><p><code>$ git config --global user.name</code><br><code>$ git config --global user.email</code></p>
-<h2 id="初始化一个版本仓库"><a href="#初始化一个版本仓库" class="headerlink" title="初始化一个版本仓库"></a>初始化一个版本仓库</h2><p><code>$ git init</code></p>
-<h2 id="Clone远程版本库"><a href="#Clone远程版本库" class="headerlink" title="Clone远程版本库"></a>Clone远程版本库</h2><p><code>$ git clone addr.</code></p>
-<h2 id="添加远程版本库origin"><a href="#添加远程版本库origin" class="headerlink" title="添加远程版本库origin"></a>添加远程版本库origin</h2><p><code>$ git remote add origin addr.</code></p>
-<h2 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h2><p><code>$ git remote -v</code></p>
-<h2 id="提交你的修改"><a href="#提交你的修改" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><h2 id="添加当前修改的文件到暂存区"><a href="#添加当前修改的文件到暂存区" class="headerlink" title="添加当前修改的文件到暂存区"></a>添加当前修改的文件到暂存区</h2><p><code>$ git add .</code></p>
-<h2 id="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"><a href="#如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件" class="headerlink" title="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"></a>如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件</h2><p><code>$ git add -u</code></p>
-<h2 id="提交你的修改-1"><a href="#提交你的修改-1" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><p><code>$ git commit –m &amp;quot;你的注释&amp;quot;</code></p>
-<h2 id="推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支"><a href="#推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支" class="headerlink" title="推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]"></a>推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]</h2><p><code>$ git push origin master</code></p>
-<h2 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h2><p><code>$ git status</code></p>
-<h2 id="跟踪新文件"><a href="#跟踪新文件" class="headerlink" title="跟踪新文件"></a>跟踪新文件</h2><p><code>$ git add readme.txt</code></p>
-<h2 id="从当前跟踪列表移除文件，并完全删除"><a href="#从当前跟踪列表移除文件，并完全删除" class="headerlink" title="从当前跟踪列表移除文件，并完全删除"></a>从当前跟踪列表移除文件，并完全删除</h2><p><code>$ git rm readme.txt</code></p>
-<h2 id="仅在暂存区删除，保留文件在当前目录，不再跟踪"><a href="#仅在暂存区删除，保留文件在当前目录，不再跟踪" class="headerlink" title="仅在暂存区删除，保留文件在当前目录，不再跟踪"></a>仅在暂存区删除，保留文件在当前目录，不再跟踪</h2><p><code>$ git rm –cached readme.txt</code></p>
-<h2 id="重命名文件"><a href="#重命名文件" class="headerlink" title="重命名文件"></a>重命名文件</h2><p><code>$ git mv reademe.txt readme</code></p>
-<h2 id="查看提交的历史记录"><a href="#查看提交的历史记录" class="headerlink" title="查看提交的历史记录"></a>查看提交的历史记录</h2><p><code>$ git log</code></p>
-<h2 id="修改最后一次提交注释的，利用–amend参数"><a href="#修改最后一次提交注释的，利用–amend参数" class="headerlink" title="修改最后一次提交注释的，利用–amend参数"></a>修改最后一次提交注释的，利用–amend参数</h2><p><code>$ git checkout –- readme.txt</code></p>
-<h2 id="基本的分支管理"><a href="#基本的分支管理" class="headerlink" title="基本的分支管理"></a>基本的分支管理</h2><h2 id="创建一个分支"><a href="#创建一个分支" class="headerlink" title="创建一个分支"></a>创建一个分支</h2><p><code>$ git branch workspace</code></p>
-<h2 id="切换工作目录到workspace"><a href="#切换工作目录到workspace" class="headerlink" title="切换工作目录到workspace"></a>切换工作目录到workspace</h2><p><code>$ git chekcout workspace</code></p>
-<h2 id="将上面的命令合在一起，创建workspace分支并切换到workspace"><a href="#将上面的命令合在一起，创建workspace分支并切换到workspace" class="headerlink" title="将上面的命令合在一起，创建workspace分支并切换到workspace"></a>将上面的命令合在一起，创建workspace分支并切换到workspace</h2><p><code>$ git chekcout –b workspace</code></p>
-<h2 id="合并workspace分支，当前工作目录为master"><a href="#合并workspace分支，当前工作目录为master" class="headerlink" title="合并workspace分支，当前工作目录为master"></a>合并workspace分支，当前工作目录为master</h2><p><code>$ git merge workspace</code></p>
-<h2 id="合并完成后，没有出现冲突，删除workspace分支"><a href="#合并完成后，没有出现冲突，删除workspace分支" class="headerlink" title="合并完成后，没有出现冲突，删除workspace分支"></a>合并完成后，没有出现冲突，删除workspace分支</h2><p><code>$ git branch –d workspace</code></p>
-<h2 id="拉去远程仓库的数据，语法为-git-fetch-remote-name"><a href="#拉去远程仓库的数据，语法为-git-fetch-remote-name" class="headerlink" title="拉去远程仓库的数据，语法为 git fetch [remote-name]"></a>拉去远程仓库的数据，语法为 git fetch [remote-name]</h2><p><code>$ git fetch</code></p>
-<h2 id="fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"><a href="#fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并" class="headerlink" title="fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"></a>fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并</h2><p><code>$ git pull</code></p>
-<h2 id="查看远程仓库的信息"><a href="#查看远程仓库的信息" class="headerlink" title="查看远程仓库的信息"></a>查看远程仓库的信息</h2><p><code>$ git remote show origin</code></p>
-
-          
+          <p>git常用命令<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018-01-27-gitstudy.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
