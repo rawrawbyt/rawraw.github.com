@@ -3,9 +3,16 @@
   
     
     <entry>
+      <title><![CDATA[微信小程序是真的讨厌]]></title>
+      <url>%2F2018-03-01-wechatfuck.html</url>
+      <content type="text"><![CDATA[微信小程序出现好久了，一直没仔细了解。从一开始就是莫名的排斥，公司关于小程序的项目也是都直接丢给新人。今天抖音刷到一个吃饭吃什么的段子，就想说这很easy,自己写一个玩一下啊。嗯，写一个放哪儿，那就小程序吧。但是好像一点都不酷，嗯，那我给它做成云标签墙吧。 想象中，一切都很美好。 START原来做过一个小demo是这样子的。 讲道理一堆食物这样子滚应该很诱人吧。然后就开始一边看看文档一边写。一切顺利地进行到这一步 没法进行dom选择，点击效果之类的可以用事件驱动来操作dom，但是初始化的状态呢，所以每个tag的样式，x,y,z,opacity,color，animate都写在循环的标签里吗？一个标签括号里百来行代码很好看吗。。。获取未知数量的每个元素的scroll位置也是难搞。抱着一颗好学的心跑去百度，结果一堆得不到答案的人在求助。 QUESTION我是真的好菜。先放着慢慢想办法咯。其实，也可能是被jQuery惯出来的臭毛病吧。 getElement可以直接标签内操作，但是烦。 appendChild可以用模板做，但是烦。而且无限的append的好像就有点难做了。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[hexo提交问题]]></title>
       <url>%2F2018-02-28-bug20180228.html</url>
-      <content type="text"><![CDATA[fatal: could not read Username for ‘https://github.com&#39;:No error巴拉巴拉今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。 TRY尝试一原因：https方式的时候 在git remote add origin 的https url 里面没有用户名和密码方案：git remote add origin https://{username}:{password}@github.com/{username}/project.git或者直接修改.git/config隐藏文件为 git remote add origin https://{username}:{password}@github.com/{username}/project.git格式结果：查了N次，用户名都是对的，添加了N次，都是已存在。 尝试二原因：如果安装git客户端的时候没有勾选git命令在bash和cmd命令都有效，若是在cmd命令下则因为没有将git添加到windows的path。方案：在blog的目录打开git bash再尝试hexo d。结果：然并卵 尝试三原因：git的版本bug方案：查看git版本git version结果：我的是2.12.2windows.2。$ git clone git://git.kernel.org/pub/scm/git/git.git用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。https://git-scm.com/download/win搞了好久的vpn啊，还好最后升级之后真的解决了问题！开心值+100！！！]]></content>
+      <content type="text"><![CDATA[fatal: could not read Username for &#39;https://github.com&#39;:No error巴拉巴拉今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。 TRY尝试一原因：https方式的时候 在git remote add origin 的https url 里面没有用户名和密码方案：git remote add origin https://{username}:{password}@github.com/{username}/project.git或者直接修改.git/config隐藏文件为 git remote add origin https://{username}:{password}@github.com/{username}/project.git格式结果：查了N次，用户名都是对的，添加了N次，都是已存在。 尝试二原因：如果安装git客户端的时候没有勾选git命令在bash和cmd命令都有效，若是在cmd命令下则因为没有将git添加到windows的path。方案：在blog的目录打开git bash再尝试hexo d。结果：然并卵 尝试三原因：git的版本bug方案：查看git版本git version结果：我的是2.12.2windows.2。$ git clone git://git.kernel.org/pub/scm/git/git.git用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。https://git-scm.com/download/win搞了好久的vpn啊，还好最后升级之后真的解决了问题！开心值+100！！！]]></content>
     </entry>
 
     
@@ -38,9 +45,9 @@
 
     
     <entry>
-      <title><![CDATA[毒鸡汤]]></title>
-      <url>%2F2017-12-08-soup.html</url>
-      <content type="text"><![CDATA[在家里闲置了很久的大脑，可能就是鸡汤喝得太多了吧]]></content>
+      <title><![CDATA[CSS hack]]></title>
+      <url>%2F2017-07-07-hack.html</url>
+      <content type="text"><![CDATA[待整理。目前还不怎么需要，先搜集了一下网上大家的方法，以后方便看咯。 概念 由于不同种类的浏览器（Internet Explorer,Safari,Mozilla Firefox,Chrome...）或者同一浏览器的不同版本 对CSS的解析认识不一样，导致生成的页面效果不一样。针对不同的浏览器去写不同的CSS，让它能够同时兼容不同的浏览器，能在不同的浏览器中也能得到我们想要的页面效果。 整理IE 6 1234* html #footer &#123; position:absolute; top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+&apos;px&apos;);&#125; Selector Hacks12/* IE6 and below */* html #uno &#123; color: red &#125; 12/* IE7 */*:first-child+html #dos &#123; color: red &#125; 12/* IE7, FF, Saf, Opera */html&gt;body #tres &#123; color: red &#125; 12/* IE8, FF, Saf, Opera (Everything but IE 6,7) */html&gt;/**/body #cuatro &#123; color: red &#125; 12/* Opera 9.27 and below, safari 2 */html:first-child #cinco &#123; color: red &#125; 12/* Safari 2-3 */html[xmlns*=&quot;&quot;] body:last-child #seis &#123; color: red &#125; 12/* safari 3+, chrome 1+, opera9+, ff 3.5+ */body:first-of-type #ocho &#123; color: red &#125; 12/* saf3+, chrome1+ */@media screen and (-webkit-min-device-pixel-ratio:0) &#123;#diez &#123; color: red &#125;&#125; 12/* iPhone / mobile webkit */@media screen and (max-device-width: 480px) &#123;#veintiseis &#123; color: red &#125;&#125; 12/* Safari 2 - 3.1 */html[xmlns*=&quot;&quot;]:root #trece &#123; color: red &#125; 12/* Everything but IE6-8 */:root *&gt; #quince &#123; color: red &#125; 12/* IE7 */*+html #dieciocho &#123; color: red &#125; 12/* Firefox only. 1+ */#veinticuatro, x:-moz-any-link &#123; color: red &#125; 12/* Firefox 3.0+ */#veinticinco, x:-moz-any-link, x:default &#123; color: red &#125; Attribute Hacks12/* IE6 */#once &#123; _color: blue &#125; 12/* IE6, IE7 */#doce &#123; *color: blue; /* or #color: blue */ &#125; 12/* Everything but IE6 */#diecisiete &#123; color/**/: blue &#125; 12/* IE6, IE7, IE8 */#diecinueve &#123; color: blue\9; &#125; 12/* IE7, IE8 */#veinte &#123; color/*\**/: blue\9; &#125; 12/* IE6, IE7 -- acts as an !important */#veintesiete &#123; color: blue !ie; &#125; /* string after ! can be anything */]]></content>
     </entry>
 
     
