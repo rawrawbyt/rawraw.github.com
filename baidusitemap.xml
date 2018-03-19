@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://rawraw.info/2018-03-19-cssbase.html</loc>
+    <lastmod>2018-03-19T13:57:40.847Z</lastmod>
+    <data>
+        <display>
+        <title>css基础小结</title>
+        <pubTime>2018-03-19T12:52:43.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rawraw.info/2018-02-28-bug20180228.html</loc>
     <lastmod>2018-03-08T06:21:22.413Z</lastmod>
     <data>
@@ -31,9 +51,9 @@
         <title>CSS hack</title>
         <pubTime>2017-07-07T05:21:24.000Z</pubTime>
         
-        <tag>css</tag>
-         
         <tag>兼容</tag>
+         
+        <tag>css</tag>
          
         <tag>杂</tag>
          
@@ -232,12 +252,12 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
+    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     <data>
         <display>
-        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
-        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
+        <title>任务流工具-taskrunner：Grunt、Gulp</title>
+        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
         
         <tag>widen</tag>
          
@@ -252,12 +272,12 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
+    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     <data>
         <display>
-        <title>任务流工具-taskrunner：Grunt、Gulp</title>
-        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
+        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
+        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
         
         <tag>widen</tag>
          
@@ -401,9 +421,9 @@
         <title>Babel安装、编译、配置（cmd和phpstorm）</title>
         <pubTime>2017-03-27T01:56:18.000Z</pubTime>
         
-        <tag>babel</tag>
-         
         <tag>JavaScript</tag>
+         
+        <tag>babel</tag>
          
         <tag>es6</tag>
          

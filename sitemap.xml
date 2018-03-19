@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rawraw.info/2018-03-19-cssbase.html</loc>
+    
+    <lastmod>2018-03-19T13:57:40.847Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://rawraw.info/2018-02-28-bug20180228.html</loc>
     
     <lastmod>2018-03-08T06:21:22.413Z</lastmod>
@@ -79,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
+    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
     
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
+    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
     
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     
