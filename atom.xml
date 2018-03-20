@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2018-03-19T13:57:40.847Z</updated>
+  <updated>2018-03-19T15:17:41.878Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://rawraw.info/2018-03-19-cssbase.html"/>
     <id>http://rawraw.info/2018-03-19-cssbase.html</id>
     <published>2018-03-19T12:52:43.000Z</published>
-    <updated>2018-03-19T13:57:40.847Z</updated>
+    <updated>2018-03-19T15:17:41.878Z</updated>
     
     <content type="html"><![CDATA[<p>css tips~</p>
 <a id="more"></a>
@@ -87,6 +87,7 @@
 <h2 id="android：position-fixed无效"><a href="#android：position-fixed无效" class="headerlink" title="android：position:fixed无效"></a>android：position:fixed无效</h2><p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no&quot;/&gt;</code></p>
 <h2 id="手动写动画的最小时间间隔是多久"><a href="#手动写动画的最小时间间隔是多久" class="headerlink" title="手动写动画的最小时间间隔是多久"></a>手动写动画的最小时间间隔是多久</h2><p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms。</p>
 <h2 id="inline-block间隙"><a href="#inline-block间隙" class="headerlink" title="inline-block间隙"></a>inline-block间隙</h2><p>float/font-size:0、letter-spacing、word-spacing</p>
+<h2 id="行内级元素末尾实现换行-用伪元素代替"><a href="#行内级元素末尾实现换行-用伪元素代替" class="headerlink" title="行内级元素末尾实现换行,用伪元素代替"></a>行内级元素末尾实现换行,用伪元素代替<br></h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.test::after&#123;</div><div class="line">    content: "A";//0x000A,00A</div><div class="line">    white-space: pre;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>百分比的padding和margin的依据都是父元素的width</li>
 <li>视差滚动插件：parallax-scrolling</li>
@@ -104,6 +105,39 @@
     
     
       <category term="css" scheme="http://rawraw.info/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IoC理念</title>
+    <link href="http://rawraw.info/2018-03-07-ioc.html"/>
+    <id>http://rawraw.info/2018-03-07-ioc.html</id>
+    <published>2018-03-07T14:52:13.000Z</published>
+    <updated>2018-03-19T15:13:18.625Z</updated>
+    
+    <content type="html"><![CDATA[<p>vue这么火react这么火，该看看IoC咯~<br>现在都喜欢对项目拆解成多个模块/组件来组合使用，以此提高code复用性。一个复杂组件总会依赖其他组件来协同完成某个逻辑功能。<br>组件越复杂，依赖越多，可复用性就越差。然后我们就可以用一下这个IoC理念咯。嗯，一种全新的设计模式。</p>
+<p><div align="center"><br><img src="/images/bg/0046.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><blockquote>
+<p>IoC 全称 Inversion of Control，中文术语为依赖倒置（反转），包含两个准则：</p>
+<blockquote>
+<p> 1.高层次的模块不应该依赖于低层次的模块，他们都应该依赖于抽象<br> 2.抽象不应该依赖于具体实现，具体实现应该依赖于抽象</p>
+</blockquote>
+</blockquote>
+<p>核心思想：面向接口编程。</p>
+<h1 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h1><p>哇 炸，再理解一下。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;vue这么火react这么火，该看看IoC咯~&lt;br&gt;现在都喜欢对项目拆解成多个模块/组件来组合使用，以此提高code复用性。一个复杂组件总会依赖其他组件来协同完成某个逻辑功能。&lt;br&gt;组件越复杂，依赖越多，可复用性就越差。然后我们就可以用一下这个IoC理念咯。嗯，一种全新的设计模式。&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0046.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="干货" scheme="http://rawraw.info/categories/%E5%B9%B2%E8%B4%A7/"/>
+    
+    
+      <category term="IoC" scheme="http://rawraw.info/tags/IoC/"/>
     
   </entry>
   
@@ -177,28 +211,29 @@
     <link href="http://rawraw.info/2018-01-27-gitstudy.html"/>
     <id>http://rawraw.info/2018-01-27-gitstudy.html</id>
     <published>2018-01-27T06:06:34.000Z</published>
-    <updated>2018-02-28T08:03:03.416Z</updated>
+    <updated>2018-03-20T04:29:17.117Z</updated>
     
     <content type="html"><![CDATA[<p>git常用命令<br><a id="more"></a></p>
-<h2 id="git升级"><a href="#git升级" class="headerlink" title="git升级"></a>git升级</h2><p><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code></p>
-<h2 id="查看用户名和邮箱"><a href="#查看用户名和邮箱" class="headerlink" title="查看用户名和邮箱"></a>查看用户名和邮箱</h2><p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
+<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="git升级"><a href="#git升级" class="headerlink" title="git升级"></a>git升级</h2><p><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code></p>
+<h1 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h1><h2 id="查看用户名和邮箱"><a href="#查看用户名和邮箱" class="headerlink" title="查看用户名和邮箱"></a>查看用户名和邮箱</h2><p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
 <h2 id="修改用户名和邮箱"><a href="#修改用户名和邮箱" class="headerlink" title="修改用户名和邮箱"></a>修改用户名和邮箱</h2><p><code>$ git config --global user.name</code><br><code>$ git config --global user.email</code></p>
 <h2 id="初始化一个版本仓库"><a href="#初始化一个版本仓库" class="headerlink" title="初始化一个版本仓库"></a>初始化一个版本仓库</h2><p><code>$ git init</code></p>
 <h2 id="Clone远程版本库"><a href="#Clone远程版本库" class="headerlink" title="Clone远程版本库"></a>Clone远程版本库</h2><p><code>$ git clone addr.</code></p>
 <h2 id="添加远程版本库origin"><a href="#添加远程版本库origin" class="headerlink" title="添加远程版本库origin"></a>添加远程版本库origin</h2><p><code>$ git remote add origin addr.</code></p>
 <h2 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h2><p><code>$ git remote -v</code></p>
-<h2 id="提交你的修改"><a href="#提交你的修改" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><h2 id="添加当前修改的文件到暂存区"><a href="#添加当前修改的文件到暂存区" class="headerlink" title="添加当前修改的文件到暂存区"></a>添加当前修改的文件到暂存区</h2><p><code>$ git add .</code></p>
+<h1 id="三、提交你的修改"><a href="#三、提交你的修改" class="headerlink" title="三、提交你的修改"></a>三、提交你的修改</h1><h2 id="添加当前修改的文件到暂存区"><a href="#添加当前修改的文件到暂存区" class="headerlink" title="添加当前修改的文件到暂存区"></a>添加当前修改的文件到暂存区</h2><p><code>$ git add .</code></p>
 <h2 id="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"><a href="#如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件" class="headerlink" title="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"></a>如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件</h2><p><code>$ git add -u</code></p>
-<h2 id="提交你的修改-1"><a href="#提交你的修改-1" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><p><code>$ git commit –m &amp;quot;你的注释&amp;quot;</code></p>
+<h2 id="提交你的修改"><a href="#提交你的修改" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><p><code>$ git commit –m &amp;quot;你的注释&amp;quot;</code></p>
 <h2 id="推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支"><a href="#推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支" class="headerlink" title="推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]"></a>推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]</h2><p><code>$ git push origin master</code></p>
 <h2 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h2><p><code>$ git status</code></p>
 <h2 id="跟踪新文件"><a href="#跟踪新文件" class="headerlink" title="跟踪新文件"></a>跟踪新文件</h2><p><code>$ git add readme.txt</code></p>
 <h2 id="从当前跟踪列表移除文件，并完全删除"><a href="#从当前跟踪列表移除文件，并完全删除" class="headerlink" title="从当前跟踪列表移除文件，并完全删除"></a>从当前跟踪列表移除文件，并完全删除</h2><p><code>$ git rm readme.txt</code></p>
 <h2 id="仅在暂存区删除，保留文件在当前目录，不再跟踪"><a href="#仅在暂存区删除，保留文件在当前目录，不再跟踪" class="headerlink" title="仅在暂存区删除，保留文件在当前目录，不再跟踪"></a>仅在暂存区删除，保留文件在当前目录，不再跟踪</h2><p><code>$ git rm –cached readme.txt</code></p>
 <h2 id="重命名文件"><a href="#重命名文件" class="headerlink" title="重命名文件"></a>重命名文件</h2><p><code>$ git mv reademe.txt readme</code></p>
-<h2 id="查看提交的历史记录"><a href="#查看提交的历史记录" class="headerlink" title="查看提交的历史记录"></a>查看提交的历史记录</h2><p><code>$ git log</code></p>
+<h2 id="查看当前分支的存在提交历史记录"><a href="#查看当前分支的存在提交历史记录" class="headerlink" title="查看当前分支的存在提交历史记录"></a>查看当前分支的存在提交历史记录</h2><p><code>$ git log</code>不包括诸如删除的或被合并的提交</p>
+<h2 id="查看当前分支所有操作历史"><a href="#查看当前分支所有操作历史" class="headerlink" title="查看当前分支所有操作历史"></a>查看当前分支所有操作历史</h2><p><code>$ git reflog</code>诸如历史提交记录，撤销，合并提交等详细历史记录</p>
 <h2 id="修改最后一次提交注释的，利用–amend参数"><a href="#修改最后一次提交注释的，利用–amend参数" class="headerlink" title="修改最后一次提交注释的，利用–amend参数"></a>修改最后一次提交注释的，利用–amend参数</h2><p><code>$ git checkout –- readme.txt</code></p>
-<h2 id="基本的分支管理"><a href="#基本的分支管理" class="headerlink" title="基本的分支管理"></a>基本的分支管理</h2><h2 id="创建一个分支"><a href="#创建一个分支" class="headerlink" title="创建一个分支"></a>创建一个分支</h2><p><code>$ git branch workspace</code></p>
+<h1 id="四、基本的分支管理"><a href="#四、基本的分支管理" class="headerlink" title="四、基本的分支管理"></a>四、基本的分支管理</h1><h2 id="创建一个分支"><a href="#创建一个分支" class="headerlink" title="创建一个分支"></a>创建一个分支</h2><p><code>$ git branch workspace</code></p>
 <h2 id="切换工作目录到workspace"><a href="#切换工作目录到workspace" class="headerlink" title="切换工作目录到workspace"></a>切换工作目录到workspace</h2><p><code>$ git chekcout workspace</code></p>
 <h2 id="将上面的命令合在一起，创建workspace分支并切换到workspace"><a href="#将上面的命令合在一起，创建workspace分支并切换到workspace" class="headerlink" title="将上面的命令合在一起，创建workspace分支并切换到workspace"></a>将上面的命令合在一起，创建workspace分支并切换到workspace</h2><p><code>$ git chekcout –b workspace</code></p>
 <h2 id="合并workspace分支，当前工作目录为master"><a href="#合并workspace分支，当前工作目录为master" class="headerlink" title="合并workspace分支，当前工作目录为master"></a>合并workspace分支，当前工作目录为master</h2><p><code>$ git merge workspace</code></p>
@@ -206,6 +241,9 @@
 <h2 id="拉去远程仓库的数据，语法为-git-fetch-remote-name"><a href="#拉去远程仓库的数据，语法为-git-fetch-remote-name" class="headerlink" title="拉去远程仓库的数据，语法为 git fetch [remote-name]"></a>拉去远程仓库的数据，语法为 git fetch [remote-name]</h2><p><code>$ git fetch</code></p>
 <h2 id="fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"><a href="#fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并" class="headerlink" title="fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"></a>fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并</h2><p><code>$ git pull</code></p>
 <h2 id="查看远程仓库的信息"><a href="#查看远程仓库的信息" class="headerlink" title="查看远程仓库的信息"></a>查看远程仓库的信息</h2><p><code>$ git remote show origin</code></p>
+<h1 id="五、合并"><a href="#五、合并" class="headerlink" title="五、合并"></a>五、合并</h1><h2 id="合并的commit的前一个commit节点"><a href="#合并的commit的前一个commit节点" class="headerlink" title="合并的commit的前一个commit节点"></a>合并的commit的前一个commit节点</h2><p><code>$ git rebase -i （commitHash）</code><br>pick：简写p，启用该commit；<br>reword：简写r，使用该commit，但是修改提交信息，修改后可以继续编辑后面的提交信息；<br>edit：简写e，使用commit，停止合并该commit；<br>squash：简写s，使用该commit，并将该commit并入前一commit；<br>drop：简写d，移除该commit；</p>
+<h1 id="六、撤销"><a href="#六、撤销" class="headerlink" title="六、撤销"></a>六、撤销</h1><h2 id="撤销一个提交的同时会创建一个新的提交"><a href="#撤销一个提交的同时会创建一个新的提交" class="headerlink" title="撤销一个提交的同时会创建一个新的提交"></a>撤销一个提交的同时会创建一个新的提交</h2><p><code>$ git revert head@{19}</code><br>撤销提交时若多个提交修改了同一文件可能会出现冲突，需要处理冲突后，暂存：<code>$ git add.</code><br>然后继续执行revert操作：<code>$ git revert --continue</code></p>
+<h2 id="期望撤销的提交是最近独立存在的，并没有发生合并"><a href="#期望撤销的提交是最近独立存在的，并没有发生合并" class="headerlink" title="期望撤销的提交是最近独立存在的，并没有发生合并"></a>期望撤销的提交是最近独立存在的，并没有发生合并</h2><p><code>$ git reset （commitHash）</code></p>
 ]]></content>
     
     <summary type="html">
@@ -513,6 +551,55 @@
     
     
       <category term="daydayup" scheme="http://rawraw.info/tags/daydayup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node.js学习</title>
+    <link href="http://rawraw.info/2017-07-20-node.html"/>
+    <id>http://rawraw.info/2017-07-20-node.html</id>
+    <published>2017-07-20T04:33:31.000Z</published>
+    <updated>2018-03-20T05:16:30.941Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h1><p>浏览器内核实际上分为两个部分:渲染引擎和 JavaScript 引擎。前者负责渲染 HTML + CSS，后者则负责运行 JavaScript。<br>实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。<br>Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p>
+<h1 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h1><ul>
+<li>实时性应用，比如在线多人协作工具，网页聊天应用等。</li>
+<li>以 I/O 为主的高并发应用，比如为客户端提供 API，读取数据库。</li>
+<li>流式应用，比如客户端经常上传文件。</li>
+<li>前后端分离。</li>
+</ul>
+<h4 id="RESTful-API"><a href="#RESTful-API" class="headerlink" title="RESTful API"></a>RESTful API</h4><blockquote>
+<p>这是NodeJS最理想的应用场景，可以处理数万条连接，本身没有太多的逻辑，只需要请求API，组织数据进行返回即可。它本质上只是从某个数据库中查找一些值并将它们组成一个响应。由于响应是少量文本，入站请求也是少量的文本，因此流量不高，一台机器甚至也可以处理最繁忙的公司的API需求。</p>
+</blockquote>
+<h4 id="统一Web应用的UI层"><a href="#统一Web应用的UI层" class="headerlink" title="统一Web应用的UI层"></a>统一Web应用的UI层</h4><blockquote>
+<p>目前MVC的架构，在某种意义上来说，Web开发有两个UI层，一个是在浏览器里面我们最终看到的，另一个在server端，负责生成和拼接页面。</p>
+</blockquote>
+<h4 id="大量Ajax请求的应用"><a href="#大量Ajax请求的应用" class="headerlink" title="大量Ajax请求的应用"></a>大量Ajax请求的应用</h4><blockquote>
+<p>例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，NodeJS能响应大量的并发请求。</p>
+</blockquote>
+<p>　总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。</p>
+<h1 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h1><ul>
+<li>不适合 CPU 密集型的任务，比如人工智能方面的计算，视频、图片的处理等。</li>
+</ul>
+<h1 id="辅助概念的理解"><a href="#辅助概念的理解" class="headerlink" title="辅助概念的理解"></a>辅助概念的理解</h1><p>看不懂啊看不懂</p>
+<h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><h2 id="非阻塞-I-O"><a href="#非阻塞-I-O" class="headerlink" title="非阻塞 I/O"></a>非阻塞 I/O</h2><h3 id="网络-I-O"><a href="#网络-I-O" class="headerlink" title="网络 I/O"></a>网络 I/O</h3><h3 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h3><h2 id="事件循环"><a href="#事件循环" class="headerlink" title="事件循环"></a>事件循环</h2><h2 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="node" scheme="http://rawraw.info/tags/node/"/>
     
   </entry>
   
@@ -1092,55 +1179,6 @@
     
     
       <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Front-end总结</title>
-    <link href="http://rawraw.info/2017-05-25-front-end.html"/>
-    <id>http://rawraw.info/2017-05-25-front-end.html</id>
-    <published>2017-05-25T08:31:48.000Z</published>
-    <updated>2017-05-25T08:38:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>前端学习流程整理、我的小计划。然后可能就是大神了吧，哈哈哈哈哈哈哈哈哈哈<del>~</del></p>
-<p><div align="center"><br><img src="/images/bg/0041.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<p>要不要画个图 我先纠结几天吧、</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;前端学习流程整理、我的小计划。然后可能就是大神了吧，哈哈哈哈哈哈哈哈哈哈&lt;del&gt;~&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0041.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
-    
-    
-      <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>navicat for mysql安装问题</title>
-    <link href="http://rawraw.info/2017-05-16-navicat.html"/>
-    <id>http://rawraw.info/2017-05-16-navicat.html</id>
-    <published>2017-05-16T06:57:22.000Z</published>
-    <updated>2017-05-16T07:23:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>navicat for mysql安装问题小集合</p>
-<p><div align="center"><br><img src="/images/bg/0024.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
-<h1 id="1045"><a href="#1045" class="headerlink" title="1045"></a>1045</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">C:\xampp\MySQL\bin mysql -u root mysql  </div><div class="line">mysql&gt; UPDATE user SET Password=PASSWORD(&apos;newpassword&apos;) where USER=&apos;root&apos;;</div><div class="line">mysql&gt; FLUSH PRIVILEGES;</div><div class="line">mysql&gt; quit</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;navicat for mysql安装问题小集合&lt;/p&gt;
-&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0024.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="mysql" scheme="http://rawraw.info/tags/mysql/"/>
     
   </entry>
   

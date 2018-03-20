@@ -4,6 +4,106 @@
 
     
   <url>
+    <loc>http://rawraw.info/2017-05-25-front-end.html</loc>
+    <lastmod>2018-03-20T05:27:45.450Z</lastmod>
+    <data>
+        <display>
+        <title>Front-end总结</title>
+        <pubTime>2017-05-25T08:31:48.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017-07-20-node.html</loc>
+    <lastmod>2018-03-20T05:16:30.941Z</lastmod>
+    <data>
+        <display>
+        <title>node.js学习</title>
+        <pubTime>2017-07-20T04:33:31.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
+    <lastmod>2018-03-20T04:29:17.117Z</lastmod>
+    <data>
+        <display>
+        <title>git常用命令</title>
+        <pubTime>2018-01-27T06:06:34.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2018-03-19-cssbase.html</loc>
+    <lastmod>2018-03-19T15:17:41.878Z</lastmod>
+    <data>
+        <display>
+        <title>css基础小结</title>
+        <pubTime>2018-03-19T12:52:43.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2018-03-07-ioc.html</loc>
+    <lastmod>2018-03-19T15:13:18.625Z</lastmod>
+    <data>
+        <display>
+        <title>IoC理念</title>
+        <pubTime>2018-03-07T14:52:13.000Z</pubTime>
+        
+        <tag>IoC</tag>
+         
+         
+           
+             
+              <breadCrumb title="干货" url="http://rawraw.info/categories/%E5%B9%B2%E8%B4%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rawraw.info/2017-04-12-interview.html</loc>
     <lastmod>2018-03-19T14:46:28.890Z</lastmod>
     <data>
@@ -39,26 +139,6 @@
            
              
               <breadCrumb title="JavaScript要仔细学" url="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rawraw.info/2018-03-19-cssbase.html</loc>
-    <lastmod>2018-03-19T13:57:40.847Z</lastmod>
-    <data>
-        <display>
-        <title>css基础小结</title>
-        <pubTime>2018-03-19T12:52:43.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
           
         </display>
     </data>
@@ -123,26 +203,6 @@
            
              
               <breadCrumb title="待解决" url="http://rawraw.info/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
-    <lastmod>2018-02-28T08:03:03.416Z</lastmod>
-    <data>
-        <display>
-        <title>git常用命令</title>
-        <pubTime>2018-01-27T06:06:34.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>
@@ -421,9 +481,9 @@
         <title>Babel安装、编译、配置（cmd和phpstorm）</title>
         <pubTime>2017-03-27T01:56:18.000Z</pubTime>
         
-        <tag>babel</tag>
-         
         <tag>JavaScript</tag>
+         
+        <tag>babel</tag>
          
         <tag>es6</tag>
          
@@ -431,26 +491,6 @@
            
              
               <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rawraw.info/2017-05-25-front-end.html</loc>
-    <lastmod>2017-05-25T08:38:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>Front-end总结</title>
-        <pubTime>2017-05-25T08:31:48.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-         
-           
-             
-              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
           
         </display>
     </data>
