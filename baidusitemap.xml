@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>http://rawraw.info/2017-04-12-interview.html</loc>
+    <lastmod>2018-03-23T06:07:15.731Z</lastmod>
+    <data>
+        <display>
+        <title>面试大宝典</title>
+        <pubTime>2017-04-12T03:07:57.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017-05-10-http.html</loc>
+    <lastmod>2018-03-23T06:00:22.505Z</lastmod>
+    <data>
+        <display>
+        <title>http协议</title>
+        <pubTime>2017-05-10T01:37:26.000Z</pubTime>
+        
+        <tag>http</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rawraw.info/2017-05-25-front-end.html</loc>
-    <lastmod>2018-03-20T05:27:45.450Z</lastmod>
+    <lastmod>2018-03-23T05:53:09.603Z</lastmod>
     <data>
         <display>
         <title>Front-end总结</title>
@@ -24,8 +66,108 @@
 
     
   <url>
+    <loc>http://rawraw.info/2017-05-25-design-patterns.html</loc>
+    <lastmod>2018-03-23T05:52:15.292Z</lastmod>
+    <data>
+        <display>
+        <title>design patterns - JavaScript设计模式</title>
+        <pubTime>2017-05-25T09:16:06.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017-06-12-js01.html</loc>
+    <lastmod>2018-03-23T05:45:39.316Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript要仔细学之一//apply( )和call( )的区别</title>
+        <pubTime>2017-06-12T08:18:56.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript要仔细学" url="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2017-07-21-angularcompare.html</loc>
+    <lastmod>2018-03-23T05:43:05.631Z</lastmod>
+    <data>
+        <display>
+        <title>Angular 1 vs. Angular 2</title>
+        <pubTime>2017-07-21T05:26:52.000Z</pubTime>
+        
+        <tag>angular</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记" url="http://rawraw.info/categories/%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2018-03-23-compatibility.html</loc>
+    <lastmod>2018-03-23T05:38:26.774Z</lastmod>
+    <data>
+        <display>
+        <title>移动端兼容性整理以及优化</title>
+        <pubTime>2018-03-23T05:28:21.000Z</pubTime>
+        
+        <tag>兼容</tag>
+         
+         
+           
+             
+              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rawraw.info/2018-03-23-temporay.html</loc>
+    <lastmod>2018-03-23T05:36:07.606Z</lastmod>
+    <data>
+        <display>
+        <title>暂放</title>
+        <pubTime>2018-03-23T05:28:50.000Z</pubTime>
+        
+        <tag>杂</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂" url="http://rawraw.info/categories/%E6%9D%82/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rawraw.info/2017-07-20-node.html</loc>
-    <lastmod>2018-03-20T05:16:30.941Z</lastmod>
+    <lastmod>2018-03-20T05:16:30.942Z</lastmod>
     <data>
         <display>
         <title>node.js学习</title>
@@ -45,7 +187,7 @@
     
   <url>
     <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
-    <lastmod>2018-03-20T04:29:17.117Z</lastmod>
+    <lastmod>2018-03-20T04:29:17.118Z</lastmod>
     <data>
         <display>
         <title>git常用命令</title>
@@ -104,28 +246,6 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-04-12-interview.html</loc>
-    <lastmod>2018-03-19T14:46:28.890Z</lastmod>
-    <data>
-        <display>
-        <title>面试大宝典</title>
-        <pubTime>2017-04-12T03:07:57.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>面试</tag>
-         
-         
-           
-             
-              <breadCrumb title="小结" url="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://rawraw.info/2017-06-28-js02.html</loc>
     <lastmod>2018-03-19T14:45:34.384Z</lastmod>
     <data>
@@ -167,15 +287,15 @@
     
   <url>
     <loc>http://rawraw.info/2017-07-07-hack.html</loc>
-    <lastmod>2018-03-08T05:45:49.744Z</lastmod>
+    <lastmod>2018-03-08T05:45:49.745Z</lastmod>
     <data>
         <display>
         <title>CSS hack</title>
         <pubTime>2017-07-07T05:21:24.000Z</pubTime>
         
-        <tag>css</tag>
-         
         <tag>兼容</tag>
+         
+        <tag>css</tag>
          
         <tag>杂</tag>
          
@@ -251,7 +371,7 @@
     
   <url>
     <loc>http://rawraw.info/2017-12-19-plan2018.html</loc>
-    <lastmod>2017-12-19T06:28:20.730Z</lastmod>
+    <lastmod>2017-12-19T06:28:20.731Z</lastmod>
     <data>
         <display>
         <title>2018前端学习计划</title>
@@ -312,12 +432,12 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
+    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     <data>
         <display>
-        <title>任务流工具-taskrunner：Grunt、Gulp</title>
-        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
+        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
+        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
         
         <tag>widen</tag>
          
@@ -332,12 +452,12 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
+    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     <data>
         <display>
-        <title>模块打包-bundler：browserify、webpack、RequireJS/AMD</title>
-        <pubTime>2017-05-26T03:00:28.000Z</pubTime>
+        <title>任务流工具-taskrunner：Grunt、Gulp</title>
+        <pubTime>2017-05-26T02:48:57.000Z</pubTime>
         
         <tag>widen</tag>
          
@@ -434,46 +554,6 @@
 
     
   <url>
-    <loc>http://rawraw.info/2017-06-12-js01.html</loc>
-    <lastmod>2017-06-12T08:33:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript要仔细学之一//apply( )和call( )的区别</title>
-        <pubTime>2017-06-12T08:18:56.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript要仔细学" url="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rawraw.info/2017-05-25-design-patterns.html</loc>
-    <lastmod>2017-06-09T08:08:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>design patterns - JavaScript设计模式</title>
-        <pubTime>2017-05-25T09:16:06.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://rawraw.info/2017-03-27-babel.html</loc>
     <lastmod>2017-05-26T08:11:38.000Z</lastmod>
     <data>
@@ -481,9 +561,9 @@
         <title>Babel安装、编译、配置（cmd和phpstorm）</title>
         <pubTime>2017-03-27T01:56:18.000Z</pubTime>
         
-        <tag>JavaScript</tag>
-         
         <tag>babel</tag>
+         
+        <tag>JavaScript</tag>
          
         <tag>es6</tag>
          
@@ -491,26 +571,6 @@
            
              
               <breadCrumb title="学习笔记" url="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rawraw.info/2017-05-10-http.html</loc>
-    <lastmod>2017-05-17T09:21:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>http协议</title>
-        <pubTime>2017-05-10T01:37:26.000Z</pubTime>
-        
-        <tag>http</tag>
-         
-         
-           
-             
-              <breadCrumb title="知识点" url="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
           
         </display>
     </data>

@@ -2,23 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rawraw.info/2017-04-12-interview.html</loc>
+    
+    <lastmod>2018-03-23T06:07:15.731Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2017-05-10-http.html</loc>
+    
+    <lastmod>2018-03-23T06:00:22.505Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://rawraw.info/2017-05-25-front-end.html</loc>
     
-    <lastmod>2018-03-20T05:27:45.450Z</lastmod>
+    <lastmod>2018-03-23T05:53:09.603Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2017-05-25-design-patterns.html</loc>
+    
+    <lastmod>2018-03-23T05:52:15.292Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2017-06-12-js01.html</loc>
+    
+    <lastmod>2018-03-23T05:45:39.316Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2017-07-21-angularcompare.html</loc>
+    
+    <lastmod>2018-03-23T05:43:05.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2018-03-23-compatibility.html</loc>
+    
+    <lastmod>2018-03-23T05:38:26.774Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2018-03-23-temporay.html</loc>
+    
+    <lastmod>2018-03-23T05:36:07.606Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://rawraw.info/2017-07-20-node.html</loc>
     
-    <lastmod>2018-03-20T05:16:30.941Z</lastmod>
+    <lastmod>2018-03-20T05:16:30.942Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
     
-    <lastmod>2018-03-20T04:29:17.117Z</lastmod>
+    <lastmod>2018-03-20T04:29:17.118Z</lastmod>
     
   </url>
   
@@ -33,13 +82,6 @@
     <loc>http://rawraw.info/2018-03-07-ioc.html</loc>
     
     <lastmod>2018-03-19T15:13:18.625Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rawraw.info/2017-04-12-interview.html</loc>
-    
-    <lastmod>2018-03-19T14:46:28.890Z</lastmod>
     
   </url>
   
@@ -60,7 +102,7 @@
   <url>
     <loc>http://rawraw.info/2017-07-07-hack.html</loc>
     
-    <lastmod>2018-03-08T05:45:49.744Z</lastmod>
+    <lastmod>2018-03-08T05:45:49.745Z</lastmod>
     
   </url>
   
@@ -88,7 +130,7 @@
   <url>
     <loc>http://rawraw.info/2017-12-19-plan2018.html</loc>
     
-    <lastmod>2017-12-19T06:28:20.730Z</lastmod>
+    <lastmod>2017-12-19T06:28:20.731Z</lastmod>
     
   </url>
   
@@ -107,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
+    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
     
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017-05-26-bundler.html</loc>
+    <loc>http://rawraw.info/2017-05-26-task-runner.html</loc>
     
     <lastmod>2017-06-21T03:04:56.000Z</lastmod>
     
@@ -149,30 +191,9 @@
   </url>
   
   <url>
-    <loc>http://rawraw.info/2017-06-12-js01.html</loc>
-    
-    <lastmod>2017-06-12T08:33:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rawraw.info/2017-05-25-design-patterns.html</loc>
-    
-    <lastmod>2017-06-09T08:08:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://rawraw.info/2017-03-27-babel.html</loc>
     
     <lastmod>2017-05-26T08:11:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://rawraw.info/2017-05-10-http.html</loc>
-    
-    <lastmod>2017-05-17T09:21:56.000Z</lastmod>
     
   </url>
   
