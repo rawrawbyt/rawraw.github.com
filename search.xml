@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[npm常用命令]]></title>
+      <url>%2F2018-03-27-npm.html</url>
+      <content type="text"><![CDATA[npm常用命令以及npm包发布 安装升级安装node以后自动会安装NPM。 淘宝镜像npm install -g cnpm --registry=https://registry.npm.taobao.org 升级$ npm install -g npm 常用安装包$ npm install &lt;pkg&gt; 或者 $ npm install &lt;pkg&gt;@&lt;version&gt; 卸载包$ npm uninstall &lt;pkg&gt; 或者 $ npm uninstall &lt;pkg&gt;@[&lt;version&gt;] 查看当前项目下的包列表$ npm ls #查看全局包列表$ npm ls －g #清理缓存$ npm cache clean #显示包的package.json信息,后面可以跟属性名称。e.g.：$ npm view &lt;pkg&gt; versions 其中versions是package.json的versions属性$ npm view &lt;pkg&gt; [attribute] 发布自己的npm包登陆第一次：$ npm adduser输入password的时候会自动隐藏，管自己输就好了然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用cnpm就完全o**k！！所以 所有的命令行 自己自动都改c吧，懒得一个个改了。not 第一次：$ npm login 查看当前用户$ npm whoami 发布$ npm init动次打次 怼怼怼$ npm publish$ npm publish &lt;pkg&gt;@&lt;version&gt; 报错集合ERR 403:包名字重了npm please try running this command again as root：未登录 迭代$ npm publish &lt;pkg&gt;@&lt;version&gt; 快速升级方法小版本号升级一个版本$ npm version patch 中版号升级一个版本$ npm version minor 大版本号升级一个版本$ npm version majornpm社区版本号规则采用的是semver(语义化版本)，主要规则如下：版本格式：主版号.次版号.修订号，版号递增规则如下： 主版号：当你做了不相容的 API 修改， 次版号：当你做了向下相容的功能性新增， 修订号：当你做了向下相容的问题修正。 先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。 删除不能删除整个包，只能某个版本$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[animation整理]]></title>
       <url>%2F2018-03-27-animation.html</url>
       <content type="text"><![CDATA[清电脑翻出一堆以前做的demo。 组件导航栏 特效云墙]]></content>
