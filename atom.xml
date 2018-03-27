@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2018-03-23T05:36:07.606Z</updated>
+  <updated>2018-03-27T12:10:51.999Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>animation整理</title>
+    <link href="http://rawraw.info/2018-03-27-animation.html"/>
+    <id>http://rawraw.info/2018-03-27-animation.html</id>
+    <published>2018-03-27T11:32:40.000Z</published>
+    <updated>2018-03-27T12:10:51.999Z</updated>
+    
+    <content type="html"><![CDATA[<p>清电脑翻出一堆以前做的demo。</p>
+<p><div align="center"><br><img src="/images/bg/0061.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h1><p><a href="demos/nav/navText.html">导航栏</a></p>
+<h1 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h1><p><a href="demos/cloud/cloud.html">云墙</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;清电脑翻出一堆以前做的demo。&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0061.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="动画" scheme="http://rawraw.info/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+      <category term="animation" scheme="http://rawraw.info/tags/animation/"/>
+    
+  </entry>
   
   <entry>
     <title>暂放</title>
@@ -731,9 +758,9 @@
       <category term="杂" scheme="http://rawraw.info/categories/%E6%9D%82/"/>
     
     
-      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
-    
       <category term="css" scheme="http://rawraw.info/tags/css/"/>
+    
+      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
     
       <category term="杂" scheme="http://rawraw.info/tags/%E6%9D%82/"/>
     
@@ -1130,35 +1157,6 @@
     
     
       <category term="summary" scheme="http://rawraw.info/tags/summary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript要仔细学之一//apply( )和call( )的区别</title>
-    <link href="http://rawraw.info/2017-06-12-js01.html"/>
-    <id>http://rawraw.info/2017-06-12-js01.html</id>
-    <published>2017-06-12T08:18:56.000Z</published>
-    <updated>2018-03-23T05:45:39.316Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>call</code>和<code>apply</code>可以改变<code>this</code>指针,即改变函数的作用域。<br><a id="more"></a></p>
-<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p><code>call</code>和<code>apply</code>方法的作用相同，就是参数不同。<br><code>call</code>和<code>apply</code>的第一个参数都是一样的，但是后面参数不同，<code>call</code>从第二个参数开始后面有许多参数，<code>apply</code>第二个参数必须是数组。<br><code>call([thisObj[,arg1[, arg2[,   [,.argN]]]]])</code><br><code>apply([thisObj[,argArray]])</code></p>
-<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><p>两个方法产生的作用是完全一样的，call, apply都属于Function.prototype的一个方法<br>call, apply作用就是借用别人的方法来调用,就像调用自己的一样.</p>
-<h2 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h2><p>方法传递的参数不同<br>f.call(this, arg1, arg2, arg3) == f.apply(this,arguements) ==this.f(arg1, arg2, arg3)</p>
-<h2 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h2><p>①<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">print</span>(<span class="params">a, b, c, d</span>)</span>&#123;</div><div class="line">   alert(a + b + c + d);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params">a, b , c , d</span>)</span>&#123;</div><div class="line">   <span class="comment">//用call方式借用print,参数显式打散传递</span></div><div class="line">   print.call(<span class="keyword">this</span>, a, b, c, d);</div><div class="line">   <span class="comment">//用apply方式借用print, 参数作为一个数组传递,</span></div><div class="line">   <span class="comment">//这里直接用JavaScript方法内本身有的arguments数组</span></div><div class="line">   print.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">   <span class="comment">//或者封装成数组</span></div><div class="line">   print.apply(<span class="keyword">this</span>, [a, b, c, d]);</div><div class="line">&#125;</div><div class="line"><span class="comment">//下面将显示”动感光波”</span></div><div class="line">example(<span class="string">"动"</span>,<span class="string">"感"</span>,<span class="string">"光"</span>,<span class="string">"波"</span>);</div><div class="line">②</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">   <span class="keyword">this</span>.name = name;</div><div class="line">   <span class="keyword">this</span>.showName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">   &#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">   Animal.call(<span class="keyword">this</span>, name);</div><div class="line">&#125;</div><div class="line">Cat.prototype = <span class="keyword">new</span> Animal();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Dog</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">   Animal.apply(<span class="keyword">this</span>, name);</div><div class="line">&#125;</div><div class="line">Dog.prototype = <span class="keyword">new</span> Animal();</div><div class="line"></div><div class="line"><span class="keyword">var</span> cat = <span class="keyword">new</span> Cat(<span class="string">"Black Cat"</span>); <span class="comment">//call必须是object</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> dog = <span class="keyword">new</span> Dog([<span class="string">"Black Dog"</span>]); <span class="comment">//apply必须是array</span></div><div class="line"></div><div class="line">cat.showName();</div><div class="line">dog.showName();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(cat <span class="keyword">instanceof</span> Animal);</div><div class="line"><span class="built_in">console</span>.log(dog <span class="keyword">instanceof</span> Animal);</div></pre></td></tr></table></figure></p>
-<p>模拟call, apply的this替换<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">   <span class="keyword">this</span>.name = name;</div><div class="line">   <span class="keyword">this</span>.showName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      alert(<span class="keyword">this</span>.name);</div><div class="line">   &#125;;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">   <span class="keyword">this</span>.superClass = Animal;</div><div class="line">   <span class="keyword">this</span>.superClass(name);</div><div class="line">   <span class="keyword">delete</span> superClass;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> cat = <span class="keyword">new</span> Cat(<span class="string">"Black Cat"</span>);</div><div class="line"></div><div class="line">cat.showName();</div></pre></td></tr></table></figure></p>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>当参数明确时可用call, 当参数不明确时可用apply给合arguments</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;call&lt;/code&gt;和&lt;code&gt;apply&lt;/code&gt;可以改变&lt;code&gt;this&lt;/code&gt;指针,即改变函数的作用域。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JavaScript要仔细学" scheme="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
-    
-    
-      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
     
   </entry>
   

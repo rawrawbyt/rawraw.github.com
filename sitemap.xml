@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rawraw.info/demos/nav/navText.html</loc>
+    
+    <lastmod>2018-03-27T12:18:26.089Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/2018-03-27-animation.html</loc>
+    
+    <lastmod>2018-03-27T12:10:51.999Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://rawraw.info/2017-04-12-interview.html</loc>
     
     <lastmod>2018-03-23T06:07:15.731Z</lastmod>
@@ -96,6 +110,13 @@
     <loc>http://rawraw.info/2018-02-28-bug20180228.html</loc>
     
     <lastmod>2018-03-08T06:21:22.413Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rawraw.info/demos/cloud/cloud.html</loc>
+    
+    <lastmod>2018-03-08T06:08:33.788Z</lastmod>
     
   </url>
   
