@@ -1,0 +1,1319 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="summary,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="rawraw" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="作为强迫症，就是特别喜欢介个样子//">
+<meta name="keywords" content="summary">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5&#x2F;JavaScript&#x2F;CSS书写规范">
+<meta property="og:url" content="http://rawraw.info/2017-06-14-norm.html">
+<meta property="og:site_name" content="rawraw">
+<meta property="og:description" content="作为强迫症，就是特别喜欢介个样子//">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://rawraw.info/images/bg/0047.jpeg">
+<meta property="og:updated_time" content="2019-04-15T14:18:01.880Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5&#x2F;JavaScript&#x2F;CSS书写规范">
+<meta name="twitter:description" content="作为强迫症，就是特别喜欢介个样子//">
+<meta name="twitter:image" content="http://rawraw.info/images/bg/0047.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://rawraw.info/2017-06-14-norm.html">
+
+
+
+
+
+  <title> HTML5/JavaScript/CSS书写规范 | rawraw </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?14cd7af8229ceaad887b250b9b886bd3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">rawraw</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Change not delete ！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://rawraw.info/2017-06-14-norm.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="rawraw">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/rawraw2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rawraw">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                HTML5/JavaScript/CSS书写规范
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-14T14:46:21+08:00">
+                2017-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/小结/" itemprop="url" rel="index">
+                    <span itemprop="name">小结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017-06-14-norm.html" class="leancloud_visitors" data-flag-title="HTML5/JavaScript/CSS书写规范">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>作为强迫症，就是特别喜欢介个样子//</p>
+<p><div align="center"><br><img src="/images/bg/0047.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h1 id="头部"><a href="#头部" class="headerlink" title="头部"></a>头部</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=Edge"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>HTML5 standardization<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">//type属性：省略</span><br></pre></td></tr></table></figure>
+<h1 id="区分浏览器"><a href="#区分浏览器" class="headerlink" title="区分浏览器"></a>区分浏览器</h1><p>no-js标签是需要与Modernizr等类库配合使用的<br><code>&lt;script src=&quot;js/libs/modernizr-2.5.0.min.js&quot;&gt;&lt;/script&gt;</code><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--[if lt IE 7]&gt; &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"&gt; &lt;![endif]--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--[if IE 7]&gt;    &lt;html class="no-js lt-ie9 lt-ie8" lang="zh"&gt; &lt;![endif]--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--[if IE 8]&gt;    &lt;html class="no-js lt-ie9" lang="zh"&gt; &lt;![endif]--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span> <span class="tag">&lt;<span class="name">html</span> <span class="attr">class</span>=<span class="string">"no-js"</span> <span class="attr">lang</span>=<span class="string">"zh"</span>&gt;</span> <span class="comment">&lt;!--&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>避免IE6条件注释引起的高版本IE文件阻塞问题</li>
+<li>与Modernizr等特征检测类库使用相同的class，更具备通用性</li>
+<li>优于使用CSS Hack</li>
+</ul>
+<h2 id="嵌套规则"><a href="#嵌套规则" class="headerlink" title="嵌套规则"></a>嵌套规则</h2><ul>
+<li>块元素可以包含内联元素或某些块元素，但内联元素却不能包含块元素，它只能包含其它的内联元素；</li>
+<li><p>里面不能放块级元素；</p></li>
+<li>块级元素与块级元素并列、内嵌元素与内嵌元素并列；</li>
+</ul>
+<h2 id="文档内容"><a href="#文档内容" class="headerlink" title="文档内容"></a>文档内容</h2><ul>
+<li>自定义属性：<code>data-*</code></li>
+<li>不要使用内联样式</li>
+<li>不要使用<em>和<strong>,用css来控制。不要使用<i>和<b>，HTML5不赞成使用</b></i></strong></em></li>
+</ul>
+<h2 id="实体字符引用"><a href="#实体字符引用" class="headerlink" title="实体字符引用"></a>实体字符引用</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th style="text-align:center">实体名</th>
+<th style="text-align:center">实体数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">“</td>
+<td style="text-align:center"><code>&amp;quot;</code></td>
+<td style="text-align:center"><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">‘</td>
+<td style="text-align:center"><code>&amp;apos;(IE不支持)</code></td>
+<td style="text-align:center"><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center"><code>&amp;amp;</code></td>
+<td style="text-align:center"><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center"><code>&amp;gt;</code></td>
+<td style="text-align:center"><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center"><code>&amp;lt;</code></td>
+<td style="text-align:center"><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center"><code>&amp;nbsp;</code></td>
+<td style="text-align:center"><code>&amp;#160;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&emsp;</td>
+<td style="text-align:center"><code>&amp;emsp;</code></td>
+<td style="text-align:center"><code>&amp;#12288;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">￥&yen;</td>
+<td style="text-align:center"><code>&amp;yen;</code></td>
+<td style="text-align:center"><code>&amp;#165;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&brvbar;</td>
+<td style="text-align:center"><code>&amp;brvbar;</code></td>
+<td style="text-align:center"><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&copy;</td>
+<td style="text-align:center"><code>&amp;copy;</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">&reg;</td>
+<td style="text-align:center"><code>&amp;reg;</code></td>
+<td style="text-align:center"><code>&amp;#169;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&trade;</td>
+<td style="text-align:center"><code>&amp;trade;</code></td>
+<td style="text-align:center"><code>&amp;#8428;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&middot;</td>
+<td style="text-align:center"><code>&amp;middot;</code></td>
+<td style="text-align:center"><code>&amp;#183;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&laquo;</td>
+<td style="text-align:center"><code>&amp;laquo;</code></td>
+<td style="text-align:center"><code>&amp;#171;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&raquo;</td>
+<td style="text-align:center"><code>&amp;raquo;</code></td>
+<td style="text-align:center"><code>&amp;#187;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&deg;</td>
+<td style="text-align:center"><code>&amp;deg;</code></td>
+<td style="text-align:center"><code>&amp;#176;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&times;</td>
+<td style="text-align:center"><code>&amp;times;</code></td>
+<td style="text-align:center"><code>&amp;#215;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&divide;</td>
+<td style="text-align:center"><code>&amp;divide;</code></td>
+<td style="text-align:center"><code>&amp;#247;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&permil;</td>
+<td style="text-align:center"><code>&amp;permil;</code></td>
+<td style="text-align:center"><code>&amp;#8240;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
+<li>给图片添加width和height，提升页面加载速度</li>
+<li>给所有img添加alt属性</li>
+<li>不要使用或尽量少用gif文件</li>
+</ul>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="引用结构"><a href="#引用结构" class="headerlink" title="引用结构"></a>引用结构</h2><p>按照顺序引入<br>CSS 一律写在 CSS 文件中，原则上不写内联样式，不直接为标签添加样式（reset 除外）。</p>
+<ul>
+<li>基础框架（reset / grid …）</li>
+<li>通用模块（theme/ common…）</li>
+<li>页面样式（page…）</li>
+</ul>
+<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
+<li>CSS对大小写敏感</li>
+<li>不采用驼峰式命名，不用中文拼音</li>
+<li>不允许使用具体的样式名称命名，也不应包含颜色、位置等与现实效果相关的信息。</li>
+<li>加上适当的命名空间（前缀），以避免命名冲突。命名空间不使用单个字母，以免与通用样式冲突。</li>
+</ul>
+<h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><p>CSS 文件命名由小写字母、下划线（_）组成。</p>
+<h3 id="选择器命名"><a href="#选择器命名" class="headerlink" title="选择器命名"></a>选择器命名</h3><p>CSS 文件命名由小写字母、中划线（-）组成。<br>|布局（grid） .g-|模块（module） .m-|元件（unit）|功能（function）|状态 .z-|皮肤（skin） .s-|JS选择器 .j-|</p>
+<h2 id="书写规范"><a href="#书写规范" class="headerlink" title="书写规范"></a>书写规范</h2><ul>
+<li><code>;</code>分行书写</li>
+<li>属性值为 0 时，单位可以省略。</li>
+<li>属性值为小数时，小数点之前的 0 不可以省略。</li>
+<li>省略 url 中的引号，其他需要引号的地方使用单引号。</li>
+</ul>
+<h2 id="书写顺序"><a href="#书写顺序" class="headerlink" title="书写顺序"></a>书写顺序</h2><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>| 显示属性 | display, visibility, position, float, clear, list-style, top 等 |<br>| 自身属性 | width, height, margin, padding, border, overflow 等 |<br>| 文本及修饰属性 | font, text-align, text-decoration, vertical-align, white-space, color, background 等 |<br>| CSS3 属性 | border-radius, box-shadow, gradients, transforms, animations 等 |</p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>a:link -&gt; a:visited -&gt; a:hover -&gt; a:active</p>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="合并选择器"><a href="#合并选择器" class="headerlink" title="合并选择器"></a>合并选择器</h3><h3 id="属性值缩写"><a href="#属性值缩写" class="headerlink" title="属性值缩写"></a>属性值缩写</h3><ul>
+<li>margin</li>
+<li>padding</li>
+<li>border</li>
+<li>background</li>
+<li>font</li>
+<li>color</li>
+<li>list-style</li>
+</ul>
+<h2 id="避免耗性能的属性"><a href="#避免耗性能的属性" class="headerlink" title="避免耗性能的属性"></a>避免耗性能的属性</h2><ul>
+<li><code>width: expression(this.width&gt;100?&#39;100px&#39;:&#39;auto&#39;);</code></li>
+<li><code>filter: alpha(opacity=50);</code></li>
+</ul>
+<h3 id="图片合并（sprite）"><a href="#图片合并（sprite）" class="headerlink" title="图片合并（sprite）"></a>图片合并（sprite）</h3><h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="使用"><a href="#使用" class="headerlink" title="使用===/!=="></a>使用<code>===</code>/<code>!==</code></h2><p><code>==</code>和<code>!=</code>不判断类型</p>
+<h3 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h3><p>在判断函数是否为空的情况下，使用<code>==</code>或<code>!=</code>是可以的。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果foo没有被初始化，它默认的值是undefined而不是null。当然underfined更不会等于null了。</span></span><br><span class="line"><span class="comment">//因此这种情况应该使用==和!=。</span></span><br><span class="line"><span class="keyword">if</span> (foo == <span class="literal">null</span>) &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="DELETE在数组中"><a href="#DELETE在数组中" class="headerlink" title="DELETE在数组中"></a><code>DELETE</code>在数组中</h2><p>数组可以被<code>DELETE</code>，但是会留下<code>undefined</code>元素。<br>可以用shift( )/pop( )/splice(index,num)<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myArray = [ <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span> ];</span><br><span class="line"><span class="keyword">delete</span> myArray[<span class="number">2</span>]; </span><br><span class="line"><span class="comment">// Noncompliant. myArray =&gt; ['a', 'b', undefined, 'd']</span></span><br><span class="line"><span class="built_in">console</span>.log(myArray[<span class="number">2</span>]); <span class="comment">// 'undefined'</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="for-in-的循环在每次操作前需要进行过滤判断"><a href="#for-in-的循环在每次操作前需要进行过滤判断" class="headerlink" title="for...in..的循环在每次操作前需要进行过滤判断"></a><code>for...in..</code>的循环在每次操作前需要进行过滤判断</h2><p>“for … in”这种循环允许开发人员按照属性的名字遍历对象。不幸的是，这个属性的集合包括了对象自身和对象继承的对象的所有属性。如果程序不考虑这点就会出现错误。都应该包括一个if判断来过滤你需要的属性。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (name <span class="keyword">in</span> object) &#123;</span><br><span class="line">    <span class="keyword">if</span> (object.hasOwnProperty(name)) &#123;</span><br><span class="line">        doSomething(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="NaN不要出现在比较中"><a href="#NaN不要出现在比较中" class="headerlink" title="NaN不要出现在比较中"></a><code>NaN</code>不要出现在比较中</h2><p>NAN不等于包括自身在内的任何值。因此与NAN作比较是得不到你需要的结果的，但是这种错误有可能会出现。<br>事实上，判断值是否等于NAN最好的方法就是和它自己作比较即NAN!==NAN，因为正常的变量都是等于自身的，如果不等于自身成立，就说明这个值是NAN。</p>
+<h2 id="保证函数调用时传入的参数都被使用"><a href="#保证函数调用时传入的参数都被使用" class="headerlink" title="保证函数调用时传入的参数都被使用"></a>保证函数调用时传入的参数都被使用</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    compute(<span class="built_in">arguments</span>);</span><br><span class="line">&#125;</span><br><span class="line">doSomething(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    print(a + <span class="string">' '</span> + b);</span><br><span class="line">&#125;</span><br><span class="line">say(<span class="string">'hello'</span>, <span class="string">'world'</span>, <span class="string">'!'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="选择器得到的结果一定要用LENGTH判断"><a href="#选择器得到的结果一定要用LENGTH判断" class="headerlink" title="选择器得到的结果一定要用LENGTH判断"></a>选择器得到的结果一定要用LENGTH判断</h2><p>无论是否找到该对象，选择器总是返回一个对象。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ($(<span class="string">'.test'</span>)) &#123;</span><br><span class="line">       <span class="comment">// ...</span></span><br><span class="line">     &#125;</span><br><span class="line"><span class="keyword">if</span> ($(<span class="string">'.test'</span>).length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">  <span class="comment">//  ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="用逻辑短路防止出现空的错误"><a href="#用逻辑短路防止出现空的错误" class="headerlink" title="用逻辑短路防止出现空的错误"></a>用逻辑短路防止出现空的错误</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (str != <span class="literal">null</span> &amp;&amp; str.length == <span class="number">0</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'String is empty'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (str != <span class="literal">undefined</span> &amp;&amp; str.length == <span class="number">0</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'String is empty'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (str == <span class="literal">null</span> || str.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'String is not empty'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (str == <span class="literal">undefined</span> || str.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'String is not empty'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h2><ul>
+<li>用<code>null</code>,不要用<code>undefined</code>（尚未创建）赋值给变量。</li>
+<li><code>var i = 0;i = i++;</code></li>
+<li>parseInt函数有两个版本的，一个是只有一个参数的，而另一个是需要两个参数的。然而，旧版的浏览器不支持一个参数的parseInt方法。<br><code>parseInt(&quot;010&quot;, 10);</code></li>
+</ul>
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><ul>
+<li><code>var input = $( &#39;form input[type=radio]&#39; );</code>代替<code>var input = $( &#39;form input:radio&#39; );</code></li>
+<li><code>var $productIds = $(&#39;#products&#39;).find(&#39;div.id&#39;);</code>代替<code>var $productIds = $(&#39;#products div.id&#39;);</code></li>
+<li>选择结果应该被保存，<code>var paragraph = $(&#39;p&#39;);paragraph.hide();paragraph.show();</code></li>
+<li>尽量不要通配选择器<em><code>$( &#39;.buttons&#39; ).children();</code>代替`$( ‘.buttons &gt; </em>‘ ); `</li>
+<li>使用<code>===</code>/<code>!==</code>，<code>==</code>和<code>!=</code>不判断类型</li>
+</ul>
+<h2 id="约定规范"><a href="#约定规范" class="headerlink" title="约定规范"></a>约定规范</h2><ul>
+<li>每一条声明须要由“;”结尾</li>
+<li>注释不应该写在每一行的最后面；一行代码不要太长（不超过80）；多分行分行</li>
+<li>文件后面应该包含一个空行（这条规则会使得在利用一些工具，例如Git的时候配合的更好）</li>
+<li>声明STRING类型的变量是需要用单引号</li>
+<li>源代码文件应该有足够的注释（默认15%）</li>
+<li>FUNCTIONS不应该有太多行（阈值：300），难以理解以及维护。</li>
+<li>函数不应该有太多的参数（临界值为7）</li>
+<li>一个表达式不应该有超过三个的操作符，以增加表达式的可读性。</li>
+<li>循环不应该包括多余一个的BREAK或者CONTINUE语句，否则重构</li>
+<li>结尾的逗号不应该被使用<code>var settings = {&#39;foo&#39;: oof,&#39;bar&#39;: rab};</code></li>
+<li><code>ARGUMENTS.CALLER</code>和<code>ARGUMENTS.CALLEE</code>在ECMAScript5中，这两个函数在strict模式下都被禁止使用。在最新的Javascript版本中不建议被使用。</li>
+<li>不要省略大括号（）if，作为范围控制</li>
+<li><code>SWITCH</code>的每个条件结尾都要有<code>BREAK</code></li>
+<li>发布版本中不要有<code>alert()</code>,<code>console</code>,给攻击者泄露敏感信息</li>
+<li><code>//TODO</code>，<code>// FIXME</code>只在 开发过程中。</li>
+<li>开发人员不能注释代码，因为会影响代码可读性。不再使用的代码就删除。</li>
+<li><code>new</code>关键字应该和构造函数一起使用</li>
+<li>不要使用<code>ARRAY</code>和<code>OBJECT</code>的构造方法。超过一个参数，会新建多个array.</li>
+<li>不要重载内置对象</li>
+<li>及时释放无用的储存</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/rawraw00.jpg" alt="rawraw wechat" style="width: 200px; max-width: 100%;">
+    <div>rawraw的公众号//先别关注吧、都没写东西、唉</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="rawraw WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay2.png" alt="rawraw Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/summary/" rel="tag"># summary</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017-06-13-api.html" rel="next" title="API大全整理/from github">
+                <i class="fa fa-chevron-left"></i> API大全整理/from github
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017-06-20-github.html" rel="prev" title="rawraw的github">
+                rawraw的github <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129128"></script>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/uploads/rawraw2.jpg" alt="rawraw">
+          <p class="site-author-name" itemprop="name">rawraw</p>
+           
+              <p class="site-description motion-element" itemprop="description">Change not delete ！</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1100379063" target="_blank" title="sina">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  sina
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              我瞅瞅、
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.pexels.com/" title="pexels素材" target="_blank">pexels素材</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.17sucai.com/" title="17素材" target="_blank">17素材</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jq22.com/" title="jQuery插件库" target="_blank">jQuery插件库</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://stackoverflow.com/" title="stackoverflow" target="_blank">stackoverflow</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5"><span class="nav-number">1.</span> <span class="nav-text">HTML5</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#头部"><span class="nav-number">2.</span> <span class="nav-text">头部</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区分浏览器"><span class="nav-number">3.</span> <span class="nav-text">区分浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套规则"><span class="nav-number">3.1.</span> <span class="nav-text">嵌套规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文档内容"><span class="nav-number">3.2.</span> <span class="nav-text">文档内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实体字符引用"><span class="nav-number">3.3.</span> <span class="nav-text">实体字符引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">3.4.</span> <span class="nav-text">图片</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">4.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用结构"><span class="nav-number">4.1.</span> <span class="nav-text">引用结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名规范"><span class="nav-number">4.2.</span> <span class="nav-text">命名规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件命名"><span class="nav-number">4.2.1.</span> <span class="nav-text">文件命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器命名"><span class="nav-number">4.2.2.</span> <span class="nav-text">选择器命名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写规范"><span class="nav-number">4.3.</span> <span class="nav-text">书写规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写顺序"><span class="nav-number">4.4.</span> <span class="nav-text">书写顺序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">4.4.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">4.4.2.</span> <span class="nav-text">链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化"><span class="nav-number">4.5.</span> <span class="nav-text">优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#合并选择器"><span class="nav-number">4.5.1.</span> <span class="nav-text">合并选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性值缩写"><span class="nav-number">4.5.2.</span> <span class="nav-text">属性值缩写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免耗性能的属性"><span class="nav-number">4.6.</span> <span class="nav-text">避免耗性能的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图片合并（sprite）"><span class="nav-number">4.6.1.</span> <span class="nav-text">图片合并（sprite）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件压缩"><span class="nav-number">4.6.2.</span> <span class="nav-text">文件压缩</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript"><span class="nav-number">5.</span> <span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">5.1.</span> <span class="nav-text">使用===/!==</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊情况"><span class="nav-number">5.1.1.</span> <span class="nav-text">特殊情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DELETE在数组中"><span class="nav-number">5.2.</span> <span class="nav-text">DELETE在数组中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-in-的循环在每次操作前需要进行过滤判断"><span class="nav-number">5.3.</span> <span class="nav-text">for...in..的循环在每次操作前需要进行过滤判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NaN不要出现在比较中"><span class="nav-number">5.4.</span> <span class="nav-text">NaN不要出现在比较中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保证函数调用时传入的参数都被使用"><span class="nav-number">5.5.</span> <span class="nav-text">保证函数调用时传入的参数都被使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器得到的结果一定要用LENGTH判断"><span class="nav-number">5.6.</span> <span class="nav-text">选择器得到的结果一定要用LENGTH判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用逻辑短路防止出现空的错误"><span class="nav-number">5.7.</span> <span class="nav-text">用逻辑短路防止出现空的错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#易错点"><span class="nav-number">5.8.</span> <span class="nav-text">易错点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能优化"><span class="nav-number">5.9.</span> <span class="nav-text">性能优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约定规范"><span class="nav-number">5.10.</span> <span class="nav-text">约定规范</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">rawraw</span>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129128"></script>
+      <!-- UY END -->
+    
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="local-search-pop-overlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("yLbd04bLXtu9FVrwNxzLGOyD-gzGzoHsz", "zV2LC8D6iHgjxdeW2TMeNajI");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+  
+
+</body>
+</html>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>rawraw</title>
+  
+  <subtitle>Change not delete ！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://rawraw.info/"/>
+  <updated>2019-04-15T14:18:01.881Z</updated>
+  <id>http://rawraw.info/</id>
+  
+  <author>
+    <name>rawraw</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在table中margin 失效</title>
+    <link href="http://rawraw.info/2018-05-20-tem.html"/>
+    <id>http://rawraw.info/2018-05-20-tem.html</id>
+    <published>2018-05-20T06:38:47.000Z</published>
+    <updated>2019-04-15T14:18:01.881Z</updated>
+    
+    <content type="html"><![CDATA[<p>想写个某几行<code>tr</code>滑动的动画，发现margin在table里没有用，那我总不能特地搞个定位来弄这个动画吧。气。</p><p><div align="center"><br><img src="/images/bg/0131.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><p>当<code>display：table</code>,<code>margin</code>会不起作用</p><h3 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h3><p><code>border-spacing</code><br>设置单元格td的边在横向和纵向上的间距。<br>指定一个length值时，这个值将作用于横向和纵向上的间距;<br>指定两个length值时，第一个将作用于横向间距，第二个值将作用于纵向间距。<br><code>table{border-spacing:5px 10px;}</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">    <span class="attribute">border-collapse</span>:separate;</span><br><span class="line">    <span class="attribute">border-spacing</span>: -<span class="number">15px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想写个某几行&lt;code&gt;tr&lt;/code&gt;滑动的动画，发现margin在table里没有用，那我总不能特地搞个定位来弄这个动画吧。气。&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0131.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue集合</title>
+    <link href="http://rawraw.info/2018-05-20-vue.html"/>
+    <id>http://rawraw.info/2018-05-20-vue.html</id>
+    <published>2018-05-20T06:38:18.000Z</published>
+    <updated>2019-04-15T14:18:01.882Z</updated>
+    
+    <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0163.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>npm常用命令</title>
+    <link href="http://rawraw.info/2018-03-27-npm.html"/>
+    <id>http://rawraw.info/2018-03-27-npm.html</id>
+    <published>2018-03-27T14:08:37.000Z</published>
+    <updated>2019-04-16T06:12:28.443Z</updated>
+    
+    <content type="html"><![CDATA[<p>npm常用命令以及npm包发布/mac upload test</p><a id="more"></a><h1 id="安装升级"><a href="#安装升级" class="headerlink" title="安装升级"></a>安装升级</h1><p>安装node以后自动会安装NPM。</p><h2 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h2><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p><code>$ npm install -g npm</code></p><h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p><code>$ npm install &lt;pkg&gt;</code> 或者 <code>$ npm install &lt;pkg&gt;@&lt;version&gt;</code></p><h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><p><code>$ npm uninstall &lt;pkg&gt;</code> 或者  <code>$ npm uninstall &lt;pkg&gt;@[&lt;version&gt;]</code></p><h2 id="查看当前项目下的包列表"><a href="#查看当前项目下的包列表" class="headerlink" title="查看当前项目下的包列表"></a>查看当前项目下的包列表</h2><p><code>$ npm ls</code></p><p>#查看全局包列表<br><code>$ npm ls －g</code></p><p>#清理缓存<br><code>$ npm cache clean</code></p><p>#显示包的package.json信息,后面可以跟属性名称。<br>e.g.：<code>$ npm view &lt;pkg&gt; versions</code>  其中versions是<code>package.json</code>的<code>versions</code>属性<br><code>$ npm view &lt;pkg&gt; [attribute]</code></p><h1 id="发布自己的npm包"><a href="#发布自己的npm包" class="headerlink" title="发布自己的npm包"></a>发布自己的npm包</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>第一次：<br><code>$ npm adduser</code><br>输入password的时候会自动隐藏，管自己输就好了<br>然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用<code>cnpm</code>就完全o**k！！<br>所以 所有的命令行 自己自动都改c吧，懒得一个个改了。<br>not 第一次：<br><code>$ npm login</code></p><h3 id="查看当前用户"><a href="#查看当前用户" class="headerlink" title="查看当前用户"></a>查看当前用户</h3><p><code>$ npm whoami</code></p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p><code>$ npm init</code><br>动次打次 怼怼怼<br><code>$ npm publish</code><br><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="报错集合"><a href="#报错集合" class="headerlink" title="报错集合"></a>报错集合</h3><p><code>ERR 403</code>:包名字重了<br><code>npm please try running this command again as root</code>：未登录</p><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><p><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="快速升级方法"><a href="#快速升级方法" class="headerlink" title="快速升级方法"></a>快速升级方法</h3><h4 id="小版本号升级一个版本"><a href="#小版本号升级一个版本" class="headerlink" title="小版本号升级一个版本"></a>小版本号升级一个版本</h4><p><code>$ npm version patch</code></p><h4 id="中版号升级一个版本"><a href="#中版号升级一个版本" class="headerlink" title="中版号升级一个版本"></a>中版号升级一个版本</h4><p><code>$ npm version minor</code></p><h4 id="大版本号升级一个版本"><a href="#大版本号升级一个版本" class="headerlink" title="大版本号升级一个版本"></a>大版本号升级一个版本</h4><p><code>$ npm version major</code><br>npm社区版本号规则采用的是semver(语义化版本)，主要规则如下：<br>版本格式：主版号.次版号.修订号，版号递增规则如下：<br>    主版号：当你做了不相容的 API 修改，<br>    次版号：当你做了向下相容的功能性新增，<br>    修订号：当你做了向下相容的问题修正。<br>    先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>不能删除整个包，只能某个版本<br><code>$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;npm常用命令以及npm包发布/mac upload test&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="npm" scheme="http://rawraw.info/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>animation整理</title>
+    <link href="http://rawraw.info/2018-03-27-animation.html"/>
+    <id>http://rawraw.info/2018-03-27-animation.html</id>
+    <published>2018-03-27T11:32:40.000Z</published>
+    <updated>2019-04-15T14:18:01.873Z</updated>
+    
+    <content type="html"><![CDATA[<p>清电脑翻出一堆以前做的demo。</p><p><div align="center"><br><img src="/images/bg/0061.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h1><p><a href="demos/nav/navText.html">导航栏</a></p><h1 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h1><p><a href="demos/cloud/cloud.html">云墙</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;清电脑翻出一堆以前做的demo。&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0061.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="动画" scheme="http://rawraw.info/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+      <category term="animation" scheme="http://rawraw.info/tags/animation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>暂放</title>
+    <link href="http://rawraw.info/2018-03-23-temporay.html"/>
+    <id>http://rawraw.info/2018-03-23-temporay.html</id>
+    <published>2018-03-23T05:28:50.000Z</published>
+    <updated>2019-04-15T14:18:01.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>偶尔翻到以前的笔记，先都堆在这放放，晚点整理；</p><a id="more"></a><h3 id="20160710："><a href="#20160710：" class="headerlink" title="20160710："></a>20160710：</h3><p>1.angular 对应的路由路径/回调不能为空</p><h3 id="20160817："><a href="#20160817：" class="headerlink" title="20160817："></a>20160817：</h3><p>1.iphone4.5 偶尔不支持vh /vw的！！！（vh用，反正要写媒体查询）</p><h3 id="20160810："><a href="#20160810：" class="headerlink" title="20160810："></a>20160810：</h3><p>自动换行 word-break:break-all和word-wrap:break-word</p><p><a href="http://www.oschina.net/translate/comparing-the-top-frameworks-for-building-hybrid-mobile-apps-1" target="_blank" rel="noopener">构建混合移动应用的流行框架优缺点对比</a></p><h1 id="Angular中ng-view-和ui-view区别"><a href="#Angular中ng-view-和ui-view区别" class="headerlink" title="Angular中ng-view 和ui-view区别"></a>Angular中ng-view 和ui-view区别</h1><p>ui-router是angular-ui下的一个模块angular-ui，可以嵌套。<br>ng-view不可以嵌套</p><h1 id="Keypress-keydown-keyup-区别"><a href="#Keypress-keydown-keyup-区别" class="headerlink" title="Keypress keydown keyup 区别"></a>Keypress keydown keyup 区别</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;偶尔翻到以前的笔记，先都堆在这放放，晚点整理；&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="杂" scheme="http://rawraw.info/categories/%E6%9D%82/"/>
+    
+    
+      <category term="杂" scheme="http://rawraw.info/tags/%E6%9D%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动端兼容性整理以及优化</title>
+    <link href="http://rawraw.info/2018-03-23-compatibility.html"/>
+    <id>http://rawraw.info/2018-03-23-compatibility.html</id>
+    <published>2018-03-23T05:28:21.000Z</published>
+    <updated>2019-04-15T14:18:01.875Z</updated>
+    
+    <content type="html"><![CDATA[<p>移动端兼容性整理<br><a id="more"></a></p><h1 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h1><p>Modernizr：兼容CSS3、HTML5新特性</p><h1 id="List"><a href="#List" class="headerlink" title="List"></a>List</h1><h3 id="contenteditable元素只能输入纯文本"><a href="#contenteditable元素只能输入纯文本" class="headerlink" title="contenteditable元素只能输入纯文本"></a>contenteditable元素只能输入纯文本</h3><p>-webkit-user-modify: read-only|read-write|read-write-plaintext-only</p><h3 id="IE6-8和FF3-浏览器不支持”-nth-child”选择器"><a href="#IE6-8和FF3-浏览器不支持”-nth-child”选择器" class="headerlink" title="IE6-8和FF3-浏览器不支持”:nth-child”选择器"></a>IE6-8和FF3-浏览器不支持”:nth-child”选择器</h3><p>:nth-child(2n),:nth-child(even)<br>:nth-child(n+5)这个选择器是选择从第五个元素开始选择<br>:nth-child(4n+1)这种方法是实现隔几选一的效果，比如我们这里是隔三选一<br>::selection<br>user-select:none</p><h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><h3 id="增加该属性，可以增加弹性（在绝对定位的时候会用到）"><a href="#增加该属性，可以增加弹性（在绝对定位的时候会用到）" class="headerlink" title="增加该属性，可以增加弹性（在绝对定位的时候会用到）"></a>增加该属性，可以增加弹性（在绝对定位的时候会用到）</h3><p>-webkit-overflow-scrolling: touch;</p><h3 id="输入法"><a href="#输入法" class="headerlink" title="输入法"></a>输入法</h3><p>开始中文输入时会触发compositionstart事件<br>选词结束后会触发compositionend事件</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;移动端兼容性整理&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+    
+    
+      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css基础小结</title>
+    <link href="http://rawraw.info/2018-03-19-cssbase.html"/>
+    <id>http://rawraw.info/2018-03-19-cssbase.html</id>
+    <published>2018-03-19T12:52:43.000Z</published>
+    <updated>2019-04-15T14:18:01.876Z</updated>
+    
+    <content type="html"><![CDATA[<p>css tips~</p><a id="more"></a><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><blockquote><p>不同浏览器的一些标签的默认值不同</p></blockquote><h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>默认为box-sizing是content-box；<br>标准盒子模型（content-box）：宽度=内容的宽度（content）+ border + padding + margin<br>低版本IE盒子模型（border-box）：宽度=内容宽度（content+border+padding）+ margin</p><h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>id、类、标签选择器、相邻选择器、子选择器（ul &gt; li）、后代选择器（li a）、通配符选择器（*）、属性选择器（a[rel=”external”]）、伪类选择器</p><h2 id="优先级算法"><a href="#优先级算法" class="headerlink" title="优先级算法"></a>优先级算法</h2><p>元素选择符： 1<br>class选择符： 10<br>id选择符：100<br>元素标签：1000<br>!important</p><h2 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h2><p>盒子属性不可继承<br>可继承的属性：font-size, font-family, color<br>不可继承的样式：border, padding, margin, width, height</p><h2 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h2><p>自己去翻那篇居中的<br>有空来放个链接</p><h2 id="a的hover顺序"><a href="#a的hover顺序" class="headerlink" title="a的hover顺序"></a>a的hover顺序</h2><p> <code>a:link {} a:visited {} a:hover {} a:active {}</code></p><h2 id="隐藏的几种方法"><a href="#隐藏的几种方法" class="headerlink" title="隐藏的几种方法"></a>隐藏的几种方法</h2><p>1.display：none 不显示对应的元素，在文档布局中不再分配空间（回流+重绘）<br>2.visibility：hidden 隐藏对应元素，在文档布局中仍保留原来的空间（重绘）<br>3.层级z-index<br>4.定位定到天边去吧</p><p>chrome中，使用visibility：collapse值和使用hidden没有区别。<br>firefox，opera和IE，使用collapse值和使用display：none没有什么区别。 </p><h2 id="float"><a href="#float" class="headerlink" title="float"></a>float</h2><p>清浮动:伪类<br>浮动元素的display:block</p><h2 id="CSS3新特性"><a href="#CSS3新特性" class="headerlink" title="CSS3新特性"></a>CSS3新特性</h2><ul><li>rgba</li><li><code>background-image background-origin(content-box/padding-box/border-box) background-size background-repeat</code></li><li><code>word-wrap：break-word</code></li><li><code>text-shadow： 1px 1px 1px #666666;</code></li><li><code>border-radius</code></li><li><code>border-image: url(border.png) 30 30 round</code></li><li><code>box-shadow: 10px 10px 5px #666666</code></li><li>font-face属性：定义自己的字体</li><li>媒体查询：定义两套css，当浏览器的尺寸变化时会采用不同的属性</li></ul><h2 id="兼容性问题"><a href="#兼容性问题" class="headerlink" title="兼容性问题"></a>兼容性问题</h2><ul><li>IE6双边距bug<br>块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大。hack：display:inline;将其转化为行内属性。</li><li><p>渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用“9”这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">background-color:#f1ee18;/*所有识别*/</span><br><span class="line">.background-color:#00deff9; /*IE6、7、8识别*/</span><br><span class="line">+background-color:#a200ff;/*IE6、7识别*/</span><br><span class="line">_background-color:#1e0bd1;/*IE6识别*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>设置较小高度标签（一般小于10px），在IE6，IE7中高度超出自己设置高度。<br>hack：给超出高度的标签设置overflow:hidden;或者设置行高line-height 小于你设置的高度。</p></li><li>IE下，可以使用获取常规属性的方法来获取自定义属性,也可以使用getAttribute()获取自定义属性；<br>Firefox下，只能使用getAttribute()获取自定义属性。<br>解决方法:统一通过getAttribute()获取自定义属性。</li><li>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,可通过加入 CSS 属性 <code>-webkit-text-size-adjust: none;</code> 解决。</li></ul><h2 id="BFC规范-块级格式化上下文：block-formatting-context"><a href="#BFC规范-块级格式化上下文：block-formatting-context" class="headerlink" title="BFC规范(块级格式化上下文：block formatting context)"></a>BFC规范(块级格式化上下文：block formatting context)</h2><p>定位方案：</p><ul><li>内部的Box会在垂直方向上一个接一个放置。</li><li>Box垂直方向的距离由margin决定，属于同一个BFC的两个相邻Box的margin会发生重叠。</li><li>每个元素的margin box 的左边，与包含块border box的左边相接触。</li><li>BFC的区域不会与float box重叠。</li><li>BFC是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。</li><li>计算BFC的高度时，浮动元素也会参与计算。</li></ul><p>满足下列条件之一就可触发BFC</p><ul><li>根元素，即html</li><li>float的值不为none（默认）</li><li>overflow的值不为visible（默认）</li><li>display的值为inline-block、table-cell、table-caption</li><li>position的值为absolute或fixed</li></ul><p>举个栗子：<br>上下margin重合的问题：在重合元素外包裹一层容器，并触发该容器生成一个BFC。<code>overflow: hidden;</code></p><h2 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h2><p>一个网站能够兼容多个终端，通过媒体查询检测不同的设备屏幕尺寸做处理。<br><code>&lt;meta name=&quot;’viewport’&quot; content=&quot;”width=device-width,&quot; initial-scale=&quot;1.&quot; maximum-scale=&quot;1,user-scalable=no”&quot;/&gt;</code></p><h2 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h2><ul><li><head><meta name="generator" content="Hexo 3.8.0">:<code>&lt;link rel=”stylesheet” type=”text/css” href=”xxx.css” media=”only screen and (max-device-width:480px)”&gt;</code></head></li><li>CSS : <code>@media only screen and (max-device-width:480px)</code></li></ul><h2 id="浏览器是怎样解析CSS选择器的？"><a href="#浏览器是怎样解析CSS选择器的？" class="headerlink" title="浏览器是怎样解析CSS选择器的？"></a>浏览器是怎样解析CSS选择器的？</h2><p>CSS选择器的解析是从右向左解析的。若从左向右的匹配，发现不符合规则，需要进行回溯，会损失很多性能。若从右向左匹配，先找到所有的最右节点，对于每一个节点，向上寻找其父节点直到找到根元素或满足条件的匹配规则，则结束这个分支的遍历。两种匹配规则的性能差别很大，是因为从右向左的匹配在第一步就筛选掉了大量的不符合条件的最右节点（叶子节点），而从左向右的匹配规则的性能都浪费在了失败的查找上面。<br>而在 CSS 解析完毕后，需要将解析的结果与 DOM Tree 的内容一起进行分析建立一棵 Render Tree，最终用来进行绘图。在建立 Render Tree 时（WebKit 中的「Attachment」过程），浏览器就要为每个 DOM Tree 中的元素根据 CSS 的解析结果（Style Rules）来确定生成怎样的 Render Tree。</p><h2 id="在网页中的应该使用奇数还是偶数的字体？为什么呢？"><a href="#在网页中的应该使用奇数还是偶数的字体？为什么呢？" class="headerlink" title="在网页中的应该使用奇数还是偶数的字体？为什么呢？"></a>在网页中的应该使用奇数还是偶数的字体？为什么呢？</h2><p>使用偶数字体。偶数字号相对更容易和 web 设计的其他部分构成比例关系。Windows 自带的点阵宋体（中易宋体）从 Vista 开始只提供 12、14、16 px 这三个大小的点阵，而 13、15、17 px时用的是小一号的点。（即每个字占的空间大了 1 px，但点阵没变），于是略显稀疏。</p><h2 id="怎么让Chrome支持小于12px-的文字？"><a href="#怎么让Chrome支持小于12px-的文字？" class="headerlink" title="怎么让Chrome支持小于12px 的文字？"></a>怎么让Chrome支持小于12px 的文字？</h2><p>   <code>p{font-size:10px;-webkit-transform:scale(0.8);}</code></p><h2 id="让页面里的字体变清晰"><a href="#让页面里的字体变清晰" class="headerlink" title="让页面里的字体变清晰"></a>让页面里的字体变清晰</h2><p>  只在ios<code>webkit-font-smoothing：antialiased 灰度平滑</code></p><h2 id="android：position-fixed无效"><a href="#android：position-fixed无效" class="headerlink" title="android：position:fixed无效"></a>android：position:fixed无效</h2><p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no&quot;/&gt;</code></p><h2 id="手动写动画的最小时间间隔是多久"><a href="#手动写动画的最小时间间隔是多久" class="headerlink" title="手动写动画的最小时间间隔是多久"></a>手动写动画的最小时间间隔是多久</h2><p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms。</p><h2 id="inline-block间隙"><a href="#inline-block间隙" class="headerlink" title="inline-block间隙"></a>inline-block间隙</h2><p>float/font-size:0、letter-spacing、word-spacing</p><h2 id="行内级元素末尾实现换行-用伪元素代替"><a href="#行内级元素末尾实现换行-用伪元素代替" class="headerlink" title="行内级元素末尾实现换行,用伪元素代替"></a>行内级元素末尾实现换行,用伪元素代替<br></h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    content: "A";//0x000A,00A</span><br><span class="line">    <span class="selector-tag">white-space</span>: <span class="selector-tag">pre</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>百分比的padding和margin的依据都是父元素的width</li><li>视差滚动插件：parallax-scrolling</li><li>多行文本垂直居中：需要设置display属性为inline-block。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;css tips~&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="小结" scheme="http://rawraw.info/categories/%E5%B0%8F%E7%BB%93/"/>
+    
+    
+      <category term="css" scheme="http://rawraw.info/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IoC理念</title>
+    <link href="http://rawraw.info/2018-03-07-ioc.html"/>
+    <id>http://rawraw.info/2018-03-07-ioc.html</id>
+    <published>2018-03-07T14:52:13.000Z</published>
+    <updated>2019-04-15T14:18:01.879Z</updated>
+    
+    <content type="html"><![CDATA[<p>vue这么火react这么火，该看看IoC咯~<br>现在都喜欢对项目拆解成多个模块/组件来组合使用，以此提高code复用性。一个复杂组件总会依赖其他组件来协同完成某个逻辑功能。<br>组件越复杂，依赖越多，可复用性就越差。然后我们就可以用一下这个IoC理念咯。嗯，一种全新的设计模式。</p><p><div align="center"><br><img src="/images/bg/0046.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><blockquote><p>IoC 全称 Inversion of Control，中文术语为依赖倒置（反转），包含两个准则：</p><blockquote><p> 1.高层次的模块不应该依赖于低层次的模块，他们都应该依赖于抽象<br> 2.抽象不应该依赖于具体实现，具体实现应该依赖于抽象</p></blockquote></blockquote><p>核心思想：面向接口编程。</p><h1 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h1><p>哇 炸，再理解一下。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;vue这么火react这么火，该看看IoC咯~&lt;br&gt;现在都喜欢对项目拆解成多个模块/组件来组合使用，以此提高code复用性。一个复杂组件总会依赖其他组件来协同完成某个逻辑功能。&lt;br&gt;组件越复杂，依赖越多，可复用性就越差。然后我们就可以用一下这个IoC理念咯。嗯，一种全新的设计模式。&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0046.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="干货" scheme="http://rawraw.info/categories/%E5%B9%B2%E8%B4%A7/"/>
+    
+    
+      <category term="IoC" scheme="http://rawraw.info/tags/IoC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序是真的讨厌</title>
+    <link href="http://rawraw.info/2018-03-01-wechatfuck.html"/>
+    <id>http://rawraw.info/2018-03-01-wechatfuck.html</id>
+    <published>2018-03-01T03:04:08.000Z</published>
+    <updated>2019-04-15T14:18:01.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>   微信小程序出现好久了，一直没仔细了解。从一开始就是莫名的排斥，公司关于小程序的项目也是都直接丢给新人。今天抖音刷到一个吃饭吃什么的段子，就想说这很easy,自己写一个玩一下啊。嗯，写一个放哪儿，那就小程序吧。但是好像一点都不酷，嗯，那我给它做成云标签墙吧。<br>   想象中，一切都很美好。</p><div align="center"><br><img src="/images/bg/0058.jpg" alt="“封面”"><br></div><a id="more"></a><h1 id="START"><a href="#START" class="headerlink" title="START"></a>START</h1><p>原来做过一个小demo是这样子的。</p><p><div align="center"><br><img src="/images/result/wall.gif" alt="“效果”"><br></div><br>讲道理一堆食物这样子滚应该很诱人吧。然后就开始一边看看文档一边写。<br>一切顺利地进行到这一步</p><p><div align="center"><br><img src="/images/code/20180301001.png" alt="“代码”"><br></div><br>没法进行dom选择，点击效果之类的可以用事件驱动来操作dom，但是初始化的状态呢，所以每个tag的样式，x,y,z,opacity,color，animate都写在循环的标签里吗？一个标签括号里百来行代码很好看吗。。。获取未知数量的每个元素的scroll位置也是难搞。<br>抱着一颗好学的心跑去百度，结果一堆得不到答案的人在求助。</p><h1 id="QUESTION"><a href="#QUESTION" class="headerlink" title="QUESTION"></a>QUESTION</h1><p>我是真的好菜。先放着慢慢想办法咯。其实，也可能是被jQuery惯出来的臭毛病吧。</p><h2 id="getElement"><a href="#getElement" class="headerlink" title="getElement"></a>getElement</h2><p>可以直接标签内操作，但是烦。</p><h2 id="appendChild"><a href="#appendChild" class="headerlink" title="appendChild"></a>appendChild</h2><p>可以用模板做，但是烦。而且无限的append的好像就有点难做了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;   微信小程序出现好久了，一直没仔细了解。从一开始就是莫名的排斥，公司关于小程序的项目也是都直接丢给新人。今天抖音刷到一个吃饭吃什么的段子，就想说这很easy,自己写一个玩一下啊。嗯，写一个放哪儿，那就小程序吧。但是好像一点都不酷，嗯，那我给它做成云标签墙吧。&lt;br&gt;   想象中，一切都很美好。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0058.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="待解决" scheme="http://rawraw.info/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="wechat" scheme="http://rawraw.info/tags/wechat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo提交问题</title>
+    <link href="http://rawraw.info/2018-02-28-bug20180228.html"/>
+    <id>http://rawraw.info/2018-02-28-bug20180228.html</id>
+    <published>2018-02-28T04:13:55.000Z</published>
+    <updated>2019-04-15T14:18:01.874Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>fatal: could not read Username for &#39;https://github.com&#39;:No error</code>巴拉巴拉<br>今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。</p><div align="center"><br><img src="/images/bg/0033.jpg" alt="“封面”"><br></div><a id="more"></a><h1 id="TRY"><a href="#TRY" class="headerlink" title="TRY"></a>TRY</h1><h2 id="尝试一"><a href="#尝试一" class="headerlink" title="尝试一"></a>尝试一</h2><p>原因：<br>https方式的时候 在git remote add origin 的https url 里面没有用户名和密码<br>方案：<br><code>git remote add origin https://{username}:{password}@github.com/{username}/project.git</code><br>或者直接修改.git/config隐藏文件为 <code>git remote add origin https://{username}:{password}@github.com/{username}/project.git</code>格式<br>结果：<br>查了N次，用户名都是对的，添加了N次，都是已存在。</p><h2 id="尝试二"><a href="#尝试二" class="headerlink" title="尝试二"></a>尝试二</h2><p>原因：<br>如果安装git客户端的时候没有勾选git命令在bash和cmd命令都有效，若是在cmd命令下则因为没有将git添加到windows的path。<br>方案：<br>在blog的目录打开git bash再尝试hexo d。<br>结果：<br>然并卵</p><h2 id="尝试三"><a href="#尝试三" class="headerlink" title="尝试三"></a>尝试三</h2><p>原因：<br>git的版本bug<br>方案：<br>查看git版本<br><code>git version</code><br>结果：<br>我的是2.12.2windows.2。<br><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code>用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。<br><code>https://git-scm.com/download/win</code><br>搞了好久的vpn啊，还好最后升级之后真的解决了问题！开心值+100！！！</p><div align="center"><br><img src="/images/bg/0062.jpeg" alt="“封面”"><br></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;fatal: could not read Username for &amp;#39;https://github.com&amp;#39;:No error&lt;/code&gt;巴拉巴拉&lt;br&gt;今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0033.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="万恶BUG" scheme="http://rawraw.info/categories/%E4%B8%87%E6%81%B6BUG/"/>
+    
+    
+      <category term="hexo" scheme="http://rawraw.info/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git常用命令</title>
+    <link href="http://rawraw.info/2018-01-27-gitstudy.html"/>
+    <id>http://rawraw.info/2018-01-27-gitstudy.html</id>
+    <published>2018-01-27T06:06:34.000Z</published>
+    <updated>2019-04-15T14:18:01.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>git常用命令<br><a id="more"></a></p><h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="git升级"><a href="#git升级" class="headerlink" title="git升级"></a>git升级</h2><p><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code></p><h1 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h1><h2 id="查看用户名和邮箱"><a href="#查看用户名和邮箱" class="headerlink" title="查看用户名和邮箱"></a>查看用户名和邮箱</h2><p><code>$ git config user.name</code><br><code>$ git config user.email</code></p><h2 id="修改用户名和邮箱"><a href="#修改用户名和邮箱" class="headerlink" title="修改用户名和邮箱"></a>修改用户名和邮箱</h2><p><code>$ git config --global user.name</code><br><code>$ git config --global user.email</code></p><h2 id="初始化一个版本仓库"><a href="#初始化一个版本仓库" class="headerlink" title="初始化一个版本仓库"></a>初始化一个版本仓库</h2><p><code>$ git init</code></p><h2 id="Clone远程版本库"><a href="#Clone远程版本库" class="headerlink" title="Clone远程版本库"></a>Clone远程版本库</h2><p><code>$ git clone addr.</code></p><h2 id="添加远程版本库origin"><a href="#添加远程版本库origin" class="headerlink" title="添加远程版本库origin"></a>添加远程版本库origin</h2><p><code>$ git remote add origin addr.</code></p><h2 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h2><p><code>$ git remote -v</code></p><h1 id="三、提交你的修改"><a href="#三、提交你的修改" class="headerlink" title="三、提交你的修改"></a>三、提交你的修改</h1><h2 id="添加当前修改的文件到暂存区"><a href="#添加当前修改的文件到暂存区" class="headerlink" title="添加当前修改的文件到暂存区"></a>添加当前修改的文件到暂存区</h2><p><code>$ git add .</code></p><h2 id="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"><a href="#如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件" class="headerlink" title="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"></a>如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件</h2><p><code>$ git add -u</code></p><h2 id="提交你的修改"><a href="#提交你的修改" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><p><code>$ git commit –m &amp;quot;你的注释&amp;quot;</code></p><h2 id="推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支"><a href="#推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支" class="headerlink" title="推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]"></a>推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]</h2><p><code>$ git push origin master</code></p><h2 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h2><p><code>$ git status</code></p><h2 id="跟踪新文件"><a href="#跟踪新文件" class="headerlink" title="跟踪新文件"></a>跟踪新文件</h2><p><code>$ git add readme.txt</code></p><h2 id="从当前跟踪列表移除文件，并完全删除"><a href="#从当前跟踪列表移除文件，并完全删除" class="headerlink" title="从当前跟踪列表移除文件，并完全删除"></a>从当前跟踪列表移除文件，并完全删除</h2><p><code>$ git rm readme.txt</code></p><h2 id="仅在暂存区删除，保留文件在当前目录，不再跟踪"><a href="#仅在暂存区删除，保留文件在当前目录，不再跟踪" class="headerlink" title="仅在暂存区删除，保留文件在当前目录，不再跟踪"></a>仅在暂存区删除，保留文件在当前目录，不再跟踪</h2><p><code>$ git rm –cached readme.txt</code></p><h2 id="重命名文件"><a href="#重命名文件" class="headerlink" title="重命名文件"></a>重命名文件</h2><p><code>$ git mv reademe.txt readme</code></p><h2 id="查看当前分支的存在提交历史记录"><a href="#查看当前分支的存在提交历史记录" class="headerlink" title="查看当前分支的存在提交历史记录"></a>查看当前分支的存在提交历史记录</h2><p><code>$ git log</code>不包括诸如删除的或被合并的提交</p><h2 id="查看当前分支所有操作历史"><a href="#查看当前分支所有操作历史" class="headerlink" title="查看当前分支所有操作历史"></a>查看当前分支所有操作历史</h2><p><code>$ git reflog</code>诸如历史提交记录，撤销，合并提交等详细历史记录</p><h2 id="修改最后一次提交注释的，利用–amend参数"><a href="#修改最后一次提交注释的，利用–amend参数" class="headerlink" title="修改最后一次提交注释的，利用–amend参数"></a>修改最后一次提交注释的，利用–amend参数</h2><p><code>$ git checkout –- readme.txt</code></p><h1 id="四、基本的分支管理"><a href="#四、基本的分支管理" class="headerlink" title="四、基本的分支管理"></a>四、基本的分支管理</h1><h2 id="创建一个分支"><a href="#创建一个分支" class="headerlink" title="创建一个分支"></a>创建一个分支</h2><p><code>$ git branch workspace</code></p><h2 id="切换工作目录到workspace"><a href="#切换工作目录到workspace" class="headerlink" title="切换工作目录到workspace"></a>切换工作目录到workspace</h2><p><code>$ git chekcout workspace</code></p><h2 id="将上面的命令合在一起，创建workspace分支并切换到workspace"><a href="#将上面的命令合在一起，创建workspace分支并切换到workspace" class="headerlink" title="将上面的命令合在一起，创建workspace分支并切换到workspace"></a>将上面的命令合在一起，创建workspace分支并切换到workspace</h2><p><code>$ git chekcout –b workspace</code></p><h2 id="合并workspace分支，当前工作目录为master"><a href="#合并workspace分支，当前工作目录为master" class="headerlink" title="合并workspace分支，当前工作目录为master"></a>合并workspace分支，当前工作目录为master</h2><p><code>$ git merge workspace</code></p><h2 id="合并完成后，没有出现冲突，删除workspace分支"><a href="#合并完成后，没有出现冲突，删除workspace分支" class="headerlink" title="合并完成后，没有出现冲突，删除workspace分支"></a>合并完成后，没有出现冲突，删除workspace分支</h2><p><code>$ git branch –d workspace</code></p><h2 id="拉去远程仓库的数据，语法为-git-fetch-remote-name"><a href="#拉去远程仓库的数据，语法为-git-fetch-remote-name" class="headerlink" title="拉去远程仓库的数据，语法为 git fetch [remote-name]"></a>拉去远程仓库的数据，语法为 git fetch [remote-name]</h2><p><code>$ git fetch</code></p><h2 id="fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"><a href="#fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并" class="headerlink" title="fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"></a>fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并</h2><p><code>$ git pull</code></p><h2 id="查看远程仓库的信息"><a href="#查看远程仓库的信息" class="headerlink" title="查看远程仓库的信息"></a>查看远程仓库的信息</h2><p><code>$ git remote show origin</code></p><h1 id="五、合并"><a href="#五、合并" class="headerlink" title="五、合并"></a>五、合并</h1><h2 id="合并的commit的前一个commit节点"><a href="#合并的commit的前一个commit节点" class="headerlink" title="合并的commit的前一个commit节点"></a>合并的commit的前一个commit节点</h2><p><code>$ git rebase -i （commitHash）</code><br>pick：简写p，启用该commit；<br>reword：简写r，使用该commit，但是修改提交信息，修改后可以继续编辑后面的提交信息；<br>edit：简写e，使用commit，停止合并该commit；<br>squash：简写s，使用该commit，并将该commit并入前一commit；<br>drop：简写d，移除该commit；</p><h1 id="六、撤销"><a href="#六、撤销" class="headerlink" title="六、撤销"></a>六、撤销</h1><h2 id="撤销一个提交的同时会创建一个新的提交"><a href="#撤销一个提交的同时会创建一个新的提交" class="headerlink" title="撤销一个提交的同时会创建一个新的提交"></a>撤销一个提交的同时会创建一个新的提交</h2><p><code>$ git revert head@{19}</code><br>撤销提交时若多个提交修改了同一文件可能会出现冲突，需要处理冲突后，暂存：<code>$ git add.</code><br>然后继续执行revert操作：<code>$ git revert --continue</code></p><h2 id="期望撤销的提交是最近独立存在的，并没有发生合并"><a href="#期望撤销的提交是最近独立存在的，并没有发生合并" class="headerlink" title="期望撤销的提交是最近独立存在的，并没有发生合并"></a>期望撤销的提交是最近独立存在的，并没有发生合并</h2><p><code>$ git reset （commitHash）</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;git常用命令&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="git" scheme="http://rawraw.info/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件夹命名习惯</title>
+    <link href="http://rawraw.info/2018-01-07-name.html"/>
+    <id>http://rawraw.info/2018-01-07-name.html</id>
+    <published>2018-01-07T04:36:28.000Z</published>
+    <updated>2019-04-15T14:18:01.880Z</updated>
+    
+    <content type="html"><![CDATA[<p>常用的项目目录文件命名<br><a id="more"></a></p><h1 id="config"><a href="#config" class="headerlink" title="config"></a>config</h1><blockquote><p>配置文件</p></blockquote><h1 id="static"><a href="#static" class="headerlink" title="static"></a>static</h1><blockquote><p>静态资源</p></blockquote><h1 id="src-source"><a href="#src-source" class="headerlink" title="src,source"></a>src,source</h1><blockquote><p>源代码</p></blockquote><h1 id="examples，demo"><a href="#examples，demo" class="headerlink" title="examples，demo"></a>examples，demo</h1><blockquote><p>示例</p></blockquote><h1 id="docs"><a href="#docs" class="headerlink" title="docs"></a>docs</h1><blockquote><p>文档</p></blockquote><h1 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h1><blockquote><p>插件</p></blockquote><h1 id="lib"><a href="#lib" class="headerlink" title="lib"></a>lib</h1><blockquote><p>library,库文件</p></blockquote><h1 id="component"><a href="#component" class="headerlink" title="component"></a>component</h1><blockquote><p>组件</p></blockquote><h1 id="dist"><a href="#dist" class="headerlink" title="dist"></a>dist</h1><blockquote><p>distribution,打包编译后的文件</p><blockquote><p>less,sass,typescript,es6</p></blockquote></blockquote><h1 id="test-tests-test"><a href="#test-tests-test" class="headerlink" title="test,tests,test"></a>test,tests,<strong>test</strong></h1><blockquote><p>测试文件</p></blockquote><h2 id="benchmarks"><a href="#benchmarks" class="headerlink" title="benchmarks"></a>benchmarks</h2><blockquote><p>测试版本的性能变化</p></blockquote><h2 id="units-spec"><a href="#units-spec" class="headerlink" title="units,spec"></a>units,spec</h2><blockquote><p>单元测试</p></blockquote><h2 id="e2e"><a href="#e2e" class="headerlink" title="e2e"></a>e2e</h2><blockquote><p>端对端测试</p></blockquote><h1 id="build-script"><a href="#build-script" class="headerlink" title="build,script"></a>build,script</h1><blockquote><p>构建脚本</p></blockquote><h1 id="utils-tools-helpers"><a href="#utils-tools-helpers" class="headerlink" title="utils,tools,helpers"></a>utils,tools,helpers</h1><blockquote><p>工具代码</p></blockquote><h1 id="models-views-controllers-middlewares"><a href="#models-views-controllers-middlewares" class="headerlink" title="models,views,controllers,middlewares"></a>models,views,controllers,middlewares</h1><blockquote><p>MVC，中间件</p></blockquote><h1 id="router"><a href="#router" class="headerlink" title="router"></a>router</h1><blockquote><p>路由</p></blockquote><h1 id="server"><a href="#server" class="headerlink" title="server"></a>server</h1><blockquote><p>服务端代码</p></blockquote><h1 id="adapters"><a href="#adapters" class="headerlink" title="adapters"></a>adapters</h1><blockquote><p>适配器模式</p></blockquote><h1 id="legacy"><a href="#legacy" class="headerlink" title="legacy"></a>legacy</h1><blockquote><p>兼容历史版本或者浏览器的代码</p></blockquote><h1 id="bin"><a href="#bin" class="headerlink" title="bin"></a>bin</h1><blockquote><p>命令脚本，命令行工具</p></blockquote><h1 id="common"><a href="#common" class="headerlink" title="common"></a>common</h1><blockquote><p>公用文件</p></blockquote><h1 id="packages"><a href="#packages" class="headerlink" title="packages"></a>packages</h1><blockquote><p>打包多个npm包,减小体积</p></blockquote><h1 id="core"><a href="#core" class="headerlink" title="core"></a>core</h1><blockquote><p>核心文件</p></blockquote><h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><blockquote><p>杂项</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;常用的项目目录文件命名&lt;br&gt;
+    
+    </summary>
+    
+      <category term="规范" scheme="http://rawraw.info/categories/%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="命名" scheme="http://rawraw.info/tags/%E5%91%BD%E5%90%8D/"/>
+    
+      <category term="规范" scheme="http://rawraw.info/tags/%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动端语音播报问题集合</title>
+    <link href="http://rawraw.info/2017-12-19-sound.html"/>
+    <id>http://rawraw.info/2017-12-19-sound.html</id>
+    <published>2017-12-19T06:16:01.000Z</published>
+    <updated>2019-04-15T14:18:01.881Z</updated>
+    
+    <content type="html"><![CDATA[<p>突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。<br>打卡签到，播放“XXX,签到成功”。<br>判断一个人的语音提示是否播报完成？或者打断？</p><p><div align="center"><br><img src="/images/bg/0059.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="文本生成语音"><a href="#文本生成语音" class="headerlink" title="文本生成语音"></a>文本生成语音</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> speaker = <span class="keyword">new</span> <span class="built_in">window</span>.SpeechSynthesisUtterance();</span><br><span class="line"><span class="keyword">var</span> speakTimer,</span><br><span class="line">    stopTimer;</span><br><span class="line"><span class="comment">// 开始播报</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speakText</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">    clearTimeout(speakTimer);</span><br><span class="line">    <span class="built_in">window</span>.speechSynthesis.cancel();</span><br><span class="line">    speakTimer = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        speaker.text = text;</span><br><span class="line">        <span class="built_in">window</span>.speechSynthesis.speak(speaker);</span><br><span class="line">    &#125;, <span class="number">200</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 停止播报</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopSpeak</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearTimeout(stopTimer);</span><br><span class="line">    clearTimeout(speakTimer);</span><br><span class="line">    stopTimer = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.speechSynthesis.cancel();</span><br><span class="line">    &#125;, <span class="number">20</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="SpeechSynthesis"><a href="#SpeechSynthesis" class="headerlink" title="SpeechSynthesis"></a>SpeechSynthesis</h3><table><thead><tr><th>参数</th><th>含义</th></tr></thead><tbody><tr><td>paused</td><td>是否暂停</td></tr><tr><td>pending</td><td>是否处理中</td></tr><tr><td>speaking</td><td>是否朗读中</td></tr><tr><td>onvoiceschanged</td><td>声音变化时触发</td></tr><tr><td>cancel()</td><td>情况待朗读队列</td></tr><tr><td>getVoices()</td><td>获取浏览器支持的语音包列表</td></tr><tr><td>pause()</td><td>暂停</td></tr><tr><td>resume()</td><td>重新开始</td></tr><tr><td>speak()</td><td>读合成的语音，参数必须</td></tr></tbody></table><h3 id="SpeechSynthesisUtterance"><a href="#SpeechSynthesisUtterance" class="headerlink" title="SpeechSynthesisUtterance"></a>SpeechSynthesisUtterance</h3><table><thead><tr><th>参数</th><th>含义</th></tr></thead><tbody><tr><td>lang</td><td>语言</td></tr><tr><td>pitch</td><td>音高</td></tr><tr><td>rate</td><td>语速</td></tr><tr><td>text</td><td>文本</td></tr><tr><td>voice</td><td>声音</td></tr><tr><td>volume</td><td>音量</td></tr><tr><td>onboundary</td><td>单词或句子边界触发，即分隔处触发</td></tr><tr><td>onend</td><td>结束时触发</td></tr><tr><td>onerror</td><td>错误时触发</td></tr><tr><td>onmark</td><td></td></tr><tr><td>onpause</td><td>暂停时触发</td></tr><tr><td>onresume</td><td>重新播放时触发</td></tr><tr><td>onstart</td><td>开始时触发</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。&lt;br&gt;打卡签到，播放“XXX,签到成功”。&lt;br&gt;判断一个人的语音提示是否播报完成？或者打断？&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0059.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="待解决" scheme="http://rawraw.info/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2018前端学习计划</title>
+    <link href="http://rawraw.info/2017-12-19-plan2018.html"/>
+    <id>http://rawraw.info/2017-12-19-plan2018.html</id>
+    <published>2017-12-19T05:14:03.000Z</published>
+    <updated>2019-04-15T14:18:01.881Z</updated>
+    
+    <content type="html"><![CDATA[<p>再堕落下去，要是个废人了。开始好好学习，天天向上咯！<br>小小列个清单先~</p><p><div align="center"><br><img src="/images/bg/0057.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="旧的要巩固"><a href="#旧的要巩固" class="headerlink" title="旧的要巩固"></a>旧的要巩固</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ol><li>结构：HTML/HTML5</li><li>样式：CSS/CSS3/canvas/svg/vr/webGL</li><li>逻辑：JavaScript/jQuery</li><li>地图：摸清天地图，一切地图不是事儿</li><li>数据:数据库/php(后台小哥哥的东西，看看会cv就好)</li><li>服务：node</li><li>兼容性：web和移动端/各浏览器</li></ol><h2 id="框架全家桶"><a href="#框架全家桶" class="headerlink" title="框架全家桶"></a>框架全家桶</h2><ol><li>vue+vuex+vue+router+axios</li><li>react+</li><li>Angular(找时间看2啊)</li></ol><h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2><ol><li>LESS/SASS</li><li>TypeSript</li><li>webpack+npm/yarn</li></ol><h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ol><li>es6</li></ol><h2 id="小技能"><a href="#小技能" class="headerlink" title="小技能"></a>小技能</h2><ol><li>gif录制，用啥软件来着，记得回去翻翻</li></ol><h1 id="新的要学学学学学！嘿嘿"><a href="#新的要学学学学学！嘿嘿" class="headerlink" title="新的要学学学学学！嘿嘿~"></a>新的要学学学学学！嘿嘿~</h1><h2 id="特效，公式撸起来"><a href="#特效，公式撸起来" class="headerlink" title="特效，公式撸起来"></a>特效，公式撸起来</h2><ol><li>贝塞尔曲线原理</li><li>视差原理</li><li>阻尼公式</li></ol><h2 id="新框架"><a href="#新框架" class="headerlink" title="新框架"></a>新框架</h2><ol><li>express框架</li><li>koa框架</li><li>egg.js(天猫)</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;再堕落下去，要是个废人了。开始好好学习，天天向上咯！&lt;br&gt;小小列个清单先~&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0057.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="计划" scheme="http://rawraw.info/categories/%E8%AE%A1%E5%88%92/"/>
+    
+    
+      <category term="daydayup" scheme="http://rawraw.info/tags/daydayup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Angular 1 vs. Angular 2</title>
+    <link href="http://rawraw.info/2017-07-21-angularcompare.html"/>
+    <id>http://rawraw.info/2017-07-21-angularcompare.html</id>
+    <published>2017-07-21T05:26:52.000Z</published>
+    <updated>2019-04-15T14:18:01.873Z</updated>
+    
+    <content type="html"><![CDATA[<p>Angular 1 对比 Angular 2 </p><a id="more"></a><h1 id="get-Angular-2-0"><a href="#get-Angular-2-0" class="headerlink" title="get Angular 2.0"></a>get Angular 2.0</h1><p><code>cnpm install angular@2.0.0-alpha.6</code></p><h1 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h1><h2 id="1-双向数据绑定"><a href="#1-双向数据绑定" class="headerlink" title="1.双向数据绑定"></a>1.双向数据绑定</h2><p>单向数据绑定<br>2.0中会有方法实现双向绑定，虽然实现的背后数据是单向的。这听起来很像React的Flux所做的工作。这种结构也可以被Angular来使用。</p><h2 id="2-观察器"><a href="#2-观察器" class="headerlink" title="2.观察器"></a>2.观察器</h2><p>Zone.js<br>$scope.$watch, $scope.$apply, $timeout这些都不在需要了，这也是1.x版本有如此之大的学习曲线的原因。<br>Zone.js可以帮Angular实现变化的自动检测。这听起来很像React的差异比较算法。</p><h2 id="3-组件通信"><a href="#3-组件通信" class="headerlink" title="3.组件通信"></a>3.组件通信</h2><p>2.0：除了$broadcast 和 $emit，2.0还有一些小得变化，1）你可以在DOM层发送消息，而不是在scope；2）你可以组件嵌套，然后link他们，这看上去很像每个组件都使用它们独立的scope。</p><h2 id="4-DOM"><a href="#4-DOM" class="headerlink" title="4. DOM"></a>4. DOM</h2><p>2.0：从很多方面可以看出，Angular 2.0对于DOM样式的操作很像React的virtual DOM，它引用的是最近呈现的view层。关于Angular Native，Misko提到，这个view层可以运行于web worker，甚至是native。</p><h2 id="5-scope"><a href="#5-scope" class="headerlink" title="5. scope"></a>5. scope</h2><h2 id="6-模块"><a href="#6-模块" class="headerlink" title="6. 模块"></a>6. 模块</h2><p>2.0将肯定使用ES6的模块语法。同时，2.0还希望通过懒加载来引入依赖注入。和以往通过单例方式管理不同的是，2.0希望使用一种层次化数据结构来提供继承特性。你将能够控制模块的生命周期，比如services。</p><h2 id="7-指令"><a href="#7-指令" class="headerlink" title="7. 指令"></a>7. 指令</h2><h2 id="8-Router"><a href="#8-Router" class="headerlink" title="8. Router"></a>8. Router</h2><h2 id="9-HTML"><a href="#9-HTML" class="headerlink" title="9. HTML"></a>9. HTML</h2><p><a href="http://www.html-js.com/article/AngularJS-mass-Angular-2-and-1x-comparison" target="_blank" rel="noopener">参考</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Angular 1 对比 Angular 2 &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://rawraw.info/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="angular" scheme="http://rawraw.info/tags/angular/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node.js学习</title>
+    <link href="http://rawraw.info/2017-07-20-node.html"/>
+    <id>http://rawraw.info/2017-07-20-node.html</id>
+    <published>2017-07-20T04:33:31.000Z</published>
+    <updated>2019-04-15T14:18:01.880Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。</p></blockquote><a id="more"></a><h1 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h1><p>浏览器内核实际上分为两个部分:渲染引擎和 JavaScript 引擎。前者负责渲染 HTML + CSS，后者则负责运行 JavaScript。<br>实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。<br>Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p><h1 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h1><ul><li>实时性应用，比如在线多人协作工具，网页聊天应用等。</li><li>以 I/O 为主的高并发应用，比如为客户端提供 API，读取数据库。</li><li>流式应用，比如客户端经常上传文件。</li><li>前后端分离。</li></ul><h4 id="RESTful-API"><a href="#RESTful-API" class="headerlink" title="RESTful API"></a>RESTful API</h4><blockquote><p>这是NodeJS最理想的应用场景，可以处理数万条连接，本身没有太多的逻辑，只需要请求API，组织数据进行返回即可。它本质上只是从某个数据库中查找一些值并将它们组成一个响应。由于响应是少量文本，入站请求也是少量的文本，因此流量不高，一台机器甚至也可以处理最繁忙的公司的API需求。</p></blockquote><h4 id="统一Web应用的UI层"><a href="#统一Web应用的UI层" class="headerlink" title="统一Web应用的UI层"></a>统一Web应用的UI层</h4><blockquote><p>目前MVC的架构，在某种意义上来说，Web开发有两个UI层，一个是在浏览器里面我们最终看到的，另一个在server端，负责生成和拼接页面。</p></blockquote><h4 id="大量Ajax请求的应用"><a href="#大量Ajax请求的应用" class="headerlink" title="大量Ajax请求的应用"></a>大量Ajax请求的应用</h4><blockquote><p>例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，NodeJS能响应大量的并发请求。</p></blockquote><p>　总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。</p><h1 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h1><ul><li>不适合 CPU 密集型的任务，比如人工智能方面的计算，视频、图片的处理等。</li></ul><h1 id="辅助概念的理解"><a href="#辅助概念的理解" class="headerlink" title="辅助概念的理解"></a>辅助概念的理解</h1><p>看不懂啊看不懂</p><h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><h2 id="非阻塞-I-O"><a href="#非阻塞-I-O" class="headerlink" title="非阻塞 I/O"></a>非阻塞 I/O</h2><h3 id="网络-I-O"><a href="#网络-I-O" class="headerlink" title="网络 I/O"></a>网络 I/O</h3><h3 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h3><h2 id="事件循环"><a href="#事件循环" class="headerlink" title="事件循环"></a>事件循环</h2><h2 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="node" scheme="http://rawraw.info/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS hack</title>
+    <link href="http://rawraw.info/2017-07-07-hack.html"/>
+    <id>http://rawraw.info/2017-07-07-hack.html</id>
+    <published>2017-07-07T05:21:24.000Z</published>
+    <updated>2019-04-15T14:18:01.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>待整理。<br>目前还不怎么需要，先搜集了一下网上大家的方法，以后方便看咯。<br><a id="more"></a></p><h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p> 由于不同种类的浏览器（<code>Internet Explorer,Safari,Mozilla Firefox,Chrome...</code>）或者同一浏览器的不同版本 对CSS的解析认识不一样，导致生成的页面效果不一样。针对不同的浏览器去写不同的CSS，让它能够同时兼容不同的浏览器，能在不同的浏览器中也能得到我们想要的页面效果。</p><h1 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h1><h3 id="IE-6"><a href="#IE-6" class="headerlink" title="IE 6"></a>IE 6</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* html #footer &#123;</span><br><span class="line">   position:absolute;</span><br><span class="line">   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+&apos;px&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Selector-Hacks"><a href="#Selector-Hacks" class="headerlink" title="Selector Hacks"></a>Selector Hacks</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE6 and below */</span><br><span class="line">* html #uno  &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE7 */</span><br><span class="line">*:first-child+html #dos &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE7, FF, Saf, Opera  */</span><br><span class="line">html&gt;body #tres &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE8, FF, Saf, Opera (Everything but IE 6,7) */</span><br><span class="line">html&gt;/**/body #cuatro &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Opera 9.27 and below, safari 2 */</span><br><span class="line">html:first-child #cinco &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Safari 2-3 */</span><br><span class="line">html[xmlns*=&quot;&quot;] body:last-child #seis &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* safari 3+, chrome 1+, opera9+, ff 3.5+ */</span><br><span class="line">body:first-of-type #ocho &#123;  color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* saf3+, chrome1+ */</span><br><span class="line">@media screen and (-webkit-min-device-pixel-ratio:0) &#123;#diez  &#123; color: red  &#125;&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* iPhone / mobile webkit */</span><br><span class="line">@media screen and (max-device-width: 480px) &#123;#veintiseis &#123; color: red  &#125;&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Safari 2 - 3.1 */</span><br><span class="line">html[xmlns*=&quot;&quot;]:root #trece  &#123; color: red  &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Everything but IE6-8 */</span><br><span class="line">:root *&gt; #quince &#123; color: red  &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE7 */</span><br><span class="line">*+html #dieciocho &#123;  color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Firefox only. 1+ */</span><br><span class="line">#veinticuatro,  x:-moz-any-link  &#123; color: red &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Firefox 3.0+ */</span><br><span class="line">#veinticinco,  x:-moz-any-link, x:default  &#123; color: red  &#125;</span><br></pre></td></tr></table></figure><h3 id="Attribute-Hacks"><a href="#Attribute-Hacks" class="headerlink" title="Attribute Hacks"></a>Attribute Hacks</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE6 */</span><br><span class="line">#once &#123; _color: blue &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE6, IE7 */</span><br><span class="line">#doce &#123; *color: blue; /* or #color: blue */ &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* Everything but IE6 */</span><br><span class="line">#diecisiete &#123; color/**/: blue &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE6, IE7, IE8 */</span><br><span class="line">#diecinueve &#123; color: blue\9; &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE7, IE8 */</span><br><span class="line">#veinte &#123; color/*\**/: blue\9; &#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* IE6, IE7 -- acts as an !important */</span><br><span class="line">#veintesiete &#123; color: blue !ie; &#125; /* string after ! can be anything */</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;待整理。&lt;br&gt;目前还不怎么需要，先搜集了一下网上大家的方法，以后方便看咯。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="杂" scheme="http://rawraw.info/categories/%E6%9D%82/"/>
+    
+    
+      <category term="css" scheme="http://rawraw.info/tags/css/"/>
+    
+      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+      <category term="杂" scheme="http://rawraw.info/tags/%E6%9D%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript要仔细学之二//闭包</title>
+    <link href="http://rawraw.info/2017-06-28-js02.html"/>
+    <id>http://rawraw.info/2017-06-28-js02.html</id>
+    <published>2017-06-28T01:48:15.000Z</published>
+    <updated>2019-04-15T14:18:01.879Z</updated>
+    
+    <content type="html"><![CDATA[<p>不得不看之闭包–<br>闭包是一种使函数能够都去其它函数的局部变量的语法机制。<br><a id="more"></a></p><h1 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">User</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">"Vicfeel"</span>;  <span class="comment">//共有属性</span></span><br><span class="line">    <span class="keyword">var</span> age = <span class="number">23</span>;    <span class="comment">//私有属性</span></span><br><span class="line">    <span class="keyword">this</span>.sayAge:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"my age is "</span> + age); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> user = <span class="keyword">new</span> User();</span><br><span class="line"><span class="built_in">console</span>.log(user.name); <span class="comment">//"Vicfeel"</span></span><br><span class="line"><span class="built_in">console</span>.log(user.age);  <span class="comment">//"undefined"</span></span><br><span class="line">user.sayAge();   <span class="comment">//"my age is 23"</span></span><br></pre></td></tr></table></figure><h1 id="一个栗子"><a href="#一个栗子" class="headerlink" title="一个栗子"></a>一个栗子</h1><blockquote><p>问题:点击列表输出对应的索引（用JS，非JQ）</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>哈哈哈<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘤嘤嘤<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘿嘿嘿<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>啦啦啦<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>略略略<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘻嘻嘻<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>呵呵呵<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>哒哒哒<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘁嘁嘁<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>哟哟哟<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><p>可能有小可爱会这样做:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'ul li'</span>);</span><br><span class="line"><span class="keyword">var</span> len = lis.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">lis[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>运行结果是，不管点击哪个列表，结果输出的都是10。</p><ol><li>var声明的变量是函数作用域的，而不是块级作用域的。也就是说，for循环10次，每次都是改变同一个i，所以它的值会从0一直加到10。</li><li>闭包保存的是外部变量的引用，而不是值。也就是说，循环10次监听器创建了10 个闭包，它们里面的i引用的是同一个啊。所以全部都指向了10。</li></ol><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="let替代var"><a href="#let替代var" class="headerlink" title="let替代var"></a>let替代var</h3><p>但是涉及到es6,出于兼容性的考虑，还要做转译，还是微微有点不开心<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'ul li'</span>);</span><br><span class="line"><span class="keyword">var</span> len = lis.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">lis[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="立即执行函数-切断闭包"><a href="#立即执行函数-切断闭包" class="headerlink" title="立即执行函数(切断闭包)"></a>立即执行函数(切断闭包)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'ul li'</span>);</span><br><span class="line"><span class="keyword">var</span> len = lis.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">i</span>) </span>&#123;</span><br><span class="line">lis[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;)(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="事件委托-避开闭包"><a href="#事件委托-避开闭包" class="headerlink" title="事件委托(避开闭包)"></a>事件委托(避开闭包)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ul = <span class="built_in">document</span>.querySelector(<span class="string">'ul'</span>);</span><br><span class="line"><span class="keyword">var</span> lis = ul.querySelectorAll(<span class="string">'li'</span>); </span><br><span class="line">ul.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> target = e.target;</span><br><span class="line"><span class="keyword">if</span>(target.nodeName.toLowerCase() === <span class="string">'li'</span>) &#123;</span><br><span class="line"><span class="built_in">console</span>.log([].indexOf.call(lis, target));</span><br><span class="line">&#125;</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不得不看之闭包–&lt;br&gt;闭包是一种使函数能够都去其它函数的局部变量的语法机制。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JavaScript要仔细学" scheme="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
+    
+    
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>鹅厂小事件</title>
+    <link href="http://rawraw.info/2017-06-21-tencent.html"/>
+    <id>http://rawraw.info/2017-06-21-tencent.html</id>
+    <published>2017-06-21T02:58:49.000Z</published>
+    <updated>2019-04-15T14:18:01.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>鹅厂啊鹅厂</p><p><div align="center"><br><img src="/images/bg/0048.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="鹅厂企业邮箱"><a href="#鹅厂企业邮箱" class="headerlink" title="鹅厂企业邮箱"></a>鹅厂企业邮箱</h1><p>鹅厂企业邮箱pop设置：pop.exmail.qq.comci</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;鹅厂啊鹅厂&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0048.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="widen" scheme="http://rawraw.info/tags/widen/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript模块规范:CommonJS和AMD</title>
+    <link href="http://rawraw.info/2017-06-20-modulerule.html"/>
+    <id>http://rawraw.info/2017-06-20-modulerule.html</id>
+    <published>2017-06-20T08:49:47.000Z</published>
+    <updated>2019-04-15T14:18:01.880Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前，通行的Javascript模块规范有两种：CommonJS和AMD。</p><p><div align="center"><br><img src="/images/bg/0010.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><blockquote><p>在浏览器环境下，没有模块也不是特别大的问题，毕竟网页程序的复杂性有限；但是在服务器端，一定要有模块，与操作系统和其他应用程序互动，否则根本没法编程。node.js的模块系统，就是参照CommonJS规范实现的。在CommonJS中，有一个全局性方法require()，用于加载模块。</p></blockquote><p>假定有一个数学模块math.js，就可以像下面这样加载。<br><figure class="highlight js"><figcaption><span>[math.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> math = <span class="built_in">require</span>(<span class="string">'math'</span>);</span><br><span class="line">math.add(<span class="number">2</span>,<span class="number">3</span>); <span class="comment">// 5 ,调用模块提供的方法</span></span><br></pre></td></tr></table></figure></p><p>CommonJS规范不适用于浏览器环境。第二行math.add(2, 3)，在第一行require(‘math’)之后运行，因此必须等math.js加载完成。浏览器端的模块，不能采用”同步加载”（synchronous），只能采用”异步加载”（asynchronous）。这就是AMD规范诞生的背景。</p><p>##　AMD规范</p><blockquote><p>全称：Asynchronous Module Definition（异步模块定义）<br>它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p></blockquote><p>AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：<br><code>require([module], callback);</code><br>上述的例子：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　<span class="built_in">require</span>([<span class="string">'math'</span>], <span class="function"><span class="keyword">function</span> (<span class="params">math</span>) </span>&#123;</span><br><span class="line">　　　　math.add(<span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">　　&#125;);</span><br></pre></td></tr></table></figure></p><p>math.add()与math模块加载不是同步的，浏览器不会发生假死。所以很显然，AMD比较适合浏览器环境。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;目前，通行的Javascript模块规范有两种：CommonJS和AMD。&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0010.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
+    
+  </entry>
+  
+</feed>
