@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2019-04-15T14:18:01.881Z</updated>
+  <updated>2019-04-18T07:30:04.468Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>（不记得转自哪里了）如何避免自己写的代码成为别人眼中的一坨屎！</title>
+    <link href="http://rawraw.info/2019-04-18-shit.html"/>
+    <id>http://rawraw.info/2019-04-18-shit.html</id>
+    <published>2019-04-18T06:55:26.000Z</published>
+    <updated>2019-04-18T07:30:04.468Z</updated>
+    
+    <content type="html"><![CDATA[<p>应该是出自某本书还是什么地方的。<br>相信每一个优秀的工程师都有一颗追求卓越代码的心，</p><blockquote><p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand. 普通的工程师堆砌代码，优秀的工程师优雅代码，卓越的工程师简化代码。</p></blockquote><div align="center"><br><img src="/images/bg/0158.jpeg" alt="“封面”"><br></div><a id="more"></a><p>首先，在苍蝇眼里，一切都是屎。</p><h1 id="一、注释"><a href="#一、注释" class="headerlink" title="一、注释"></a>一、注释</h1><ul><li>不要给不好的名字加注释，一个好的名字比好的注释更重要；</li><li>不要“拐杖注释”，好代码 &gt; 坏代码 + 好注释；</li><li>一定要给常量加注释；</li><li>团队统一定义标记：<br>  <em>TODO  待处理的问题；  </em>FIXME  已知有问题的代码；<br>  *HACK 不得不采用的粗糙的解决方案；</li><li>在注释中用精心挑选的输入输出例子进行说明；</li><li>注释应该声明代码的高层次意图，而非明显的细节；</li><li>不要在代码中加入代码的著作信息，git可以干的事情不要交给代码；</li><li>源代码中的html注释是一种厌物, 增加阅读难度；</li><li>注释一定要描述离它最近的代码；</li><li>注释一定要与代码对应；</li><li>公共api需要添加注释，其它代码谨慎使用注释；</li><li>典型的烂注释：<br>  不恰当的信息；废弃的注释；冗余注释；糟糕的注释；注释掉的代码；</li><li>唯一真正好的注释是你想办法不去写的注释：<br>  <em>不要有循规式注释，比如setter/getter注释；  </em>不要添加日志式注释，比如修改时间等信息（git可以做的事情）；<br>  <em>注释一定是表达代码之外的东西，代码可以包含的内容，注释中一定不要出现；  </em>如果有必要注释，请注释意图（why），而不要去注释实现（how)，大家都会看代码；<br>  *适当添加警示注释；</li></ul><h1 id="二、命名"><a href="#二、命名" class="headerlink" title="二、命名"></a>二、命名</h1><ul><li>尽可能使用标准命名方法，比如设计模式，通用学术名词等；</li><li>命名要找更有表现力的词：<br>  <em>使用更专业的词，比如不用get而使用fetch或者download；  </em>避免空泛的名字，像tmp；<br>  <em>使用具体的名字来细致的描述事物；  </em>给变量名带上重要的细节，比如加上单位ms等；<br>  <em>为作用域大的名字采用更长的名字，作用域小的使用短名字；  </em>变量类型为布尔值表达加上is，has，can，should这样的词会更明确；</li><li>变量名称长短应该与其作用域对应；</li><li>别害怕长名称，长而具有描述性的名称比短而令人费解的名称好；</li><li>函数名称应该说明副作用，名称应该表达函数，变量或类的一切信息，请不要掩盖副作用，比如CreateAndReturnXXX；</li></ul><h1 id="三、方法"><a href="#三、方法" class="headerlink" title="三、方法"></a>三、方法</h1><ul><li>函数不应该有100行那么长，20行封顶最好：<br>  <em>if else while等控制语句其中代码块应该只有一行，也就是一个函数调用语句；  </em>函数的锁进层次不应该多于两层；<br>  *一个函数只做一件事，一个函数不应该能抽象出另外一个函数；</li><li>某个公共函数调用的私有函数紧随其后；</li><li>最理想的参数是零参数，最长不要超过三个入参，尽量不要输出参数：<ul><li>如果函数传入三个及以上参数最好将其抽象为类；</li><li>标识参数十分丑陋，向函数传入布尔值用于区分不同业务的做法很丑陋，应该拆分为多个函数；</li></ul></li><li>别返回null值，抛出异常或者返回特殊对象，尽量避免NPE；</li><li>别传入null值；</li></ul><h1 id="四、异常与错误"><a href="#四、异常与错误" class="headerlink" title="四、异常与错误"></a>四、异常与错误</h1><ul><li>抽离try catch包含的代码块，其中代码块抽象为一个函数；</li><li>抛出的每个异常，都应当提供足够的环境说明，已便判断错误的来源与处所；</li><li>不要将系统错误归咎于偶然事件；</li></ul><h1 id="五、并发"><a href="#五、并发" class="headerlink" title="五、并发"></a>五、并发</h1><ul><li>分离并发相关代码与其它代码；</li><li>严格限制对可能被共享的数据的访问；</li><li>避免使用一个共享对象的多个同步方法；</li><li>保持同步区域微小，尽可能少设计临界区；</li></ul><h1 id="六、单元测试"><a href="#六、单元测试" class="headerlink" title="六、单元测试"></a>六、单元测试</h1><ul><li>不要怕单元测试的方法名字太长或者繁琐，测试函数的名称就像注释；</li><li>不要追求太高的测试覆盖率，测试代码前面90%通常比后面10%花的时间少；</li><li>使用最简单的并且能够完整运用代码的测试输入；；</li><li>给测试函数取一个完整性的描述性名字，比如  Test _；</li><li>测试代码与生产代码一样重要；</li><li>如果测试代码不能保证整洁，你就会很快失去他们；</li><li>每个测试一个断言，单个测试中断言数量应该最小化也就是一个断言；</li><li>FIRST原则：<ul><li>快速 Fast；</li><li>独立 Independent  测试应该相互独立；</li><li>可重复 Repeatable  测试应当在任何环境中重复通过；</li><li>自足验证 Self-Validating   测试应该有布尔值输出；</li><li>及时  Timely   最好的方式是TDD；</li></ul></li></ul><h1 id="七、代码结构"><a href="#七、代码结构" class="headerlink" title="七、代码结构"></a>七、代码结构</h1><ul><li>代码行长度控制在100-120个字符；</li><li>可能用大多数为200行，最长500行的单个文件构造出色的系统；</li><li>关系密切的代码应该相互靠近：<ul><li>变量声明应该靠近其使用位置；</li><li>若某个函数调用了另外一个，应该把他们放在一起，而且调用者应该放在被调用者上面；</li><li>自上向下展示函数调用依赖顺序；</li></ul></li><li>应该把解释条件意图的函数抽离出来，尽可能将条件表达为肯定形式；</li><li>不要继承常量，比如接口中定义常量，不要使用继承欺骗编程语言的作用范围规则；</li><li>模块不应了解它所操作对象的内部情况；</li><li>DTO（Data Transfer Objects）是一个只有公共变量没有函数的类；</li><li>对象暴露行为，隐藏数据；</li><li>不要使用“尤达表示法” 如 if(null == obj)，现代编译器对if(obj = null)这样的代码会给出警告；</li><li>一般情况使用if else，简单语句使用三目运算符；</li><li>通常来讲提早返回可以减少嵌套并让代码整洁；</li></ul><h1 id="八、设计"><a href="#八、设计" class="headerlink" title="八、设计"></a>八、设计</h1><ul><li>类应该足够短小：<ul><li>类应该满足单一权责原则（SRP），类和模块只有一个修改理由；</li><li>类应该只有少量的实体变量；</li><li>类应该遵循依赖倒置原则 DIP（Dependency Inversion Principle），类应该依赖于抽象而不是依赖于具体细节；</li><li>类中的方法越少越好，函数知道的变量越少越好，类拥有的实体变量越少越好；</li></ul></li><li>通过减少变量的数量和让他们尽量“轻量级”来让代码更有可读性：<ul><li>减少变量；</li><li>缩小变量的作用域；</li><li>只写一次的变量更好，如常量；</li></ul></li><li>最好读的代码就是没有代码：<ul><li>从项目中消除不必要的功能，不要过度设计；</li><li>从新考虑需求，解决版本最简单的问题，只要能完成工作就行；</li><li>经常性地通读标准库的整个API，保持对他们的熟悉程度；</li></ul></li><li>简单设计：<ul><li>运行所有测试；</li><li>不可重复；</li><li>表达了程序员的意图；</li><li>尽可能减少类和方法的数量；</li><li>以上规则按重要程度排列；</li></ul></li><li>无论是设计系统或者单独模块，别忘了使用大概可工作的最简单方案；</li><li>整洁的代码只提供一种而非多种做一件事的途径，他只有尽量少的依赖。明确定义并提供尽量少的API；</li><li>减少重复代码，提高表达力，提早构建，简单抽象；</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;应该是出自某本书还是什么地方的。&lt;br&gt;相信每一个优秀的工程师都有一颗追求卓越代码的心，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Any fool can write code that a computer can understand. Good programmers write code that humans can understand. 普通的工程师堆砌代码，优秀的工程师优雅代码，卓越的工程师简化代码。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0158.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>less=&gt;vue中引入</title>
+    <link href="http://rawraw.info/2019-04-18-less-vue.html"/>
+    <id>http://rawraw.info/2019-04-18-less-vue.html</id>
+    <published>2019-04-18T06:45:19.000Z</published>
+    <updated>2019-04-18T06:52:28.425Z</updated>
+    
+    <content type="html"><![CDATA[<p>在vue中引入less</p><div align="center"><br><img src="/images/bg/0160.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h1><p><code>npm install less less-loader --save</code><br>or<br><code>yarn add less less-loader --save</code></p><h1 id="step2"><a href="#step2" class="headerlink" title="step2"></a>step2</h1><p>修改webpack.config.js文件，配置loader加载依赖，让其支持外部的less,在原来的代码上添加</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    test: /\.less$/,</span><br><span class="line">    loader: &quot;style-loader!css-loader!less-loader&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">    或者</span><br><span class="line">    @import &apos;./index.less&apos;; //引入全局less文件</span><br><span class="line">    ）。</span><br><span class="line"></span><br><span class="line">webpack.base.conf.js</span><br><span class="line">    &#123;  </span><br><span class="line">        test: /\.scss$/,   </span><br><span class="line">        loaders: [&quot;style&quot;, &quot;css&quot;, &quot;sass&quot;,&quot;style-loader!css-loader!less-loader&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        test:/\.less$/,</span><br><span class="line">        loader:&apos;less-loader&apos;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在vue中引入less&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0160.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gulp配置</title>
+    <link href="http://rawraw.info/2019-04-18-gulp.html"/>
+    <id>http://rawraw.info/2019-04-18-gulp.html</id>
+    <published>2019-04-18T06:22:21.000Z</published>
+    <updated>2019-04-18T06:33:50.042Z</updated>
+    
+    <content type="html"><![CDATA[<p>gulp配置</p><div align="center"><br><img src="/images/bg/0164.jpg" alt="“封面”"><br></div><a id="more"></a><h1 id="config"><a href="#config" class="headerlink" title="config"></a>config</h1><h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;connect&apos;, function () &#123;</span><br><span class="line">    connect.server(&#123;</span><br><span class="line">        port: 3006,</span><br><span class="line">        livereload: true,</span><br><span class="line">        host: &apos;0.0.0.0&apos;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="自定义标签"><a href="#自定义标签" class="headerlink" title="自定义标签"></a>自定义标签</h2><h3 id="if-eq"><a href="#if-eq" class="headerlink" title="if_eq"></a>if_eq</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hbs.handlebars.registerHelper(&apos;if_eq&apos;,function(v1,v2,name)&#123;</span><br><span class="line">    if(v1 == v2)&#123;</span><br><span class="line">        return name.fn(this)</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        return name.inverse(this)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;gulp配置&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0164.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="gulp" scheme="http://rawraw.info/tags/gulp/"/>
+    
+  </entry>
   
   <entry>
     <title>在table中margin 失效</title>
@@ -40,16 +106,18 @@
     <link href="http://rawraw.info/2018-05-20-vue.html"/>
     <id>http://rawraw.info/2018-05-20-vue.html</id>
     <published>2018-05-20T06:38:18.000Z</published>
-    <updated>2019-04-15T14:18:01.882Z</updated>
+    <updated>2019-04-18T07:01:52.031Z</updated>
     
-    <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>]]></content>
+    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h1><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><font color="red">[Vue warn]: Error in render: “TypeError: _self.$scopedSlots.default is not a function”</font><blockquote><p>究其原因，是因为表格是element-ui通过循环产生的，而vue在dom重新渲染时有一个性能优化机制，就是相同dom会被复用，这就是问题所在，所以，通过key去标识一下当前行是唯一的，不许复用，就行了。</p></blockquote><p>方案：添加 <font color="red">:key=”Math.random()”</font></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0163.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0163.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
     
     </summary>
     
+    
+      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
     
   </entry>
   
@@ -58,13 +126,13 @@
     <link href="http://rawraw.info/2018-03-27-npm.html"/>
     <id>http://rawraw.info/2018-03-27-npm.html</id>
     <published>2018-03-27T14:08:37.000Z</published>
-    <updated>2019-04-16T06:12:28.443Z</updated>
+    <updated>2019-04-16T06:55:49.733Z</updated>
     
-    <content type="html"><![CDATA[<p>npm常用命令以及npm包发布/mac upload test</p><a id="more"></a><h1 id="安装升级"><a href="#安装升级" class="headerlink" title="安装升级"></a>安装升级</h1><p>安装node以后自动会安装NPM。</p><h2 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h2><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p><code>$ npm install -g npm</code></p><h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p><code>$ npm install &lt;pkg&gt;</code> 或者 <code>$ npm install &lt;pkg&gt;@&lt;version&gt;</code></p><h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><p><code>$ npm uninstall &lt;pkg&gt;</code> 或者  <code>$ npm uninstall &lt;pkg&gt;@[&lt;version&gt;]</code></p><h2 id="查看当前项目下的包列表"><a href="#查看当前项目下的包列表" class="headerlink" title="查看当前项目下的包列表"></a>查看当前项目下的包列表</h2><p><code>$ npm ls</code></p><p>#查看全局包列表<br><code>$ npm ls －g</code></p><p>#清理缓存<br><code>$ npm cache clean</code></p><p>#显示包的package.json信息,后面可以跟属性名称。<br>e.g.：<code>$ npm view &lt;pkg&gt; versions</code>  其中versions是<code>package.json</code>的<code>versions</code>属性<br><code>$ npm view &lt;pkg&gt; [attribute]</code></p><h1 id="发布自己的npm包"><a href="#发布自己的npm包" class="headerlink" title="发布自己的npm包"></a>发布自己的npm包</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>第一次：<br><code>$ npm adduser</code><br>输入password的时候会自动隐藏，管自己输就好了<br>然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用<code>cnpm</code>就完全o**k！！<br>所以 所有的命令行 自己自动都改c吧，懒得一个个改了。<br>not 第一次：<br><code>$ npm login</code></p><h3 id="查看当前用户"><a href="#查看当前用户" class="headerlink" title="查看当前用户"></a>查看当前用户</h3><p><code>$ npm whoami</code></p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p><code>$ npm init</code><br>动次打次 怼怼怼<br><code>$ npm publish</code><br><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="报错集合"><a href="#报错集合" class="headerlink" title="报错集合"></a>报错集合</h3><p><code>ERR 403</code>:包名字重了<br><code>npm please try running this command again as root</code>：未登录</p><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><p><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="快速升级方法"><a href="#快速升级方法" class="headerlink" title="快速升级方法"></a>快速升级方法</h3><h4 id="小版本号升级一个版本"><a href="#小版本号升级一个版本" class="headerlink" title="小版本号升级一个版本"></a>小版本号升级一个版本</h4><p><code>$ npm version patch</code></p><h4 id="中版号升级一个版本"><a href="#中版号升级一个版本" class="headerlink" title="中版号升级一个版本"></a>中版号升级一个版本</h4><p><code>$ npm version minor</code></p><h4 id="大版本号升级一个版本"><a href="#大版本号升级一个版本" class="headerlink" title="大版本号升级一个版本"></a>大版本号升级一个版本</h4><p><code>$ npm version major</code><br>npm社区版本号规则采用的是semver(语义化版本)，主要规则如下：<br>版本格式：主版号.次版号.修订号，版号递增规则如下：<br>    主版号：当你做了不相容的 API 修改，<br>    次版号：当你做了向下相容的功能性新增，<br>    修订号：当你做了向下相容的问题修正。<br>    先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>不能删除整个包，只能某个版本<br><code>$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]</code></p>]]></content>
+    <content type="html"><![CDATA[<p>npm常用命令以及npm包发布</p><a id="more"></a><h1 id="安装升级"><a href="#安装升级" class="headerlink" title="安装升级"></a>安装升级</h1><p>安装node以后自动会安装NPM。</p><h2 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h2><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p><code>$ npm install -g npm</code></p><h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p><code>$ npm install &lt;pkg&gt;</code> 或者 <code>$ npm install &lt;pkg&gt;@&lt;version&gt;</code></p><h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><p><code>$ npm uninstall &lt;pkg&gt;</code> 或者  <code>$ npm uninstall &lt;pkg&gt;@[&lt;version&gt;]</code></p><h2 id="查看当前项目下的包列表"><a href="#查看当前项目下的包列表" class="headerlink" title="查看当前项目下的包列表"></a>查看当前项目下的包列表</h2><p><code>$ npm ls</code></p><p>#查看全局包列表<br><code>$ npm ls －g</code></p><p>#清理缓存<br><code>$ npm cache clean</code></p><p>#显示包的package.json信息,后面可以跟属性名称。<br>e.g.：<code>$ npm view &lt;pkg&gt; versions</code>  其中versions是<code>package.json</code>的<code>versions</code>属性<br><code>$ npm view &lt;pkg&gt; [attribute]</code></p><h1 id="发布自己的npm包"><a href="#发布自己的npm包" class="headerlink" title="发布自己的npm包"></a>发布自己的npm包</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>第一次：<br><code>$ npm adduser</code><br>输入password的时候会自动隐藏，管自己输就好了<br>然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用<code>cnpm</code>就完全o**k！！<br>所以 所有的命令行 自己自动都改c吧，懒得一个个改了。<br>not 第一次：<br><code>$ npm login</code></p><h3 id="查看当前用户"><a href="#查看当前用户" class="headerlink" title="查看当前用户"></a>查看当前用户</h3><p><code>$ npm whoami</code></p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p><code>$ npm init</code><br>动次打次 怼怼怼<br><code>$ npm publish</code><br><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="报错集合"><a href="#报错集合" class="headerlink" title="报错集合"></a>报错集合</h3><p><code>ERR 403</code>:包名字重了<br><code>npm please try running this command again as root</code>：未登录</p><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><p><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="快速升级方法"><a href="#快速升级方法" class="headerlink" title="快速升级方法"></a>快速升级方法</h3><h4 id="小版本号升级一个版本"><a href="#小版本号升级一个版本" class="headerlink" title="小版本号升级一个版本"></a>小版本号升级一个版本</h4><p><code>$ npm version patch</code></p><h4 id="中版号升级一个版本"><a href="#中版号升级一个版本" class="headerlink" title="中版号升级一个版本"></a>中版号升级一个版本</h4><p><code>$ npm version minor</code></p><h4 id="大版本号升级一个版本"><a href="#大版本号升级一个版本" class="headerlink" title="大版本号升级一个版本"></a>大版本号升级一个版本</h4><p><code>$ npm version major</code><br>npm社区版本号规则采用的是semver(语义化版本)，主要规则如下：<br>版本格式：主版号.次版号.修订号，版号递增规则如下：<br>    主版号：当你做了不相容的 API 修改，<br>    次版号：当你做了向下相容的功能性新增，<br>    修订号：当你做了向下相容的问题修正。<br>    先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>不能删除整个包，只能某个版本<br><code>$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]</code></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;npm常用命令以及npm包发布/mac upload test&lt;/p&gt;
+      &lt;p&gt;npm常用命令以及npm包发布&lt;/p&gt;
     
     </summary>
     
@@ -392,74 +460,6 @@
       <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
     
       <category term="杂" scheme="http://rawraw.info/tags/%E6%9D%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript要仔细学之二//闭包</title>
-    <link href="http://rawraw.info/2017-06-28-js02.html"/>
-    <id>http://rawraw.info/2017-06-28-js02.html</id>
-    <published>2017-06-28T01:48:15.000Z</published>
-    <updated>2019-04-15T14:18:01.879Z</updated>
-    
-    <content type="html"><![CDATA[<p>不得不看之闭包–<br>闭包是一种使函数能够都去其它函数的局部变量的语法机制。<br><a id="more"></a></p><h1 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">User</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">"Vicfeel"</span>;  <span class="comment">//共有属性</span></span><br><span class="line">    <span class="keyword">var</span> age = <span class="number">23</span>;    <span class="comment">//私有属性</span></span><br><span class="line">    <span class="keyword">this</span>.sayAge:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"my age is "</span> + age); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> user = <span class="keyword">new</span> User();</span><br><span class="line"><span class="built_in">console</span>.log(user.name); <span class="comment">//"Vicfeel"</span></span><br><span class="line"><span class="built_in">console</span>.log(user.age);  <span class="comment">//"undefined"</span></span><br><span class="line">user.sayAge();   <span class="comment">//"my age is 23"</span></span><br></pre></td></tr></table></figure><h1 id="一个栗子"><a href="#一个栗子" class="headerlink" title="一个栗子"></a>一个栗子</h1><blockquote><p>问题:点击列表输出对应的索引（用JS，非JQ）</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>哈哈哈<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘤嘤嘤<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘿嘿嘿<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>啦啦啦<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>略略略<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘻嘻嘻<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>呵呵呵<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>哒哒哒<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>嘁嘁嘁<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>哟哟哟<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><p>可能有小可爱会这样做:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'ul li'</span>);</span><br><span class="line"><span class="keyword">var</span> len = lis.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">lis[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>运行结果是，不管点击哪个列表，结果输出的都是10。</p><ol><li>var声明的变量是函数作用域的，而不是块级作用域的。也就是说，for循环10次，每次都是改变同一个i，所以它的值会从0一直加到10。</li><li>闭包保存的是外部变量的引用，而不是值。也就是说，循环10次监听器创建了10 个闭包，它们里面的i引用的是同一个啊。所以全部都指向了10。</li></ol><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="let替代var"><a href="#let替代var" class="headerlink" title="let替代var"></a>let替代var</h3><p>但是涉及到es6,出于兼容性的考虑，还要做转译，还是微微有点不开心<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'ul li'</span>);</span><br><span class="line"><span class="keyword">var</span> len = lis.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">lis[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="立即执行函数-切断闭包"><a href="#立即执行函数-切断闭包" class="headerlink" title="立即执行函数(切断闭包)"></a>立即执行函数(切断闭包)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'ul li'</span>);</span><br><span class="line"><span class="keyword">var</span> len = lis.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">i</span>) </span>&#123;</span><br><span class="line">lis[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;)(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="事件委托-避开闭包"><a href="#事件委托-避开闭包" class="headerlink" title="事件委托(避开闭包)"></a>事件委托(避开闭包)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ul = <span class="built_in">document</span>.querySelector(<span class="string">'ul'</span>);</span><br><span class="line"><span class="keyword">var</span> lis = ul.querySelectorAll(<span class="string">'li'</span>); </span><br><span class="line">ul.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> target = e.target;</span><br><span class="line"><span class="keyword">if</span>(target.nodeName.toLowerCase() === <span class="string">'li'</span>) &#123;</span><br><span class="line"><span class="built_in">console</span>.log([].indexOf.call(lis, target));</span><br><span class="line">&#125;</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;不得不看之闭包–&lt;br&gt;闭包是一种使函数能够都去其它函数的局部变量的语法机制。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JavaScript要仔细学" scheme="http://rawraw.info/categories/JavaScript%E8%A6%81%E4%BB%94%E7%BB%86%E5%AD%A6/"/>
-    
-    
-      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>鹅厂小事件</title>
-    <link href="http://rawraw.info/2017-06-21-tencent.html"/>
-    <id>http://rawraw.info/2017-06-21-tencent.html</id>
-    <published>2017-06-21T02:58:49.000Z</published>
-    <updated>2019-04-15T14:18:01.882Z</updated>
-    
-    <content type="html"><![CDATA[<p>鹅厂啊鹅厂</p><p><div align="center"><br><img src="/images/bg/0048.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="鹅厂企业邮箱"><a href="#鹅厂企业邮箱" class="headerlink" title="鹅厂企业邮箱"></a>鹅厂企业邮箱</h1><p>鹅厂企业邮箱pop设置：pop.exmail.qq.comci</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;鹅厂啊鹅厂&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0048.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://rawraw.info/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="widen" scheme="http://rawraw.info/tags/widen/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Javascript模块规范:CommonJS和AMD</title>
-    <link href="http://rawraw.info/2017-06-20-modulerule.html"/>
-    <id>http://rawraw.info/2017-06-20-modulerule.html</id>
-    <published>2017-06-20T08:49:47.000Z</published>
-    <updated>2019-04-15T14:18:01.880Z</updated>
-    
-    <content type="html"><![CDATA[<p>目前，通行的Javascript模块规范有两种：CommonJS和AMD。</p><p><div align="center"><br><img src="/images/bg/0010.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><blockquote><p>在浏览器环境下，没有模块也不是特别大的问题，毕竟网页程序的复杂性有限；但是在服务器端，一定要有模块，与操作系统和其他应用程序互动，否则根本没法编程。node.js的模块系统，就是参照CommonJS规范实现的。在CommonJS中，有一个全局性方法require()，用于加载模块。</p></blockquote><p>假定有一个数学模块math.js，就可以像下面这样加载。<br><figure class="highlight js"><figcaption><span>[math.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> math = <span class="built_in">require</span>(<span class="string">'math'</span>);</span><br><span class="line">math.add(<span class="number">2</span>,<span class="number">3</span>); <span class="comment">// 5 ,调用模块提供的方法</span></span><br></pre></td></tr></table></figure></p><p>CommonJS规范不适用于浏览器环境。第二行math.add(2, 3)，在第一行require(‘math’)之后运行，因此必须等math.js加载完成。浏览器端的模块，不能采用”同步加载”（synchronous），只能采用”异步加载”（asynchronous）。这就是AMD规范诞生的背景。</p><p>##　AMD规范</p><blockquote><p>全称：Asynchronous Module Definition（异步模块定义）<br>它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p></blockquote><p>AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：<br><code>require([module], callback);</code><br>上述的例子：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　<span class="built_in">require</span>([<span class="string">'math'</span>], <span class="function"><span class="keyword">function</span> (<span class="params">math</span>) </span>&#123;</span><br><span class="line">　　　　math.add(<span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">　　&#125;);</span><br></pre></td></tr></table></figure></p><p>math.add()与math模块加载不是同步的，浏览器不会发生假死。所以很显然，AMD比较适合浏览器环境。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;目前，通行的Javascript模块规范有两种：CommonJS和AMD。&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0010.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="知识点" scheme="http://rawraw.info/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
     
   </entry>
   

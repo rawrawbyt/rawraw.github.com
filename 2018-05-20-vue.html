@@ -83,7 +83,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="前端,白依婷">
+  <meta name="keywords" content="vue,">
 
 
 
@@ -101,13 +101,14 @@
 
 
 
+<meta name="keywords" content="vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue集合">
 <meta property="og:url" content="http://rawraw.info/2018-05-20-vue.html">
 <meta property="og:site_name" content="rawraw">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://rawraw.info/images/bg/0163.jpeg">
-<meta property="og:updated_time" content="2019-04-15T14:18:01.882Z">
+<meta property="og:updated_time" content="2019-04-18T07:01:52.031Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue集合">
 <meta name="twitter:image" content="http://rawraw.info/images/bg/0163.jpeg">
@@ -404,7 +405,15 @@
       
 
       
-        <p><div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p>
+        <div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div>
+
+<a id="more"></a>
+<h1 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h1><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><font color="red">[Vue warn]: Error in render: “TypeError: _self.$scopedSlots.default is not a function”</font>
+
+<blockquote>
+<p>究其原因，是因为表格是element-ui通过循环产生的，而vue在dom重新渲染时有一个性能优化机制，就是相同dom会被复用，这就是问题所在，所以，通过key去标识一下当前行是唯一的，不许复用，就行了。</p>
+</blockquote>
+<p>方案：添加 <font color="red">:key=”Math.random()”</font></p>
 
       
     </div>
@@ -451,6 +460,12 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+        </div>
       
 
       
@@ -546,8 +561,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/uploads/rawraw2.jpg" alt="rawraw">
           <p class="site-author-name" itemprop="name">rawraw</p>
@@ -560,7 +584,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-count">49</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -578,7 +602,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-count">38</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -647,6 +671,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#bugs"><span class="nav-number">1.</span> <span class="nav-text">bugs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.0.1.</span> <span class="nav-text">1</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
