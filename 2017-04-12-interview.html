@@ -108,7 +108,7 @@
 <meta property="og:site_name" content="rawraw">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://rawraw.info/images/bg/0022.jpeg">
-<meta property="og:updated_time" content="2019-04-15T14:18:01.878Z">
+<meta property="og:updated_time" content="2019-04-30T05:42:26.014Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试大宝典">
 <meta name="twitter:image" content="http://rawraw.info/images/bg/0022.jpeg">
@@ -381,8 +381,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/小结/" itemprop="url" rel="index">
-                    <span itemprop="name">小结</span>
+                  <a href="/categories/Note/" itemprop="url" rel="index">
+                    <span itemprop="name">Note</span>
                   </a>
                 </span>
 
@@ -531,7 +531,7 @@
 <p>不过还有很多细节，比如触发响应函数时的上下文应该是什么，触发响应函数的参数列表应该是什么，如果要求把调用trigger的参数列表都传到响应函数中还要考虑到吧arguments对象转化为纯数组才行等等。</p>
 <p>还有一些面试官会问到事件如何派发也就是事件广播（dispatchEvent）等等，这里不再展开。</p>
 <h4 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h4><blockquote>
-<p>当我们需要对很多元素添加事件的时候，可以通过将事件添加到它们的父节点而将事件委托给父节点来触发处理函数。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=<span class="string">'list'</span>&gt;&lt;/ul&gt;</span><br><span class="line"><span class="keyword">var</span> count = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">var</span> ulList = <span class="built_in">document</span>.getElementById(<span class="string">"list"</span>);</span><br><span class="line"><span class="comment">//动态构建节点</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = count;i--;)&#123;</span><br><span class="line">    <span class="keyword">var</span> liDom = <span class="built_in">document</span>.createElement(<span class="string">'li'</span>);</span><br><span class="line">    ulList.appendChild(liDom);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//绑定点击事件</span></span><br><span class="line"><span class="keyword">var</span> liNode = ulList.getElementByTagName(<span class="string">"li"</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>, l = liNodes.length; i &lt; l; i++)&#123;</span><br><span class="line">    liNode[i].onClick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">//li点击事件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> count = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">var</span> ulList = <span class="built_in">document</span>.getElementById(<span class="string">"list"</span>);</span><br><span class="line"><span class="comment">//动态构建节点</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = count;i--;)&#123;</span><br><span class="line">    <span class="keyword">var</span> liDom = <span class="built_in">document</span>.createElement(<span class="string">'li'</span>);</span><br><span class="line">    ulList.appendChild(liDom);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//绑定点击事件</span></span><br><span class="line"><span class="keyword">var</span> liNode = ulList.getElementByTagName(<span class="string">"li"</span>);</span><br><span class="line">liNode.onClick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(e.target &amp;&amp; e.target.nodeName.toUpperCase == <span class="string">"LI"</span>) &#123;</span><br><span class="line">        <span class="comment">// li点击事件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>当我们需要对很多元素添加事件的时候，可以通过将事件添加到它们的父节点而将事件委托给父节点来触发处理函数。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=<span class="string">'list'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="keyword">var</span> count = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">var</span> ulList = <span class="built_in">document</span>.getElementById(<span class="string">"list"</span>);</span><br><span class="line"><span class="comment">//动态构建节点</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = count;i--;)&#123;</span><br><span class="line">    <span class="keyword">var</span> liDom = <span class="built_in">document</span>.createElement(<span class="string">'li'</span>);</span><br><span class="line">    ulList.appendChild(liDom);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//绑定点击事件</span></span><br><span class="line"><span class="keyword">var</span> liNode = ulList.getElementByTagName(<span class="string">"li"</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>, l = liNodes.length; i &lt; l; i++)&#123;</span><br><span class="line">    liNode[i].onClick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">//li点击事件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> count = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">var</span> ulList = <span class="built_in">document</span>.getElementById(<span class="string">"list"</span>);</span><br><span class="line"><span class="comment">//动态构建节点</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = count;i--;)&#123;</span><br><span class="line">    <span class="keyword">var</span> liDom = <span class="built_in">document</span>.createElement(<span class="string">'li'</span>);</span><br><span class="line">    ulList.appendChild(liDom);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//绑定点击事件</span></span><br><span class="line"><span class="keyword">var</span> liNode = ulList.getElementByTagName(<span class="string">"li"</span>);</span><br><span class="line">liNode.onClick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(e.target &amp;&amp; e.target.nodeName.toUpperCase == <span class="string">"LI"</span>) &#123;</span><br><span class="line">        <span class="comment">// li点击事件</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <h3 id="7、单线程和异步队列"><a href="#7、单线程和异步队列" class="headerlink" title="7、单线程和异步队列"></a>7、单线程和异步队列</h3><blockquote>
 <p>setTimeout和setInterval</p>
@@ -725,7 +725,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">49</span>
+                <span class="site-state-item-count">50</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -734,7 +734,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -743,7 +743,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">38</span>
+                <span class="site-state-item-count">49</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
