@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2019-05-16T09:22:42.742Z</updated>
+  <updated>2019-05-20T04:32:24.409Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="http://rawraw.info/2019-05-16-js03.html"/>
     <id>http://rawraw.info/2019-05-16-js03.html</id>
     <published>2019-05-16T09:02:57.000Z</published>
-    <updated>2019-05-16T09:22:42.742Z</updated>
+    <updated>2019-05-20T04:32:24.409Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h1 id="变量和类型"><a href="#变量和类型" class="headerlink" title="变量和类型"></a>变量和类型</h1><h4 id="JavaScript规定了几种语言类型"><a href="#JavaScript规定了几种语言类型" class="headerlink" title="JavaScript规定了几种语言类型"></a>JavaScript规定了几种语言类型</h4><p>6种基本类型:String、Number、Boolean、Symbol、Undefined、Null<br>1种复杂数据类型：object,Array<br><a href="http://www.mamicode.com/info-detail-2347949.html" target="_blank" rel="noopener">详细</a></p><h4 id="JavaScript对象的底层数据结构是什么"><a href="#JavaScript对象的底层数据结构是什么" class="headerlink" title="JavaScript对象的底层数据结构是什么"></a>JavaScript对象的底层数据结构是什么</h4><p><a href="https://www.cnblogs.com/full-stack-engineer/p/9684072.html" target="_blank" rel="noopener">参考</a><br><a href="https://zhuanlan.zhihu.com/p/26388217" target="_blank" rel="noopener">从Chrome源码看JS Array的实现</a></p><h4 id="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"><a href="#Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol" class="headerlink" title="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"></a>Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol</h4><p><a href="https://juejin.im/post/5cd44bfbe51d453aa44ad6e4" target="_blank" rel="noopener">参考</a></p><h1 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h1>]]></content>
+    <content type="html"><![CDATA[<p>基础</p><p><div align="center"><br><img src="/images/bg/0170.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="变量和类型"><a href="#变量和类型" class="headerlink" title="变量和类型"></a>变量和类型</h1><h4 id="JavaScript规定了几种语言类型"><a href="#JavaScript规定了几种语言类型" class="headerlink" title="JavaScript规定了几种语言类型"></a>JavaScript规定了几种语言类型</h4><p>6种基本类型:String、Number、Boolean、Symbol、Undefined、Null<br>1种复杂数据类型：object,Array<br><a href="http://www.mamicode.com/info-detail-2347949.html" target="_blank" rel="noopener">详细</a></p><h4 id="JavaScript对象的底层数据结构是什么"><a href="#JavaScript对象的底层数据结构是什么" class="headerlink" title="JavaScript对象的底层数据结构是什么"></a>JavaScript对象的底层数据结构是什么</h4><p><a href="https://www.cnblogs.com/full-stack-engineer/p/9684072.html" target="_blank" rel="noopener">参考</a><br><a href="https://zhuanlan.zhihu.com/p/26388217" target="_blank" rel="noopener">从Chrome源码看JS Array的实现</a></p><h4 id="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"><a href="#Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol" class="headerlink" title="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"></a>Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol</h4><p><a href="https://juejin.im/post/5cd44bfbe51d453aa44ad6e4" target="_blank" rel="noopener">参考</a></p><h1 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h1>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;变量和类型&quot;&gt;&lt;a href=&quot;#变量和类型&quot; class=&quot;headerlink&quot; title=&quot;变量和类型&quot;&gt;&lt;/a&gt;变量和类型&lt;/h1&gt;&lt;h4 id=&quot;JavaScript规定了几种语言类型&quot;&gt;&lt;a href=&quot;#Java
-      
+      &lt;p&gt;基础&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0170.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
     
     </summary>
     
@@ -47,17 +44,13 @@
     <link href="http://rawraw.info/2019-05-16-yarn.html"/>
     <id>http://rawraw.info/2019-05-16-yarn.html</id>
     <published>2019-05-16T08:31:30.000Z</published>
-    <updated>2019-05-16T08:41:04.568Z</updated>
+    <updated>2019-05-20T04:29:52.727Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h1 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h1><p>Yarn 同样是一个从 npm 注册源获取模块的新的 CLI 客户端。注册的方式不会有任何变化；<br>Yarn 是 Facebook, Google, Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。就像我们可以从官方文档了解那样，它的目的是解决这些团队使用 npm 面临的少数问题，即：</p><ul><li>安装的时候无法保证速度/一致性</li><li>安全问题，因为 npm 安装时允许运行代码</li></ul><h1 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h1><ul><li>yarn.lock 文件</li><li>并行安装<br>每当 npm 或 Yarn 需要安装一个包时，它会进行一系列的任务。在 npm 中这些任务是按包的顺序一个个执行，这意味着必须等待上一个包被完整安装才会进入下一个；Yarn 则并行的执行这些任务，提高了性能。</li><li>清晰的输出<br>npm 默认情况下非常冗余，例如使用 npm install 时它会递归列出所有安装的信息；而 Yarn 则一点也不冗余，当可以使用其它命令时，它适当的使用 emojis 表情来减少信息（Windows 除外）。</li></ul><h1 id="pnpm"><a href="#pnpm" class="headerlink" title="pnpm"></a>pnpm</h1><p>可阅读pnpm的作者Zoltan Kochan发表的<a href="https://www.kochan.io/nodejs/why-should-we-use-pnpm.html" target="_blank" rel="noopener">“为什么要用pnpm？”</a></p><ul><li>pnpm运行起来非常的快，超过了npm和yarn</li><li>pnpm采用了一种巧妙的方法，利用硬链接和符号链接来避免复制所有本地缓存源文件，这是yarn的最大的性能弱点之一</li><li>使用链接并不容易，会带来一堆问题需要考虑。</li><li>pnpm继承了yarn的所有优点，包括离线模式和确定性安装</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>npm和yarn区别<br><a id="more"></a></p><h1 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h1><p>Yarn 同样是一个从 npm 注册源获取模块的新的 CLI 客户端。注册的方式不会有任何变化；<br>Yarn 是 Facebook, Google, Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。就像我们可以从官方文档了解那样，它的目的是解决这些团队使用 npm 面临的少数问题，即：</p><ul><li>安装的时候无法保证速度/一致性</li><li>安全问题，因为 npm 安装时允许运行代码</li></ul><h1 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h1><ul><li>yarn.lock 文件</li><li>并行安装<br>每当 npm 或 Yarn 需要安装一个包时，它会进行一系列的任务。在 npm 中这些任务是按包的顺序一个个执行，这意味着必须等待上一个包被完整安装才会进入下一个；Yarn 则并行的执行这些任务，提高了性能。</li><li>清晰的输出<br>npm 默认情况下非常冗余，例如使用 npm install 时它会递归列出所有安装的信息；而 Yarn 则一点也不冗余，当可以使用其它命令时，它适当的使用 emojis 表情来减少信息（Windows 除外）。</li></ul><h1 id="pnpm"><a href="#pnpm" class="headerlink" title="pnpm"></a>pnpm</h1><p>可阅读pnpm的作者Zoltan Kochan发表的<a href="https://www.kochan.io/nodejs/why-should-we-use-pnpm.html" target="_blank" rel="noopener">“为什么要用pnpm？”</a></p><ul><li>pnpm运行起来非常的快，超过了npm和yarn</li><li>pnpm采用了一种巧妙的方法，利用硬链接和符号链接来避免复制所有本地缓存源文件，这是yarn的最大的性能弱点之一</li><li>使用链接并不容易，会带来一堆问题需要考虑。</li><li>pnpm继承了yarn的所有优点，包括离线模式和确定性安装</li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;yarn&quot;&gt;&lt;a href=&quot;#yarn&quot; class=&quot;headerlink&quot; title=&quot;yarn&quot;&gt;&lt;/a&gt;yarn&lt;/h1&gt;&lt;p&gt;Yarn 同样是一个从 npm 注册源获取模块的新的 CLI 客户端。注册的方式不会有任
-      
+      &lt;p&gt;npm和yarn区别&lt;br&gt;
     
     </summary>
     
@@ -75,18 +68,13 @@
     <link href="http://rawraw.info/2019-05-16-nginx.html"/>
     <id>http://rawraw.info/2019-05-16-nginx.html</id>
     <published>2019-05-16T07:01:47.000Z</published>
-    <updated>2019-05-16T08:30:07.983Z</updated>
+    <updated>2019-05-20T04:31:02.147Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><p>正向代理的代理对象是客户端,反向代理的代理对象是服务端。</p><p><a href="https://www.cnblogs.com/crazylqy/p/7150580.html" target="_blank" rel="noopener">参考</a></p><h1 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h1><p>正向代理:客户端 &lt;一&gt; 代理 一&gt;服务端</p><h1 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h1><p>反向代理:客户端 一&gt;代理 &lt;一&gt; 服务端</p>]]></content>
+    <content type="html"><![CDATA[<p>nginx正向代理和反向代理<br><a id="more"></a></p><p>正向代理的代理对象是客户端,反向代理的代理对象是服务端。</p><p><a href="https://www.cnblogs.com/crazylqy/p/7150580.html" target="_blank" rel="noopener">参考</a></p><h1 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h1><p>正向代理:客户端 &lt;一&gt; 代理 一&gt;服务端</p><h1 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h1><p>反向代理:客户端 一&gt;代理 &lt;一&gt; 服务端</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;正向代理的代理对象是客户端,反向代理的代理对象是服务端。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/crazylqy/p/7150580.html&quot; target=&quot;_blank&quot; rel=&quot;noop
-      
+      &lt;p&gt;nginx正向代理和反向代理&lt;br&gt;
     
     </summary>
     
@@ -291,9 +279,9 @@
       <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
     
     
-      <category term="less" scheme="http://rawraw.info/tags/less/"/>
-    
       <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
+    
+      <category term="less" scheme="http://rawraw.info/tags/less/"/>
     
   </entry>
   
@@ -394,7 +382,7 @@
     <link href="http://rawraw.info/2018-03-27-npm.html"/>
     <id>http://rawraw.info/2018-03-27-npm.html</id>
     <published>2018-03-27T14:08:37.000Z</published>
-    <updated>2019-05-16T08:31:02.424Z</updated>
+    <updated>2019-05-20T04:29:21.522Z</updated>
     
     <content type="html"><![CDATA[<p>npm常用命令以及npm包发布</p><a id="more"></a><h1 id="安装升级"><a href="#安装升级" class="headerlink" title="安装升级"></a>安装升级</h1><p>安装node以后自动会安装NPM。</p><h2 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h2><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p><code>$ npm install -g npm</code></p><h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p><code>$ npm install &lt;pkg&gt;</code> 或者 <code>$ npm install &lt;pkg&gt;@&lt;version&gt;</code></p><h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><p><code>$ npm uninstall &lt;pkg&gt;</code> 或者  <code>$ npm uninstall &lt;pkg&gt;@[&lt;version&gt;]</code></p><h2 id="查看当前项目下的包列表"><a href="#查看当前项目下的包列表" class="headerlink" title="查看当前项目下的包列表"></a>查看当前项目下的包列表</h2><p><code>$ npm ls</code></p><p>#查看全局包列表<br><code>$ npm ls －g</code></p><p>#清理缓存<br><code>$ npm cache clean</code></p><p>#显示包的package.json信息,后面可以跟属性名称。<br>e.g.：<code>$ npm view &lt;pkg&gt; versions</code>  其中versions是<code>package.json</code>的<code>versions</code>属性<br><code>$ npm view &lt;pkg&gt; [attribute]</code></p><h1 id="发布自己的npm包"><a href="#发布自己的npm包" class="headerlink" title="发布自己的npm包"></a>发布自己的npm包</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>第一次：<br><code>$ npm adduser</code><br>输入password的时候会自动隐藏，管自己输就好了<br>然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用<code>cnpm</code>就完全o**k！！<br>所以 所有的命令行 自己自动都改c吧，懒得一个个改了。<br>not 第一次：<br><code>$ npm login</code></p><h3 id="查看当前用户"><a href="#查看当前用户" class="headerlink" title="查看当前用户"></a>查看当前用户</h3><p><code>$ npm whoami</code></p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p><code>$ npm init</code><br>动次打次 怼怼怼<br><code>$ npm publish</code><br><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="报错集合"><a href="#报错集合" class="headerlink" title="报错集合"></a>报错集合</h3><p><code>ERR 403</code>:包名字重了<br><code>npm please try running this command again as root</code>：未登录</p><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><p><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="快速升级方法"><a href="#快速升级方法" class="headerlink" title="快速升级方法"></a>快速升级方法</h3><h4 id="小版本号升级一个版本"><a href="#小版本号升级一个版本" class="headerlink" title="小版本号升级一个版本"></a>小版本号升级一个版本</h4><p><code>$ npm version patch</code></p><h4 id="中版号升级一个版本"><a href="#中版号升级一个版本" class="headerlink" title="中版号升级一个版本"></a>中版号升级一个版本</h4><p><code>$ npm version minor</code></p><h4 id="大版本号升级一个版本"><a href="#大版本号升级一个版本" class="headerlink" title="大版本号升级一个版本"></a>大版本号升级一个版本</h4><p><code>$ npm version major</code><br>npm社区版本号规则采用的是semver(语义化版本)，主要规则如下：<br>版本格式：主版号.次版号.修订号，版号递增规则如下：<br>    主版号：当你做了不相容的 API 修改，<br>    次版号：当你做了向下相容的功能性新增，<br>    修订号：当你做了向下相容的问题修正。<br>    先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>不能删除整个包，只能某个版本<br><code>$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]</code></p>]]></content>
     
