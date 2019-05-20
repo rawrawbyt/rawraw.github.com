@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2019-04-30T05:43:15.253Z</updated>
+  <updated>2019-05-16T09:22:42.742Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -15,6 +15,214 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript要仔细学之三//基础</title>
+    <link href="http://rawraw.info/2019-05-16-js03.html"/>
+    <id>http://rawraw.info/2019-05-16-js03.html</id>
+    <published>2019-05-16T09:02:57.000Z</published>
+    <updated>2019-05-16T09:22:42.742Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h1 id="变量和类型"><a href="#变量和类型" class="headerlink" title="变量和类型"></a>变量和类型</h1><h4 id="JavaScript规定了几种语言类型"><a href="#JavaScript规定了几种语言类型" class="headerlink" title="JavaScript规定了几种语言类型"></a>JavaScript规定了几种语言类型</h4><p>6种基本类型:String、Number、Boolean、Symbol、Undefined、Null<br>1种复杂数据类型：object,Array<br><a href="http://www.mamicode.com/info-detail-2347949.html" target="_blank" rel="noopener">详细</a></p><h4 id="JavaScript对象的底层数据结构是什么"><a href="#JavaScript对象的底层数据结构是什么" class="headerlink" title="JavaScript对象的底层数据结构是什么"></a>JavaScript对象的底层数据结构是什么</h4><p><a href="https://www.cnblogs.com/full-stack-engineer/p/9684072.html" target="_blank" rel="noopener">参考</a><br><a href="https://zhuanlan.zhihu.com/p/26388217" target="_blank" rel="noopener">从Chrome源码看JS Array的实现</a></p><h4 id="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"><a href="#Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol" class="headerlink" title="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"></a>Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol</h4><p><a href="https://juejin.im/post/5cd44bfbe51d453aa44ad6e4" target="_blank" rel="noopener">参考</a></p><h1 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;变量和类型&quot;&gt;&lt;a href=&quot;#变量和类型&quot; class=&quot;headerlink&quot; title=&quot;变量和类型&quot;&gt;&lt;/a&gt;变量和类型&lt;/h1&gt;&lt;h4 id=&quot;JavaScript规定了几种语言类型&quot;&gt;&lt;a href=&quot;#Java
+      
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>依赖包管理npm、yarn</title>
+    <link href="http://rawraw.info/2019-05-16-yarn.html"/>
+    <id>http://rawraw.info/2019-05-16-yarn.html</id>
+    <published>2019-05-16T08:31:30.000Z</published>
+    <updated>2019-05-16T08:41:04.568Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h1 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h1><p>Yarn 同样是一个从 npm 注册源获取模块的新的 CLI 客户端。注册的方式不会有任何变化；<br>Yarn 是 Facebook, Google, Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。就像我们可以从官方文档了解那样，它的目的是解决这些团队使用 npm 面临的少数问题，即：</p><ul><li>安装的时候无法保证速度/一致性</li><li>安全问题，因为 npm 安装时允许运行代码</li></ul><h1 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h1><ul><li>yarn.lock 文件</li><li>并行安装<br>每当 npm 或 Yarn 需要安装一个包时，它会进行一系列的任务。在 npm 中这些任务是按包的顺序一个个执行，这意味着必须等待上一个包被完整安装才会进入下一个；Yarn 则并行的执行这些任务，提高了性能。</li><li>清晰的输出<br>npm 默认情况下非常冗余，例如使用 npm install 时它会递归列出所有安装的信息；而 Yarn 则一点也不冗余，当可以使用其它命令时，它适当的使用 emojis 表情来减少信息（Windows 除外）。</li></ul><h1 id="pnpm"><a href="#pnpm" class="headerlink" title="pnpm"></a>pnpm</h1><p>可阅读pnpm的作者Zoltan Kochan发表的<a href="https://www.kochan.io/nodejs/why-should-we-use-pnpm.html" target="_blank" rel="noopener">“为什么要用pnpm？”</a></p><ul><li>pnpm运行起来非常的快，超过了npm和yarn</li><li>pnpm采用了一种巧妙的方法，利用硬链接和符号链接来避免复制所有本地缓存源文件，这是yarn的最大的性能弱点之一</li><li>使用链接并不容易，会带来一堆问题需要考虑。</li><li>pnpm继承了yarn的所有优点，包括离线模式和确定性安装</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;yarn&quot;&gt;&lt;a href=&quot;#yarn&quot; class=&quot;headerlink&quot; title=&quot;yarn&quot;&gt;&lt;/a&gt;yarn&lt;/h1&gt;&lt;p&gt;Yarn 同样是一个从 npm 注册源获取模块的新的 CLI 客户端。注册的方式不会有任
+      
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="npm" scheme="http://rawraw.info/tags/npm/"/>
+    
+      <category term="yarn" scheme="http://rawraw.info/tags/yarn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx正向代理和反向代理</title>
+    <link href="http://rawraw.info/2019-05-16-nginx.html"/>
+    <id>http://rawraw.info/2019-05-16-nginx.html</id>
+    <published>2019-05-16T07:01:47.000Z</published>
+    <updated>2019-05-16T08:30:07.983Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><p>正向代理的代理对象是客户端,反向代理的代理对象是服务端。</p><p><a href="https://www.cnblogs.com/crazylqy/p/7150580.html" target="_blank" rel="noopener">参考</a></p><h1 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h1><p>正向代理:客户端 &lt;一&gt; 代理 一&gt;服务端</p><h1 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h1><p>反向代理:客户端 一&gt;代理 &lt;一&gt; 服务端</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;正向代理的代理对象是客户端,反向代理的代理对象是服务端。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/crazylqy/p/7150580.html&quot; target=&quot;_blank&quot; rel=&quot;noop
+      
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="nginx" scheme="http://rawraw.info/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨浏览器开发</title>
+    <link href="http://rawraw.info/2019-05-16-browser.html"/>
+    <id>http://rawraw.info/2019-05-16-browser.html</id>
+    <published>2019-05-16T06:09:30.000Z</published>
+    <updated>2019-05-16T08:44:27.542Z</updated>
+    
+    <content type="html"><![CDATA[<p>重点：要脱离前端类库的跨浏览器开发</p><a id="more"></a><ul><li>css reset</li><li>Polyfill抚平不同浏览器之间对js实现的差异。</li></ul><p>Selenium是前端工具 测试<br>IETester让您查看 不同IE版本的页面<br>Browsershots让你看看 不同平台上的页面<br>Google让您搜索已知且模糊的IE变态<br>IE 6 No More为您节省了很多麻烦，而不用担心IE 6这个名字的史前垃圾。<br>YUI Graded Browser Support - 确保您知道要关注哪些浏览器<br>jQquery跨浏览器javascript库<br>YUI 3: Reset CSS重置您的CSS(链接包含有用的信息以及CSS)<br>9 Most Common IE Bugs and How to Fix Them非常有用的提示，如何通过先解决常见问题来获得最大的收益。<br>Cross browser development包含许多有关跨浏览器开发的有用教程。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;重点：要脱离前端类库的跨浏览器开发&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="browser" scheme="http://rawraw.info/tags/browser/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨终端开发</title>
+    <link href="http://rawraw.info/2019-05-16-client.html"/>
+    <id>http://rawraw.info/2019-05-16-client.html</id>
+    <published>2019-05-16T06:07:49.000Z</published>
+    <updated>2019-05-16T06:08:49.362Z</updated>
+    
+    <content type="html"><![CDATA[<p>Flutter</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Flutter&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="跨终端" scheme="http://rawraw.info/tags/%E8%B7%A8%E7%BB%88%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OSI七层模型与TCP/IP四层模型</title>
+    <link href="http://rawraw.info/2019-05-16-osi.html"/>
+    <id>http://rawraw.info/2019-05-16-osi.html</id>
+    <published>2019-05-16T02:58:23.000Z</published>
+    <updated>2019-05-16T03:02:47.692Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://jingyan.baidu.com/article/00a07f387b7e0682d028dce2.html" target="_blank" rel="noopener">OSI七层模型与TCP/IP四层模型参考</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://jingyan.baidu.com/article/00a07f387b7e0682d028dce2.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OSI七层模型与TCP/IP四层模型参考&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="OSI" scheme="http://rawraw.info/tags/OSI/"/>
+    
+      <category term="TCP" scheme="http://rawraw.info/tags/TCP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>get/post请求区别</title>
+    <link href="http://rawraw.info/2019-05-16-getpost.html"/>
+    <id>http://rawraw.info/2019-05-16-getpost.html</id>
+    <published>2019-05-16T02:24:38.000Z</published>
+    <updated>2019-05-16T03:14:18.908Z</updated>
+    
+    <content type="html"><![CDATA[<p>GET和POST本质上两者没有任何区别，是HTTP协议中的两种发送请求的方法，底层实现都是基于TCP/IP协议。</p><a id="more"></a><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>GET和POST是HTTP协议中的两种发送请求的方法。<br>HTTP是什么？HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议。<br>HTTP的底层是TCP/IP。所以GET和POST的底层也是TCP/IP，也就是说，GET/POST都是TCP链接。<br>GET和POST能做的事情是一样的。你要给GET加上request body，给POST带上url参数，技术上是完全行的通的。<br>上述的所谓区别，只是浏览器厂家根据约定，做得限制而已。<br>HTTP请求，最初设定了八种方法。这八种方法本质上没有任何区别。只是让请求，更加有语义而已。</p><ul><li>OPTIONS 返回服务器所支持的请求方法</li><li>GET 向服务器获取指定资源</li><li>HEAD 与GET一致，只不过响应体不返回，只返回响应头</li><li>POST 向服务器提交数据，数据放在请求体里</li><li>PUT 与POST相似，只是具有幂等特性，一般用于更新</li><li>DELETE 删除服务器指定资源</li><li>TRACE 回显服务器端收到的请求，测试的时候会用到这个</li><li>CONNECT 预留，暂无使用</li></ul><p>万维网世界中，TCP就像汽车，我们用TCP来运输数据，它很可靠，从来不会发生丢件少件的现象。但是如果路上跑的全是看起来一模一样的汽车，那这个世界看起来是一团混乱，送急件的汽车可能被前面满载货物的汽车拦堵在路上，整个交通系统一定会瘫痪。为了避免这种情况发生，交通规则HTTP诞生了。HTTP给汽车运输设定了好几个服务类别，有GET, POST, PUT, DELETE等等，HTTP规定，当执行GET请求的时候，要给汽车贴上GET的标签（设置method为GET），而且要求把传送的数据放在车顶上（url中）以方便记录。如果是POST请求，就要在车上贴上POST的标签，并把货物放在车厢里。当然，你也可以在GET的时候往车厢内偷偷藏点货物，但是这是很不光彩；也可以在POST的时候在车顶上也放一些数据，让人觉得傻乎乎的。HTTP只是个行为准则，而TCP才是GET和POST怎么实现的基本。</p><p>在万维网世界中，还有另一个重要的角色：运输公司。不同的浏览器（发起http请求）和服务器（接受http请求）就是不同的运输公司。 虽然理论上，你可以在车顶上无限的堆货物（url中无限加参数）。但是运输公司可不傻，装货和卸货也是有很大成本的，他们会限制单次运输量来控制风险，数据量太大对浏览器和服务器都是很大负担。业界不成文的规定是，（大多数）浏览器通常都会限制url长度在2K个字节，而（大多数）服务器最多处理64K大小的url。超过的部分，恕不处理。如果你用GET服务，在request body偷偷藏了数据，不同服务器的处理方式也是不同的，有些服务器会帮你卸货，读出数据，有些服务器直接忽略，所以，虽然GET可以带request body，也不能保证一定能被接收到哦。</p><p>GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。 </p><h1 id="w3school标准答案"><a href="#w3school标准答案" class="headerlink" title="w3school标准答案"></a>w3school标准答案</h1><ul><li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li><li>GET产生的URL地址可以被Bookmark，而POST不可以。</li><li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li><li>GET请求只能进行url编码，而POST支持多种编码方式。</li><li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li><li>GET请求在URL中传送的参数是有长度限制的，而POST么有。</li><li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。（所以中文需要URL编码）</li><li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li><li>GET参数通过URL传递，POST放在Request body中。</li></ul><h2 id="重大区别"><a href="#重大区别" class="headerlink" title="重大区别"></a>重大区别</h2><p>GET产生一个TCP数据包；POST产生两个TCP数据包。</p><pre><code>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</code></pre><p>也就是说，GET只需要汽车跑一趟就把货送到了，而POST得跑两趟，第一趟，先去和服务器打个招呼“嗨，我等下要送一批货来，你们打开门迎接我”，然后再回头把货送过去。</p><p>因为POST需要两步，时间上消耗的要多一点，看起来GET比POST更有效。因此Yahoo团队有推荐用GET替换POST来优化网站性能。但这是一个坑！跳入需谨慎。为什么？</p><ol><li>GET与POST都有自己的语义，不能随便混用。</li><li>据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</li><li>并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;GET和POST本质上两者没有任何区别，是HTTP协议中的两种发送请求的方法，底层实现都是基于TCP/IP协议。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="http" scheme="http://rawraw.info/tags/http/"/>
+    
+      <category term="get" scheme="http://rawraw.info/tags/get/"/>
+    
+      <category term="post" scheme="http://rawraw.info/tags/post/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨域的几种方式</title>
+    <link href="http://rawraw.info/2019-05-15-proxy.html"/>
+    <id>http://rawraw.info/2019-05-15-proxy.html</id>
+    <published>2019-05-15T07:07:42.000Z</published>
+    <updated>2019-05-15T09:08:49.574Z</updated>
+    
+    <content type="html"><![CDATA[<p>跨域的几种方式</p><p><div align="center"><br><img src="/images/bg/0172.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="跨域是什么"><a href="#跨域是什么" class="headerlink" title="跨域是什么"></a>跨域是什么</h1><p>一个完整的地址 = 协议 + 子域名 + 主域名 + 端口号 + 请求资源地址</p><p>JavaScript出于安全方面的考虑，不允许跨域调用其他页面的对象。<br>当协议、子域名、主域名、端口号中任意一个不相同时，都算作不同域。不同域之间相互请求资源，就算作“跨域”。</p><blockquote><p>跨域并不是请求发不出去，请求能发出去，服务端能收到请求并正常返回结果，只是结果被浏览器拦截了。之所以会跨域，是因为受到了同源策略的限制，同源策略要求源相同才能正常进行通信，即协议、域名、端口号都完全一致。</p></blockquote><h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。它的存在可以保护用户隐私信息，防止身份伪造等(读取Cookie)。</p><h4 id="同源策略限制内容有："><a href="#同源策略限制内容有：" class="headerlink" title="同源策略限制内容有："></a>同源策略限制内容有：</h4><ul><li>Cookie、LocalStorage、IndexedDB 等存储性内容</li><li>DOM 节点</li><li>AJAX 请求不能发送</li></ul><h4 id="允许跨域加载资源的三个标签"><a href="#允许跨域加载资源的三个标签" class="headerlink" title="允许跨域加载资源的三个标签"></a>允许跨域加载资源的三个标签</h4><ul><li><code>&lt;img src=XXX&gt;</code></li><li><code>&lt;link href=XXX&gt;</code></li><li><code>&lt;script src=XXX&gt;</code></li></ul><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h2><p>详情见proxy</p><h2 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h2><p>Websocket是HTML5的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket和HTTP都是应用层协议，都基于 TCP 协议。但是 WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 server 与 client 都能主动向对方发送或接收数据。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。</p><p>原生WebSocket API使用起来不太方便，我们使用Socket.io，它很好地封装了webSocket接口，提供了更简单、灵活的接口，也对不支持webSocket的浏览器提供了向下兼容。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//前端代码：</span><br><span class="line">&lt;div&gt;user input：&lt;input type = &quot;text&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;./socket.io.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var socket = io(&apos;http://www.domain2.com:8080&apos;);</span><br><span class="line">// 连接成功处理</span><br><span class="line">socket.on(&apos;connect&apos;,function()&#123;</span><br><span class="line">    // 监听服务端消息</span><br><span class="line">    socket.on(&apos;message&apos;,function(msg)&#123;</span><br><span class="line">        console.log(&apos;data from server: ---&gt; &apos;+msg</span><br><span class="line">    );</span><br><span class="line">&#125;);</span><br><span class="line">// 监听服务端关闭</span><br><span class="line">    socket.on(&apos;disconnect&apos;,function()&#123;</span><br><span class="line">        console.log(&apos;Server socket has closed.&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">document.getElementsByTagName(&apos;input&apos;)[0].onblur = function()&#123;</span><br><span class="line">    socket.send(this.value);</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//Nodejs socket后台：</span><br><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">var socket  = require(&apos;socket.io&apos;);</span><br><span class="line">// 启http服务</span><br><span class="line">var server = http.createServer(function(req,res)&#123;</span><br><span class="line">    res.writeHead(200,&#123;</span><br><span class="line">        &apos;Content-type&apos;: &apos;text/html&apos;</span><br><span class="line">    &#125;);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(&apos;8080&apos;);</span><br><span class="line">console.log(&apos;Server is running at port 8080...&apos;);</span><br><span class="line">// 监听socket连接</span><br><span class="line">socket.listen(server).on(&apos;connection&apos;,function(client)&#123;</span><br><span class="line">// 接收信息</span><br><span class="line">    client.on(&apos;message&apos;,function(msg) &#123;</span><br><span class="line">    client.send(&apos;hello：&apos; + msg);</span><br><span class="line">    console.log(&apos;data from client: ---&gt; &apos; + msg);</span><br><span class="line">    </span><br><span class="line">&#125;);</span><br><span class="line">    </span><br><span class="line">// 断开处理</span><br><span class="line">    client.on(&apos;disconnect&apos;, function() &#123;</span><br><span class="line">        console.log(&apos;Client socket has closed.&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="cors"><a href="#cors" class="headerlink" title="cors"></a>cors</h2><p>整个CORS通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，CORS通信与同源的AJAX通信没有差别，代码完全一样。浏览器一旦发现AJAX请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。因此，实现CORS通信的关键是服务器。只要服务器实现了CORS接口，就可以跨源通信。</p><p>CORS要求浏览器(&gt;IE10)和服务器的同时支持，是跨域的根本解决方法，由浏览器自动完成。<br>优点在于功能更加强大支持各种HTTP Method，缺点是兼容性不如JSONP。<br>服务端：<br><code>header(&quot;Access-Control-Allow-Origin:*&quot;);</code><br><code>header(&quot;Access-Control-Allow-Methods:POST,GET&quot;);</code></p><h2 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h2><p>原理：利用 <code>&lt;script&gt;</code> 元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 数据。JSONP请求一定需要对方的服务器做支持才可以。</p><p>JSONP和AJAX相同，都是客户端向服务器端发送请求，从服务器端获取数据的方式。但AJAX属于同源策略，JSONP属于非同源策略（跨域请求）。</p><p>JSONP优点是兼容性好，可用于解决主流浏览器的跨域数据访问的问题。缺点是仅支持get方法具有局限性。</p><ul><li>声明一个回调函数，其函数名(如fn)当做参数值，要传递给跨域请求数据的服务器，函数形参为要获取目标数据(服务器返回的data)。</li><li>创建一个<code>&lt;script&gt;</code>标签，把那个跨域的API数据接口地址，赋值给script的src，还要在这个地址中向服务器传递该函数名,通过问号传参。</li><li>服务器接收到请求后，需要进行特殊的处理：把传递进来的函数名和它需要给你的数据拼接成一个字符串</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type =&quot;text/javascript&quot;&gt;</span><br><span class="line">function fn(data)&#123;</span><br><span class="line">    alert(data.msg);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script type = &quot;text/javascript&quot; src=&quot;http://test.com/jsonServerResponse?jsonp=fn&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><h2 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h2><p>如果两个网页不同源，就无法拿到对方的DOM。典型的例子是iframe窗口和 window.open 方法打开的窗口，它们与父窗口无法通信。HTML5为了解决这个问题，引入了一个全新的API：跨文档通信 API（Cross-document messaging）。这个API为window对象新增了一个 window.postMessage 方法，允许跨窗口通信，不论这两个窗口是否同源。</p><p>postMessage方法的第一个参数是具体的信息内容，第二个参数是接收消息的窗口的源（origin），即”协议 + 域名 + 端口”。也可以设为 *，表示不限制域名，向所有窗口发送。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//发送信息页面 http://localhost:63342/index.html</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;跨域请求&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">  </span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;iframe src=&quot;http://localhost:3000/users/reg&quot; id=&quot;frm&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">    &lt;input type=&quot;button&quot; value =&quot;OK&quot; onclick=&quot;run()&quot;&gt;&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function run()&#123;</span><br><span class="line">    var frm = document.getElementById(&quot;frm&quot;);</span><br><span class="line">    frm.contentWindow.postMessage(&quot;跨域请求信息&quot;,&quot;http://localhost:3000&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//接收信息页面 http://localhost:3000/message.html</span><br><span class="line"> window.addEventListener(&quot;message&quot;,function(e)&#123;//通过监听message事件，可以监听对方发送的消息。</span><br><span class="line">  console.log(e.data);</span><br><span class="line">&#125;,false);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;跨域的几种方式&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0172.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="html" scheme="http://rawraw.info/tags/html/"/>
+    
+      <category term="跨域" scheme="http://rawraw.info/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>这是一个键盘</title>
@@ -83,9 +291,9 @@
       <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
     
     
-      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
-    
       <category term="less" scheme="http://rawraw.info/tags/less/"/>
+    
+      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
     
   </entry>
   
@@ -109,6 +317,30 @@
     
     
       <category term="gulp" scheme="http://rawraw.info/tags/gulp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mvc/mvvm</title>
+    <link href="http://rawraw.info/2019-03-16-mvc.html"/>
+    <id>http://rawraw.info/2019-03-16-mvc.html</id>
+    <published>2019-03-16T06:24:55.000Z</published>
+    <updated>2019-05-16T06:41:56.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>mvc/mvvm区别</p><a id="more"></a><h1 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h1><p>Model View Controller</p><p>Model（模型）：是应用程序中用于处理应用程序数据逻辑的部分。通常模型对象负责在数据库中存取数据。<br>View（视图）：是应用程序中处理数据显示的部分。通常视图是依据模型数据创建的。<br>Controller（控制器）：是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。</p><p>MVC的思想：一句话描述就是Controller负责将Model的数据用View显示出来</p><p>众所周知，MVC 是开发客户端最经典的设计模式，iOS 开发也不例外，但是 MVC 有让人无法忽视的严重问题。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>Model和View永远不能相互通信，只能通过Controller传递。</li><li>Controller可以直接与Model对话（读写调用Model），Model通过Notification和KVO机制与Controller间接通信。</li><li>Controller可以直接与View对话，通过outlet,直接操作View,outlet直接对应到View中的控件,View通过action向Controller报告事件的发生(如用户Touch我了)。Controller是View的直接数据源（数据很可能是Controller从Model中取得并经过加工了）。Controller是View的代理（delegate),以同步View与Controller。</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>View的可扩展性相当低。<br>在通常的开发中，除了简单的 Model、View 以外的所有部分都被放在了 Controller 里面。Controller 负责显示界面、响应用户的操作、网络请求以及与 Model 交互。这就导致了 Controller：</p><ul><li>逻辑复杂，难以维护；</li><li>和 View 紧耦合，无法测试；</li></ul><h1 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h1><p>Model View ViewModel</p><p>Controller的存在感被完全的降低了。<br>本质上是一个精心优化的 MVC 架构；<br>既然 View 和 Controller 是一对好基友，在 MVVM 里面，干脆把它们当做 View。<br>现在将原来 Controller 的部分职责拆分出来由 View Model 承担，主要包括：</p><ul><li>校验用户输入；</li><li>网络请求；</li><li>展示层的逻辑，比如格式化字符串；</li><li>其他不能放入 Model，与 View 无关的逻辑；</li></ul><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>MVVM 兼容 MVC，可以先创建一个简单的 View Model，再慢慢迁移。</li><li>MVVM 使得 app 更容易测试，因为 View Model 部分不涉及 UI。</li></ul><p>MVVM 最好配合 binding 机制，Model 的变化需要同步到 View Model，View Model 的变化也需要同步到 View</p><p><a href="https://www.jianshu.com/p/b0aab1ffad93" target="_blank" rel="noopener">发展史</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;mvc/mvvm区别&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="mvc" scheme="http://rawraw.info/tags/mvc/"/>
+    
+      <category term="mvvm" scheme="http://rawraw.info/tags/mvvm/"/>
     
   </entry>
   
@@ -162,7 +394,7 @@
     <link href="http://rawraw.info/2018-03-27-npm.html"/>
     <id>http://rawraw.info/2018-03-27-npm.html</id>
     <published>2018-03-27T14:08:37.000Z</published>
-    <updated>2019-04-30T05:46:18.215Z</updated>
+    <updated>2019-05-16T08:31:02.424Z</updated>
     
     <content type="html"><![CDATA[<p>npm常用命令以及npm包发布</p><a id="more"></a><h1 id="安装升级"><a href="#安装升级" class="headerlink" title="安装升级"></a>安装升级</h1><p>安装node以后自动会安装NPM。</p><h2 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h2><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p><code>$ npm install -g npm</code></p><h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p><code>$ npm install &lt;pkg&gt;</code> 或者 <code>$ npm install &lt;pkg&gt;@&lt;version&gt;</code></p><h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><p><code>$ npm uninstall &lt;pkg&gt;</code> 或者  <code>$ npm uninstall &lt;pkg&gt;@[&lt;version&gt;]</code></p><h2 id="查看当前项目下的包列表"><a href="#查看当前项目下的包列表" class="headerlink" title="查看当前项目下的包列表"></a>查看当前项目下的包列表</h2><p><code>$ npm ls</code></p><p>#查看全局包列表<br><code>$ npm ls －g</code></p><p>#清理缓存<br><code>$ npm cache clean</code></p><p>#显示包的package.json信息,后面可以跟属性名称。<br>e.g.：<code>$ npm view &lt;pkg&gt; versions</code>  其中versions是<code>package.json</code>的<code>versions</code>属性<br><code>$ npm view &lt;pkg&gt; [attribute]</code></p><h1 id="发布自己的npm包"><a href="#发布自己的npm包" class="headerlink" title="发布自己的npm包"></a>发布自己的npm包</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>第一次：<br><code>$ npm adduser</code><br>输入password的时候会自动隐藏，管自己输就好了<br>然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用<code>cnpm</code>就完全o**k！！<br>所以 所有的命令行 自己自动都改c吧，懒得一个个改了。<br>not 第一次：<br><code>$ npm login</code></p><h3 id="查看当前用户"><a href="#查看当前用户" class="headerlink" title="查看当前用户"></a>查看当前用户</h3><p><code>$ npm whoami</code></p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p><code>$ npm init</code><br>动次打次 怼怼怼<br><code>$ npm publish</code><br><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="报错集合"><a href="#报错集合" class="headerlink" title="报错集合"></a>报错集合</h3><p><code>ERR 403</code>:包名字重了<br><code>npm please try running this command again as root</code>：未登录</p><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><p><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="快速升级方法"><a href="#快速升级方法" class="headerlink" title="快速升级方法"></a>快速升级方法</h3><h4 id="小版本号升级一个版本"><a href="#小版本号升级一个版本" class="headerlink" title="小版本号升级一个版本"></a>小版本号升级一个版本</h4><p><code>$ npm version patch</code></p><h4 id="中版号升级一个版本"><a href="#中版号升级一个版本" class="headerlink" title="中版号升级一个版本"></a>中版号升级一个版本</h4><p><code>$ npm version minor</code></p><h4 id="大版本号升级一个版本"><a href="#大版本号升级一个版本" class="headerlink" title="大版本号升级一个版本"></a>大版本号升级一个版本</h4><p><code>$ npm version major</code><br>npm社区版本号规则采用的是semver(语义化版本)，主要规则如下：<br>版本格式：主版号.次版号.修订号，版号递增规则如下：<br>    主版号：当你做了不相容的 API 修改，<br>    次版号：当你做了向下相容的功能性新增，<br>    修订号：当你做了向下相容的问题修正。<br>    先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>不能删除整个包，只能某个版本<br><code>$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]</code></p>]]></content>
     
@@ -267,211 +499,6 @@
     
     
       <category term="css" scheme="http://rawraw.info/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IoC理念</title>
-    <link href="http://rawraw.info/2018-03-07-ioc.html"/>
-    <id>http://rawraw.info/2018-03-07-ioc.html</id>
-    <published>2018-03-07T14:52:13.000Z</published>
-    <updated>2019-04-30T05:42:40.118Z</updated>
-    
-    <content type="html"><![CDATA[<p>vue这么火react这么火，该看看IoC咯~<br>现在都喜欢对项目拆解成多个模块/组件来组合使用，以此提高code复用性。一个复杂组件总会依赖其他组件来协同完成某个逻辑功能。<br>组件越复杂，依赖越多，可复用性就越差。然后我们就可以用一下这个IoC理念咯。嗯，一种全新的设计模式。</p><p><div align="center"><br><img src="/images/bg/0046.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><blockquote><p>IoC 全称 Inversion of Control，中文术语为依赖倒置（反转），包含两个准则：</p><blockquote><p> 1.高层次的模块不应该依赖于低层次的模块，他们都应该依赖于抽象<br> 2.抽象不应该依赖于具体实现，具体实现应该依赖于抽象</p></blockquote></blockquote><p>核心思想：面向接口编程。</p><h1 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h1><p>哇 炸，再理解一下。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;vue这么火react这么火，该看看IoC咯~&lt;br&gt;现在都喜欢对项目拆解成多个模块/组件来组合使用，以此提高code复用性。一个复杂组件总会依赖其他组件来协同完成某个逻辑功能。&lt;br&gt;组件越复杂，依赖越多，可复用性就越差。然后我们就可以用一下这个IoC理念咯。嗯，一种全新的设计模式。&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0046.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="IoC" scheme="http://rawraw.info/tags/IoC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序是真的讨厌</title>
-    <link href="http://rawraw.info/2018-03-01-wechatfuck.html"/>
-    <id>http://rawraw.info/2018-03-01-wechatfuck.html</id>
-    <published>2018-03-01T03:04:08.000Z</published>
-    <updated>2019-04-30T05:50:24.769Z</updated>
-    
-    <content type="html"><![CDATA[<p>   微信小程序出现好久了，一直没仔细了解。从一开始就是莫名的排斥，公司关于小程序的项目也是都直接丢给新人。今天抖音刷到一个吃饭吃什么的段子，就想说这很easy,自己写一个玩一下啊。嗯，写一个放哪儿，那就小程序吧。但是好像一点都不酷，嗯，那我给它做成云标签墙吧。<br>   想象中，一切都很美好。</p><div align="center"><br><img src="/images/bg/0058.jpg" alt="“封面”"><br></div><a id="more"></a><h1 id="START"><a href="#START" class="headerlink" title="START"></a>START</h1><p>原来做过一个小demo是这样子的。</p><div align="center"><br><img src="/images/result/wall.gif" alt="“效果”"><br></div><br>讲道理一堆食物这样子滚应该很诱人吧。然后就开始一边看看文档一边写。<br>一切顺利地进行到这一步<br><div align="center"><br><img src="/images/code/20180301001.png" alt="“代码”"><br></div><h1 id="QUESTION"><a href="#QUESTION" class="headerlink" title="QUESTION"></a>QUESTION</h1><h2 id="getElement"><a href="#getElement" class="headerlink" title="getElement"></a>getElement</h2><p>可以直接标签内操作，但是烦。</p><h2 id="appendChild"><a href="#appendChild" class="headerlink" title="appendChild"></a>appendChild</h2><p>可以用模板做，但是烦。而且无限的append的好像就有点难做了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;   微信小程序出现好久了，一直没仔细了解。从一开始就是莫名的排斥，公司关于小程序的项目也是都直接丢给新人。今天抖音刷到一个吃饭吃什么的段子，就想说这很easy,自己写一个玩一下啊。嗯，写一个放哪儿，那就小程序吧。但是好像一点都不酷，嗯，那我给它做成云标签墙吧。&lt;br&gt;   想象中，一切都很美好。&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0058.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="oh my bug" scheme="http://rawraw.info/categories/oh-my-bug/"/>
-    
-    
-      <category term="wechat" scheme="http://rawraw.info/tags/wechat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo提交问题</title>
-    <link href="http://rawraw.info/2018-02-28-bug20180228.html"/>
-    <id>http://rawraw.info/2018-02-28-bug20180228.html</id>
-    <published>2018-02-28T04:13:55.000Z</published>
-    <updated>2019-04-30T05:38:38.512Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>fatal: could not read Username for &#39;https://github.com&#39;:No error</code>巴拉巴拉<br>今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。</p><div align="center"><br><img src="/images/bg/0033.jpg" alt="“封面”"><br></div><a id="more"></a><h1 id="TRY"><a href="#TRY" class="headerlink" title="TRY"></a>TRY</h1><h2 id="尝试一"><a href="#尝试一" class="headerlink" title="尝试一"></a>尝试一</h2><p>原因：<br>https方式的时候 在git remote add origin 的https url 里面没有用户名和密码<br>方案：<br><code>git remote add origin https://{username}:{password}@github.com/{username}/project.git</code><br>或者直接修改.git/config隐藏文件为 <code>git remote add origin https://{username}:{password}@github.com/{username}/project.git</code>格式<br>结果：<br>查了N次，用户名都是对的，添加了N次，都是已存在。</p><h2 id="尝试二"><a href="#尝试二" class="headerlink" title="尝试二"></a>尝试二</h2><p>原因：<br>如果安装git客户端的时候没有勾选git命令在bash和cmd命令都有效，若是在cmd命令下则因为没有将git添加到windows的path。<br>方案：<br>在blog的目录打开git bash再尝试hexo d。<br>结果：<br>然并卵</p><h2 id="尝试三"><a href="#尝试三" class="headerlink" title="尝试三"></a>尝试三</h2><p>原因：<br>git的版本bug<br>方案：<br>查看git版本<br><code>git version</code><br>结果：<br>我的是2.12.2windows.2。<br><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code>用这个更新之后还是2.12.2.所以直接官网下载了2.16.2的安装包。<br><code>https://git-scm.com/download/win</code><br>搞了好久的vpn啊，还好最后升级之后真的解决了问题！开心值+100！！！</p><div align="center"><br><img src="/images/bg/0062.jpeg" alt="“封面”"><br></div>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;fatal: could not read Username for &amp;#39;https://github.com&amp;#39;:No error&lt;/code&gt;巴拉巴拉&lt;br&gt;今天在提交git的时候，居然炸了，说是找不到username，然而config也没改过啊，生气。&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0033.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="oh my bug" scheme="http://rawraw.info/categories/oh-my-bug/"/>
-    
-    
-      <category term="hexo" scheme="http://rawraw.info/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git常用命令</title>
-    <link href="http://rawraw.info/2018-01-27-gitstudy.html"/>
-    <id>http://rawraw.info/2018-01-27-gitstudy.html</id>
-    <published>2018-01-27T06:06:34.000Z</published>
-    <updated>2019-04-30T05:41:12.968Z</updated>
-    
-    <content type="html"><![CDATA[<p>git常用命令<br><a id="more"></a></p><h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="git升级"><a href="#git升级" class="headerlink" title="git升级"></a>git升级</h2><p><code>$ git clone git://git.kernel.org/pub/scm/git/git.git</code></p><h1 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h1><h2 id="查看用户名和邮箱"><a href="#查看用户名和邮箱" class="headerlink" title="查看用户名和邮箱"></a>查看用户名和邮箱</h2><p><code>$ git config user.name</code><br><code>$ git config user.email</code></p><h2 id="修改用户名和邮箱"><a href="#修改用户名和邮箱" class="headerlink" title="修改用户名和邮箱"></a>修改用户名和邮箱</h2><p><code>$ git config --global user.name</code><br><code>$ git config --global user.email</code></p><h2 id="初始化一个版本仓库"><a href="#初始化一个版本仓库" class="headerlink" title="初始化一个版本仓库"></a>初始化一个版本仓库</h2><p><code>$ git init</code></p><h2 id="Clone远程版本库"><a href="#Clone远程版本库" class="headerlink" title="Clone远程版本库"></a>Clone远程版本库</h2><p><code>$ git clone addr.</code></p><h2 id="添加远程版本库origin"><a href="#添加远程版本库origin" class="headerlink" title="添加远程版本库origin"></a>添加远程版本库origin</h2><p><code>$ git remote add origin addr.</code></p><h2 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h2><p><code>$ git remote -v</code></p><h1 id="三、提交你的修改"><a href="#三、提交你的修改" class="headerlink" title="三、提交你的修改"></a>三、提交你的修改</h1><h2 id="添加当前修改的文件到暂存区"><a href="#添加当前修改的文件到暂存区" class="headerlink" title="添加当前修改的文件到暂存区"></a>添加当前修改的文件到暂存区</h2><p><code>$ git add .</code></p><h2 id="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"><a href="#如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件" class="headerlink" title="如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件"></a>如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件</h2><p><code>$ git add -u</code></p><h2 id="提交你的修改"><a href="#提交你的修改" class="headerlink" title="提交你的修改"></a>提交你的修改</h2><p><code>$ git commit –m &amp;quot;你的注释&amp;quot;</code></p><h2 id="推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支"><a href="#推送你的更新到远程服务器-语法为-git-push-远程名-本地分支-远程分支" class="headerlink" title="推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]"></a>推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]</h2><p><code>$ git push origin master</code></p><h2 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h2><p><code>$ git status</code></p><h2 id="跟踪新文件"><a href="#跟踪新文件" class="headerlink" title="跟踪新文件"></a>跟踪新文件</h2><p><code>$ git add readme.txt</code></p><h2 id="从当前跟踪列表移除文件，并完全删除"><a href="#从当前跟踪列表移除文件，并完全删除" class="headerlink" title="从当前跟踪列表移除文件，并完全删除"></a>从当前跟踪列表移除文件，并完全删除</h2><p><code>$ git rm readme.txt</code></p><h2 id="仅在暂存区删除，保留文件在当前目录，不再跟踪"><a href="#仅在暂存区删除，保留文件在当前目录，不再跟踪" class="headerlink" title="仅在暂存区删除，保留文件在当前目录，不再跟踪"></a>仅在暂存区删除，保留文件在当前目录，不再跟踪</h2><p><code>$ git rm –cached readme.txt</code></p><h2 id="重命名文件"><a href="#重命名文件" class="headerlink" title="重命名文件"></a>重命名文件</h2><p><code>$ git mv reademe.txt readme</code></p><h2 id="查看当前分支的存在提交历史记录"><a href="#查看当前分支的存在提交历史记录" class="headerlink" title="查看当前分支的存在提交历史记录"></a>查看当前分支的存在提交历史记录</h2><p><code>$ git log</code>不包括诸如删除的或被合并的提交</p><h2 id="查看当前分支所有操作历史"><a href="#查看当前分支所有操作历史" class="headerlink" title="查看当前分支所有操作历史"></a>查看当前分支所有操作历史</h2><p><code>$ git reflog</code>诸如历史提交记录，撤销，合并提交等详细历史记录</p><h2 id="修改最后一次提交注释的，利用–amend参数"><a href="#修改最后一次提交注释的，利用–amend参数" class="headerlink" title="修改最后一次提交注释的，利用–amend参数"></a>修改最后一次提交注释的，利用–amend参数</h2><p><code>$ git checkout –- readme.txt</code></p><h1 id="四、基本的分支管理"><a href="#四、基本的分支管理" class="headerlink" title="四、基本的分支管理"></a>四、基本的分支管理</h1><h2 id="创建一个分支"><a href="#创建一个分支" class="headerlink" title="创建一个分支"></a>创建一个分支</h2><p><code>$ git branch workspace</code></p><h2 id="切换工作目录到workspace"><a href="#切换工作目录到workspace" class="headerlink" title="切换工作目录到workspace"></a>切换工作目录到workspace</h2><p><code>$ git chekcout workspace</code></p><h2 id="将上面的命令合在一起，创建workspace分支并切换到workspace"><a href="#将上面的命令合在一起，创建workspace分支并切换到workspace" class="headerlink" title="将上面的命令合在一起，创建workspace分支并切换到workspace"></a>将上面的命令合在一起，创建workspace分支并切换到workspace</h2><p><code>$ git chekcout –b workspace</code></p><h2 id="合并workspace分支，当前工作目录为master"><a href="#合并workspace分支，当前工作目录为master" class="headerlink" title="合并workspace分支，当前工作目录为master"></a>合并workspace分支，当前工作目录为master</h2><p><code>$ git merge workspace</code></p><h2 id="合并完成后，没有出现冲突，删除workspace分支"><a href="#合并完成后，没有出现冲突，删除workspace分支" class="headerlink" title="合并完成后，没有出现冲突，删除workspace分支"></a>合并完成后，没有出现冲突，删除workspace分支</h2><p><code>$ git branch –d workspace</code></p><h2 id="拉去远程仓库的数据，语法为-git-fetch-remote-name"><a href="#拉去远程仓库的数据，语法为-git-fetch-remote-name" class="headerlink" title="拉去远程仓库的数据，语法为 git fetch [remote-name]"></a>拉去远程仓库的数据，语法为 git fetch [remote-name]</h2><p><code>$ git fetch</code></p><h2 id="fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"><a href="#fetch-会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并" class="headerlink" title="fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并"></a>fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并</h2><p><code>$ git pull</code></p><h2 id="查看远程仓库的信息"><a href="#查看远程仓库的信息" class="headerlink" title="查看远程仓库的信息"></a>查看远程仓库的信息</h2><p><code>$ git remote show origin</code></p><h1 id="五、合并"><a href="#五、合并" class="headerlink" title="五、合并"></a>五、合并</h1><h2 id="合并的commit的前一个commit节点"><a href="#合并的commit的前一个commit节点" class="headerlink" title="合并的commit的前一个commit节点"></a>合并的commit的前一个commit节点</h2><p><code>$ git rebase -i （commitHash）</code><br>pick：简写p，启用该commit；<br>reword：简写r，使用该commit，但是修改提交信息，修改后可以继续编辑后面的提交信息；<br>edit：简写e，使用commit，停止合并该commit；<br>squash：简写s，使用该commit，并将该commit并入前一commit；<br>drop：简写d，移除该commit；</p><h1 id="六、撤销"><a href="#六、撤销" class="headerlink" title="六、撤销"></a>六、撤销</h1><h2 id="撤销一个提交的同时会创建一个新的提交"><a href="#撤销一个提交的同时会创建一个新的提交" class="headerlink" title="撤销一个提交的同时会创建一个新的提交"></a>撤销一个提交的同时会创建一个新的提交</h2><p><code>$ git revert head@{19}</code><br>撤销提交时若多个提交修改了同一文件可能会出现冲突，需要处理冲突后，暂存：<code>$ git add.</code><br>然后继续执行revert操作：<code>$ git revert --continue</code></p><h2 id="期望撤销的提交是最近独立存在的，并没有发生合并"><a href="#期望撤销的提交是最近独立存在的，并没有发生合并" class="headerlink" title="期望撤销的提交是最近独立存在的，并没有发生合并"></a>期望撤销的提交是最近独立存在的，并没有发生合并</h2><p><code>$ git reset （commitHash）</code></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;git常用命令&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="git" scheme="http://rawraw.info/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文件夹命名习惯</title>
-    <link href="http://rawraw.info/2018-01-07-name.html"/>
-    <id>http://rawraw.info/2018-01-07-name.html</id>
-    <published>2018-01-07T04:36:28.000Z</published>
-    <updated>2019-04-30T05:44:57.843Z</updated>
-    
-    <content type="html"><![CDATA[<p>常用的项目目录文件命名<br><a id="more"></a></p><h1 id="config"><a href="#config" class="headerlink" title="config"></a>config</h1><blockquote><p>配置文件</p></blockquote><h1 id="static"><a href="#static" class="headerlink" title="static"></a>static</h1><blockquote><p>静态资源</p></blockquote><h1 id="src-source"><a href="#src-source" class="headerlink" title="src,source"></a>src,source</h1><blockquote><p>源代码</p></blockquote><h1 id="examples，demo"><a href="#examples，demo" class="headerlink" title="examples，demo"></a>examples，demo</h1><blockquote><p>示例</p></blockquote><h1 id="docs"><a href="#docs" class="headerlink" title="docs"></a>docs</h1><blockquote><p>文档</p></blockquote><h1 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h1><blockquote><p>插件</p></blockquote><h1 id="lib"><a href="#lib" class="headerlink" title="lib"></a>lib</h1><blockquote><p>library,库文件</p></blockquote><h1 id="component"><a href="#component" class="headerlink" title="component"></a>component</h1><blockquote><p>组件</p></blockquote><h1 id="dist"><a href="#dist" class="headerlink" title="dist"></a>dist</h1><blockquote><p>distribution,打包编译后的文件</p><blockquote><p>less,sass,typescript,es6</p></blockquote></blockquote><h1 id="test-tests-test"><a href="#test-tests-test" class="headerlink" title="test,tests,test"></a>test,tests,<strong>test</strong></h1><blockquote><p>测试文件</p></blockquote><h2 id="benchmarks"><a href="#benchmarks" class="headerlink" title="benchmarks"></a>benchmarks</h2><blockquote><p>测试版本的性能变化</p></blockquote><h2 id="units-spec"><a href="#units-spec" class="headerlink" title="units,spec"></a>units,spec</h2><blockquote><p>单元测试</p></blockquote><h2 id="e2e"><a href="#e2e" class="headerlink" title="e2e"></a>e2e</h2><blockquote><p>端对端测试</p></blockquote><h1 id="build-script"><a href="#build-script" class="headerlink" title="build,script"></a>build,script</h1><blockquote><p>构建脚本</p></blockquote><h1 id="utils-tools-helpers"><a href="#utils-tools-helpers" class="headerlink" title="utils,tools,helpers"></a>utils,tools,helpers</h1><blockquote><p>工具代码</p></blockquote><h1 id="models-views-controllers-middlewares"><a href="#models-views-controllers-middlewares" class="headerlink" title="models,views,controllers,middlewares"></a>models,views,controllers,middlewares</h1><blockquote><p>MVC，中间件</p></blockquote><h1 id="router"><a href="#router" class="headerlink" title="router"></a>router</h1><blockquote><p>路由</p></blockquote><h1 id="server"><a href="#server" class="headerlink" title="server"></a>server</h1><blockquote><p>服务端代码</p></blockquote><h1 id="adapters"><a href="#adapters" class="headerlink" title="adapters"></a>adapters</h1><blockquote><p>适配器模式</p></blockquote><h1 id="legacy"><a href="#legacy" class="headerlink" title="legacy"></a>legacy</h1><blockquote><p>兼容历史版本或者浏览器的代码</p></blockquote><h1 id="bin"><a href="#bin" class="headerlink" title="bin"></a>bin</h1><blockquote><p>命令脚本，命令行工具</p></blockquote><h1 id="common"><a href="#common" class="headerlink" title="common"></a>common</h1><blockquote><p>公用文件</p></blockquote><h1 id="packages"><a href="#packages" class="headerlink" title="packages"></a>packages</h1><blockquote><p>打包多个npm包,减小体积</p></blockquote><h1 id="core"><a href="#core" class="headerlink" title="core"></a>core</h1><blockquote><p>核心文件</p></blockquote><h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><blockquote><p>杂项</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;常用的项目目录文件命名&lt;br&gt;
-    
-    </summary>
-    
-      <category term="rule" scheme="http://rawraw.info/categories/rule/"/>
-    
-    
-      <category term="rule" scheme="http://rawraw.info/tags/rule/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>移动端语音播报问题集合</title>
-    <link href="http://rawraw.info/2017-12-19-sound.html"/>
-    <id>http://rawraw.info/2017-12-19-sound.html</id>
-    <published>2017-12-19T06:16:01.000Z</published>
-    <updated>2019-04-30T05:48:01.875Z</updated>
-    
-    <content type="html"><![CDATA[<p>突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。<br>打卡签到，播放“XXX,签到成功”。<br>判断一个人的语音提示是否播报完成？或者打断？</p><p><div align="center"><br><img src="/images/bg/0059.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="文本生成语音"><a href="#文本生成语音" class="headerlink" title="文本生成语音"></a>文本生成语音</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> speaker = <span class="keyword">new</span> <span class="built_in">window</span>.SpeechSynthesisUtterance();</span><br><span class="line"><span class="keyword">var</span> speakTimer,</span><br><span class="line">    stopTimer;</span><br><span class="line"><span class="comment">// 开始播报</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">speakText</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">    clearTimeout(speakTimer);</span><br><span class="line">    <span class="built_in">window</span>.speechSynthesis.cancel();</span><br><span class="line">    speakTimer = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        speaker.text = text;</span><br><span class="line">        <span class="built_in">window</span>.speechSynthesis.speak(speaker);</span><br><span class="line">    &#125;, <span class="number">200</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 停止播报</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopSpeak</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearTimeout(stopTimer);</span><br><span class="line">    clearTimeout(speakTimer);</span><br><span class="line">    stopTimer = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.speechSynthesis.cancel();</span><br><span class="line">    &#125;, <span class="number">20</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="SpeechSynthesis"><a href="#SpeechSynthesis" class="headerlink" title="SpeechSynthesis"></a>SpeechSynthesis</h3><table><thead><tr><th>参数</th><th>含义</th></tr></thead><tbody><tr><td>paused</td><td>是否暂停</td></tr><tr><td>pending</td><td>是否处理中</td></tr><tr><td>speaking</td><td>是否朗读中</td></tr><tr><td>onvoiceschanged</td><td>声音变化时触发</td></tr><tr><td>cancel()</td><td>情况待朗读队列</td></tr><tr><td>getVoices()</td><td>获取浏览器支持的语音包列表</td></tr><tr><td>pause()</td><td>暂停</td></tr><tr><td>resume()</td><td>重新开始</td></tr><tr><td>speak()</td><td>读合成的语音，参数必须</td></tr></tbody></table><h3 id="SpeechSynthesisUtterance"><a href="#SpeechSynthesisUtterance" class="headerlink" title="SpeechSynthesisUtterance"></a>SpeechSynthesisUtterance</h3><table><thead><tr><th>参数</th><th>含义</th></tr></thead><tbody><tr><td>lang</td><td>语言</td></tr><tr><td>pitch</td><td>音高</td></tr><tr><td>rate</td><td>语速</td></tr><tr><td>text</td><td>文本</td></tr><tr><td>voice</td><td>声音</td></tr><tr><td>volume</td><td>音量</td></tr><tr><td>onboundary</td><td>单词或句子边界触发，即分隔处触发</td></tr><tr><td>onend</td><td>结束时触发</td></tr><tr><td>onerror</td><td>错误时触发</td></tr><tr><td>onmark</td><td></td></tr><tr><td>onpause</td><td>暂停时触发</td></tr><tr><td>onresume</td><td>重新播放时触发</td></tr><tr><td>onstart</td><td>开始时触发</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;突然想到之前一个项目的问题，当时手忙脚乱糊弄地解决了一下。&lt;br&gt;打卡签到，播放“XXX,签到成功”。&lt;br&gt;判断一个人的语音提示是否播报完成？或者打断？&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0059.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="oh my bug" scheme="http://rawraw.info/categories/oh-my-bug/"/>
-    
-    
-      <category term="question" scheme="http://rawraw.info/tags/question/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018前端学习计划</title>
-    <link href="http://rawraw.info/2017-12-19-plan2018.html"/>
-    <id>http://rawraw.info/2017-12-19-plan2018.html</id>
-    <published>2017-12-19T05:14:03.000Z</published>
-    <updated>2019-04-30T05:46:47.322Z</updated>
-    
-    <content type="html"><![CDATA[<p>再堕落下去，要是个废人了。开始好好学习，天天向上咯！<br>小小列个清单先~</p><p><div align="center"><br><img src="/images/bg/0057.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="旧的要巩固"><a href="#旧的要巩固" class="headerlink" title="旧的要巩固"></a>旧的要巩固</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ol><li>结构：HTML/HTML5</li><li>样式：CSS/CSS3/canvas/svg/vr/webGL</li><li>逻辑：JavaScript/jQuery</li><li>地图：摸清天地图，一切地图不是事儿</li><li>数据:数据库/php(后台小哥哥的东西，看看会cv就好)</li><li>服务：node</li><li>兼容性：web和移动端/各浏览器</li></ol><h2 id="框架全家桶"><a href="#框架全家桶" class="headerlink" title="框架全家桶"></a>框架全家桶</h2><ol><li>vue+vuex+vue+router+axios</li><li>react+</li><li>Angular(找时间看2啊)</li></ol><h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2><ol><li>LESS/SASS</li><li>TypeSript</li><li>webpack+npm/yarn</li></ol><h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ol><li>es6</li></ol><h2 id="小技能"><a href="#小技能" class="headerlink" title="小技能"></a>小技能</h2><ol><li>gif录制，用啥软件来着，记得回去翻翻</li></ol><h1 id="新的要学学学学学！嘿嘿"><a href="#新的要学学学学学！嘿嘿" class="headerlink" title="新的要学学学学学！嘿嘿~"></a>新的要学学学学学！嘿嘿~</h1><h2 id="特效，公式撸起来"><a href="#特效，公式撸起来" class="headerlink" title="特效，公式撸起来"></a>特效，公式撸起来</h2><ol><li>贝塞尔曲线原理</li><li>视差原理</li><li>阻尼公式</li></ol><h2 id="新框架"><a href="#新框架" class="headerlink" title="新框架"></a>新框架</h2><ol><li>express框架</li><li>koa框架</li><li>egg.js(天猫)</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;再堕落下去，要是个废人了。开始好好学习，天天向上咯！&lt;br&gt;小小列个清单先~&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0057.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="TODO" scheme="http://rawraw.info/categories/TODO/"/>
-    
-    
-      <category term="daydayup" scheme="http://rawraw.info/tags/daydayup/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Angular 1 vs. Angular 2</title>
-    <link href="http://rawraw.info/2017-07-21-angularcompare.html"/>
-    <id>http://rawraw.info/2017-07-21-angularcompare.html</id>
-    <published>2017-07-21T05:26:52.000Z</published>
-    <updated>2019-04-30T05:35:36.071Z</updated>
-    
-    <content type="html"><![CDATA[<p>Angular 1 对比 Angular 2 </p><a id="more"></a><h1 id="get-Angular-2-0"><a href="#get-Angular-2-0" class="headerlink" title="get Angular 2.0"></a>get Angular 2.0</h1><p><code>cnpm install angular@2.0.0-alpha.6</code></p><h1 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h1><h2 id="1-双向数据绑定"><a href="#1-双向数据绑定" class="headerlink" title="1.双向数据绑定"></a>1.双向数据绑定</h2><p>单向数据绑定<br>2.0中会有方法实现双向绑定，虽然实现的背后数据是单向的。这听起来很像React的Flux所做的工作。这种结构也可以被Angular来使用。</p><h2 id="2-观察器"><a href="#2-观察器" class="headerlink" title="2.观察器"></a>2.观察器</h2><p>Zone.js<br>$scope.$watch, $scope.$apply, $timeout这些都不在需要了，这也是1.x版本有如此之大的学习曲线的原因。<br>Zone.js可以帮Angular实现变化的自动检测。这听起来很像React的差异比较算法。</p><h2 id="3-组件通信"><a href="#3-组件通信" class="headerlink" title="3.组件通信"></a>3.组件通信</h2><p>2.0：除了$broadcast 和 $emit，2.0还有一些小得变化，1）你可以在DOM层发送消息，而不是在scope；2）你可以组件嵌套，然后link他们，这看上去很像每个组件都使用它们独立的scope。</p><h2 id="4-DOM"><a href="#4-DOM" class="headerlink" title="4. DOM"></a>4. DOM</h2><p>2.0：从很多方面可以看出，Angular 2.0对于DOM样式的操作很像React的virtual DOM，它引用的是最近呈现的view层。关于Angular Native，Misko提到，这个view层可以运行于web worker，甚至是native。</p><h2 id="5-scope"><a href="#5-scope" class="headerlink" title="5. scope"></a>5. scope</h2><h2 id="6-模块"><a href="#6-模块" class="headerlink" title="6. 模块"></a>6. 模块</h2><p>2.0将肯定使用ES6的模块语法。同时，2.0还希望通过懒加载来引入依赖注入。和以往通过单例方式管理不同的是，2.0希望使用一种层次化数据结构来提供继承特性。你将能够控制模块的生命周期，比如services。</p><h2 id="7-指令"><a href="#7-指令" class="headerlink" title="7. 指令"></a>7. 指令</h2><h2 id="8-Router"><a href="#8-Router" class="headerlink" title="8. Router"></a>8. Router</h2><h2 id="9-HTML"><a href="#9-HTML" class="headerlink" title="9. HTML"></a>9. HTML</h2><p><a href="http://www.html-js.com/article/AngularJS-mass-Angular-2-and-1x-comparison" target="_blank" rel="noopener">参考</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Angular 1 对比 Angular 2 &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="angularJs" scheme="http://rawraw.info/tags/angularJs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>node.js学习</title>
-    <link href="http://rawraw.info/2017-07-20-node.html"/>
-    <id>http://rawraw.info/2017-07-20-node.html</id>
-    <published>2017-07-20T04:33:31.000Z</published>
-    <updated>2019-04-30T05:45:19.213Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。</p></blockquote><a id="more"></a><h1 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h1><p>浏览器内核实际上分为两个部分:渲染引擎和 JavaScript 引擎。前者负责渲染 HTML + CSS，后者则负责运行 JavaScript。<br>实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。<br>Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p><h1 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h1><ul><li>实时性应用，比如在线多人协作工具，网页聊天应用等。</li><li>以 I/O 为主的高并发应用，比如为客户端提供 API，读取数据库。</li><li>流式应用，比如客户端经常上传文件。</li><li>前后端分离。</li></ul><h4 id="RESTful-API"><a href="#RESTful-API" class="headerlink" title="RESTful API"></a>RESTful API</h4><blockquote><p>这是NodeJS最理想的应用场景，可以处理数万条连接，本身没有太多的逻辑，只需要请求API，组织数据进行返回即可。它本质上只是从某个数据库中查找一些值并将它们组成一个响应。由于响应是少量文本，入站请求也是少量的文本，因此流量不高，一台机器甚至也可以处理最繁忙的公司的API需求。</p></blockquote><h4 id="统一Web应用的UI层"><a href="#统一Web应用的UI层" class="headerlink" title="统一Web应用的UI层"></a>统一Web应用的UI层</h4><blockquote><p>目前MVC的架构，在某种意义上来说，Web开发有两个UI层，一个是在浏览器里面我们最终看到的，另一个在server端，负责生成和拼接页面。</p></blockquote><h4 id="大量Ajax请求的应用"><a href="#大量Ajax请求的应用" class="headerlink" title="大量Ajax请求的应用"></a>大量Ajax请求的应用</h4><blockquote><p>例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，NodeJS能响应大量的并发请求。</p></blockquote><p>　总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。</p><h1 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h1><ul><li>不适合 CPU 密集型的任务，比如人工智能方面的计算，视频、图片的处理等。</li></ul><h1 id="辅助概念的理解"><a href="#辅助概念的理解" class="headerlink" title="辅助概念的理解"></a>辅助概念的理解</h1><p>看不懂啊看不懂</p><h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><h2 id="非阻塞-I-O"><a href="#非阻塞-I-O" class="headerlink" title="非阻塞 I/O"></a>非阻塞 I/O</h2><h3 id="网络-I-O"><a href="#网络-I-O" class="headerlink" title="网络 I/O"></a>网络 I/O</h3><h3 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h3><h2 id="事件循环"><a href="#事件循环" class="headerlink" title="事件循环"></a>事件循环</h2><h2 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="node" scheme="http://rawraw.info/tags/node/"/>
     
   </entry>
   

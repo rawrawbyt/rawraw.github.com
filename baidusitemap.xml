@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://rawraw.info/2019-05-16-js03.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-16-browser.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-16-yarn.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2018-03-27-npm.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-16-nginx.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-03-16-mvc.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-16-client.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-16-getpost.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-16-osi.html</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-05-15-proxy.html</loc>
+    <lastmod>2019-05-15</lastmod>
+  </url>  <url>
     <loc>http://rawraw.info/2017-05-16-xampp.html</loc>
     <lastmod>2019-04-30</lastmod>
   </url>  <url>
@@ -41,9 +71,6 @@
     <lastmod>2019-04-30</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2017-05-04-optimize.html</loc>
-    <lastmod>2019-04-30</lastmod>
-  </url>  <url>
-    <loc>http://rawraw.info/2018-03-27-npm.html</loc>
     <lastmod>2019-04-30</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2017-03-30-nothing.html</loc>

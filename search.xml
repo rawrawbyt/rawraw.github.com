@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaScript要仔细学之三//基础]]></title>
+    <url>%2F2019-05-16-js03.html</url>
+    <content type="text"><![CDATA[变量和类型JavaScript规定了几种语言类型6种基本类型:String、Number、Boolean、Symbol、Undefined、Null1种复杂数据类型：object,Array详细 JavaScript对象的底层数据结构是什么参考从Chrome源码看JS Array的实现 Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol参考 原型和原型链]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[依赖包管理npm、yarn]]></title>
+    <url>%2F2019-05-16-yarn.html</url>
+    <content type="text"><![CDATA[yarnYarn 同样是一个从 npm 注册源获取模块的新的 CLI 客户端。注册的方式不会有任何变化；Yarn 是 Facebook, Google, Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。就像我们可以从官方文档了解那样，它的目的是解决这些团队使用 npm 面临的少数问题，即： 安装的时候无法保证速度/一致性 安全问题，因为 npm 安装时允许运行代码 优势 yarn.lock 文件 并行安装每当 npm 或 Yarn 需要安装一个包时，它会进行一系列的任务。在 npm 中这些任务是按包的顺序一个个执行，这意味着必须等待上一个包被完整安装才会进入下一个；Yarn 则并行的执行这些任务，提高了性能。 清晰的输出npm 默认情况下非常冗余，例如使用 npm install 时它会递归列出所有安装的信息；而 Yarn 则一点也不冗余，当可以使用其它命令时，它适当的使用 emojis 表情来减少信息（Windows 除外）。 pnpm可阅读pnpm的作者Zoltan Kochan发表的“为什么要用pnpm？” pnpm运行起来非常的快，超过了npm和yarn pnpm采用了一种巧妙的方法，利用硬链接和符号链接来避免复制所有本地缓存源文件，这是yarn的最大的性能弱点之一 使用链接并不容易，会带来一堆问题需要考虑。 pnpm继承了yarn的所有优点，包括离线模式和确定性安装]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+        <tag>yarn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx正向代理和反向代理]]></title>
+    <url>%2F2019-05-16-nginx.html</url>
+    <content type="text"><![CDATA[正向代理的代理对象是客户端,反向代理的代理对象是服务端。 参考 正向代理正向代理:客户端 &lt;一&gt; 代理 一&gt;服务端 反向代理反向代理:客户端 一&gt;代理 &lt;一&gt; 服务端]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[跨浏览器开发]]></title>
+    <url>%2F2019-05-16-browser.html</url>
+    <content type="text"><![CDATA[重点：要脱离前端类库的跨浏览器开发 css reset Polyfill抚平不同浏览器之间对js实现的差异。 Selenium是前端工具 测试IETester让您查看 不同IE版本的页面Browsershots让你看看 不同平台上的页面Google让您搜索已知且模糊的IE变态IE 6 No More为您节省了很多麻烦，而不用担心IE 6这个名字的史前垃圾。YUI Graded Browser Support - 确保您知道要关注哪些浏览器jQquery跨浏览器javascript库YUI 3: Reset CSS重置您的CSS(链接包含有用的信息以及CSS)9 Most Common IE Bugs and How to Fix Them非常有用的提示，如何通过先解决常见问题来获得最大的收益。Cross browser development包含许多有关跨浏览器开发的有用教程。]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>browser</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[跨终端开发]]></title>
+    <url>%2F2019-05-16-client.html</url>
+    <content type="text"><![CDATA[Flutter]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>跨终端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OSI七层模型与TCP/IP四层模型]]></title>
+    <url>%2F2019-05-16-osi.html</url>
+    <content type="text"><![CDATA[OSI七层模型与TCP/IP四层模型参考]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>OSI</tag>
+        <tag>TCP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[get/post请求区别]]></title>
+    <url>%2F2019-05-16-getpost.html</url>
+    <content type="text"><![CDATA[GET和POST本质上两者没有任何区别，是HTTP协议中的两种发送请求的方法，底层实现都是基于TCP/IP协议。 定义GET和POST是HTTP协议中的两种发送请求的方法。HTTP是什么？HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议。HTTP的底层是TCP/IP。所以GET和POST的底层也是TCP/IP，也就是说，GET/POST都是TCP链接。GET和POST能做的事情是一样的。你要给GET加上request body，给POST带上url参数，技术上是完全行的通的。上述的所谓区别，只是浏览器厂家根据约定，做得限制而已。HTTP请求，最初设定了八种方法。这八种方法本质上没有任何区别。只是让请求，更加有语义而已。 OPTIONS 返回服务器所支持的请求方法 GET 向服务器获取指定资源 HEAD 与GET一致，只不过响应体不返回，只返回响应头 POST 向服务器提交数据，数据放在请求体里 PUT 与POST相似，只是具有幂等特性，一般用于更新 DELETE 删除服务器指定资源 TRACE 回显服务器端收到的请求，测试的时候会用到这个 CONNECT 预留，暂无使用 万维网世界中，TCP就像汽车，我们用TCP来运输数据，它很可靠，从来不会发生丢件少件的现象。但是如果路上跑的全是看起来一模一样的汽车，那这个世界看起来是一团混乱，送急件的汽车可能被前面满载货物的汽车拦堵在路上，整个交通系统一定会瘫痪。为了避免这种情况发生，交通规则HTTP诞生了。HTTP给汽车运输设定了好几个服务类别，有GET, POST, PUT, DELETE等等，HTTP规定，当执行GET请求的时候，要给汽车贴上GET的标签（设置method为GET），而且要求把传送的数据放在车顶上（url中）以方便记录。如果是POST请求，就要在车上贴上POST的标签，并把货物放在车厢里。当然，你也可以在GET的时候往车厢内偷偷藏点货物，但是这是很不光彩；也可以在POST的时候在车顶上也放一些数据，让人觉得傻乎乎的。HTTP只是个行为准则，而TCP才是GET和POST怎么实现的基本。 在万维网世界中，还有另一个重要的角色：运输公司。不同的浏览器（发起http请求）和服务器（接受http请求）就是不同的运输公司。 虽然理论上，你可以在车顶上无限的堆货物（url中无限加参数）。但是运输公司可不傻，装货和卸货也是有很大成本的，他们会限制单次运输量来控制风险，数据量太大对浏览器和服务器都是很大负担。业界不成文的规定是，（大多数）浏览器通常都会限制url长度在2K个字节，而（大多数）服务器最多处理64K大小的url。超过的部分，恕不处理。如果你用GET服务，在request body偷偷藏了数据，不同服务器的处理方式也是不同的，有些服务器会帮你卸货，读出数据，有些服务器直接忽略，所以，虽然GET可以带request body，也不能保证一定能被接收到哦。 GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。 w3school标准答案 GET在浏览器回退时是无害的，而POST会再次提交请求。 GET产生的URL地址可以被Bookmark，而POST不可以。 GET请求会被浏览器主动cache，而POST不会，除非手动设置。 GET请求只能进行url编码，而POST支持多种编码方式。 GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。 GET请求在URL中传送的参数是有长度限制的，而POST么有。 对参数的数据类型，GET只接受ASCII字符，而POST没有限制。（所以中文需要URL编码） GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。 GET参数通过URL传递，POST放在Request body中。 重大区别GET产生一个TCP数据包；POST产生两个TCP数据包。 对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）； 而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。 也就是说，GET只需要汽车跑一趟就把货送到了，而POST得跑两趟，第一趟，先去和服务器打个招呼“嗨，我等下要送一批货来，你们打开门迎接我”，然后再回头把货送过去。 因为POST需要两步，时间上消耗的要多一点，看起来GET比POST更有效。因此Yahoo团队有推荐用GET替换POST来优化网站性能。但这是一个坑！跳入需谨慎。为什么？ GET与POST都有自己的语义，不能随便混用。 据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。 并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>http</tag>
+        <tag>get</tag>
+        <tag>post</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[跨域的几种方式]]></title>
+    <url>%2F2019-05-15-proxy.html</url>
+    <content type="text"><![CDATA[跨域的几种方式 跨域是什么一个完整的地址 = 协议 + 子域名 + 主域名 + 端口号 + 请求资源地址 JavaScript出于安全方面的考虑，不允许跨域调用其他页面的对象。当协议、子域名、主域名、端口号中任意一个不相同时，都算作不同域。不同域之间相互请求资源，就算作“跨域”。 跨域并不是请求发不出去，请求能发出去，服务端能收到请求并正常返回结果，只是结果被浏览器拦截了。之所以会跨域，是因为受到了同源策略的限制，同源策略要求源相同才能正常进行通信，即协议、域名、端口号都完全一致。 同源策略同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。它的存在可以保护用户隐私信息，防止身份伪造等(读取Cookie)。 同源策略限制内容有： Cookie、LocalStorage、IndexedDB 等存储性内容 DOM 节点 AJAX 请求不能发送 允许跨域加载资源的三个标签 &lt;img src=XXX&gt; &lt;link href=XXX&gt; &lt;script src=XXX&gt; 解决方案nginx详情见proxy websocketWebsocket是HTML5的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket和HTTP都是应用层协议，都基于 TCP 协议。但是 WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 server 与 client 都能主动向对方发送或接收数据。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。 原生WebSocket API使用起来不太方便，我们使用Socket.io，它很好地封装了webSocket接口，提供了更简单、灵活的接口，也对不支持webSocket的浏览器提供了向下兼容。 123456789101112131415161718192021//前端代码：&lt;div&gt;user input：&lt;input type = &quot;text&quot;&gt;&lt;/div&gt;&lt;script src=&quot;./socket.io.js&quot;&gt;&lt;/script&gt;&lt;script&gt;var socket = io(&apos;http://www.domain2.com:8080&apos;);// 连接成功处理socket.on(&apos;connect&apos;,function()&#123; // 监听服务端消息 socket.on(&apos;message&apos;,function(msg)&#123; console.log(&apos;data from server: ---&gt; &apos;+msg );&#125;);// 监听服务端关闭 socket.on(&apos;disconnect&apos;,function()&#123; console.log(&apos;Server socket has closed.&apos;); &#125;);&#125;);document.getElementsByTagName(&apos;input&apos;)[0].onblur = function()&#123; socket.send(this.value);&#125;;&lt;/script&gt; 1234567891011121314151617181920212223242526//Nodejs socket后台：var http = require(&apos;http&apos;);var socket = require(&apos;socket.io&apos;);// 启http服务var server = http.createServer(function(req,res)&#123; res.writeHead(200,&#123; &apos;Content-type&apos;: &apos;text/html&apos; &#125;); res.end();&#125;);server.listen(&apos;8080&apos;);console.log(&apos;Server is running at port 8080...&apos;);// 监听socket连接socket.listen(server).on(&apos;connection&apos;,function(client)&#123;// 接收信息 client.on(&apos;message&apos;,function(msg) &#123; client.send(&apos;hello：&apos; + msg); console.log(&apos;data from client: ---&gt; &apos; + msg); &#125;); // 断开处理 client.on(&apos;disconnect&apos;, function() &#123; console.log(&apos;Client socket has closed.&apos;); &#125;);&#125;); cors整个CORS通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，CORS通信与同源的AJAX通信没有差别，代码完全一样。浏览器一旦发现AJAX请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。因此，实现CORS通信的关键是服务器。只要服务器实现了CORS接口，就可以跨源通信。 CORS要求浏览器(&gt;IE10)和服务器的同时支持，是跨域的根本解决方法，由浏览器自动完成。优点在于功能更加强大支持各种HTTP Method，缺点是兼容性不如JSONP。服务端：header(&quot;Access-Control-Allow-Origin:*&quot;);header(&quot;Access-Control-Allow-Methods:POST,GET&quot;); JSONP原理：利用 &lt;script&gt; 元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 数据。JSONP请求一定需要对方的服务器做支持才可以。 JSONP和AJAX相同，都是客户端向服务器端发送请求，从服务器端获取数据的方式。但AJAX属于同源策略，JSONP属于非同源策略（跨域请求）。 JSONP优点是兼容性好，可用于解决主流浏览器的跨域数据访问的问题。缺点是仅支持get方法具有局限性。 声明一个回调函数，其函数名(如fn)当做参数值，要传递给跨域请求数据的服务器，函数形参为要获取目标数据(服务器返回的data)。 创建一个&lt;script&gt;标签，把那个跨域的API数据接口地址，赋值给script的src，还要在这个地址中向服务器传递该函数名,通过问号传参。 服务器接收到请求后，需要进行特殊的处理：把传递进来的函数名和它需要给你的数据拼接成一个字符串 123456&lt;script type =&quot;text/javascript&quot;&gt;function fn(data)&#123; alert(data.msg);&#125;&lt;/script&gt;&lt;script type = &quot;text/javascript&quot; src=&quot;http://test.com/jsonServerResponse?jsonp=fn&quot;&gt;&lt;/script&gt; postMessage如果两个网页不同源，就无法拿到对方的DOM。典型的例子是iframe窗口和 window.open 方法打开的窗口，它们与父窗口无法通信。HTML5为了解决这个问题，引入了一个全新的API：跨文档通信 API（Cross-document messaging）。这个API为window对象新增了一个 window.postMessage 方法，允许跨窗口通信，不论这两个窗口是否同源。 postMessage方法的第一个参数是具体的信息内容，第二个参数是接收消息的窗口的源（origin），即”协议 + 域名 + 端口”。也可以设为 *，表示不限制域名，向所有窗口发送。 123456789101112131415161718//发送信息页面 http://localhost:63342/index.html&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;跨域请求&lt;/title&gt;&lt;/head&gt; &lt;body&gt; &lt;iframe src=&quot;http://localhost:3000/users/reg&quot; id=&quot;frm&quot;&gt;&lt;/iframe&gt; &lt;input type=&quot;button&quot; value =&quot;OK&quot; onclick=&quot;run()&quot;&gt;&lt;/body&gt;&lt;/html&gt;&lt;script&gt;function run()&#123; var frm = document.getElementById(&quot;frm&quot;); frm.contentWindow.postMessage(&quot;跨域请求信息&quot;,&quot;http://localhost:3000&quot;;&#125;&lt;/script&gt; 1234//接收信息页面 http://localhost:3000/message.html window.addEventListener(&quot;message&quot;,function(e)&#123;//通过监听message事件，可以监听对方发送的消息。 console.log(e.data);&#125;,false);]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>跨域</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[这是一个键盘]]></title>
     <url>%2F2019-04-29-keyboard.html</url>
     <content type="text"><![CDATA[code12 result]]></content>
@@ -30,8 +123,8 @@
         <category>Note</category>
       </categories>
       <tags>
-        <tag>vue</tag>
         <tag>less</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -43,6 +136,18 @@
       </categories>
       <tags>
         <tag>gulp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mvc/mvvm]]></title>
+    <url>%2F2019-03-16-mvc.html</url>
+    <content type="text"><![CDATA[mvc/mvvm区别 MVCModel View Controller Model（模型）：是应用程序中用于处理应用程序数据逻辑的部分。通常模型对象负责在数据库中存取数据。View（视图）：是应用程序中处理数据显示的部分。通常视图是依据模型数据创建的。Controller（控制器）：是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。 MVC的思想：一句话描述就是Controller负责将Model的数据用View显示出来 众所周知，MVC 是开发客户端最经典的设计模式，iOS 开发也不例外，但是 MVC 有让人无法忽视的严重问题。 特点 Model和View永远不能相互通信，只能通过Controller传递。 Controller可以直接与Model对话（读写调用Model），Model通过Notification和KVO机制与Controller间接通信。 Controller可以直接与View对话，通过outlet,直接操作View,outlet直接对应到View中的控件,View通过action向Controller报告事件的发生(如用户Touch我了)。Controller是View的直接数据源（数据很可能是Controller从Model中取得并经过加工了）。Controller是View的代理（delegate),以同步View与Controller。 缺点View的可扩展性相当低。在通常的开发中，除了简单的 Model、View 以外的所有部分都被放在了 Controller 里面。Controller 负责显示界面、响应用户的操作、网络请求以及与 Model 交互。这就导致了 Controller： 逻辑复杂，难以维护； 和 View 紧耦合，无法测试； MVVMModel View ViewModel Controller的存在感被完全的降低了。本质上是一个精心优化的 MVC 架构；既然 View 和 Controller 是一对好基友，在 MVVM 里面，干脆把它们当做 View。现在将原来 Controller 的部分职责拆分出来由 View Model 承担，主要包括： 校验用户输入； 网络请求； 展示层的逻辑，比如格式化字符串； 其他不能放入 Model，与 View 无关的逻辑； 优点 MVVM 兼容 MVC，可以先创建一个简单的 View Model，再慢慢迁移。 MVVM 使得 app 更容易测试，因为 View Model 部分不涉及 UI。 MVVM 最好配合 binding 机制，Model 的变化需要同步到 View Model，View Model 的变化也需要同步到 View 发展史]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>mvc</tag>
+        <tag>mvvm</tag>
       </tags>
   </entry>
   <entry>
@@ -546,8 +651,8 @@
         <category>Note</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>babel</tag>
+        <tag>JavaScript</tag>
         <tag>es6</tag>
       </tags>
   </entry>
