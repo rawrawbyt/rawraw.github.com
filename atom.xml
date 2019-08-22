@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rawraw.info/"/>
-  <updated>2019-05-20T04:32:24.409Z</updated>
+  <updated>2019-08-21T06:43:48.792Z</updated>
   <id>http://rawraw.info/</id>
   
   <author>
@@ -17,18 +17,101 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JavaScript要仔细学之三//基础</title>
-    <link href="http://rawraw.info/2019-05-16-js03.html"/>
-    <id>http://rawraw.info/2019-05-16-js03.html</id>
-    <published>2019-05-16T09:02:57.000Z</published>
-    <updated>2019-05-20T04:32:24.409Z</updated>
+    <title>如何做好一份分享</title>
+    <link href="http://rawraw.info/2019-08-21-share.html"/>
+    <id>http://rawraw.info/2019-08-21-share.html</id>
+    <published>2019-08-21T02:47:23.000Z</published>
+    <updated>2019-08-21T06:43:48.792Z</updated>
     
-    <content type="html"><![CDATA[<p>基础</p><p><div align="center"><br><img src="/images/bg/0170.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="变量和类型"><a href="#变量和类型" class="headerlink" title="变量和类型"></a>变量和类型</h1><h4 id="JavaScript规定了几种语言类型"><a href="#JavaScript规定了几种语言类型" class="headerlink" title="JavaScript规定了几种语言类型"></a>JavaScript规定了几种语言类型</h4><p>6种基本类型:String、Number、Boolean、Symbol、Undefined、Null<br>1种复杂数据类型：object,Array<br><a href="http://www.mamicode.com/info-detail-2347949.html" target="_blank" rel="noopener">详细</a></p><h4 id="JavaScript对象的底层数据结构是什么"><a href="#JavaScript对象的底层数据结构是什么" class="headerlink" title="JavaScript对象的底层数据结构是什么"></a>JavaScript对象的底层数据结构是什么</h4><p><a href="https://www.cnblogs.com/full-stack-engineer/p/9684072.html" target="_blank" rel="noopener">参考</a><br><a href="https://zhuanlan.zhihu.com/p/26388217" target="_blank" rel="noopener">从Chrome源码看JS Array的实现</a></p><h4 id="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"><a href="#Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol" class="headerlink" title="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"></a>Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol</h4><p><a href="https://juejin.im/post/5cd44bfbe51d453aa44ad6e4" target="_blank" rel="noopener">参考</a></p><h1 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h1>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>Stay Hungry, Stay Foolish.<br>刻意训练和精心准备，则是演讲成功的最关键的因素。<br>所谓的优秀，都是刻意训练和长期的积累在短时间内爆发出来的，大家往往只看到短时间内惊人的爆发力，却忽略了其背后的付出与努力。</p></blockquote><p><div align="center"><br><img src="/images/bg/0123.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><p>如何快速有效地提升自己。曾经，我们强调更多的是学习和思考，古语也说: 学而不思则罔，思而不学则殆。而现在，还有一种更为行之有效的方法，那就是：分享。</p><p>沟通的本质是让对方轻松地弄明白他原来并不知道的东西，更进一步，让对方通过自己已经懂的知识理解他原来并不懂的东西。</p><h4 id="Who-What-amp-When-Why-How-Future-Recap"><a href="#Who-What-amp-When-Why-How-Future-Recap" class="headerlink" title="Who-What&amp;When-Why-How-Future-Recap"></a>Who-What&amp;When-Why-How-Future-Recap</h4><ul><li><p>Who: 自我介绍，让听众了解自己，建立连接；</p></li><li><p>What&amp;When: 今天要分享的主题，通过简短介绍吸引听众的注意力、好奇心；</p></li><li><p>Why: 为什么要做这个架构改造、技术升级，整个项目的背景是什么样的，结合对听众的了解，做特定的介绍；</p></li><li><p>How: 深入浅出 3~4 个最核心的内容点，当然为了全面性，你可以都罗列出来，但介绍的重点建议控制在 3~4 项；</p></li><li><p>Future: 让大家了解你未来的计划，你对技术趋势的看法等等；</p></li><li><p>Recap: 对今天的主题再做一个回顾，让听众加深对核心内容记忆。</p></li></ul><h3 id="point1-逐字稿"><a href="#point1-逐字稿" class="headerlink" title="point1 逐字稿"></a>point1 逐字稿</h3><p>前期避免紧张必备逐字稿，充分的准备；别让正式演讲是你的第一次；时刻提醒自己要放慢语速；<br><a href="https://www.jianshu.com/p/1809a46b8a4c" target="_blank" rel="noopener">逐字稿</a></p><h3 id="point2-PPT"><a href="#point2-PPT" class="headerlink" title="point2 PPT"></a>point2 PPT</h3><p>PPT是配角，你才是主角；多图少字；<br>PPT保留keyword，只是提醒作用（照着ppt读，人家不如直接下载ppt）；正常流程，不要交互式的幻灯片；<br>流程图更能清晰地表达；</p><ul><li>Who: 1 页</li><li>What&amp;When: 1~2 页</li><li>Why: 1 页</li><li>How: 展开 3~4 点，每点 2~3 页</li><li>Future: 1 页</li><li>Recap: 1 页</li></ul><h3 id="point3-心理"><a href="#point3-心理" class="headerlink" title="point3 心理"></a>point3 心理</h3><p>紧张和焦虑感是普遍存在的，并非自己独有；<br>确信自己的分享对听众是有价值的，会让自己信心满满;</p><p>了解需求；<br>可以先引入话题，提出观点；<br>适可而止，不可贪多，知识点建议控制在三点左右，这样不仅更容易让听众记住，而且自己讲的时候也比较简单，不用担心到时候忘词；<br>不要背完整的演讲稿（实在不安可以背），记住开场和思路；<br>要提前熟悉场地，看看演讲场地的环境，了解听众座位的布局;</p><h3 id="point4-学会讲故事"><a href="#point4-学会讲故事" class="headerlink" title="point4 学会讲故事"></a>point4 学会讲故事</h3><blockquote><p>凡是能让人在脑海中产生画面感的话语或文字就是故事。</p></blockquote><p>人们在听故事的时候更容易产生共情作用，也更容易理解你想要表达的信息。</p><p>讲一个好故事的核心：给听众一个期望，然后用你讲的故事填满这个期望，让人们采用你的建议和陈述，这就是故事的核心。</p><p>赋比兴；</p><p>用自己习惯的手势配合你的演讲内容就好，但是不要手足无措，比如一会儿插兜一会儿抱胸，自己不觉得，台下听众会看得非常清楚。<br>一个非常自然的手势是“切西瓜”，伸出手臂，摊开手掌，让手掌与地面垂直，然后小幅度上下挥动。<br>不要做出夸张的身体姿势，有病哦；</p><p>（可以去看这本书《粘住》）</p><p>### </p><ul><li>收尾时要强调重点；根据心理学中的“近因效应”：人对演讲末尾部分的印象最为深刻，记忆也最为清晰。要想让听众记住你期望他记住的 2-3 个关键点，以达到分享的目的，在收尾时的总结和强调就至关重要。</li></ul>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;基础&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0170.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;Stay Hungry, Stay Foolish.&lt;br&gt;刻意训练和精心准备，则是演讲成功的最关键的因素。&lt;br&gt;所谓的优秀，都是刻意训练和长期的积累在短时间内爆发出来的，大家往往只看到短时间内惊人的爆发力，却忽略了其背后的付出与努力。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0123.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>node.js内存溢出</title>
+    <link href="http://rawraw.info/2019-08-19-nodememory.html"/>
+    <id>http://rawraw.info/2019-08-19-nodememory.html</id>
+    <published>2019-08-19T02:24:09.000Z</published>
+    <updated>2019-08-20T02:07:04.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>转的整理；</p><div align="center"><br><img src="/images/bg/0139.jpeg" alt="“封面”"><br></div><a id="more"></a><h3 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h3><ol><li>密集型运算；批量处理数据，大量循环；</li><li>操作的数据量较大；对象需要频繁的创建/销毁，或操作对象本身较大；</li></ol><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><h4 id="V8内存分配机制"><a href="#V8内存分配机制" class="headerlink" title="V8内存分配机制"></a>V8内存分配机制</h4><ol><li>V8本身分配的内存较小;</li><li>JavaScript语言本身限制;</li><li>程序员使用不当;</li></ol><blockquote><p>V8是 Google 在 Chrome 浏览器中使用的 JavaScript 引擎。而在浏览器环境中，运算一般不需要多大内存。<br>V8 对每个进程分配的运行内存，在32位系统中约为700MB，而在64位系统中约为1.4GB。</p></blockquote><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ol><li>使用 async/await防止事件堆积,变为同步操作； V8 获得内存回收的机会；<br>每次循环V8都会回收内存一次，因此内存不会再溢出。但这样做必然会造成运行效率的降低，而应该在速度在安全之间平衡，控制好循环的安全次数。<br>说明:实际开发中，上面这种虽然解决了内存溢出，但是仍然会造成进程阻塞，可以开启一个进程/线程来解决阻塞问题<br><a href="https://mp.weixin.qq.com/s/fkrHHMwx75NLhvv4P3rk-w" target="_blank" rel="noopener">深入理解Node.js 进程与线程</a></li><li>增加V8内存空间<br><code>node --max-old-space-size=4096 app</code></li><li>使用非V8内存<br>V8内存：数组、字符串等JavaScript内置对象，运行时使用“V8内存”<br>系统内存：Buffer是一个Node.js的扩展对象，使用底层的系统内存，不占用V8内存空间。与之相关的文件系统fs和流Stream流操作，都不会占用V8内存。<br>[fs学习]（<a href="https://mp.weixin.qq.com/s/m1SqvFaqTn3Bh2Fg9500sQ）" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/m1SqvFaqTn3Bh2Fg9500sQ）</a><br>[stream学习]（<a href="https://mp.weixin.qq.com/s/HQmualyyEV4t7lG0PZf8zQ）" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/HQmualyyEV4t7lG0PZf8zQ）</a><br><a href="https://mp.weixin.qq.com/s/t5oZmD1tR5rSlJAmSlwXOg" target="_blank" rel="noopener">Buffer学习</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转的整理；&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0139.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="node" scheme="http://rawraw.info/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack config</title>
+    <link href="http://rawraw.info/2019-08-13-webpack.html"/>
+    <id>http://rawraw.info/2019-08-13-webpack.html</id>
+    <published>2019-08-13T03:18:57.000Z</published>
+    <updated>2019-08-21T08:23:34.276Z</updated>
+    
+    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0128.jpeg" alt="“封面”"><br></div><a id="more"></a><h2 id="打包原理"><a href="#打包原理" class="headerlink" title="打包原理"></a>打包原理</h2><p>webpack只是一个打包模块的机制，只是把依赖的模块转化成可以代表这些包的静态文件。webpack就是识别你的 入口文件。识别你的模块依赖，来打包你的代码。<br>webpack做的就是分析代码，转换代码，编译代码，输出代码。</p><p>webpack中每个模块有一个唯一的id，是从0开始递增的。整个打包后的bundle.js是一个匿名函数自执行。参数则为一个数组。数组的每一项都为个function。function的内容则为每个模块的内容，并按照require的顺序排列。</p><p>如何实现一个简单的webpack</p><ul><li>读取文件分析模块依赖</li><li>对模块进行解析执行(深度遍历)</li><li>针对不同的模块使用相应的loader</li><li>编译模块，生成抽象语法树AST。</li><li>循环遍历AST树，拼接输出js。</li></ul><p>loader原理<br>在解析对于文件，会自动去调用响应的loaderloader 本质上是一个函数，输入参数是一个字符串，输出参数也是一个字符串。当然，输出的参数会被当成是 JS 代码，从而被 esprima 解析成 AST，触发进一步的依赖解析。webpack会按照从右到左的顺序执行loader。</p><p><a href="https://www.jianshu.com/p/e24ed38d89fd" target="_blank" rel="noopener">打包原理</a></p><h2 id="区分环境"><a href="#区分环境" class="headerlink" title="区分环境"></a>区分环境</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line"></span><br><span class="line">exec(<span class="string">'git rev-parse --abbrev-ref HEAD'</span>, (_error, stdout, _stderr) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> url = stdout.replace(<span class="regexp">/^\s+|\s+$/g</span>, <span class="string">''</span>);</span><br><span class="line">  <span class="keyword">let</span> pageUrl = <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">if</span> (url === <span class="string">'master'</span>) &#123;</span><br><span class="line">    url = <span class="string">'https://api.duoxuanmall.com'</span>;</span><br><span class="line">    pageUrl = <span class="string">'https://native.duoxuanmall.com'</span></span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    url = <span class="string">'https://dailyapi.duoxuanmall.com'</span>;</span><br><span class="line">    pageUrl = <span class="string">'https://dailynative.duoxuanmall.com'</span>    </span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> content = <span class="string">`</span></span><br><span class="line"><span class="string">    export const rootUrl = '<span class="subst">$&#123;url&#125;</span>'</span></span><br><span class="line"><span class="string">    export const pageUrl = '<span class="subst">$&#123;pageUrl&#125;</span>'</span></span><br><span class="line"><span class="string">  `</span></span><br><span class="line">  fs.writeFile(<span class="string">'./config/rootUrl.js'</span>, content, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(err);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'success'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h5 id="生成的文件"><a href="#生成的文件" class="headerlink" title="[生成的文件]"></a>[生成的文件]</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> rootUrl = <span class="string">''</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> pageUrl = <span class="string">''</span></span><br></pre></td></tr></table></figure><h2 id="自定义ip"><a href="#自定义ip" class="headerlink" title="自定义ip"></a>自定义ip</h2><p><code>&quot;dev&quot;: &quot;node bin/get_enviroment.js &amp;&amp; webpack-dev-server --config ./webpack.config.js --host 192.168.7.236 --port 8086&quot;,</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0128.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="webpack" scheme="http://rawraw.info/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>serverlees无服务器架构</title>
+    <link href="http://rawraw.info/2019-08-13-serverlees.html"/>
+    <id>http://rawraw.info/2019-08-13-serverlees.html</id>
+    <published>2019-08-13T02:50:25.000Z</published>
+    <updated>2019-08-20T02:07:04.573Z</updated>
+    
+    <content type="html"><![CDATA[<p>学不动了学不动了</p><div align="center"><br><img src="/images/bg/0129.jpeg" alt="“封面”"><br></div><a id="more"></a><p><a href="https://mp.weixin.qq.com/s/6lULH06QfNx0FOMwAglZGg" target="_blank" rel="noopener">开发历史</a></p><h2 id="serverlees"><a href="#serverlees" class="headerlink" title="serverlees"></a>serverlees</h2><p>无服务器是一种学说，而不是技术</p><p><a href="https://www.jdon.com/soa/serverless.html" target="_blank" rel="noopener">概念</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;学不动了学不动了&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0129.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="serverlees" scheme="http://rawraw.info/tags/serverlees/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript要仔细学之三//阻止事件</title>
+    <link href="http://rawraw.info/2019-07-29-js03.html"/>
+    <id>http://rawraw.info/2019-07-29-js03.html</id>
+    <published>2019-07-29T01:43:05.000Z</published>
+    <updated>2019-08-20T02:08:49.566Z</updated>
+    
+    <content type="html"><![CDATA[<p>哈哈 这么久了，用是会用，居然迷迷糊糊，这次千万记住咯～</p><p><div align="center"><br><img src="/images/bg/0177.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h3 id="event-stopPropagation-方法"><a href="#event-stopPropagation-方法" class="headerlink" title="event.stopPropagation()方法"></a>event.stopPropagation()方法</h3><blockquote><p>这是阻止事件的冒泡方法，不让事件向documen上层蔓延，但是默认事件任然会执行，当你调用这个方法的时候，如果点击一个连接，这个连接仍然会被打开。</p></blockquote><h3 id="event-preventDefault-方法"><a href="#event-preventDefault-方法" class="headerlink" title="event.preventDefault()方法"></a>event.preventDefault()方法</h3><blockquote><p>这是阻止默认事件的方法，调用此方法是，连接不会被打开，但是会发生冒泡，冒泡会传递到上一层的父元素，此方法可以控制一些按钮在点击时只触发时间而不会引起表单的提交。</p></blockquote><h3 id="return-false；"><a href="#return-false；" class="headerlink" title="return false；"></a>return false；</h3><blockquote><p>同时阻止事件冒泡也会阻止默认事件；写上此代码，连接不会被打开，事件也不会传递到上一层的父元素；可以理解为return false就等于同时调用了event.stopPropagation()和event.preventDefault()</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;哈哈 这么久了，用是会用，居然迷迷糊糊，这次千万记住咯～&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0177.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
     
     </summary>
     
@@ -36,6 +119,225 @@
     
     
       <category term="JavaScript" scheme="http://rawraw.info/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序内置webview调试工具</title>
+    <link href="http://rawraw.info/2019-07-27-vconsole.html"/>
+    <id>http://rawraw.info/2019-07-27-vconsole.html</id>
+    <published>2019-07-27T06:24:24.000Z</published>
+    <updated>2019-08-20T02:07:04.574Z</updated>
+    
+    <content type="html"><![CDATA[<p>webview页面调试工具</p><div align="center"><br><img src="/images/bg/0166.jpg" alt="“封面”"><br></div><a id="more"></a><p>1.<code>yarn add vConsole</code><br>2.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VConsole <span class="keyword">from</span> <span class="string">'vconsole/dist/vconsole.min.js'</span></span><br><span class="line"><span class="keyword">let</span> vConsole = <span class="keyword">new</span> VConsole() <span class="comment">// 初始化</span></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;webview页面调试工具&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0166.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="tool" scheme="http://rawraw.info/categories/tool/"/>
+    
+    
+      <category term="vconsole" scheme="http://rawraw.info/tags/vconsole/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue-cli</title>
+    <link href="http://rawraw.info/2019-07-18-vue-cli.html"/>
+    <id>http://rawraw.info/2019-07-18-vue-cli.html</id>
+    <published>2019-07-18T07:08:51.000Z</published>
+    <updated>2019-08-20T02:07:04.574Z</updated>
+    
+    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0106.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="vue-cli3"><a href="#vue-cli3" class="headerlink" title="vue-cli3"></a>vue-cli3</h1><h3 id="一直运行-sockjs-node-info-t-解决方案"><a href="#一直运行-sockjs-node-info-t-解决方案" class="headerlink" title="一直运行 /sockjs-node/info?t= 解决方案"></a>一直运行 /sockjs-node/info?t= 解决方案</h3><p> sockjs-node 是一个JavaScript库，提供跨浏览器JavaScript的API，创建了一个低延迟、全双工的浏览器和web服务器之间通信通道。</p><p>服务端：sockjs-node（<a href="https://github.com/sockjs/sockjs-node）" target="_blank" rel="noopener">https://github.com/sockjs/sockjs-node）</a><br>客户端：sockjs-clien（<a href="https://github.com/sockjs/sockjs-client）" target="_blank" rel="noopener">https://github.com/sockjs/sockjs-client）</a></p><p>如果你的项目没有用到 sockjs，vuecli3 运行 yarn serve 之后 network 里面一直调研一个接口：<a href="http://localhost:8080/sockjs-node/info?t=1462183700002" target="_blank" rel="noopener">http://localhost:8080/sockjs-node/info?t=1462183700002</a></p><p>源码关闭：</p><p>找到<code>/node_modules/sockjs-client/dist/sockjs.js</code>第1605行</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line"><span class="comment">//  self.xhr.send(payload); 把这里注掉</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">  self.emit(<span class="string">'finish'</span>, <span class="number">0</span>, <span class="string">''</span>);</span><br><span class="line">  self._cleanup(<span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0106.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="note" scheme="http://rawraw.info/categories/note/"/>
+    
+    
+      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
+    
+      <category term="vue-cli" scheme="http://rawraw.info/tags/vue-cli/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序们taro</title>
+    <link href="http://rawraw.info/2019-07-18-mini-program.html"/>
+    <id>http://rawraw.info/2019-07-18-mini-program.html</id>
+    <published>2019-07-18T03:38:42.000Z</published>
+    <updated>2019-08-20T02:07:04.571Z</updated>
+    
+    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0015.jpeg" alt="“封面”"><br></div><a id="more"></a><h4 id="微信小程序转taro"><a href="#微信小程序转taro" class="headerlink" title="微信小程序转taro"></a>微信小程序转taro</h4><p><code>$ taro convert</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0015.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="taro" scheme="http://rawraw.info/tags/taro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快应用</title>
+    <link href="http://rawraw.info/2019-07-18-pwa.html"/>
+    <id>http://rawraw.info/2019-07-18-pwa.html</id>
+    <published>2019-07-18T03:37:38.000Z</published>
+    <updated>2019-08-20T02:07:04.572Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://doc.quickapp.cn/" target="_blank" rel="noopener">参考</a></p><div align="center"><br><img src="/images/bg/0172.jpg" alt="“封面”"><br></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://doc.quickapp.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0172.jpg&quot; alt=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="pwa" scheme="http://rawraw.info/tags/pwa/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chorme扩展工具</title>
+    <link href="http://rawraw.info/2019-07-18-chorme-extend.html"/>
+    <id>http://rawraw.info/2019-07-18-chorme-extend.html</id>
+    <published>2019-07-18T03:32:11.000Z</published>
+    <updated>2019-08-20T02:07:04.569Z</updated>
+    
+    <content type="html"><![CDATA[<p>换了台笔记本，vpn也上不去了。只能瞎搞了。</p><div align="center"><br><img src="/images/bg/0140.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="React-Devtools调试工具"><a href="#React-Devtools调试工具" class="headerlink" title="React Devtools调试工具"></a>React Devtools调试工具</h1><h2 id="Git-地址"><a href="#Git-地址" class="headerlink" title="Git 地址"></a>Git 地址</h2><p><a href="https://github.com/facebook/react-devtools`" target="_blank" rel="noopener">Git 地址</a></p><p><code>git clone https://github.com/facebook/react-devtools.git</code></p><h2 id="进入react-devtools文件夹，安装依赖"><a href="#进入react-devtools文件夹，安装依赖" class="headerlink" title="进入react-devtools文件夹，安装依赖"></a>进入react-devtools文件夹，安装依赖</h2><p><code>npm --registry https://registry.npm.taobao.org install</code></p><h2 id="打包一份扩展程序"><a href="#打包一份扩展程序" class="headerlink" title="打包一份扩展程序"></a>打包一份扩展程序</h2><p><code>npm run build:extension:chrome</code><br>项目目录中生成一个新的文件夹，<code>react-devtools -&gt; shells -&gt; chrome -&gt; build -&gt; unpacked</code>文件夹</p><h2 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h2><p>打开chrome扩展程序chrome://extensions/，加载已解压的扩展程序，选择第3步中的生成的unpacked文件夹。</p><h1 id="vue-devtools"><a href="#vue-devtools" class="headerlink" title="vue-devtools"></a>vue-devtools</h1><h2 id="https-github-com-vuejs-vue-devtools"><a href="#https-github-com-vuejs-vue-devtools" class="headerlink" title="https://github.com/vuejs/vue-devtools"></a><a href="https://github.com/vuejs/vue-devtools" target="_blank" rel="noopener">https://github.com/vuejs/vue-devtools</a></h2><p><code>git clone https://github.com/vuejs/vue-devtools.git</code><br><code>npm i</code><br>修改manifest.json文件<br>把”persistent”:false改成true<br><code>npm run build</code><br>选择vue-devtools&gt;shells下的chrome文件夹</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;换了台笔记本，vpn也上不去了。只能瞎搞了。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0140.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>图床工具</title>
+    <link href="http://rawraw.info/2019-07-18-picgo.html"/>
+    <id>http://rawraw.info/2019-07-18-picgo.html</id>
+    <published>2019-07-18T03:30:35.000Z</published>
+    <updated>2019-08-20T02:07:04.572Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.jianshu.com/p/9d91355e8418" target="_blank" rel="noopener">参考</a></p><div align="center"><br><img src="/images/bg/0114.jpeg" alt="“封面”"><br></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/9d91355e8418&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微信公众号开发注意事项</title>
+    <link href="http://rawraw.info/2019-07-18-wx.html"/>
+    <id>http://rawraw.info/2019-07-18-wx.html</id>
+    <published>2019-07-18T03:27:49.000Z</published>
+    <updated>2019-08-20T02:07:04.576Z</updated>
+    
+    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0147.jpeg" alt="“封面”"><br></div><a id="more"></a><h2 id="Input-fix"><a href="#Input-fix" class="headerlink" title="Input fix"></a>Input fix</h2><p><a href="https://blog.csdn.net/weixin_39579517/article/details/88397759" target="_blank" rel="noopener">参考</a></p><p>Fix 不能设置 top0</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0147.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="wx" scheme="http://rawraw.info/tags/wx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vultr 搭建 SSR </title>
+    <link href="http://rawraw.info/2019-07-18-ssr.html"/>
+    <id>http://rawraw.info/2019-07-18-ssr.html</id>
+    <published>2019-07-18T03:26:40.000Z</published>
+    <updated>2019-08-20T02:07:04.573Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://juejin.im/post/5bbdbffcf265da0ac2568a80" target="_blank" rel="noopener">参考</a><br><a href="https://idc.wanyunshuju.com/li/548.html" target="_blank" rel="noopener">参考</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://juejin.im/post/5bbdbffcf265da0ac2568a80&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://idc.wanyunshuju.com/l
+      
+    
+    </summary>
+    
+    
+      <category term="ssr" scheme="http://rawraw.info/tags/ssr/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssh哦</title>
+    <link href="http://rawraw.info/2019-07-18-ssh.html"/>
+    <id>http://rawraw.info/2019-07-18-ssh.html</id>
+    <published>2019-07-18T03:07:55.000Z</published>
+    <updated>2019-08-20T02:07:04.573Z</updated>
+    
+    <content type="html"><![CDATA[<p><div align="center"><br><img src="/images/bg/0171.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h4 id="检查-ssh文件夹是否存在"><a href="#检查-ssh文件夹是否存在" class="headerlink" title="检查.ssh文件夹是否存在"></a>检查.ssh文件夹是否存在</h4><p><code>$ ls -al ~/.ssh</code></p><h4 id="不存在"><a href="#不存在" class="headerlink" title="不存在"></a>不存在</h4><p>新建.ssh文件夹<br><code>$ mkdir ~/.ssh</code><br><code>$ cd ~/.ssh</code><br><code>$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code><br>连续按三次回车<code>id_rsa   id_rsa.pub</code></p><h4 id="查看公钥"><a href="#查看公钥" class="headerlink" title="查看公钥"></a>查看公钥</h4><p><code>$ cat id_rsa.pub</code></p><h4 id="将密钥复制到剪贴板"><a href="#将密钥复制到剪贴板" class="headerlink" title="将密钥复制到剪贴板"></a>将密钥复制到剪贴板</h4><p><code>pbcopy &lt; ~/.ssh/id_rsa.pub</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0171.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="ssh" scheme="http://rawraw.info/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue集合</title>
+    <link href="http://rawraw.info/2019-05-20-vue.html"/>
+    <id>http://rawraw.info/2019-05-20-vue.html</id>
+    <published>2019-05-20T06:38:18.000Z</published>
+    <updated>2019-08-20T02:07:04.575Z</updated>
+    
+    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><h3 id="数据双向绑定"><a href="#数据双向绑定" class="headerlink" title="数据双向绑定"></a>数据双向绑定</h3><p>Vue3之前通过get和set完成，而Vue3后通过proxy来完成。</p><h3 id="虚拟dom"><a href="#虚拟dom" class="headerlink" title="虚拟dom"></a>虚拟dom</h3><p>一个内部的json字符串。</p><h1 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h1><h3 id="for中的key"><a href="#for中的key" class="headerlink" title="for中的key"></a>for中的key</h3><font color="red">[Vue warn]: Error in render: “TypeError: _self.$scopedSlots.default is not a function”</font><blockquote><p>究其原因，是因为表格是element-ui通过循环产生的，而vue在dom重新渲染时有一个性能优化机制，就是相同dom会被复用，这就是问题所在，所以，通过key去标识一下当前行是唯一的，不许复用，就行了。</p></blockquote><p>方案：添加 <font color="red">:key=”Math.random()”</font></p><h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h4 id="v-if-v-show"><a href="#v-if-v-show" class="headerlink" title="v-if / v-show"></a>v-if / v-show</h4><p><code>v-if</code>:惰性;切换过程中条件块内的事件监听器和子组件适当地被销毁和重建;<br><code>v-show</code>:不管初始条件是什么，元素总是会被渲染;<br>v-if 适用于在运行时不需要频繁切换条件的场景；v-show 则适用于需要非常频繁切换条件的场景。</p><h4 id="computed-watch"><a href="#computed-watch" class="headerlink" title="computed / watch"></a>computed / watch</h4><p><code>computed</code>： 是计算属性，依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed  的值；<br><code>watch</code>： 更多的是「观察」的作用，类似于某些数据的监听回调 ，每当监听的数据变化时都会执行回调进行后续操作；<br>computed适用于需要进行数值计算，并且依赖于其它数据时；因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；<br>watch适用于需要在数据变化时执行异步或开销较大的操作时；使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p><h4 id="v-for-遍历必须为-item-添加-key，且避免同时使用-v-if"><a href="#v-for-遍历必须为-item-添加-key，且避免同时使用-v-if" class="headerlink" title="v-for 遍历必须为 item 添加 key，且避免同时使用 v-if"></a>v-for 遍历必须为 item 添加 key，且避免同时使用 v-if</h4><ol><li>v-for 遍历必须为 item 添加 key<br>在列表数据进行遍历渲染时，需要为每一项 item 设置唯一 key 值，方便 Vue.js 内部机制精准找到该条列表数据。当 state 更新时，新的状态值和旧的状态值对比，较快地定位到 diff 。</li><li>v-for 遍历避免同时使用 v-if<br>v-for 比 v-if 优先级高，如果每一次都需要遍历整个数组，将会影响速度，尤其是当之需要渲染很小一部分的时候，必要情况下应该替换成 computed 属性。<br>百度小程序里面for和if同时使用是直接语法报错的；<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div</span><br><span class="line">v-<span class="keyword">for</span>=<span class="string">"(key,obj) in lists"</span></span><br><span class="line">:key=<span class="string">"key"</span>&gt;</span><br><span class="line">&#123;&#123; obj.name &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">computed: &#123;</span></span><br><span class="line"><span class="regexp">  lists: function () &#123;</span></span><br><span class="line"><span class="regexp">    return this.lists.filter(function (list) &#123;</span></span><br><span class="line"><span class="regexp">        return list.isActive</span></span><br><span class="line"><span class="regexp">    &#125;)</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure></li></ol><h4 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h4><h5 id="图片资源懒加载"><a href="#图片资源懒加载" class="headerlink" title="图片资源懒加载"></a>图片资源懒加载</h5><ol><li>插件：<code>yarn add vue-lazyload --save-dev</code></li><li><figure class="highlight js"><figcaption><span>[main.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueLazyload <span class="keyword">from</span> <span class="string">'vue-lazyload'</span></span><br></pre></td></tr></table></figure></li><li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Vue.use(VueLazyload)</span><br><span class="line">or</span><br><span class="line">Vue.use(VueLazyload, &#123;</span><br><span class="line">    preLoad: <span class="number">1.3</span>,</span><br><span class="line">    error: <span class="string">'dist/error.png'</span>,</span><br><span class="line">    loading: <span class="string">'dist/loading.gif'</span>,</span><br><span class="line">    attempt: <span class="number">1</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li><li><p>vue文件</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">v-lazy</span>=<span class="string">"/static/img/1.png"</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ol><h5 id="路由懒加载"><a href="#路由懒加载" class="headerlink" title="路由懒加载"></a>路由懒加载</h5><ol><li>首屏加载问题；<br><code>const goodslist = () =&gt; import( /* webpackChunkName: &quot;trade&quot; */ &#39;./views/Goodslist.vue&#39;);</code></li><li>服务端渲染 SSR/预渲染<br>SSR:重点优化的场景；<br>预渲染:少量页面优化；在构建时 (build time) 简单地生成针对特定路由的静态 HTML 文件。优点是设置预渲染更简单，并可以将你的前端作为一个完全静态的站点，具体你可以使用 prerender-spa-plugin 就可以轻松地添加预渲染 。</li></ol><h4 id="第三方插件的按需引入"><a href="#第三方插件的按需引入" class="headerlink" title="第三方插件的按需引入"></a>第三方插件的按需引入</h4><ol><li><code>yarn add babel-plugin-component -D</code></li><li><figure class="highlight js"><figcaption><span>[.babelrc]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"presets"</span>: [[<span class="string">"es2015"</span>, &#123; <span class="string">"modules"</span>: <span class="literal">false</span> &#125;]],</span><br><span class="line">  <span class="string">"plugins"</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"component"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"libraryName"</span>: <span class="string">"element-ui"</span>,</span><br><span class="line">        <span class="string">"styleLibraryName"</span>: <span class="string">"theme-chalk"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><figure class="highlight js"><figcaption><span>[main.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Button,&#125; <span class="keyword">from</span> <span class="string">'element-ui'</span>;</span><br><span class="line"></span><br><span class="line">Vue.use(Button)</span><br></pre></td></tr></table></figure></li></ol><h4 id="长列表性能优化"><a href="#长列表性能优化" class="headerlink" title="长列表性能优化"></a>长列表性能优化</h4><ol><li>Vue 会通过 <code>Object.defineProperty</code>对数据进行劫持，来实现视图响应数据的变化;纯粹的数据展示，不会做任何修改的数据可以通过 Object.freeze 方法来冻结一个对象；<br><code>this.lists = Object.freeze(lists);</code></li><li>无限列表性能;<code>vue-virtual-scroll-list 和 vue-virtual-scroller</code></li></ol><h4 id="事件的销毁"><a href="#事件的销毁" class="headerlink" title="事件的销毁"></a>事件的销毁</h4><p>Vue 组件销毁时，会自动清理它与其它实例的连接，解绑它的全部指令及事件监听器，但是仅限于组件本身的事件。如果在 js 内使用 addEventListene 等方式是不会自动销毁的，我们需要在组件销毁时手动移除这些事件的监听，以免造成内存泄露;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">created() &#123;</span><br><span class="line">  addEventListener(<span class="string">'click'</span>, <span class="keyword">this</span>.click, <span class="literal">false</span>)</span><br><span class="line">&#125;,</span><br><span class="line">beforeDestroy() &#123;</span><br><span class="line">  removeEventListener(<span class="string">'click'</span>, <span class="keyword">this</span>.click, <span class="literal">false</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><h4 id="图片压缩"><a href="#图片压缩" class="headerlink" title="图片压缩"></a>图片压缩</h4><ol><li><code>yarn add image-webpack-loader --save-dev</code></li><li><figure class="highlight js"><figcaption><span>[webpack.base.conf.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  test: <span class="regexp">/\.(png|jpe?g|gif|svg)(\?.*)?$/</span>,</span><br><span class="line">  use:[</span><br><span class="line">    &#123;</span><br><span class="line">    loader: <span class="string">'url-loader'</span>,</span><br><span class="line">    options: &#123;</span><br><span class="line">      limit: <span class="number">10000</span>,</span><br><span class="line">      name: utils.assetsPath(<span class="string">'img/[name].[hash:7].[ext]'</span>)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      loader: <span class="string">'image-webpack-loader'</span>,</span><br><span class="line">      options: &#123;</span><br><span class="line">        bypassOnDebug: <span class="literal">true</span>,</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h4 id="减少-ES6-转为-ES5-的冗余代码"><a href="#减少-ES6-转为-ES5-的冗余代码" class="headerlink" title="减少 ES6 转为 ES5 的冗余代码"></a>减少 ES6 转为 ES5 的冗余代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ES6 转为 ES5,需要以下两个辅助函数：</span><br><span class="line">babel-runtime/helpers/createClass  // 用于实现 class 语法</span><br><span class="line">babel-runtime/helpers/inherits  // 用于实现 extends 语法</span><br></pre></td></tr></table></figure><p>在默认情况下， Babel 会在每个输出文件中内嵌这些依赖的辅助函数代码，如果多个源代码文件都依赖这些辅助函数，那么这些辅助函数的代码将会出现很多次，造成代码冗余。</p><ol><li><code>yarn add babel-plugin-transform-runtime --save-dev</code></li><li><figure class="highlight js"><figcaption><span>[.babelrc]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"plugins"</span>: [</span><br><span class="line">    <span class="string">"transform-runtime"</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure></li></ol><h4 id="提取公共代码"><a href="#提取公共代码" class="headerlink" title="提取公共代码"></a>提取公共代码</h4><p>如果项目中没有去将每个页面的第三方库和公共模块提取出来，则项目会存在以下问题：</p><ul><li>相同的资源被重复加载，浪费用户的流量和服务器的成本。</li><li>每个页面需要加载的资源太大，导致网页首屏加载缓慢，影响用户体验。<br>所以我们需要将多个页面的公共代码抽离成单独的文件，来优化以上问题 。Webpack 内置了专门用于提取多个Chunk 中的公共部分的插件 CommonsChunkPlugin，我们在项目中 CommonsChunkPlugin 的配置如下：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 所有在 package.json 里面依赖的包，都会被打包进 vendor.js 这个文件中。</span></span><br><span class="line"><span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(&#123;</span><br><span class="line">  name: <span class="string">'vendor'</span>,</span><br><span class="line">  minChunks: <span class="function"><span class="keyword">function</span>(<span class="params">module, count</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="built_in">module</span>.resource &amp;&amp;</span><br><span class="line">      /\.js$/.test(<span class="built_in">module</span>.resource) &amp;&amp;</span><br><span class="line">      <span class="built_in">module</span>.resource.indexOf(</span><br><span class="line">        path.join(__dirname, <span class="string">'../node_modules'</span>)</span><br><span class="line">      ) === <span class="number">0</span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;),</span><br><span class="line"><span class="comment">// 抽取出代码模块的映射关系</span></span><br><span class="line"><span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(&#123;</span><br><span class="line">  name: <span class="string">'manifest'</span>,</span><br><span class="line">  chunks: [<span class="string">'vendor'</span>]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li></ul><h4 id="模版预编译"><a href="#模版预编译" class="headerlink" title="模版预编译"></a>模版预编译</h4><p>当使用 DOM 内模板或 JavaScript 内的字符串模板时，模板会在运行时被编译为渲染函数。通常情况下这个过程已经足够快了，但对性能敏感的应用还是最好避免这种用法。<br>预编译模板最简单的方式就是使用单文件组件——相关的构建设置会自动把预编译处理好，所以构建好的代码已经包含了编译出来的渲染函数而不是原始的模板字符串。<br>如果你使用 webpack，并且喜欢分离 JavaScript 和模板文件，你可以使用 vue-template-loader，它也可以在构建过程中把模板文件转换成为 JavaScript 渲染函数。</p><h4 id="提取组件的-CSS"><a href="#提取组件的-CSS" class="headerlink" title="提取组件的 CSS"></a>提取组件的 CSS</h4><p>当使用单文件组件时，组件内的 CSS 会以 style 标签的方式通过 JavaScript 动态注入。这有一些小小的运行时开销，如果你使用服务端渲染，这会导致一段 “无样式内容闪烁 (fouc) ” 。将所有组件的 CSS 提取到同一个文件可以避免这个问题，也会让 CSS 更好地进行压缩和缓存。<br>查阅这个构建工具各自的文档来了解更多：</p><ul><li>webpack + vue-loader ( vue-cli 的 webpack 模板已经预先配置好)</li><li>Browserify + vueify</li><li>Rollup + rollup-plugin-vue</li></ul><h4 id="优化-SourceMap"><a href="#优化-SourceMap" class="headerlink" title="优化 SourceMap"></a>优化 SourceMap</h4><p>我们在项目进行打包后，会将开发中的多个文件代码打包到一个文件中，并且经过压缩、去掉多余的空格、babel编译化后，最终将编译得到的代码会用于线上环境，那么这样处理后的代码和源代码会有很大的差别，当有 bug的时候，我们只能定位到压缩处理后的代码位置，无法定位到开发环境中的代码，对于开发来说不好调式定位问题，因此 sourceMap 出现了，它就是为了解决不好调式代码问题的。<br>SourceMap 的可选值如下（+ 号越多，代表速度越快，- 号越多，代表速度越慢, o 代表中等速度 ）<br>开发环境推荐：<code>cheap-module-eval-source-map</code><br>生产环境推荐：<code>cheap-module-source-map</code><br>原因如下：</p><ul><li>cheap：源代码中的列信息是没有任何作用，因此我们打包后的文件不希望包含列相关信息，只有行信息能建立打包前后的依赖关系。因此不管是开发环境或生产环境，我们都希望添加 cheap 的基本类型来忽略打包前后的列信息；</li><li>module ：不管是开发环境还是正式环境，我们都希望能定位到bug的源代码具体的位置，比如说某个 Vue 文件报错了，我们希望能定位到具体的 Vue 文件，因此我们也需要 module 配置；</li><li>soure-map ：source-map 会为每一个打包后的模块生成独立的 soucemap 文件 ，因此我们需要增加source-map 属性；</li><li>eval-source-map：eval 打包代码的速度非常快，因为它不生成 map 文件，但是可以对 eval 组合使用 eval-source-map 使用会将 map 文件以 DataURL 的形式存在打包后的 js 文件中。在正式环境中不要使用 eval-source-map, 因为它会增加文件的大小，但是在开发环境中，可以试用下，因为他们打包的速度很快。</li></ul><h4 id="构建结果输出分析"><a href="#构建结果输出分析" class="headerlink" title="构建结果输出分析"></a>构建结果输出分析</h4><p>vue-cli2:<br><code>webpack-bundle-analyzer</code><br><figure class="highlight js"><figcaption><span>[webpack.prod.conf.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (config.build.bundleAnalyzerReport) &#123;</span><br><span class="line">  <span class="keyword">var</span> BundleAnalyzerPlugin =   <span class="built_in">require</span>(<span class="string">'webpack-bundle-analyzer'</span>).BundleAnalyzerPlugin;</span><br><span class="line">  webpackConfig.plugins.push(<span class="keyword">new</span> BundleAnalyzerPlugin());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><code>yarn run build --report</code><br>vue-cli3:<br><figure class="highlight js"><figcaption><span>[vue.config.js]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports=&#123;</span><br><span class="line">    chainWebpack:<span class="function"><span class="params">config</span>=&gt;</span>&#123;</span><br><span class="line">        <span class="comment">// config.moudle</span></span><br><span class="line">        <span class="comment">//     .rule('vue')</span></span><br><span class="line">        <span class="comment">//     .user('vue-loader')</span></span><br><span class="line">        <span class="comment">//     .loader('vue-loader')</span></span><br><span class="line">        <span class="comment">//     .tap(options=&gt;&#123;</span></span><br><span class="line">        <span class="comment">//         //update</span></span><br><span class="line">        <span class="comment">//         return options</span></span><br><span class="line">        <span class="comment">//     &#125;)</span></span><br><span class="line">        <span class="comment">// Examples</span></span><br><span class="line">        <span class="comment">//config</span></span><br><span class="line">        <span class="comment">// .plugin('hot')</span></span><br><span class="line">        <span class="comment">// .use(webpack.HotModuleReplacementPlugin);</span></span><br><span class="line">        <span class="comment">// config</span></span><br><span class="line">        <span class="comment">// .plugin('env')</span></span><br><span class="line">        <span class="comment">// .use(webpack.EnvironmentPlugin, ['NODE_ENV']);</span></span><br><span class="line">        config</span><br><span class="line">        .plugin(<span class="string">'webpack-bundle-analyzer'</span>)</span><br><span class="line">        .use(<span class="built_in">require</span>(<span class="string">'webpack-bundle-analyzer'</span>).BundleAnalyzerPlugin)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>if (process.env.npm_config_report) {<br>  // …<br>}<br><figure class="highlight js"><figcaption><span>[package.json]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"analyz"</span>: <span class="string">"npm_config_report=true npm run build"</span></span><br></pre></td></tr></table></figure></p><h2 id="基础web"><a href="#基础web" class="headerlink" title="基础web"></a>基础web</h2><h4 id="开启-gzip-压缩"><a href="#开启-gzip-压缩" class="headerlink" title="开启 gzip 压缩"></a>开启 gzip 压缩</h4><p>gzip 是 GNUzip 的缩写，最早用于 UNIX 系统的文件压缩。HTTP 协议上的 gzip 编码是一种用来改进 web 应用程序性能的技术，web 服务器和客户端（浏览器）必须共同支持 gzip。目前主流的浏览器，Chrome，firefox，IE等都支持该协议。常见的服务器如 Apache，Nginx，IIS 同样支持，gzip 压缩效率非常高，通常可以达到 70% 的压缩率，也就是说，如果你的网页有 30K，压缩之后就变成了 9K 左右</p><ol><li><code>yarn add compression --save</code></li><li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> compression = <span class="built_in">require</span>(<span class="string">'compression'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line">app.use(compression())</span><br></pre></td></tr></table></figure></li><li><p>重启服务，观察网络面板里面的 response header，如果看到content-encoding的字段则表明 gzip 开启成功;</p><h4 id="浏览器缓存-静态资源进行缓存"><a href="#浏览器缓存-静态资源进行缓存" class="headerlink" title="浏览器缓存;静态资源进行缓存"></a>浏览器缓存;静态资源进行缓存</h4><h4 id="CDN-的使用"><a href="#CDN-的使用" class="headerlink" title="CDN 的使用"></a>CDN 的使用</h4><h4 id="Chrome-Performance-查找性能瓶颈"><a href="#Chrome-Performance-查找性能瓶颈" class="headerlink" title="Chrome Performance 查找性能瓶颈"></a>Chrome Performance 查找性能瓶颈</h4></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0163.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
+    
+    
+      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
     
   </entry>
   
@@ -158,335 +460,6 @@
       <category term="OSI" scheme="http://rawraw.info/tags/OSI/"/>
     
       <category term="TCP" scheme="http://rawraw.info/tags/TCP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>get/post请求区别</title>
-    <link href="http://rawraw.info/2019-05-16-getpost.html"/>
-    <id>http://rawraw.info/2019-05-16-getpost.html</id>
-    <published>2019-05-16T02:24:38.000Z</published>
-    <updated>2019-05-16T03:14:18.908Z</updated>
-    
-    <content type="html"><![CDATA[<p>GET和POST本质上两者没有任何区别，是HTTP协议中的两种发送请求的方法，底层实现都是基于TCP/IP协议。</p><a id="more"></a><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>GET和POST是HTTP协议中的两种发送请求的方法。<br>HTTP是什么？HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议。<br>HTTP的底层是TCP/IP。所以GET和POST的底层也是TCP/IP，也就是说，GET/POST都是TCP链接。<br>GET和POST能做的事情是一样的。你要给GET加上request body，给POST带上url参数，技术上是完全行的通的。<br>上述的所谓区别，只是浏览器厂家根据约定，做得限制而已。<br>HTTP请求，最初设定了八种方法。这八种方法本质上没有任何区别。只是让请求，更加有语义而已。</p><ul><li>OPTIONS 返回服务器所支持的请求方法</li><li>GET 向服务器获取指定资源</li><li>HEAD 与GET一致，只不过响应体不返回，只返回响应头</li><li>POST 向服务器提交数据，数据放在请求体里</li><li>PUT 与POST相似，只是具有幂等特性，一般用于更新</li><li>DELETE 删除服务器指定资源</li><li>TRACE 回显服务器端收到的请求，测试的时候会用到这个</li><li>CONNECT 预留，暂无使用</li></ul><p>万维网世界中，TCP就像汽车，我们用TCP来运输数据，它很可靠，从来不会发生丢件少件的现象。但是如果路上跑的全是看起来一模一样的汽车，那这个世界看起来是一团混乱，送急件的汽车可能被前面满载货物的汽车拦堵在路上，整个交通系统一定会瘫痪。为了避免这种情况发生，交通规则HTTP诞生了。HTTP给汽车运输设定了好几个服务类别，有GET, POST, PUT, DELETE等等，HTTP规定，当执行GET请求的时候，要给汽车贴上GET的标签（设置method为GET），而且要求把传送的数据放在车顶上（url中）以方便记录。如果是POST请求，就要在车上贴上POST的标签，并把货物放在车厢里。当然，你也可以在GET的时候往车厢内偷偷藏点货物，但是这是很不光彩；也可以在POST的时候在车顶上也放一些数据，让人觉得傻乎乎的。HTTP只是个行为准则，而TCP才是GET和POST怎么实现的基本。</p><p>在万维网世界中，还有另一个重要的角色：运输公司。不同的浏览器（发起http请求）和服务器（接受http请求）就是不同的运输公司。 虽然理论上，你可以在车顶上无限的堆货物（url中无限加参数）。但是运输公司可不傻，装货和卸货也是有很大成本的，他们会限制单次运输量来控制风险，数据量太大对浏览器和服务器都是很大负担。业界不成文的规定是，（大多数）浏览器通常都会限制url长度在2K个字节，而（大多数）服务器最多处理64K大小的url。超过的部分，恕不处理。如果你用GET服务，在request body偷偷藏了数据，不同服务器的处理方式也是不同的，有些服务器会帮你卸货，读出数据，有些服务器直接忽略，所以，虽然GET可以带request body，也不能保证一定能被接收到哦。</p><p>GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。 </p><h1 id="w3school标准答案"><a href="#w3school标准答案" class="headerlink" title="w3school标准答案"></a>w3school标准答案</h1><ul><li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li><li>GET产生的URL地址可以被Bookmark，而POST不可以。</li><li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li><li>GET请求只能进行url编码，而POST支持多种编码方式。</li><li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li><li>GET请求在URL中传送的参数是有长度限制的，而POST么有。</li><li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。（所以中文需要URL编码）</li><li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li><li>GET参数通过URL传递，POST放在Request body中。</li></ul><h2 id="重大区别"><a href="#重大区别" class="headerlink" title="重大区别"></a>重大区别</h2><p>GET产生一个TCP数据包；POST产生两个TCP数据包。</p><pre><code>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</code></pre><p>也就是说，GET只需要汽车跑一趟就把货送到了，而POST得跑两趟，第一趟，先去和服务器打个招呼“嗨，我等下要送一批货来，你们打开门迎接我”，然后再回头把货送过去。</p><p>因为POST需要两步，时间上消耗的要多一点，看起来GET比POST更有效。因此Yahoo团队有推荐用GET替换POST来优化网站性能。但这是一个坑！跳入需谨慎。为什么？</p><ol><li>GET与POST都有自己的语义，不能随便混用。</li><li>据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</li><li>并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;GET和POST本质上两者没有任何区别，是HTTP协议中的两种发送请求的方法，底层实现都是基于TCP/IP协议。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="http" scheme="http://rawraw.info/tags/http/"/>
-    
-      <category term="get" scheme="http://rawraw.info/tags/get/"/>
-    
-      <category term="post" scheme="http://rawraw.info/tags/post/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>跨域的几种方式</title>
-    <link href="http://rawraw.info/2019-05-15-proxy.html"/>
-    <id>http://rawraw.info/2019-05-15-proxy.html</id>
-    <published>2019-05-15T07:07:42.000Z</published>
-    <updated>2019-05-15T09:08:49.574Z</updated>
-    
-    <content type="html"><![CDATA[<p>跨域的几种方式</p><p><div align="center"><br><img src="/images/bg/0172.jpg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="跨域是什么"><a href="#跨域是什么" class="headerlink" title="跨域是什么"></a>跨域是什么</h1><p>一个完整的地址 = 协议 + 子域名 + 主域名 + 端口号 + 请求资源地址</p><p>JavaScript出于安全方面的考虑，不允许跨域调用其他页面的对象。<br>当协议、子域名、主域名、端口号中任意一个不相同时，都算作不同域。不同域之间相互请求资源，就算作“跨域”。</p><blockquote><p>跨域并不是请求发不出去，请求能发出去，服务端能收到请求并正常返回结果，只是结果被浏览器拦截了。之所以会跨域，是因为受到了同源策略的限制，同源策略要求源相同才能正常进行通信，即协议、域名、端口号都完全一致。</p></blockquote><h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。它的存在可以保护用户隐私信息，防止身份伪造等(读取Cookie)。</p><h4 id="同源策略限制内容有："><a href="#同源策略限制内容有：" class="headerlink" title="同源策略限制内容有："></a>同源策略限制内容有：</h4><ul><li>Cookie、LocalStorage、IndexedDB 等存储性内容</li><li>DOM 节点</li><li>AJAX 请求不能发送</li></ul><h4 id="允许跨域加载资源的三个标签"><a href="#允许跨域加载资源的三个标签" class="headerlink" title="允许跨域加载资源的三个标签"></a>允许跨域加载资源的三个标签</h4><ul><li><code>&lt;img src=XXX&gt;</code></li><li><code>&lt;link href=XXX&gt;</code></li><li><code>&lt;script src=XXX&gt;</code></li></ul><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h2><p>详情见proxy</p><h2 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h2><p>Websocket是HTML5的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket和HTTP都是应用层协议，都基于 TCP 协议。但是 WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 server 与 client 都能主动向对方发送或接收数据。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。</p><p>原生WebSocket API使用起来不太方便，我们使用Socket.io，它很好地封装了webSocket接口，提供了更简单、灵活的接口，也对不支持webSocket的浏览器提供了向下兼容。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//前端代码：</span><br><span class="line">&lt;div&gt;user input：&lt;input type = &quot;text&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;./socket.io.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var socket = io(&apos;http://www.domain2.com:8080&apos;);</span><br><span class="line">// 连接成功处理</span><br><span class="line">socket.on(&apos;connect&apos;,function()&#123;</span><br><span class="line">    // 监听服务端消息</span><br><span class="line">    socket.on(&apos;message&apos;,function(msg)&#123;</span><br><span class="line">        console.log(&apos;data from server: ---&gt; &apos;+msg</span><br><span class="line">    );</span><br><span class="line">&#125;);</span><br><span class="line">// 监听服务端关闭</span><br><span class="line">    socket.on(&apos;disconnect&apos;,function()&#123;</span><br><span class="line">        console.log(&apos;Server socket has closed.&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">document.getElementsByTagName(&apos;input&apos;)[0].onblur = function()&#123;</span><br><span class="line">    socket.send(this.value);</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//Nodejs socket后台：</span><br><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">var socket  = require(&apos;socket.io&apos;);</span><br><span class="line">// 启http服务</span><br><span class="line">var server = http.createServer(function(req,res)&#123;</span><br><span class="line">    res.writeHead(200,&#123;</span><br><span class="line">        &apos;Content-type&apos;: &apos;text/html&apos;</span><br><span class="line">    &#125;);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(&apos;8080&apos;);</span><br><span class="line">console.log(&apos;Server is running at port 8080...&apos;);</span><br><span class="line">// 监听socket连接</span><br><span class="line">socket.listen(server).on(&apos;connection&apos;,function(client)&#123;</span><br><span class="line">// 接收信息</span><br><span class="line">    client.on(&apos;message&apos;,function(msg) &#123;</span><br><span class="line">    client.send(&apos;hello：&apos; + msg);</span><br><span class="line">    console.log(&apos;data from client: ---&gt; &apos; + msg);</span><br><span class="line">    </span><br><span class="line">&#125;);</span><br><span class="line">    </span><br><span class="line">// 断开处理</span><br><span class="line">    client.on(&apos;disconnect&apos;, function() &#123;</span><br><span class="line">        console.log(&apos;Client socket has closed.&apos;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="cors"><a href="#cors" class="headerlink" title="cors"></a>cors</h2><p>整个CORS通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，CORS通信与同源的AJAX通信没有差别，代码完全一样。浏览器一旦发现AJAX请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。因此，实现CORS通信的关键是服务器。只要服务器实现了CORS接口，就可以跨源通信。</p><p>CORS要求浏览器(&gt;IE10)和服务器的同时支持，是跨域的根本解决方法，由浏览器自动完成。<br>优点在于功能更加强大支持各种HTTP Method，缺点是兼容性不如JSONP。<br>服务端：<br><code>header(&quot;Access-Control-Allow-Origin:*&quot;);</code><br><code>header(&quot;Access-Control-Allow-Methods:POST,GET&quot;);</code></p><h2 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h2><p>原理：利用 <code>&lt;script&gt;</code> 元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 数据。JSONP请求一定需要对方的服务器做支持才可以。</p><p>JSONP和AJAX相同，都是客户端向服务器端发送请求，从服务器端获取数据的方式。但AJAX属于同源策略，JSONP属于非同源策略（跨域请求）。</p><p>JSONP优点是兼容性好，可用于解决主流浏览器的跨域数据访问的问题。缺点是仅支持get方法具有局限性。</p><ul><li>声明一个回调函数，其函数名(如fn)当做参数值，要传递给跨域请求数据的服务器，函数形参为要获取目标数据(服务器返回的data)。</li><li>创建一个<code>&lt;script&gt;</code>标签，把那个跨域的API数据接口地址，赋值给script的src，还要在这个地址中向服务器传递该函数名,通过问号传参。</li><li>服务器接收到请求后，需要进行特殊的处理：把传递进来的函数名和它需要给你的数据拼接成一个字符串</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type =&quot;text/javascript&quot;&gt;</span><br><span class="line">function fn(data)&#123;</span><br><span class="line">    alert(data.msg);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script type = &quot;text/javascript&quot; src=&quot;http://test.com/jsonServerResponse?jsonp=fn&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><h2 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h2><p>如果两个网页不同源，就无法拿到对方的DOM。典型的例子是iframe窗口和 window.open 方法打开的窗口，它们与父窗口无法通信。HTML5为了解决这个问题，引入了一个全新的API：跨文档通信 API（Cross-document messaging）。这个API为window对象新增了一个 window.postMessage 方法，允许跨窗口通信，不论这两个窗口是否同源。</p><p>postMessage方法的第一个参数是具体的信息内容，第二个参数是接收消息的窗口的源（origin），即”协议 + 域名 + 端口”。也可以设为 *，表示不限制域名，向所有窗口发送。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//发送信息页面 http://localhost:63342/index.html</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;跨域请求&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">  </span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;iframe src=&quot;http://localhost:3000/users/reg&quot; id=&quot;frm&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">    &lt;input type=&quot;button&quot; value =&quot;OK&quot; onclick=&quot;run()&quot;&gt;&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function run()&#123;</span><br><span class="line">    var frm = document.getElementById(&quot;frm&quot;);</span><br><span class="line">    frm.contentWindow.postMessage(&quot;跨域请求信息&quot;,&quot;http://localhost:3000&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//接收信息页面 http://localhost:3000/message.html</span><br><span class="line"> window.addEventListener(&quot;message&quot;,function(e)&#123;//通过监听message事件，可以监听对方发送的消息。</span><br><span class="line">  console.log(e.data);</span><br><span class="line">&#125;,false);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;跨域的几种方式&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0172.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="html" scheme="http://rawraw.info/tags/html/"/>
-    
-      <category term="跨域" scheme="http://rawraw.info/tags/%E8%B7%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>这是一个键盘</title>
-    <link href="http://rawraw.info/2019-04-29-keyboard.html"/>
-    <id>http://rawraw.info/2019-04-29-keyboard.html</id>
-    <published>2019-04-29T10:16:21.000Z</published>
-    <updated>2019-04-30T05:43:15.253Z</updated>
-    
-    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0175.jpg" alt="“封面”"><br></div><a id="more"></a><h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="result"><a href="#result" class="headerlink" title="result"></a>result</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0175.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="js" scheme="http://rawraw.info/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>（不记得转自哪里了）如何避免自己写的代码成为别人眼中的一坨屎！</title>
-    <link href="http://rawraw.info/2019-04-18-shit.html"/>
-    <id>http://rawraw.info/2019-04-18-shit.html</id>
-    <published>2019-04-18T06:55:26.000Z</published>
-    <updated>2019-04-30T05:47:36.955Z</updated>
-    
-    <content type="html"><![CDATA[<p>应该是出自某本书还是什么地方的。<br>相信每一个优秀的工程师都有一颗追求卓越代码的心，</p><blockquote><p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand. 普通的工程师堆砌代码，优秀的工程师优雅代码，卓越的工程师简化代码。</p></blockquote><div align="center"><br><img src="/images/bg/0158.jpeg" alt="“封面”"><br></div><a id="more"></a><p>首先，在苍蝇眼里，一切都是屎。</p><h1 id="一、注释"><a href="#一、注释" class="headerlink" title="一、注释"></a>一、注释</h1><ul><li>不要给不好的名字加注释，一个好的名字比好的注释更重要；</li><li>不要“拐杖注释”，好代码 &gt; 坏代码 + 好注释；</li><li>一定要给常量加注释；</li><li>团队统一定义标记：<br>  <em>TODO  待处理的问题；  </em>FIXME  已知有问题的代码；<br>  *HACK 不得不采用的粗糙的解决方案；</li><li>在注释中用精心挑选的输入输出例子进行说明；</li><li>注释应该声明代码的高层次意图，而非明显的细节；</li><li>不要在代码中加入代码的著作信息，git可以干的事情不要交给代码；</li><li>源代码中的html注释是一种厌物, 增加阅读难度；</li><li>注释一定要描述离它最近的代码；</li><li>注释一定要与代码对应；</li><li>公共api需要添加注释，其它代码谨慎使用注释；</li><li>典型的烂注释：<br>  不恰当的信息；废弃的注释；冗余注释；糟糕的注释；注释掉的代码；</li><li>唯一真正好的注释是你想办法不去写的注释：<br>  <em>不要有循规式注释，比如setter/getter注释；  </em>不要添加日志式注释，比如修改时间等信息（git可以做的事情）；<br>  <em>注释一定是表达代码之外的东西，代码可以包含的内容，注释中一定不要出现；  </em>如果有必要注释，请注释意图（why），而不要去注释实现（how)，大家都会看代码；<br>  *适当添加警示注释；</li></ul><h1 id="二、命名"><a href="#二、命名" class="headerlink" title="二、命名"></a>二、命名</h1><ul><li>尽可能使用标准命名方法，比如设计模式，通用学术名词等；</li><li>命名要找更有表现力的词：<br>  <em>使用更专业的词，比如不用get而使用fetch或者download；  </em>避免空泛的名字，像tmp；<br>  <em>使用具体的名字来细致的描述事物；  </em>给变量名带上重要的细节，比如加上单位ms等；<br>  <em>为作用域大的名字采用更长的名字，作用域小的使用短名字；  </em>变量类型为布尔值表达加上is，has，can，should这样的词会更明确；</li><li>变量名称长短应该与其作用域对应；</li><li>别害怕长名称，长而具有描述性的名称比短而令人费解的名称好；</li><li>函数名称应该说明副作用，名称应该表达函数，变量或类的一切信息，请不要掩盖副作用，比如CreateAndReturnXXX；</li></ul><h1 id="三、方法"><a href="#三、方法" class="headerlink" title="三、方法"></a>三、方法</h1><ul><li>函数不应该有100行那么长，20行封顶最好：<br>  <em>if else while等控制语句其中代码块应该只有一行，也就是一个函数调用语句；  </em>函数的锁进层次不应该多于两层；<br>  *一个函数只做一件事，一个函数不应该能抽象出另外一个函数；</li><li>某个公共函数调用的私有函数紧随其后；</li><li>最理想的参数是零参数，最长不要超过三个入参，尽量不要输出参数：<ul><li>如果函数传入三个及以上参数最好将其抽象为类；</li><li>标识参数十分丑陋，向函数传入布尔值用于区分不同业务的做法很丑陋，应该拆分为多个函数；</li></ul></li><li>别返回null值，抛出异常或者返回特殊对象，尽量避免NPE；</li><li>别传入null值；</li></ul><h1 id="四、异常与错误"><a href="#四、异常与错误" class="headerlink" title="四、异常与错误"></a>四、异常与错误</h1><ul><li>抽离try catch包含的代码块，其中代码块抽象为一个函数；</li><li>抛出的每个异常，都应当提供足够的环境说明，已便判断错误的来源与处所；</li><li>不要将系统错误归咎于偶然事件；</li></ul><h1 id="五、并发"><a href="#五、并发" class="headerlink" title="五、并发"></a>五、并发</h1><ul><li>分离并发相关代码与其它代码；</li><li>严格限制对可能被共享的数据的访问；</li><li>避免使用一个共享对象的多个同步方法；</li><li>保持同步区域微小，尽可能少设计临界区；</li></ul><h1 id="六、单元测试"><a href="#六、单元测试" class="headerlink" title="六、单元测试"></a>六、单元测试</h1><ul><li>不要怕单元测试的方法名字太长或者繁琐，测试函数的名称就像注释；</li><li>不要追求太高的测试覆盖率，测试代码前面90%通常比后面10%花的时间少；</li><li>使用最简单的并且能够完整运用代码的测试输入；；</li><li>给测试函数取一个完整性的描述性名字，比如  Test _；</li><li>测试代码与生产代码一样重要；</li><li>如果测试代码不能保证整洁，你就会很快失去他们；</li><li>每个测试一个断言，单个测试中断言数量应该最小化也就是一个断言；</li><li>FIRST原则：<ul><li>快速 Fast；</li><li>独立 Independent  测试应该相互独立；</li><li>可重复 Repeatable  测试应当在任何环境中重复通过；</li><li>自足验证 Self-Validating   测试应该有布尔值输出；</li><li>及时  Timely   最好的方式是TDD；</li></ul></li></ul><h1 id="七、代码结构"><a href="#七、代码结构" class="headerlink" title="七、代码结构"></a>七、代码结构</h1><ul><li>代码行长度控制在100-120个字符；</li><li>可能用大多数为200行，最长500行的单个文件构造出色的系统；</li><li>关系密切的代码应该相互靠近：<ul><li>变量声明应该靠近其使用位置；</li><li>若某个函数调用了另外一个，应该把他们放在一起，而且调用者应该放在被调用者上面；</li><li>自上向下展示函数调用依赖顺序；</li></ul></li><li>应该把解释条件意图的函数抽离出来，尽可能将条件表达为肯定形式；</li><li>不要继承常量，比如接口中定义常量，不要使用继承欺骗编程语言的作用范围规则；</li><li>模块不应了解它所操作对象的内部情况；</li><li>DTO（Data Transfer Objects）是一个只有公共变量没有函数的类；</li><li>对象暴露行为，隐藏数据；</li><li>不要使用“尤达表示法” 如 if(null == obj)，现代编译器对if(obj = null)这样的代码会给出警告；</li><li>一般情况使用if else，简单语句使用三目运算符；</li><li>通常来讲提早返回可以减少嵌套并让代码整洁；</li></ul><h1 id="八、设计"><a href="#八、设计" class="headerlink" title="八、设计"></a>八、设计</h1><ul><li>类应该足够短小：<ul><li>类应该满足单一权责原则（SRP），类和模块只有一个修改理由；</li><li>类应该只有少量的实体变量；</li><li>类应该遵循依赖倒置原则 DIP（Dependency Inversion Principle），类应该依赖于抽象而不是依赖于具体细节；</li><li>类中的方法越少越好，函数知道的变量越少越好，类拥有的实体变量越少越好；</li></ul></li><li>通过减少变量的数量和让他们尽量“轻量级”来让代码更有可读性：<ul><li>减少变量；</li><li>缩小变量的作用域；</li><li>只写一次的变量更好，如常量；</li></ul></li><li>最好读的代码就是没有代码：<ul><li>从项目中消除不必要的功能，不要过度设计；</li><li>从新考虑需求，解决版本最简单的问题，只要能完成工作就行；</li><li>经常性地通读标准库的整个API，保持对他们的熟悉程度；</li></ul></li><li>简单设计：<ul><li>运行所有测试；</li><li>不可重复；</li><li>表达了程序员的意图；</li><li>尽可能减少类和方法的数量；</li><li>以上规则按重要程度排列；</li></ul></li><li>无论是设计系统或者单独模块，别忘了使用大概可工作的最简单方案；</li><li>整洁的代码只提供一种而非多种做一件事的途径，他只有尽量少的依赖。明确定义并提供尽量少的API；</li><li>减少重复代码，提高表达力，提早构建，简单抽象；</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;应该是出自某本书还是什么地方的。&lt;br&gt;相信每一个优秀的工程师都有一颗追求卓越代码的心，&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Any fool can write code that a computer can understand. Good programmers write code that humans can understand. 普通的工程师堆砌代码，优秀的工程师优雅代码，卓越的工程师简化代码。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0158.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Rule" scheme="http://rawraw.info/categories/Rule/"/>
-    
-    
-      <category term="rule" scheme="http://rawraw.info/tags/rule/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>less=&gt;vue中引入</title>
-    <link href="http://rawraw.info/2019-04-18-less-vue.html"/>
-    <id>http://rawraw.info/2019-04-18-less-vue.html</id>
-    <published>2019-04-18T06:45:19.000Z</published>
-    <updated>2019-04-30T05:43:36.136Z</updated>
-    
-    <content type="html"><![CDATA[<p>在vue中引入less</p><div align="center"><br><img src="/images/bg/0160.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h1><p><code>npm install less less-loader --save</code><br>or<br><code>yarn add less less-loader --save</code></p><h1 id="step2"><a href="#step2" class="headerlink" title="step2"></a>step2</h1><p>修改webpack.config.js文件，配置loader加载依赖，让其支持外部的less,在原来的代码上添加</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    test: /\.less$/,</span><br><span class="line">    loader: &quot;style-loader!css-loader!less-loader&quot;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">    或者</span><br><span class="line">    @import &apos;./index.less&apos;; //引入全局less文件</span><br><span class="line">    ）。</span><br><span class="line"></span><br><span class="line">webpack.base.conf.js</span><br><span class="line">    &#123;  </span><br><span class="line">        test: /\.scss$/,   </span><br><span class="line">        loaders: [&quot;style&quot;, &quot;css&quot;, &quot;sass&quot;,&quot;style-loader!css-loader!less-loader&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        test:/\.less$/,</span><br><span class="line">        loader:&apos;less-loader&apos;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在vue中引入less&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0160.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
-    
-      <category term="less" scheme="http://rawraw.info/tags/less/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gulp配置</title>
-    <link href="http://rawraw.info/2019-04-18-gulp.html"/>
-    <id>http://rawraw.info/2019-04-18-gulp.html</id>
-    <published>2019-04-18T06:22:21.000Z</published>
-    <updated>2019-04-30T05:41:20.092Z</updated>
-    
-    <content type="html"><![CDATA[<p>gulp配置</p><div align="center"><br><img src="/images/bg/0164.jpg" alt="“封面”"><br></div><a id="more"></a><h1 id="config"><a href="#config" class="headerlink" title="config"></a>config</h1><h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;connect&apos;, function () &#123;</span><br><span class="line">    connect.server(&#123;</span><br><span class="line">        port: 3006,</span><br><span class="line">        livereload: true,</span><br><span class="line">        host: &apos;0.0.0.0&apos;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="自定义标签"><a href="#自定义标签" class="headerlink" title="自定义标签"></a>自定义标签</h2><h3 id="if-eq"><a href="#if-eq" class="headerlink" title="if_eq"></a>if_eq</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hbs.handlebars.registerHelper(&apos;if_eq&apos;,function(v1,v2,name)&#123;</span><br><span class="line">    if(v1 == v2)&#123;</span><br><span class="line">        return name.fn(this)</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        return name.inverse(this)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;gulp配置&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0164.jpg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="gulp" scheme="http://rawraw.info/tags/gulp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mvc/mvvm</title>
-    <link href="http://rawraw.info/2019-03-16-mvc.html"/>
-    <id>http://rawraw.info/2019-03-16-mvc.html</id>
-    <published>2019-03-16T06:24:55.000Z</published>
-    <updated>2019-05-16T06:41:56.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>mvc/mvvm区别</p><a id="more"></a><h1 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h1><p>Model View Controller</p><p>Model（模型）：是应用程序中用于处理应用程序数据逻辑的部分。通常模型对象负责在数据库中存取数据。<br>View（视图）：是应用程序中处理数据显示的部分。通常视图是依据模型数据创建的。<br>Controller（控制器）：是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。</p><p>MVC的思想：一句话描述就是Controller负责将Model的数据用View显示出来</p><p>众所周知，MVC 是开发客户端最经典的设计模式，iOS 开发也不例外，但是 MVC 有让人无法忽视的严重问题。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>Model和View永远不能相互通信，只能通过Controller传递。</li><li>Controller可以直接与Model对话（读写调用Model），Model通过Notification和KVO机制与Controller间接通信。</li><li>Controller可以直接与View对话，通过outlet,直接操作View,outlet直接对应到View中的控件,View通过action向Controller报告事件的发生(如用户Touch我了)。Controller是View的直接数据源（数据很可能是Controller从Model中取得并经过加工了）。Controller是View的代理（delegate),以同步View与Controller。</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>View的可扩展性相当低。<br>在通常的开发中，除了简单的 Model、View 以外的所有部分都被放在了 Controller 里面。Controller 负责显示界面、响应用户的操作、网络请求以及与 Model 交互。这就导致了 Controller：</p><ul><li>逻辑复杂，难以维护；</li><li>和 View 紧耦合，无法测试；</li></ul><h1 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h1><p>Model View ViewModel</p><p>Controller的存在感被完全的降低了。<br>本质上是一个精心优化的 MVC 架构；<br>既然 View 和 Controller 是一对好基友，在 MVVM 里面，干脆把它们当做 View。<br>现在将原来 Controller 的部分职责拆分出来由 View Model 承担，主要包括：</p><ul><li>校验用户输入；</li><li>网络请求；</li><li>展示层的逻辑，比如格式化字符串；</li><li>其他不能放入 Model，与 View 无关的逻辑；</li></ul><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>MVVM 兼容 MVC，可以先创建一个简单的 View Model，再慢慢迁移。</li><li>MVVM 使得 app 更容易测试，因为 View Model 部分不涉及 UI。</li></ul><p>MVVM 最好配合 binding 机制，Model 的变化需要同步到 View Model，View Model 的变化也需要同步到 View</p><p><a href="https://www.jianshu.com/p/b0aab1ffad93" target="_blank" rel="noopener">发展史</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;mvc/mvvm区别&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="mvc" scheme="http://rawraw.info/tags/mvc/"/>
-    
-      <category term="mvvm" scheme="http://rawraw.info/tags/mvvm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在table中margin 失效</title>
-    <link href="http://rawraw.info/2018-05-20-tem.html"/>
-    <id>http://rawraw.info/2018-05-20-tem.html</id>
-    <published>2018-05-20T06:38:47.000Z</published>
-    <updated>2019-04-30T05:48:43.137Z</updated>
-    
-    <content type="html"><![CDATA[<p>想写个某几行<code>tr</code>滑动的动画，发现margin在table里没有用，那我总不能特地搞个定位来弄这个动画吧。气。</p><p><div align="center"><br><img src="/images/bg/0131.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><p>当<code>display：table</code>,<code>margin</code>会不起作用</p><h3 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h3><p><code>border-spacing</code><br>设置单元格td的边在横向和纵向上的间距。<br>指定一个length值时，这个值将作用于横向和纵向上的间距;<br>指定两个length值时，第一个将作用于横向间距，第二个值将作用于纵向间距。<br><code>table{border-spacing:5px 10px;}</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">    <span class="attribute">border-collapse</span>:separate;</span><br><span class="line">    <span class="attribute">border-spacing</span>: -<span class="number">15px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;想写个某几行&lt;code&gt;tr&lt;/code&gt;滑动的动画，发现margin在table里没有用，那我总不能特地搞个定位来弄这个动画吧。气。&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0131.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="css" scheme="http://rawraw.info/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue集合</title>
-    <link href="http://rawraw.info/2018-05-20-vue.html"/>
-    <id>http://rawraw.info/2018-05-20-vue.html</id>
-    <published>2018-05-20T06:38:18.000Z</published>
-    <updated>2019-04-30T05:49:22.243Z</updated>
-    
-    <content type="html"><![CDATA[<div align="center"><br><img src="/images/bg/0163.jpeg" alt="“封面”"><br></div><a id="more"></a><h1 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h1><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><font color="red">[Vue warn]: Error in render: “TypeError: _self.$scopedSlots.default is not a function”</font><blockquote><p>究其原因，是因为表格是element-ui通过循环产生的，而vue在dom重新渲染时有一个性能优化机制，就是相同dom会被复用，这就是问题所在，所以，通过key去标识一下当前行是唯一的，不许复用，就行了。</p></blockquote><p>方案：添加 <font color="red">:key=”Math.random()”</font></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0163.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="vue" scheme="http://rawraw.info/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npm常用命令</title>
-    <link href="http://rawraw.info/2018-03-27-npm.html"/>
-    <id>http://rawraw.info/2018-03-27-npm.html</id>
-    <published>2018-03-27T14:08:37.000Z</published>
-    <updated>2019-05-20T04:29:21.522Z</updated>
-    
-    <content type="html"><![CDATA[<p>npm常用命令以及npm包发布</p><a id="more"></a><h1 id="安装升级"><a href="#安装升级" class="headerlink" title="安装升级"></a>安装升级</h1><p>安装node以后自动会安装NPM。</p><h2 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h2><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p><code>$ npm install -g npm</code></p><h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p><code>$ npm install &lt;pkg&gt;</code> 或者 <code>$ npm install &lt;pkg&gt;@&lt;version&gt;</code></p><h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><p><code>$ npm uninstall &lt;pkg&gt;</code> 或者  <code>$ npm uninstall &lt;pkg&gt;@[&lt;version&gt;]</code></p><h2 id="查看当前项目下的包列表"><a href="#查看当前项目下的包列表" class="headerlink" title="查看当前项目下的包列表"></a>查看当前项目下的包列表</h2><p><code>$ npm ls</code></p><p>#查看全局包列表<br><code>$ npm ls －g</code></p><p>#清理缓存<br><code>$ npm cache clean</code></p><p>#显示包的package.json信息,后面可以跟属性名称。<br>e.g.：<code>$ npm view &lt;pkg&gt; versions</code>  其中versions是<code>package.json</code>的<code>versions</code>属性<br><code>$ npm view &lt;pkg&gt; [attribute]</code></p><h1 id="发布自己的npm包"><a href="#发布自己的npm包" class="headerlink" title="发布自己的npm包"></a>发布自己的npm包</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>第一次：<br><code>$ npm adduser</code><br>输入password的时候会自动隐藏，管自己输就好了<br>然后邮箱一直enter不了，一直报e400的错。然后想到之前装的淘宝镜像。然后就用<code>cnpm</code>就完全o**k！！<br>所以 所有的命令行 自己自动都改c吧，懒得一个个改了。<br>not 第一次：<br><code>$ npm login</code></p><h3 id="查看当前用户"><a href="#查看当前用户" class="headerlink" title="查看当前用户"></a>查看当前用户</h3><p><code>$ npm whoami</code></p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p><code>$ npm init</code><br>动次打次 怼怼怼<br><code>$ npm publish</code><br><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="报错集合"><a href="#报错集合" class="headerlink" title="报错集合"></a>报错集合</h3><p><code>ERR 403</code>:包名字重了<br><code>npm please try running this command again as root</code>：未登录</p><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><p><code>$ npm publish &lt;pkg&gt;@&lt;version&gt;</code></p><h3 id="快速升级方法"><a href="#快速升级方法" class="headerlink" title="快速升级方法"></a>快速升级方法</h3><h4 id="小版本号升级一个版本"><a href="#小版本号升级一个版本" class="headerlink" title="小版本号升级一个版本"></a>小版本号升级一个版本</h4><p><code>$ npm version patch</code></p><h4 id="中版号升级一个版本"><a href="#中版号升级一个版本" class="headerlink" title="中版号升级一个版本"></a>中版号升级一个版本</h4><p><code>$ npm version minor</code></p><h4 id="大版本号升级一个版本"><a href="#大版本号升级一个版本" class="headerlink" title="大版本号升级一个版本"></a>大版本号升级一个版本</h4><p><code>$ npm version major</code><br>npm社区版本号规则采用的是semver(语义化版本)，主要规则如下：<br>版本格式：主版号.次版号.修订号，版号递增规则如下：<br>    主版号：当你做了不相容的 API 修改，<br>    次版号：当你做了向下相容的功能性新增，<br>    修订号：当你做了向下相容的问题修正。<br>    先行版号及版本编译资讯可以加到「主版号.次版号.修订号」的后面，作为延伸。</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>不能删除整个包，只能某个版本<br><code>$ npm unpublish &lt;pkg&gt;[@&lt;version&gt;]</code></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;npm常用命令以及npm包发布&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="npm" scheme="http://rawraw.info/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>animation整理</title>
-    <link href="http://rawraw.info/2018-03-27-animation.html"/>
-    <id>http://rawraw.info/2018-03-27-animation.html</id>
-    <published>2018-03-27T11:32:40.000Z</published>
-    <updated>2019-04-30T05:37:04.994Z</updated>
-    
-    <content type="html"><![CDATA[<p>清电脑翻出一堆以前做的demo。</p><p><div align="center"><br><img src="/images/bg/0061.jpeg" alt="“封面”"><br></div><br><a id="more"></a></p><h1 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h1><p><a href="demos/nav/navText.html">导航栏</a></p><h1 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h1><p><a href="demos/cloud/cloud.html">云墙</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;清电脑翻出一堆以前做的demo。&lt;/p&gt;
-&lt;p&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/bg/0061.jpeg&quot; alt=&quot;“封面”&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Frontend-work" scheme="http://rawraw.info/categories/Frontend-work/"/>
-    
-    
-      <category term="css" scheme="http://rawraw.info/tags/css/"/>
-    
-      <category term="animation" scheme="http://rawraw.info/tags/animation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暂放</title>
-    <link href="http://rawraw.info/2018-03-23-temporay.html"/>
-    <id>http://rawraw.info/2018-03-23-temporay.html</id>
-    <published>2018-03-23T05:28:50.000Z</published>
-    <updated>2019-04-30T05:48:52.652Z</updated>
-    
-    <content type="html"><![CDATA[<p>偶尔翻到以前的笔记，先都堆在这放放，晚点整理；</p><a id="more"></a><h3 id="20160710："><a href="#20160710：" class="headerlink" title="20160710："></a>20160710：</h3><p>1.angular 对应的路由路径/回调不能为空</p><h3 id="20160817："><a href="#20160817：" class="headerlink" title="20160817："></a>20160817：</h3><p>1.iphone4.5 偶尔不支持vh /vw的！！！（vh用，反正要写媒体查询）</p><h3 id="20160810："><a href="#20160810：" class="headerlink" title="20160810："></a>20160810：</h3><p>自动换行 word-break:break-all和word-wrap:break-word</p><p><a href="http://www.oschina.net/translate/comparing-the-top-frameworks-for-building-hybrid-mobile-apps-1" target="_blank" rel="noopener">构建混合移动应用的流行框架优缺点对比</a></p><h1 id="Angular中ng-view-和ui-view区别"><a href="#Angular中ng-view-和ui-view区别" class="headerlink" title="Angular中ng-view 和ui-view区别"></a>Angular中ng-view 和ui-view区别</h1><p>ui-router是angular-ui下的一个模块angular-ui，可以嵌套。<br>ng-view不可以嵌套</p><h1 id="Keypress-keydown-keyup-区别"><a href="#Keypress-keydown-keyup-区别" class="headerlink" title="Keypress keydown keyup 区别"></a>Keypress keydown keyup 区别</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;偶尔翻到以前的笔记，先都堆在这放放，晚点整理；&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="杂" scheme="http://rawraw.info/tags/%E6%9D%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>移动端兼容性整理以及优化</title>
-    <link href="http://rawraw.info/2018-03-23-compatibility.html"/>
-    <id>http://rawraw.info/2018-03-23-compatibility.html</id>
-    <published>2018-03-23T05:28:21.000Z</published>
-    <updated>2019-04-30T05:39:51.118Z</updated>
-    
-    <content type="html"><![CDATA[<p>移动端兼容性整理<br><a id="more"></a></p><h1 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h1><p>Modernizr：兼容CSS3、HTML5新特性</p><h1 id="List"><a href="#List" class="headerlink" title="List"></a>List</h1><h3 id="contenteditable元素只能输入纯文本"><a href="#contenteditable元素只能输入纯文本" class="headerlink" title="contenteditable元素只能输入纯文本"></a>contenteditable元素只能输入纯文本</h3><p>-webkit-user-modify: read-only|read-write|read-write-plaintext-only</p><h3 id="IE6-8和FF3-浏览器不支持”-nth-child”选择器"><a href="#IE6-8和FF3-浏览器不支持”-nth-child”选择器" class="headerlink" title="IE6-8和FF3-浏览器不支持”:nth-child”选择器"></a>IE6-8和FF3-浏览器不支持”:nth-child”选择器</h3><p>:nth-child(2n),:nth-child(even)<br>:nth-child(n+5)这个选择器是选择从第五个元素开始选择<br>:nth-child(4n+1)这种方法是实现隔几选一的效果，比如我们这里是隔三选一<br>::selection<br>user-select:none</p><h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><h3 id="增加该属性，可以增加弹性（在绝对定位的时候会用到）"><a href="#增加该属性，可以增加弹性（在绝对定位的时候会用到）" class="headerlink" title="增加该属性，可以增加弹性（在绝对定位的时候会用到）"></a>增加该属性，可以增加弹性（在绝对定位的时候会用到）</h3><p>-webkit-overflow-scrolling: touch;</p><h3 id="输入法"><a href="#输入法" class="headerlink" title="输入法"></a>输入法</h3><p>开始中文输入时会触发compositionstart事件<br>选词结束后会触发compositionend事件</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;移动端兼容性整理&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="兼容" scheme="http://rawraw.info/tags/%E5%85%BC%E5%AE%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>css基础小结</title>
-    <link href="http://rawraw.info/2018-03-19-cssbase.html"/>
-    <id>http://rawraw.info/2018-03-19-cssbase.html</id>
-    <published>2018-03-19T12:52:43.000Z</published>
-    <updated>2019-04-30T05:40:20.415Z</updated>
-    
-    <content type="html"><![CDATA[<p>css tips~</p><a id="more"></a><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><blockquote><p>不同浏览器的一些标签的默认值不同</p></blockquote><h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>默认为box-sizing是content-box；<br>标准盒子模型（content-box）：宽度=内容的宽度（content）+ border + padding + margin<br>低版本IE盒子模型（border-box）：宽度=内容宽度（content+border+padding）+ margin</p><h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>id、类、标签选择器、相邻选择器、子选择器（ul &gt; li）、后代选择器（li a）、通配符选择器（*）、属性选择器（a[rel=”external”]）、伪类选择器</p><h2 id="优先级算法"><a href="#优先级算法" class="headerlink" title="优先级算法"></a>优先级算法</h2><p>元素选择符： 1<br>class选择符： 10<br>id选择符：100<br>元素标签：1000<br>!important</p><h2 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h2><p>盒子属性不可继承<br>可继承的属性：font-size, font-family, color<br>不可继承的样式：border, padding, margin, width, height</p><h2 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h2><p>自己去翻那篇居中的<br>有空来放个链接</p><h2 id="a的hover顺序"><a href="#a的hover顺序" class="headerlink" title="a的hover顺序"></a>a的hover顺序</h2><p> <code>a:link {} a:visited {} a:hover {} a:active {}</code></p><h2 id="隐藏的几种方法"><a href="#隐藏的几种方法" class="headerlink" title="隐藏的几种方法"></a>隐藏的几种方法</h2><p>1.display：none 不显示对应的元素，在文档布局中不再分配空间（回流+重绘）<br>2.visibility：hidden 隐藏对应元素，在文档布局中仍保留原来的空间（重绘）<br>3.层级z-index<br>4.定位定到天边去吧</p><p>chrome中，使用visibility：collapse值和使用hidden没有区别。<br>firefox，opera和IE，使用collapse值和使用display：none没有什么区别。 </p><h2 id="float"><a href="#float" class="headerlink" title="float"></a>float</h2><p>清浮动:伪类<br>浮动元素的display:block</p><h2 id="CSS3新特性"><a href="#CSS3新特性" class="headerlink" title="CSS3新特性"></a>CSS3新特性</h2><ul><li>rgba</li><li><code>background-image background-origin(content-box/padding-box/border-box) background-size background-repeat</code></li><li><code>word-wrap：break-word</code></li><li><code>text-shadow： 1px 1px 1px #666666;</code></li><li><code>border-radius</code></li><li><code>border-image: url(border.png) 30 30 round</code></li><li><code>box-shadow: 10px 10px 5px #666666</code></li><li>font-face属性：定义自己的字体</li><li>媒体查询：定义两套css，当浏览器的尺寸变化时会采用不同的属性</li></ul><h2 id="兼容性问题"><a href="#兼容性问题" class="headerlink" title="兼容性问题"></a>兼容性问题</h2><ul><li>IE6双边距bug<br>块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大。hack：display:inline;将其转化为行内属性。</li><li><p>渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用“9”这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">background-color:#f1ee18;/*所有识别*/</span><br><span class="line">.background-color:#00deff9; /*IE6、7、8识别*/</span><br><span class="line">+background-color:#a200ff;/*IE6、7识别*/</span><br><span class="line">_background-color:#1e0bd1;/*IE6识别*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>设置较小高度标签（一般小于10px），在IE6，IE7中高度超出自己设置高度。<br>hack：给超出高度的标签设置overflow:hidden;或者设置行高line-height 小于你设置的高度。</p></li><li>IE下，可以使用获取常规属性的方法来获取自定义属性,也可以使用getAttribute()获取自定义属性；<br>Firefox下，只能使用getAttribute()获取自定义属性。<br>解决方法:统一通过getAttribute()获取自定义属性。</li><li>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,可通过加入 CSS 属性 <code>-webkit-text-size-adjust: none;</code> 解决。</li></ul><h2 id="BFC规范-块级格式化上下文：block-formatting-context"><a href="#BFC规范-块级格式化上下文：block-formatting-context" class="headerlink" title="BFC规范(块级格式化上下文：block formatting context)"></a>BFC规范(块级格式化上下文：block formatting context)</h2><p>定位方案：</p><ul><li>内部的Box会在垂直方向上一个接一个放置。</li><li>Box垂直方向的距离由margin决定，属于同一个BFC的两个相邻Box的margin会发生重叠。</li><li>每个元素的margin box 的左边，与包含块border box的左边相接触。</li><li>BFC的区域不会与float box重叠。</li><li>BFC是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。</li><li>计算BFC的高度时，浮动元素也会参与计算。</li></ul><p>满足下列条件之一就可触发BFC</p><ul><li>根元素，即html</li><li>float的值不为none（默认）</li><li>overflow的值不为visible（默认）</li><li>display的值为inline-block、table-cell、table-caption</li><li>position的值为absolute或fixed</li></ul><p>举个栗子：<br>上下margin重合的问题：在重合元素外包裹一层容器，并触发该容器生成一个BFC。<code>overflow: hidden;</code></p><h2 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h2><p>一个网站能够兼容多个终端，通过媒体查询检测不同的设备屏幕尺寸做处理。<br><code>&lt;meta name=&quot;’viewport’&quot; content=&quot;”width=device-width,&quot; initial-scale=&quot;1.&quot; maximum-scale=&quot;1,user-scalable=no”&quot;/&gt;</code></p><h2 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h2><ul><li><head><meta name="generator" content="Hexo 3.8.0">:<code>&lt;link rel=”stylesheet” type=”text/css” href=”xxx.css” media=”only screen and (max-device-width:480px)”&gt;</code></head></li><li>CSS : <code>@media only screen and (max-device-width:480px)</code></li></ul><h2 id="浏览器是怎样解析CSS选择器的？"><a href="#浏览器是怎样解析CSS选择器的？" class="headerlink" title="浏览器是怎样解析CSS选择器的？"></a>浏览器是怎样解析CSS选择器的？</h2><p>CSS选择器的解析是从右向左解析的。若从左向右的匹配，发现不符合规则，需要进行回溯，会损失很多性能。若从右向左匹配，先找到所有的最右节点，对于每一个节点，向上寻找其父节点直到找到根元素或满足条件的匹配规则，则结束这个分支的遍历。两种匹配规则的性能差别很大，是因为从右向左的匹配在第一步就筛选掉了大量的不符合条件的最右节点（叶子节点），而从左向右的匹配规则的性能都浪费在了失败的查找上面。<br>而在 CSS 解析完毕后，需要将解析的结果与 DOM Tree 的内容一起进行分析建立一棵 Render Tree，最终用来进行绘图。在建立 Render Tree 时（WebKit 中的「Attachment」过程），浏览器就要为每个 DOM Tree 中的元素根据 CSS 的解析结果（Style Rules）来确定生成怎样的 Render Tree。</p><h2 id="在网页中的应该使用奇数还是偶数的字体？为什么呢？"><a href="#在网页中的应该使用奇数还是偶数的字体？为什么呢？" class="headerlink" title="在网页中的应该使用奇数还是偶数的字体？为什么呢？"></a>在网页中的应该使用奇数还是偶数的字体？为什么呢？</h2><p>使用偶数字体。偶数字号相对更容易和 web 设计的其他部分构成比例关系。Windows 自带的点阵宋体（中易宋体）从 Vista 开始只提供 12、14、16 px 这三个大小的点阵，而 13、15、17 px时用的是小一号的点。（即每个字占的空间大了 1 px，但点阵没变），于是略显稀疏。</p><h2 id="怎么让Chrome支持小于12px-的文字？"><a href="#怎么让Chrome支持小于12px-的文字？" class="headerlink" title="怎么让Chrome支持小于12px 的文字？"></a>怎么让Chrome支持小于12px 的文字？</h2><p>   <code>p{font-size:10px;-webkit-transform:scale(0.8);}</code></p><h2 id="让页面里的字体变清晰"><a href="#让页面里的字体变清晰" class="headerlink" title="让页面里的字体变清晰"></a>让页面里的字体变清晰</h2><p>  只在ios<code>webkit-font-smoothing：antialiased 灰度平滑</code></p><h2 id="android：position-fixed无效"><a href="#android：position-fixed无效" class="headerlink" title="android：position:fixed无效"></a>android：position:fixed无效</h2><p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no&quot;/&gt;</code></p><h2 id="手动写动画的最小时间间隔是多久"><a href="#手动写动画的最小时间间隔是多久" class="headerlink" title="手动写动画的最小时间间隔是多久"></a>手动写动画的最小时间间隔是多久</h2><p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms。</p><h2 id="inline-block间隙"><a href="#inline-block间隙" class="headerlink" title="inline-block间隙"></a>inline-block间隙</h2><p>float/font-size:0、letter-spacing、word-spacing</p><h2 id="行内级元素末尾实现换行-用伪元素代替"><a href="#行内级元素末尾实现换行-用伪元素代替" class="headerlink" title="行内级元素末尾实现换行,用伪元素代替"></a>行内级元素末尾实现换行,用伪元素代替<br></h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    content: "A";//0x000A,00A</span><br><span class="line">    <span class="selector-tag">white-space</span>: <span class="selector-tag">pre</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>百分比的padding和margin的依据都是父元素的width</li><li>视差滚动插件：parallax-scrolling</li><li>多行文本垂直居中：需要设置display属性为inline-block。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;css tips~&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Note" scheme="http://rawraw.info/categories/Note/"/>
-    
-    
-      <category term="css" scheme="http://rawraw.info/tags/css/"/>
     
   </entry>
   

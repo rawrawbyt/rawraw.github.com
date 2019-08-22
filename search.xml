@@ -1,14 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[JavaScript要仔细学之三//基础]]></title>
-    <url>%2F2019-05-16-js03.html</url>
-    <content type="text"><![CDATA[基础 变量和类型JavaScript规定了几种语言类型6种基本类型:String、Number、Boolean、Symbol、Undefined、Null1种复杂数据类型：object,Array详细 JavaScript对象的底层数据结构是什么参考从Chrome源码看JS Array的实现 Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol参考 原型和原型链]]></content>
+    <title><![CDATA[如何做好一份分享]]></title>
+    <url>%2F2019-08-21-share.html</url>
+    <content type="text"><![CDATA[Stay Hungry, Stay Foolish.刻意训练和精心准备，则是演讲成功的最关键的因素。所谓的优秀，都是刻意训练和长期的积累在短时间内爆发出来的，大家往往只看到短时间内惊人的爆发力，却忽略了其背后的付出与努力。 如何快速有效地提升自己。曾经，我们强调更多的是学习和思考，古语也说: 学而不思则罔，思而不学则殆。而现在，还有一种更为行之有效的方法，那就是：分享。 沟通的本质是让对方轻松地弄明白他原来并不知道的东西，更进一步，让对方通过自己已经懂的知识理解他原来并不懂的东西。 Who-What&amp;When-Why-How-Future-Recap Who: 自我介绍，让听众了解自己，建立连接； What&amp;When: 今天要分享的主题，通过简短介绍吸引听众的注意力、好奇心； Why: 为什么要做这个架构改造、技术升级，整个项目的背景是什么样的，结合对听众的了解，做特定的介绍； How: 深入浅出 3~4 个最核心的内容点，当然为了全面性，你可以都罗列出来，但介绍的重点建议控制在 3~4 项； Future: 让大家了解你未来的计划，你对技术趋势的看法等等； Recap: 对今天的主题再做一个回顾，让听众加深对核心内容记忆。 point1 逐字稿前期避免紧张必备逐字稿，充分的准备；别让正式演讲是你的第一次；时刻提醒自己要放慢语速；逐字稿 point2 PPTPPT是配角，你才是主角；多图少字；PPT保留keyword，只是提醒作用（照着ppt读，人家不如直接下载ppt）；正常流程，不要交互式的幻灯片；流程图更能清晰地表达； Who: 1 页 What&amp;When: 1~2 页 Why: 1 页 How: 展开 3~4 点，每点 2~3 页 Future: 1 页 Recap: 1 页 point3 心理紧张和焦虑感是普遍存在的，并非自己独有；确信自己的分享对听众是有价值的，会让自己信心满满; 了解需求；可以先引入话题，提出观点；适可而止，不可贪多，知识点建议控制在三点左右，这样不仅更容易让听众记住，而且自己讲的时候也比较简单，不用担心到时候忘词；不要背完整的演讲稿（实在不安可以背），记住开场和思路；要提前熟悉场地，看看演讲场地的环境，了解听众座位的布局; point4 学会讲故事 凡是能让人在脑海中产生画面感的话语或文字就是故事。 人们在听故事的时候更容易产生共情作用，也更容易理解你想要表达的信息。 讲一个好故事的核心：给听众一个期望，然后用你讲的故事填满这个期望，让人们采用你的建议和陈述，这就是故事的核心。 赋比兴； 用自己习惯的手势配合你的演讲内容就好，但是不要手足无措，比如一会儿插兜一会儿抱胸，自己不觉得，台下听众会看得非常清楚。一个非常自然的手势是“切西瓜”，伸出手臂，摊开手掌，让手掌与地面垂直，然后小幅度上下挥动。不要做出夸张的身体姿势，有病哦； （可以去看这本书《粘住》） ### 收尾时要强调重点；根据心理学中的“近因效应”：人对演讲末尾部分的印象最为深刻，记忆也最为清晰。要想让听众记住你期望他记住的 2-3 个关键点，以达到分享的目的，在收尾时的总结和强调就至关重要。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[node.js内存溢出]]></title>
+    <url>%2F2019-08-19-nodememory.html</url>
+    <content type="text"><![CDATA[转的整理； 现象 密集型运算；批量处理数据，大量循环； 操作的数据量较大；对象需要频繁的创建/销毁，或操作对象本身较大； 原因V8内存分配机制 V8本身分配的内存较小; JavaScript语言本身限制; 程序员使用不当; V8是 Google 在 Chrome 浏览器中使用的 JavaScript 引擎。而在浏览器环境中，运算一般不需要多大内存。V8 对每个进程分配的运行内存，在32位系统中约为700MB，而在64位系统中约为1.4GB。 方案 使用 async/await防止事件堆积,变为同步操作； V8 获得内存回收的机会；每次循环V8都会回收内存一次，因此内存不会再溢出。但这样做必然会造成运行效率的降低，而应该在速度在安全之间平衡，控制好循环的安全次数。说明:实际开发中，上面这种虽然解决了内存溢出，但是仍然会造成进程阻塞，可以开启一个进程/线程来解决阻塞问题深入理解Node.js 进程与线程 增加V8内存空间node --max-old-space-size=4096 app 使用非V8内存V8内存：数组、字符串等JavaScript内置对象，运行时使用“V8内存”系统内存：Buffer是一个Node.js的扩展对象，使用底层的系统内存，不占用V8内存空间。与之相关的文件系统fs和流Stream流操作，都不会占用V8内存。[fs学习]（https://mp.weixin.qq.com/s/m1SqvFaqTn3Bh2Fg9500sQ）[stream学习]（https://mp.weixin.qq.com/s/HQmualyyEV4t7lG0PZf8zQ）Buffer学习]]></content>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[webpack config]]></title>
+    <url>%2F2019-08-13-webpack.html</url>
+    <content type="text"><![CDATA[打包原理webpack只是一个打包模块的机制，只是把依赖的模块转化成可以代表这些包的静态文件。webpack就是识别你的 入口文件。识别你的模块依赖，来打包你的代码。webpack做的就是分析代码，转换代码，编译代码，输出代码。 webpack中每个模块有一个唯一的id，是从0开始递增的。整个打包后的bundle.js是一个匿名函数自执行。参数则为一个数组。数组的每一项都为个function。function的内容则为每个模块的内容，并按照require的顺序排列。 如何实现一个简单的webpack 读取文件分析模块依赖 对模块进行解析执行(深度遍历) 针对不同的模块使用相应的loader 编译模块，生成抽象语法树AST。 循环遍历AST树，拼接输出js。 loader原理在解析对于文件，会自动去调用响应的loaderloader 本质上是一个函数，输入参数是一个字符串，输出参数也是一个字符串。当然，输出的参数会被当成是 JS 代码，从而被 esprima 解析成 AST，触发进一步的依赖解析。webpack会按照从右到左的顺序执行loader。 打包原理 区分环境12345678910111213141516171819202122232425const fs = require('fs');const exec = require('child_process').exec;exec('git rev-parse --abbrev-ref HEAD', (_error, stdout, _stderr) =&gt; &#123; let url = stdout.replace(/^\s+|\s+$/g, ''); let pageUrl = ''; if (url === 'master') &#123; url = 'https://api.duoxuanmall.com'; pageUrl = 'https://native.duoxuanmall.com' &#125; else &#123; url = 'https://dailyapi.duoxuanmall.com'; pageUrl = 'https://dailynative.duoxuanmall.com' &#125; const content = ` export const rootUrl = '$&#123;url&#125;' export const pageUrl = '$&#123;pageUrl&#125;' ` fs.writeFile('./config/rootUrl.js', content, function (err) &#123; if(err) &#123; console.log(err); &#125;else&#123; console.log('success') &#125; &#125;)&#125;) [生成的文件]12export const rootUrl = ''export const pageUrl = '' 自定义ip&quot;dev&quot;: &quot;node bin/get_enviroment.js &amp;&amp; webpack-dev-server --config ./webpack.config.js --host 192.168.7.236 --port 8086&quot;,]]></content>
+      <tags>
+        <tag>webpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[serverlees无服务器架构]]></title>
+    <url>%2F2019-08-13-serverlees.html</url>
+    <content type="text"><![CDATA[学不动了学不动了 开发历史 serverlees无服务器是一种学说，而不是技术 概念]]></content>
+      <tags>
+        <tag>serverlees</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript要仔细学之三//阻止事件]]></title>
+    <url>%2F2019-07-29-js03.html</url>
+    <content type="text"><![CDATA[哈哈 这么久了，用是会用，居然迷迷糊糊，这次千万记住咯～ event.stopPropagation()方法 这是阻止事件的冒泡方法，不让事件向documen上层蔓延，但是默认事件任然会执行，当你调用这个方法的时候，如果点击一个连接，这个连接仍然会被打开。 event.preventDefault()方法 这是阻止默认事件的方法，调用此方法是，连接不会被打开，但是会发生冒泡，冒泡会传递到上一层的父元素，此方法可以控制一些按钮在点击时只触发时间而不会引起表单的提交。 return false； 同时阻止事件冒泡也会阻止默认事件；写上此代码，连接不会被打开，事件也不会传递到上一层的父元素；可以理解为return false就等于同时调用了event.stopPropagation()和event.preventDefault()]]></content>
       <categories>
         <category>Note</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小程序内置webview调试工具]]></title>
+    <url>%2F2019-07-27-vconsole.html</url>
+    <content type="text"><![CDATA[webview页面调试工具 1.yarn add vConsole2.12import VConsole from 'vconsole/dist/vconsole.min.js'let vConsole = new VConsole() // 初始化]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>vconsole</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vue-cli]]></title>
+    <url>%2F2019-07-18-vue-cli.html</url>
+    <content type="text"><![CDATA[vue-cli3一直运行 /sockjs-node/info?t= 解决方案 sockjs-node 是一个JavaScript库，提供跨浏览器JavaScript的API，创建了一个低延迟、全双工的浏览器和web服务器之间通信通道。 服务端：sockjs-node（https://github.com/sockjs/sockjs-node）客户端：sockjs-clien（https://github.com/sockjs/sockjs-client） 如果你的项目没有用到 sockjs，vuecli3 运行 yarn serve 之后 network 里面一直调研一个接口：http://localhost:8080/sockjs-node/info?t=1462183700002 源码关闭： 找到/node_modules/sockjs-client/dist/sockjs.js第1605行 123456try &#123;// self.xhr.send(payload); 把这里注掉&#125; catch (e) &#123; self.emit('finish', 0, ''); self._cleanup(false);&#125;]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>vue-cli</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小程序们taro]]></title>
+    <url>%2F2019-07-18-mini-program.html</url>
+    <content type="text"><![CDATA[微信小程序转taro$ taro convert]]></content>
+      <tags>
+        <tag>taro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[快应用]]></title>
+    <url>%2F2019-07-18-pwa.html</url>
+    <content type="text"><![CDATA[参考]]></content>
+      <tags>
+        <tag>pwa</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[chorme扩展工具]]></title>
+    <url>%2F2019-07-18-chorme-extend.html</url>
+    <content type="text"><![CDATA[换了台笔记本，vpn也上不去了。只能瞎搞了。 React Devtools调试工具Git 地址Git 地址 git clone https://github.com/facebook/react-devtools.git 进入react-devtools文件夹，安装依赖npm --registry https://registry.npm.taobao.org install 打包一份扩展程序npm run build:extension:chrome项目目录中生成一个新的文件夹，react-devtools -&gt; shells -&gt; chrome -&gt; build -&gt; unpacked文件夹 加载打开chrome扩展程序chrome://extensions/，加载已解压的扩展程序，选择第3步中的生成的unpacked文件夹。 vue-devtoolshttps://github.com/vuejs/vue-devtoolsgit clone https://github.com/vuejs/vue-devtools.gitnpm i修改manifest.json文件把”persistent”:false改成truenpm run build选择vue-devtools&gt;shells下的chrome文件夹]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[图床工具]]></title>
+    <url>%2F2019-07-18-picgo.html</url>
+    <content type="text"><![CDATA[参考]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[微信公众号开发注意事项]]></title>
+    <url>%2F2019-07-18-wx.html</url>
+    <content type="text"><![CDATA[Input fix参考 Fix 不能设置 top0]]></content>
+      <tags>
+        <tag>wx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vultr 搭建 SSR]]></title>
+    <url>%2F2019-07-18-ssr.html</url>
+    <content type="text"><![CDATA[参考参考]]></content>
+      <tags>
+        <tag>ssr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ssh哦]]></title>
+    <url>%2F2019-07-18-ssh.html</url>
+    <content type="text"><![CDATA[检查.ssh文件夹是否存在$ ls -al ~/.ssh 不存在新建.ssh文件夹$ mkdir ~/.ssh$ cd ~/.ssh$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;连续按三次回车id_rsa id_rsa.pub 查看公钥$ cat id_rsa.pub 将密钥复制到剪贴板pbcopy &lt; ~/.ssh/id_rsa.pub]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vue集合]]></title>
+    <url>%2F2019-05-20-vue.html</url>
+    <content type="text"><![CDATA[原理数据双向绑定Vue3之前通过get和set完成，而Vue3后通过proxy来完成。 虚拟dom一个内部的json字符串。 bugsfor中的key[Vue warn]: Error in render: “TypeError: _self.$scopedSlots.default is not a function” 究其原因，是因为表格是element-ui通过循环产生的，而vue在dom重新渲染时有一个性能优化机制，就是相同dom会被复用，这就是问题所在，所以，通过key去标识一下当前行是唯一的，不许复用，就行了。 方案：添加 :key=”Math.random()” 优化代码v-if / v-showv-if:惰性;切换过程中条件块内的事件监听器和子组件适当地被销毁和重建;v-show:不管初始条件是什么，元素总是会被渲染;v-if 适用于在运行时不需要频繁切换条件的场景；v-show 则适用于需要非常频繁切换条件的场景。 computed / watchcomputed： 是计算属性，依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed 的值；watch： 更多的是「观察」的作用，类似于某些数据的监听回调 ，每当监听的数据变化时都会执行回调进行后续操作；computed适用于需要进行数值计算，并且依赖于其它数据时；因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；watch适用于需要在数据变化时执行异步或开销较大的操作时；使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。 v-for 遍历必须为 item 添加 key，且避免同时使用 v-if v-for 遍历必须为 item 添加 key在列表数据进行遍历渲染时，需要为每一项 item 设置唯一 key 值，方便 Vue.js 内部机制精准找到该条列表数据。当 state 更新时，新的状态值和旧的状态值对比，较快地定位到 diff 。 v-for 遍历避免同时使用 v-ifv-for 比 v-if 优先级高，如果每一次都需要遍历整个数组，将会影响速度，尤其是当之需要渲染很小一部分的时候，必要情况下应该替换成 computed 属性。百度小程序里面for和if同时使用是直接语法报错的；1234567891011121314&lt;divv-for="(key,obj) in lists":key="key"&gt;&#123;&#123; obj.name &#125;&#125;&lt;/div&gt;computed: &#123; lists: function () &#123; return this.lists.filter(function (list) &#123; return list.isActive &#125;) &#125;&#125; 懒加载图片资源懒加载 插件：yarn add vue-lazyload --save-dev [main.js]1import VueLazyload from 'vue-lazyload' 12345678Vue.use(VueLazyload)orVue.use(VueLazyload, &#123; preLoad: 1.3, error: 'dist/error.png', loading: 'dist/loading.gif', attempt: 1&#125;) vue文件 1&lt;img v-lazy="/static/img/1.png"&gt; 路由懒加载 首屏加载问题；const goodslist = () =&gt; import( /* webpackChunkName: &quot;trade&quot; */ &#39;./views/Goodslist.vue&#39;); 服务端渲染 SSR/预渲染SSR:重点优化的场景；预渲染:少量页面优化；在构建时 (build time) 简单地生成针对特定路由的静态 HTML 文件。优点是设置预渲染更简单，并可以将你的前端作为一个完全静态的站点，具体你可以使用 prerender-spa-plugin 就可以轻松地添加预渲染 。 第三方插件的按需引入 yarn add babel-plugin-component -D [.babelrc]123456789101112&#123; "presets": [["es2015", &#123; "modules": false &#125;]], "plugins": [ [ "component", &#123; "libraryName": "element-ui", "styleLibraryName": "theme-chalk" &#125; ] ]&#125; [main.js]1234import Vue from 'vue';import &#123; Button,&#125; from 'element-ui';Vue.use(Button) 长列表性能优化 Vue 会通过 Object.defineProperty对数据进行劫持，来实现视图响应数据的变化;纯粹的数据展示，不会做任何修改的数据可以通过 Object.freeze 方法来冻结一个对象；this.lists = Object.freeze(lists); 无限列表性能;vue-virtual-scroll-list 和 vue-virtual-scroller 事件的销毁Vue 组件销毁时，会自动清理它与其它实例的连接，解绑它的全部指令及事件监听器，但是仅限于组件本身的事件。如果在 js 内使用 addEventListene 等方式是不会自动销毁的，我们需要在组件销毁时手动移除这些事件的监听，以免造成内存泄露;123456created() &#123; addEventListener('click', this.click, false)&#125;,beforeDestroy() &#123; removeEventListener('click', this.click, false)&#125; webpack图片压缩 yarn add image-webpack-loader --save-dev [webpack.base.conf.js]123456789101112131415161718&#123; test: /\.(png|jpe?g|gif|svg)(\?.*)?$/, use:[ &#123; loader: 'url-loader', options: &#123; limit: 10000, name: utils.assetsPath('img/[name].[hash:7].[ext]') &#125; &#125;, &#123; loader: 'image-webpack-loader', options: &#123; bypassOnDebug: true, &#125; &#125; ]&#125; 减少 ES6 转为 ES5 的冗余代码123ES6 转为 ES5,需要以下两个辅助函数：babel-runtime/helpers/createClass // 用于实现 class 语法babel-runtime/helpers/inherits // 用于实现 extends 语法 在默认情况下， Babel 会在每个输出文件中内嵌这些依赖的辅助函数代码，如果多个源代码文件都依赖这些辅助函数，那么这些辅助函数的代码将会出现很多次，造成代码冗余。 yarn add babel-plugin-transform-runtime --save-dev [.babelrc]123"plugins": [ "transform-runtime"] 提取公共代码如果项目中没有去将每个页面的第三方库和公共模块提取出来，则项目会存在以下问题： 相同的资源被重复加载，浪费用户的流量和服务器的成本。 每个页面需要加载的资源太大，导致网页首屏加载缓慢，影响用户体验。所以我们需要将多个页面的公共代码抽离成单独的文件，来优化以上问题 。Webpack 内置了专门用于提取多个Chunk 中的公共部分的插件 CommonsChunkPlugin，我们在项目中 CommonsChunkPlugin 的配置如下：123456789101112131415161718// 所有在 package.json 里面依赖的包，都会被打包进 vendor.js 这个文件中。new webpack.optimize.CommonsChunkPlugin(&#123; name: 'vendor', minChunks: function(module, count) &#123; return ( module.resource &amp;&amp; /\.js$/.test(module.resource) &amp;&amp; module.resource.indexOf( path.join(__dirname, '../node_modules') ) === 0 ); &#125;&#125;),// 抽取出代码模块的映射关系new webpack.optimize.CommonsChunkPlugin(&#123; name: 'manifest', chunks: ['vendor']&#125;) 模版预编译当使用 DOM 内模板或 JavaScript 内的字符串模板时，模板会在运行时被编译为渲染函数。通常情况下这个过程已经足够快了，但对性能敏感的应用还是最好避免这种用法。预编译模板最简单的方式就是使用单文件组件——相关的构建设置会自动把预编译处理好，所以构建好的代码已经包含了编译出来的渲染函数而不是原始的模板字符串。如果你使用 webpack，并且喜欢分离 JavaScript 和模板文件，你可以使用 vue-template-loader，它也可以在构建过程中把模板文件转换成为 JavaScript 渲染函数。 提取组件的 CSS当使用单文件组件时，组件内的 CSS 会以 style 标签的方式通过 JavaScript 动态注入。这有一些小小的运行时开销，如果你使用服务端渲染，这会导致一段 “无样式内容闪烁 (fouc) ” 。将所有组件的 CSS 提取到同一个文件可以避免这个问题，也会让 CSS 更好地进行压缩和缓存。查阅这个构建工具各自的文档来了解更多： webpack + vue-loader ( vue-cli 的 webpack 模板已经预先配置好) Browserify + vueify Rollup + rollup-plugin-vue 优化 SourceMap我们在项目进行打包后，会将开发中的多个文件代码打包到一个文件中，并且经过压缩、去掉多余的空格、babel编译化后，最终将编译得到的代码会用于线上环境，那么这样处理后的代码和源代码会有很大的差别，当有 bug的时候，我们只能定位到压缩处理后的代码位置，无法定位到开发环境中的代码，对于开发来说不好调式定位问题，因此 sourceMap 出现了，它就是为了解决不好调式代码问题的。SourceMap 的可选值如下（+ 号越多，代表速度越快，- 号越多，代表速度越慢, o 代表中等速度 ）开发环境推荐：cheap-module-eval-source-map生产环境推荐：cheap-module-source-map原因如下： cheap：源代码中的列信息是没有任何作用，因此我们打包后的文件不希望包含列相关信息，只有行信息能建立打包前后的依赖关系。因此不管是开发环境或生产环境，我们都希望添加 cheap 的基本类型来忽略打包前后的列信息； module ：不管是开发环境还是正式环境，我们都希望能定位到bug的源代码具体的位置，比如说某个 Vue 文件报错了，我们希望能定位到具体的 Vue 文件，因此我们也需要 module 配置； soure-map ：source-map 会为每一个打包后的模块生成独立的 soucemap 文件 ，因此我们需要增加source-map 属性； eval-source-map：eval 打包代码的速度非常快，因为它不生成 map 文件，但是可以对 eval 组合使用 eval-source-map 使用会将 map 文件以 DataURL 的形式存在打包后的 js 文件中。在正式环境中不要使用 eval-source-map, 因为它会增加文件的大小，但是在开发环境中，可以试用下，因为他们打包的速度很快。 构建结果输出分析vue-cli2:webpack-bundle-analyzer[webpack.prod.conf.js]1234if (config.build.bundleAnalyzerReport) &#123; var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; webpackConfig.plugins.push(new BundleAnalyzerPlugin());&#125; yarn run build --reportvue-cli3:[vue.config.js]12345678910111213141516171819202122module.exports=&#123; chainWebpack:config=&gt;&#123; // config.moudle // .rule('vue') // .user('vue-loader') // .loader('vue-loader') // .tap(options=&gt;&#123; // //update // return options // &#125;) // Examples //config // .plugin('hot') // .use(webpack.HotModuleReplacementPlugin); // config // .plugin('env') // .use(webpack.EnvironmentPlugin, ['NODE_ENV']); config .plugin('webpack-bundle-analyzer') .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin) &#125;&#125; if (process.env.npm_config_report) { // …}[package.json]1"analyz": "npm_config_report=true npm run build" 基础web开启 gzip 压缩gzip 是 GNUzip 的缩写，最早用于 UNIX 系统的文件压缩。HTTP 协议上的 gzip 编码是一种用来改进 web 应用程序性能的技术，web 服务器和客户端（浏览器）必须共同支持 gzip。目前主流的浏览器，Chrome，firefox，IE等都支持该协议。常见的服务器如 Apache，Nginx，IIS 同样支持，gzip 压缩效率非常高，通常可以达到 70% 的压缩率，也就是说，如果你的网页有 30K，压缩之后就变成了 9K 左右 yarn add compression --save 123var compression = require('compression');var app = express();app.use(compression()) 重启服务，观察网络面板里面的 response header，如果看到content-encoding的字段则表明 gzip 开启成功; 浏览器缓存;静态资源进行缓存CDN 的使用Chrome Performance 查找性能瓶颈]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -123,8 +239,8 @@
         <category>Note</category>
       </categories>
       <tags>
-        <tag>vue</tag>
         <tag>less</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -159,17 +275,6 @@
       </categories>
       <tags>
         <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[vue集合]]></title>
-    <url>%2F2018-05-20-vue.html</url>
-    <content type="text"><![CDATA[bugs1[Vue warn]: Error in render: “TypeError: _self.$scopedSlots.default is not a function” 究其原因，是因为表格是element-ui通过循环产生的，而vue在dom重新渲染时有一个性能优化机制，就是相同dom会被复用，这就是问题所在，所以，通过key去标识一下当前行是唯一的，不许复用，就行了。 方案：添加 :key=”Math.random()”]]></content>
-      <categories>
-        <category>Note</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -264,7 +369,7 @@
   <entry>
     <title><![CDATA[git常用命令]]></title>
     <url>%2F2018-01-27-gitstudy.html</url>
-    <content type="text"><![CDATA[git常用命令 一、安装git升级$ git clone git://git.kernel.org/pub/scm/git/git.git 二、配置查看用户名和邮箱$ git config user.name$ git config user.email 修改用户名和邮箱$ git config --global user.name$ git config --global user.email 初始化一个版本仓库$ git init Clone远程版本库$ git clone addr. 添加远程版本库origin$ git remote add origin addr. 查看远程仓库$ git remote -v 三、提交你的修改添加当前修改的文件到暂存区$ git add . 如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件$ git add -u 提交你的修改$ git commit –m &amp;quot;你的注释&amp;quot; 推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]$ git push origin master 查看文件状态$ git status 跟踪新文件$ git add readme.txt 从当前跟踪列表移除文件，并完全删除$ git rm readme.txt 仅在暂存区删除，保留文件在当前目录，不再跟踪$ git rm –cached readme.txt 重命名文件$ git mv reademe.txt readme 查看当前分支的存在提交历史记录$ git log不包括诸如删除的或被合并的提交 查看当前分支所有操作历史$ git reflog诸如历史提交记录，撤销，合并提交等详细历史记录 修改最后一次提交注释的，利用–amend参数$ git checkout –- readme.txt 四、基本的分支管理创建一个分支$ git branch workspace 切换工作目录到workspace$ git chekcout workspace 将上面的命令合在一起，创建workspace分支并切换到workspace$ git chekcout –b workspace 合并workspace分支，当前工作目录为master$ git merge workspace 合并完成后，没有出现冲突，删除workspace分支$ git branch –d workspace 拉去远程仓库的数据，语法为 git fetch [remote-name]$ git fetch fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并$ git pull 查看远程仓库的信息$ git remote show origin 五、合并合并的commit的前一个commit节点$ git rebase -i （commitHash）pick：简写p，启用该commit；reword：简写r，使用该commit，但是修改提交信息，修改后可以继续编辑后面的提交信息；edit：简写e，使用commit，停止合并该commit；squash：简写s，使用该commit，并将该commit并入前一commit；drop：简写d，移除该commit； 六、撤销撤销一个提交的同时会创建一个新的提交$ git revert head@{19}撤销提交时若多个提交修改了同一文件可能会出现冲突，需要处理冲突后，暂存：$ git add.然后继续执行revert操作：$ git revert --continue 期望撤销的提交是最近独立存在的，并没有发生合并$ git reset （commitHash）]]></content>
+    <content type="text"><![CDATA[git常用命令 代码冲突服务器代码合并本地代码123$ git stash //暂存当前正在进行的工作。$ git pull origin master //拉取服务器的代码$ git stash pop //合并暂存的代码 服务器代码覆盖本地代码12$git reset --hard //回滚到上一个版本$git pull origin master 更换git地址$ git remote set-url origin 合并一条$ git merge --squash another 一、安装git升级$ git clone git://git.kernel.org/pub/scm/git/git.git 二、配置查看用户名和邮箱$ git config user.name$ git config user.email 修改用户名和邮箱$ git config --global user.name$ git config --global user.email 初始化一个版本仓库$ git init Clone远程版本库$ git clone addr. 添加远程版本库origin$ git remote add origin addr. 查看远程仓库$ git remote -v 三、提交你的修改添加当前修改的文件到暂存区$ git add . 如果你自动追踪文件，包括你已经手动删除的，状态为Deleted的文件$ git add -u 提交你的修改$ git commit –m &amp;quot;你的注释&amp;quot; 推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]$ git push origin master 查看文件状态$ git status 跟踪新文件$ git add readme.txt 从当前跟踪列表移除文件，并完全删除$ git rm readme.txt 仅在暂存区删除，保留文件在当前目录，不再跟踪$ git rm –cached readme.txt 重命名文件$ git mv reademe.txt readme 查看当前分支的存在提交历史记录$ git log不包括诸如删除的或被合并的提交 查看当前分支所有操作历史$ git reflog诸如历史提交记录，撤销，合并提交等详细历史记录 修改最后一次提交注释的，利用–amend参数$ git checkout –- readme.txt 四、基本的分支管理创建一个分支$ git branch workspace 切换工作目录到workspace$ git chekcout workspace 将上面的命令合在一起，创建workspace分支并切换到workspace$ git chekcout –b workspace 合并workspace分支，当前工作目录为master$ git merge workspace 合并完成后，没有出现冲突，删除workspace分支$ git branch –d workspace 拉去远程仓库的数据，语法为 git fetch [remote-name]$ git fetch fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并$ git pull 查看远程仓库的信息$ git remote show origin 五、合并合并的commit的前一个commit节点$ git rebase -i （commitHash）pick：简写p，启用该commit；reword：简写r，使用该commit，但是修改提交信息，修改后可以继续编辑后面的提交信息；edit：简写e，使用commit，停止合并该commit；squash：简写s，使用该commit，并将该commit并入前一commit；drop：简写d，移除该commit； 六、撤销撤销一个提交的同时会创建一个新的提交$ git revert head@{19}撤销提交时若多个提交修改了同一文件可能会出现冲突，需要处理冲突后，暂存：$ git add.然后继续执行revert操作：$ git revert --continue 期望撤销的提交是最近独立存在的，并没有发生合并$ git reset （commitHash）]]></content>
       <categories>
         <category>Note</category>
       </categories>
@@ -319,7 +424,7 @@
   <entry>
     <title><![CDATA[node.js学习]]></title>
     <url>%2F2017-07-20-node.html</url>
-    <content type="text"><![CDATA[Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。 一、定义浏览器内核实际上分为两个部分:渲染引擎和 JavaScript 引擎。前者负责渲染 HTML + CSS，后者则负责运行 JavaScript。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。 适用场景 实时性应用，比如在线多人协作工具，网页聊天应用等。 以 I/O 为主的高并发应用，比如为客户端提供 API，读取数据库。 流式应用，比如客户端经常上传文件。 前后端分离。 RESTful API 这是NodeJS最理想的应用场景，可以处理数万条连接，本身没有太多的逻辑，只需要请求API，组织数据进行返回即可。它本质上只是从某个数据库中查找一些值并将它们组成一个响应。由于响应是少量文本，入站请求也是少量的文本，因此流量不高，一台机器甚至也可以处理最繁忙的公司的API需求。 统一Web应用的UI层 目前MVC的架构，在某种意义上来说，Web开发有两个UI层，一个是在浏览器里面我们最终看到的，另一个在server端，负责生成和拼接页面。 大量Ajax请求的应用 例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，NodeJS能响应大量的并发请求。 总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。 局限性 不适合 CPU 密集型的任务，比如人工智能方面的计算，视频、图片的处理等。 辅助概念的理解看不懂啊看不懂 并发非阻塞 I/O网络 I/O文件 I/O事件循环数据流]]></content>
+    <content type="text"><![CDATA[Node.js是一个Javascript运行环境(runtime)。简单的说 Node.js 就是运行在服务端的 JavaScript。用于方便地搭建响应速度快、易于扩展的网络应用。 一、定义浏览器内核实际上分为两个部分:渲染引擎和 JavaScript 引擎。前者负责渲染 HTML + CSS，后者则负责运行 JavaScript。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。 适用场景 实时性应用，比如在线多人协作工具，网页聊天应用等。 以 I/O 为主的高并发应用，比如为客户端提供 API，读取数据库。 流式应用，比如客户端经常上传文件。 前后端分离。 RESTful API 这是NodeJS最理想的应用场景，可以处理数万条连接，本身没有太多的逻辑，只需要请求API，组织数据进行返回即可。它本质上只是从某个数据库中查找一些值并将它们组成一个响应。由于响应是少量文本，入站请求也是少量的文本，因此流量不高，一台机器甚至也可以处理最繁忙的公司的API需求。 统一Web应用的UI层 目前MVC的架构，在某种意义上来说，Web开发有两个UI层，一个是在浏览器里面我们最终看到的，另一个在server端，负责生成和拼接页面。 大量Ajax请求的应用 例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，NodeJS能响应大量的并发请求。 总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。 局限性 不适合 CPU 密集型的任务，比如人工智能方面的计算，视频、图片的处理等。 辅助概念的理解并发非阻塞 I/O网络 I/O文件 I/O事件循环数据流]]></content>
       <categories>
         <category>Note</category>
       </categories>
@@ -546,8 +651,8 @@
         <category>Note</category>
       </categories>
       <tags>
-        <tag>css</tag>
         <tag>JavaScript</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
