@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://rawraw.info/2019-05-20-vue.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-09-22-pm2.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-09-22-flex.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-09-22-h5.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2018-09-22-img.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
+    <loc>http://rawraw.info/2019-07-18-ssh.html</loc>
+    <lastmod>2019-09-22</lastmod>
+  </url>  <url>
     <loc>http://rawraw.info/2019-08-13-webpack.html</loc>
     <lastmod>2019-08-21</lastmod>
   </url>  <url>
@@ -16,28 +37,22 @@
     <loc>http://rawraw.info/2019-07-18-wx.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
-    <loc>http://rawraw.info/2019-05-20-vue.html</loc>
-    <lastmod>2019-08-20</lastmod>
-  </url>  <url>
     <loc>http://rawraw.info/2019-07-27-vconsole.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2019-07-18-vue-cli.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
-    <loc>http://rawraw.info/2019-07-18-ssh.html</loc>
+    <loc>http://rawraw.info/2019-08-13-serverlees.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2019-07-18-ssr.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
-    <loc>http://rawraw.info/2019-08-13-serverlees.html</loc>
+    <loc>http://rawraw.info/2019-07-18-picgo.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2019-07-18-pwa.html</loc>
-    <lastmod>2019-08-20</lastmod>
-  </url>  <url>
-    <loc>http://rawraw.info/2019-07-18-picgo.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2017-07-20-node.html</loc>
@@ -47,9 +62,6 @@
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2019-08-19-nodememory.html</loc>
-    <lastmod>2019-08-20</lastmod>
-  </url>  <url>
-    <loc>http://rawraw.info/2018-01-27-gitstudy.html</loc>
     <lastmod>2019-08-20</lastmod>
   </url>  <url>
     <loc>http://rawraw.info/2019-07-18-chorme-extend.html</loc>
